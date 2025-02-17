@@ -1,12 +1,4 @@
 import sys
-
-sys.path.append('/Users/federico/Documents/Tesi informatica/programming/Trading-Agent')
-sys.path.append('/Users/federico/Documents/Tesi informatica/programming/Trading-Agent/db')
-# sys.path.append('/Users/federico/Documents/Tesi informatica/programming/Trading-Agent/agent1')
-# sys.path.append('/Users/federico/Documents/Tesi informatica/programming/Trading-Agent/agent2')
-# sys.path.append('/Users/federico/Documents/Tesi informatica/programming/Trading-Agent/agent3')
-sys.path.append('/Users/federico/Documents/Tesi informatica/programming/Trading-Agent/symbols')
-
 import psycopg2
 import random
 import logging
@@ -67,17 +59,17 @@ def getRandomDate(cursor):
         random_date = min_date + timedelta(days=random_days)
 
         # Verifica se la data casuale esiste nel database
-        cursor.execute(f"SELECT time_value_it FROM nyse_actions WHERE time_value_it = '{random_date}';")
+        cursor.execute(f"SELECT time_value FROM data_market_nyse_symbols WHERE time_value = '{random_date}';")
         result = cursor.fetchone()
 
         if result:  # Data trovata nel database
             # Verifica se la data casuale esiste nel database
-            cursor.execute(f"SELECT time_value_it FROM larg_comp_eu_actions WHERE time_value_it = '{random_date}';")
+            cursor.execute(f"SELECT time_value FROM data_market_larg_comp_eu_symbols WHERE time_value = '{random_date}';")
             result1 = cursor.fetchone()
 
             if result1:
                 # Verifica se la data casuale esiste nel database
-                cursor.execute(f"SELECT time_value_it FROM nasdaq_actions WHERE time_value_it = '{random_date}';")
+                cursor.execute(f"SELECT time_value FROM data_market_nasdaq_symbols WHERE time_value = '{random_date}';")
                 result2 = cursor.fetchone()
 
                 if result2:
@@ -112,17 +104,17 @@ def getRandomDateBetween(cursor, min_date, max_date):
         random_date = min_date + timedelta(days=random_days)
 
         # Verifica se la data casuale esiste nel database
-        cursor.execute(f"SELECT time_value_it FROM nyse_actions WHERE time_value_it = '{random_date}';")
+        cursor.execute(f"SELECT time_value FROM data_market_nyse_symbols WHERE time_value = '{random_date}';")
         result = cursor.fetchone()
 
         if result:  # Data trovata nel database
             # Verifica se la data casuale esiste nel database
-            cursor.execute(f"SELECT time_value_it FROM larg_comp_eu_actions WHERE time_value_it = '{random_date}';")
+            cursor.execute(f"SELECT time_value FROM data_market_larg_comp_eu_symbols WHERE time_value = '{random_date}';")
             result1 = cursor.fetchone()
 
             if result1:
                 # Verifica se la data casuale esiste nel database
-                cursor.execute(f"SELECT time_value_it FROM nasdaq_actions WHERE time_value_it = '{random_date}';")
+                cursor.execute(f"SELECT time_value FROM data_market_nasdaq_symbols WHERE time_value = '{random_date}';")
                 result2 = cursor.fetchone()
 
                 if result2:
@@ -185,7 +177,7 @@ def getRandomDate2(cursor):
     random_date = min_date + timedelta(days=random_day)
 
     # Verifica se la data casuale esiste nel database
-    cursor.execute(f"SELECT time_value_it FROM nyse_actions WHERE time_value_it = '{random_date}';")
+    cursor.execute(f"SELECT time_value FROM data_market_nyse_symbols WHERE time_value = '{random_date}';")
     result = cursor.fetchone()
 
     if result:
@@ -220,7 +212,7 @@ def generateiRandomDates2(cursor, i):
 
 ###############################################################
 
-def getLastIdTest(cur):
+def get_last_id_test(cur):
     """
     Funzione utilizzata per recuperare l'ultimo id presente ai testing effettuati e restituire il nuovo che dovrà esere utilizzato.
     
@@ -231,7 +223,7 @@ def getLastIdTest(cur):
         - l'id che sarà utilizzato per il test attuale.
     """
     # Recupera l'ultimo id del testing
-    cur.execute("SELECT id FROM Testing ORDER BY id desc;")
+    cur.execute("SELECT id FROM testing_data ORDER BY id desc;")
     idTest = cur.fetchone()
 
     if idTest == None:
@@ -243,25 +235,20 @@ def getLastIdTest(cur):
 
 ###############################################################
 
-def clearSomeTablesDB(cur, conn):
+def clear_tables_db(cur, conn): 
     cur.execute("DELETE FROM sale;")
     conn.commit()
 
     cur.execute("DELETE FROM purchase;")
     conn.commit()
 
-    cur.execute("DELETE FROM logindate;")
-    conn.commit()
-
-    cur.execute("DELETE FROM datatrader;")
-    conn.commit()
 
 ###############################################################
 
 def getValueMiddlePrice(chosen_symbol, market, date, cur):
     start_date = datetime.strptime(date, '%Y-%m-%d %H:%M:%S') - timedelta(days=50)
     cur.execute(
-        f"SELECT close_price FROM {market} WHERE symbol = '{chosen_symbol}' AND time_value_it BETWEEN '{start_date}' AND '{date}';")
+        f"SELECT close_price FROM {market} WHERE symbol = '{chosen_symbol}' AND time_value BETWEEN '{start_date}' AND '{date}';")
     prices = [row[0] for row in cur.fetchall()]
 
     if len(prices) == 0:

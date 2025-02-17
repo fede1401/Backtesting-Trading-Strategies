@@ -3,7 +3,7 @@ import psycopg2  # https://www.youtube.com/watch?v=miEFm1CyjfM
 
 
 # Funzione per connettersi al database PostgreSQL 'nasdaq'.
-def connect_nasdaq():
+def connect_data_backtesting():
     try:
         # Configura i parametri di connessione per PostgreSQL
         conn = psycopg2.connect(
@@ -67,5 +67,5 @@ def connectDB_example():
 
 
 if __name__ == "__main__":
-    # connectDB_example()
-    connect_nasdaq()
+    connectDB_example()
+    #connect_data_backtesting()

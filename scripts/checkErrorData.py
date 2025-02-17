@@ -25,7 +25,7 @@ get_path_specify([db_path, f'{main_project}/data/anomalies'])
 from work_historical.database import connectDB
 
 
-def checkErr(initial_date, end_date, market):
+def checkErr(initial_date, end_date, market_data):
     """
     Funzione utilizzata per controllare se ci sono anomalie nei dati di mercato, scaricati dall'agente 1 e salvati nel database.
     
@@ -40,13 +40,13 @@ def checkErr(initial_date, end_date, market):
     """
     try:
         # Connessione al database
-        cur, conn = connectDB.connect_nasdaq()
+        cur, conn = connectDB.connect_data_backtesting()
         
         # recupero dal database del simbolo, del tempo e del prezzo di apertura e massimo, per controllari se ci siano variazioni enormi tra il prezzo di apertura e massimo
         # per un simbolo in un intervallo di tempo ---> errore di scaricamento di dati di mercato oppure evento che scatena un innalzamento del prezzo.
-        cur.execute(f"""SELECT symbol, time_value_it, open_price, high_price 
-                    FROM {market} 
-                    WHERE time_value_it 
+        cur.execute(f"""SELECT symbol, time_value, open_price, high_price 
+                    FROM {market_data} 
+                    WHERE time_value 
                     BETWEEN '{initial_date}' AND '{end_date}'""")
         
         # Dizionario: {symbol: [(time_value_it, open_price, high_price), ...]}
@@ -62,8 +62,8 @@ def checkErr(initial_date, end_date, market):
         threshold_pct = 30 #--> 30*100% = 3000% di variazione
         
         # Apriamo il file di report in modalità append        
-        with open(f'{main_project}/data/anomalies/errorData_{market}.txt', 'a') as file_out:
-            file_out.write(f"---------------------------------------------\nControllo anomalie per il mercato: {market}\n")
+        with open(f'{main_project}/data/anomalies/errorData_{market_data}.txt', 'a') as file_out:
+            file_out.write(f"---------------------------------------------\nControllo anomalie per il mercato: {market_data}\n")
             for symbol, values in data_by_symbol.items():
                 # Ordiniamo per data (se non già ordinati)
                 values.sort(key=lambda x: x[0])
@@ -183,8 +183,8 @@ if __name__ == '__main__':
              ('2018-01-01 00:00:00', '2019-01-01 00:00:00'), ('2019-01-01 00:00:00', '2020-01-01 00:00:00'), ('2020-01-01 00:00:00', '2021-01-01 00:00:00'),
              ('2022-01-01 00:00:00', '2023-01-01 00:00:00'), ('2023-01-01 00:00:00', '2024-01-01 00:00:00'), ('2024-01-01 00:00:00', '2025-01-01 00:00:00')]   
     
-    market = ['nasdaq_actions', 'nyse_actions', 'larg_comp_eu_actions']
+    market_data = ['data_market_nasdaq_symbols', 'data_market_nyse_symbols', 'data_market_larg_comp_eu_symbols']
     
-    for mark in market:
+    for mark in market_data:
         for date in dates:
             checkErr(date[0], date[1], mark) # 1 anno

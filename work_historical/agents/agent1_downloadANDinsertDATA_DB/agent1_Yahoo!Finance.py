@@ -226,7 +226,7 @@ def fillDB(filename, cur, conn, market):
                     symbol = filename.split('/')[4]
                     symbol = symbol.split('.')[0]
                     
-                    time_value_it = time_value_ny = infoF[0]
+                    time_value = infoF[0]
                     
                     close_price = infoF[2]
                     open_price = infoF[5]
@@ -236,23 +236,21 @@ def fillDB(filename, cur, conn, market):
                     time_frame = '1d'
                     
                     # array che raggruppa i valori per poi inserirli nel DB.
-                    rate = [open_price, high_price, low_price, close_price, 0, 0, 0, time_value_it, time_value_ny]
+                    rate = [open_price, high_price, low_price, close_price, time_value]
                     print(symbol, rate, '\n')
                     
                     # a seconda del mercato di riferimento vengono inseriti i dati nel database
                     if market == 'NASDAQ':
-                        db.insertInNasdaqFromYahoo(symbol, time_frame, rate, cur=cur, conn=conn)
+                        db.insert_data_in_nasdaq_from_yahoo(symbol, time_frame, rate, cur=cur, conn=conn)
                     elif market == 'NYSE':
-                        db.insertInNyseFromYahoo(symbol, time_frame, rate, cur=cur, conn=conn)
+                        db.insert_data_in_nyse_from_yahoo(symbol, time_frame, rate, cur=cur, conn=conn)
                     elif market == 'LARG_COMP_EU':
-                        db.insertInLargeCompEUFromYahoo(symbol, time_frame, rate, cur=cur, conn=conn)
+                        db.insert_data_in_large_comp_eu_from_yahoo(symbol, time_frame, rate, cur=cur, conn=conn)
                                 
         # chiurusra del file
         file.close()
     return 0
        
-
-
 
 
 def getMarkCap(marketFiles):    

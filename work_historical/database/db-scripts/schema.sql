@@ -71,7 +71,7 @@ CREATE TABLE IF NOT EXISTS sale (
     PRIMARY KEY (sale_date, created_at, symbol)
 );
 
--- (Opzionale) Se c'è una relazione diretta con purchase, potresti aggiungere una foreign key. Esempio:
+-- (Opzionale) Se c'è una relazione diretta con purchase, si può aggiungere una foreign key. Esempio:
 -- ALTER TABLE sale
 --     ADD CONSTRAINT fk_purchase
 --     FOREIGN KEY (purchase_date, symbol)
@@ -98,12 +98,12 @@ CREATE TABLE IF NOT EXISTS testing_data (
     id                      INTEGER           NOT NULL,
     agent                   VARCHAR(50)       NOT NULL,
     number_test             INTEGER,
+    market                  VARCHAR(30)       NOT NULL,
     initial_date            TIMESTAMP         NOT NULL,
     end_date                TIMESTAMP         NOT NULL,
     initial_budget_usd      DOUBLE PRECISION  NOT NULL,
-    profit_perc             DOUBLE PRECISION,
     budget_with_profit_usd  DOUBLE PRECISION,
-    market                  VARCHAR(30)       NOT NULL,
+    profit_perc             DOUBLE PRECISION,
     n_purchase              INTEGER           NOT NULL,
     n_sale                  INTEGER           NOT NULL,
     avg_sale_time_seconds   DOUBLE PRECISION  NOT NULL,

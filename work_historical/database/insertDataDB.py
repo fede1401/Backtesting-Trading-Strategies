@@ -56,72 +56,51 @@ def insertInNasdaqActions(symbol, time_frame, rates, cur):
 
 
 # Funzione per inserire i dati dei titoli azionari del NASDAQ scaricati con Yahoo!Finance nel database
-def insertInNasdaqFromYahoo(symbol, time_frame, rate, cur, conn):
+def insert_data_in_nasdaq_from_yahoo(symbol, time_frame, rate, cur, conn):
     try:
-            # Calcola il tempo in formato italiano (sottrae 3 ore dall'orario UNIX)
-            #time_value_it = datetime.fromtimestamp(rate['time']) - timedelta(hours=3)
-
-            # Calcola il tempo in formato newyorkese (sottrae 9 ore dall'orario UNIX)
-            #time_value_ny = datetime.fromtimestamp(rate['time']) - timedelta(hours=9)
 
             # Esegue l'inserimento nella tabella nasdaq_actions
             cur.execute(
-                "INSERT INTO nasdaq_actions (symbol, time_frame, time_value_IT, time_value_NY, open_price, high_price, low_price, close_price, tick_volume, spread, real_volume) "
-                "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s) "
-                "ON CONFLICT (symbol, time_value_IT, time_value_NY, time_frame) DO NOTHING",
+                "INSERT INTO data_market_nasdaq_symbols (symbol, time_frame, time_value, open_price, high_price, low_price, close_price) "
+                "VALUES (%s, %s, %s, %s, %s, %s, %s) "
+                "ON CONFLICT (symbol, time_value, time_frame) DO NOTHING",
                 (
                     symbol,
                     time_frame,
-                    datetime.strptime(rate[7], '%Y-%m-%d'),
-                    datetime.strptime(rate[8], '%Y-%m-%d'),
+                    datetime.strptime(rate[4], '%Y-%m-%d'),
                     convert_numpy_to_python(rate[0]),
                     convert_numpy_to_python(rate[1]),
                     convert_numpy_to_python(rate[2]),
                     convert_numpy_to_python(rate[3]),
-                    convert_numpy_to_python(rate[4]),
-                    convert_numpy_to_python(rate[5]),
-                    convert_numpy_to_python(rate[6])
                 )
             )        
-            
     except Exception as e:
         print("Errore durante l'inserimento dei dati: ", e)
     
     # Conferma la transazione e stampa un messaggio
     conn.commit()
     
-    print(f"Dati relativi al salvataggio di {symbol} nella data: {datetime.strptime(rate[7], '%Y-%m-%d')} salvati nel db.\n")
-    
+    print(f"Dati relativi al salvataggio di {symbol} nella data: {datetime.strptime(rate[4], '%Y-%m-%d')} salvati nel db.\n")
     return 0
 
 ################################################################################################################################################################################################
 
 # Funzione per inserire i dati dei titoli azionari del NYSE scaricati con Yahoo!Finance nel database
-def insertInNyseFromYahoo(symbol, time_frame, rate, cur, conn):
+def insert_data_in_nyse_from_yahoo(symbol, time_frame, rate, cur, conn):
     try:
-            # Calcola il tempo in formato italiano (sottrae 3 ore dall'orario UNIX)
-            #time_value_it = datetime.fromtimestamp(rate['time']) - timedelta(hours=3)
-
-            # Calcola il tempo in formato newyorkese (sottrae 9 ore dall'orario UNIX)
-            #time_value_ny = datetime.fromtimestamp(rate['time']) - timedelta(hours=9)
-
             # Esegue l'inserimento nella tabella nasdaq_actions
             cur.execute(
-                "INSERT INTO nyse_actions (symbol, time_frame, time_value_IT, time_value_NY, open_price, high_price, low_price, close_price, tick_volume, spread, real_volume) "
-                "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s) "
-                "ON CONFLICT (symbol, time_value_IT, time_value_NY, time_frame) DO NOTHING",
+                "INSERT INTO data_market_nyse_symbols (symbol, time_frame, time_value, open_price, high_price, low_price, close_price) "
+                "VALUES (%s, %s, %s, %s, %s, %s, %s) "
+                "ON CONFLICT (symbol, time_value, time_frame) DO NOTHING",
                 (
                     symbol,
                     time_frame,
-                    datetime.strptime(rate[7], '%Y-%m-%d'),
-                    datetime.strptime(rate[8], '%Y-%m-%d'),
+                    datetime.strptime(rate[4], '%Y-%m-%d'),
                     convert_numpy_to_python(rate[0]),
                     convert_numpy_to_python(rate[1]),
                     convert_numpy_to_python(rate[2]),
-                    convert_numpy_to_python(rate[3]),
-                    convert_numpy_to_python(rate[4]),
-                    convert_numpy_to_python(rate[5]),
-                    convert_numpy_to_python(rate[6])
+                    convert_numpy_to_python(rate[3])
                 )
             )        
             
@@ -130,9 +109,7 @@ def insertInNyseFromYahoo(symbol, time_frame, rate, cur, conn):
     
     # Conferma la transazione e stampa un messaggio
     conn.commit()
-    
-    print(f"Dati relativi al salvataggio di {symbol} nella data: {datetime.strptime(rate[7], '%Y-%m-%d')} salvati nel db.\n")
-    
+    print(f"Dati relativi al salvataggio di {symbol} nella data: {datetime.strptime(rate[4], '%Y-%m-%d')} salvati nel db.\n")
     return 0
 
 
@@ -140,31 +117,21 @@ def insertInNyseFromYahoo(symbol, time_frame, rate, cur, conn):
 
 
 # Funzione per inserire i dati dei titoli azionari del NYSE scaricati con Yahoo!Finance nel database
-def insertInLargeCompEUFromYahoo(symbol, time_frame, rate, cur, conn):
+def insert_data_in_large_comp_eu_from_yahoo(symbol, time_frame, rate, cur, conn):
     try:
-            # Calcola il tempo in formato italiano (sottrae 3 ore dall'orario UNIX)
-            #time_value_it = datetime.fromtimestamp(rate['time']) - timedelta(hours=3)
-
-            # Calcola il tempo in formato newyorkese (sottrae 9 ore dall'orario UNIX)
-            #time_value_ny = datetime.fromtimestamp(rate['time']) - timedelta(hours=9)
-
             # Esegue l'inserimento nella tabella nasdaq_actions
             cur.execute(
-                "INSERT INTO larg_comp_eu_actions (symbol, time_frame, time_value_IT, time_value_NY, open_price, high_price, low_price, close_price, tick_volume, spread, real_volume) "
-                "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s) "
-                "ON CONFLICT (symbol, time_value_IT, time_value_NY, time_frame) DO NOTHING",
+                "INSERT INTO data_market_larg_comp_eu_symbols (symbol, time_frame, time_value, open_price, high_price, low_price, close_price) "
+                "VALUES (%s, %s, %s, %s, %s, %s, %s) "
+                "ON CONFLICT (symbol, time_value, time_frame) DO NOTHING",
                 (
                     symbol,
                     time_frame,
-                    datetime.strptime(rate[7], '%Y-%m-%d'),
-                    datetime.strptime(rate[8], '%Y-%m-%d'),
+                    datetime.strptime(rate[4], '%Y-%m-%d'),
                     convert_numpy_to_python(rate[0]),
                     convert_numpy_to_python(rate[1]),
                     convert_numpy_to_python(rate[2]),
-                    convert_numpy_to_python(rate[3]),
-                    convert_numpy_to_python(rate[4]),
-                    convert_numpy_to_python(rate[5]),
-                    convert_numpy_to_python(rate[6])
+                    convert_numpy_to_python(rate[3])
                 )
             )        
             
@@ -174,23 +141,22 @@ def insertInLargeCompEUFromYahoo(symbol, time_frame, rate, cur, conn):
     # Conferma la transazione e stampa un messaggio
     conn.commit()
     
-    print(f"Dati relativi al salvataggio di {symbol} nella data: {datetime.strptime(rate[7], '%Y-%m-%d')} salvati nel db.\n")
-    
+    print(f"Dati relativi al salvataggio di {symbol} nella data: {datetime.strptime(rate[4], '%Y-%m-%d')} salvati nel db.\n")
     return 0
 
 ################################################################################################################################################################################################
 
 # Funzione per inserire un acquisto di un simbolo azionario nel database
-def insertInPurchase (date, ticket, volume, symbol, price, cur, conn):
+def insert_purchase (date, ticket, volume, symbol, price, cur, conn):
     if cur is not None and conn is not None:
         #print("\nConnessione al database nasdaq avvenuta con successo.\n")
         
         try:
             # Esegue l'inserimento nella tabella Purchase
             cur.execute(
-                "INSERT INTO Purchase (datePur, now, ticket, volume, symbol, price) "
+                "INSERT INTO purchase (purchase_date, created_at, ticket, volume, symbol, price) "
                 "VALUES (%s, %s, %s, %s, %s, %s) "
-                "ON CONFLICT (datePur, now, symbol) DO NOTHING",
+                "ON CONFLICT (purchase_date, created_at, symbol) DO NOTHING",
                 (
                     date,
                     datetime.now(),
@@ -213,28 +179,31 @@ def insertInPurchase (date, ticket, volume, symbol, price, cur, conn):
 
 
 # Funzione per inserire una vendita (chiusura di una posizione) di un simbolo azionario nel database
-def insertInSale (dateSal, datePur, ticket_pur, ticket_sale, volume, symbol, priceSale, pricePurchase, profitUSD, profitPerc, cur, conn):
+def insert_sale (date_sale, date_purch, ticket_pur, ticket_sale, volume, symbol, price_sale, price_purchase, profit_USD, profit_perc, cur, conn):
     if cur is not None and conn is not None:
         #print("\nConnessione al database nasdaq avvenuta con successo.\n")
         
         try:
             # Esegue l'inserimento nella tabella Sale
             cur.execute(
-                "INSERT INTO Sale (dateSal, datePur, now, ticket_pur, ticket_sale, volume, symbol, priceSale, pricePurchase, profit_USD, profit_Perc)"
-                "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s) "
-                "ON CONFLICT (dateSal, now, symbol) DO NOTHING",
+                """
+                INSERT INTO sale (sale_date, purchase_date, created_at, ticket_purchase, ticket_sale, symbol, price_sale, 
+                                    price_purchase, volume, profit_usd, profit_perc)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s) 
+                ON CONFLICT (sale_date, created_at, symbol) DO NOTHING
+                """,
                 (
-                    dateSal,
-                    datePur,
+                    date_sale,
+                    date_purch,
                     datetime.now(),
                     ticket_pur,
                     ticket_sale,
-                    convert_numpy_to_python(volume), 
                     symbol,
-                    convert_numpy_to_python(priceSale),
-                    convert_numpy_to_python(pricePurchase),
-                    convert_numpy_to_python(profitUSD),
-                    convert_numpy_to_python(profitPerc)
+                    convert_numpy_to_python(price_sale),
+                    convert_numpy_to_python(price_purchase),
+                    convert_numpy_to_python(volume), 
+                    convert_numpy_to_python(profit_USD),
+                    convert_numpy_to_python(profit_perc)
                 )
             )
         except Exception as e:
@@ -242,154 +211,40 @@ def insertInSale (dateSal, datePur, ticket_pur, ticket_sale, volume, symbol, pri
         
         # Conferma la transazione e stampa un messaggio
         conn.commit()
-            
         #print("Dati relativi alla vendita dell'azione salvati nel db.\n")
 
        
 ################################################################################################################################################################################################ 
 
 
-# Funzione per inserire dati relativi allo stato del trader nel database
-def insertInDataTrader(date, stateAg, initialBalance, balance, equity, margin, profitUSD, profitPerc, deposit, credit, cur, conn):
-    if cur is not None and conn is not None:
-        #print("\nConnessione al database nasdaq avvenuta con successo.\n")
-        
-        try:
-            # Esegue l'inserimento nella tabella DataTrader
-            cur.execute(
-                "INSERT INTO DataTrader (date, now, stAgent, initialBalance, balance, equity, margin, profitUSD, profitPerc, deposit, credit) "
-                "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s) ",
-                (
-                    date,
-                    datetime.now(),
-                    stateAg.name, 
-                    convert_numpy_to_python(initialBalance),
-                    convert_numpy_to_python(balance),
-                    convert_numpy_to_python(equity),
-                    convert_numpy_to_python(margin),
-                    convert_numpy_to_python(profitUSD),
-                    convert_numpy_to_python(profitPerc),
-                    convert_numpy_to_python(deposit),
-                    convert_numpy_to_python(credit)
-                )
-            )
-        except Exception as e:
-            print("Errore durante l'inserimento dei dati: ", e)
-        
-        # Conferma la transazione e stampa un messaggio
-        conn.commit()
-            
-        #print("Dati relativi allo stato del trader salvati nel db.\n")
-        
-
-################################################################################################################################################################################################
-
-
-# Funzione per inserire dati relativi al login dell'utente nel database
-def insertInLoginDate(nameSurname, username, server, cur, conn):
+def insert_in_data_testing(id, agent, number_test, initial_date, end_date, initial_budget, profit_perc, budg_with_profit_USD , market, n_purchase, n_sale, middle_time_sale_second, middle_time_sale_day, title_better_profit, title_worse_profit, notes, cur, conn):
     if cur is not None and conn is not None:
         #print("\nConnessione al database nasdaq avvenuta con successo.\n")
         
         try:
             # Esegue l'inserimento nella tabella loginDate
             cur.execute(
-                "INSERT INTO loginDate (date, nameSurname, username, serverr) "
-                "VALUES (%s, %s, %s, %s) "
-                "ON CONFLICT (date, username) DO NOTHING",
-                (
-                    datetime.now(),
-                    nameSurname,
-                    username,
-                    server
-                )
-            )
-        except Exception as e:
-            print("Errore durante l'inserimento dei dati: ", e)
-        
-        # Conferma la transazione e stampa un messaggio
-        conn.commit()
-            
-        #print("Dati relativi al login dell'utente salvati nel db.\n")
-        
-
-################################################################################################################################################################################################
-
-
-def insertInSector(nome, cur, conn):
-    if cur is not None and conn is not None:
-        #print("\nConnessione al database nasdaq avvenuta con successo.\n")
-        
-        try:
-            # Esegue l'inserimento nella tabella loginDate
-            cur.execute(
-                "INSERT INTO SectorNasdaq (nome) "
-                "VALUES (%s) "
-                "ON CONFLICT (nome) DO NOTHING",
-                (
-                    nome,
-                )
-            )
-        except Exception as e:
-            print("Errore durante l'inserimento dei dati: ", e)
-        
-        # Conferma la transazione e stampa un messaggio
-        conn.commit()
-            
-        print("Dati relativi al  salvati nel db.\n")
-
-
-################################################################################################################################################################################################
-
-def insertInSectorNyse(nome, cur, conn):
-    if cur is not None and conn is not None:
-        #print("\nConnessione al database nasdaq avvenuta con successo.\n")
-        
-        try:
-            # Esegue l'inserimento nella tabella loginDate
-            cur.execute(
-                "INSERT INTO SectorNyse (nome) "
-                "VALUES (%s) "
-                "ON CONFLICT (nome) DO NOTHING",
-                (
-                    nome,
-                )
-            )
-        except Exception as e:
-            print("Errore durante l'inserimento dei dati: ", e)
-        
-        # Conferma la transazione e stampa un messaggio
-        conn.commit()
-            
-        print("Dati relativi al  salvati nel db.\n")
-
-
-################################################################################################################################################################################################
-
-
-def insertInTesting(id, agent, numberTest, initial_date, end_date, profitPerc, profitUSD , market, nPurchase, nSale, middleTimeSaleSecond, middleTimeSaleDay,titleBetterProfit, titleWorseProfit,  notes, cur, conn):
-    if cur is not None and conn is not None:
-        #print("\nConnessione al database nasdaq avvenuta con successo.\n")
-        
-        try:
-            # Esegue l'inserimento nella tabella loginDate
-            cur.execute(
-                "INSERT INTO Testing (id, agent, numberTest, initial_date, end_date, profitPerc, profitUSD, market, nPurchase, nSale, middleTimeSaleSecond, middleTimeSaleDay, titleBetterProfit, titleWorseProfit, notes) "
-                "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s ) ",
+                """
+                INSERT INTO testing_data (id, agent, number_test, market, initial_date, end_date, initial_budget_usd, budget_with_profit_usd,
+                                    profit_perc, n_purchase, n_sale, avg_sale_time_seconds, avg_sale_time_days, best_profit_symbol, worst_profit_symbol, notes) 
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s ) 
+                """,
                 (
                     convert_numpy_to_python(id),
                     agent, 
-                    convert_numpy_to_python(numberTest),
+                    convert_numpy_to_python(number_test),
+                    market,
                     initial_date, 
                     end_date,
-                    convert_numpy_to_python(profitPerc),
-                    convert_numpy_to_python(round(profitUSD, 4)),
-                    market,
-                    convert_numpy_to_python(nPurchase),
-                    convert_numpy_to_python(nSale),
-                    convert_numpy_to_python(round(middleTimeSaleSecond, 4)),
-                    convert_numpy_to_python(round(middleTimeSaleDay, 4)),
-                    titleBetterProfit, 
-                    titleWorseProfit,
+                    convert_numpy_to_python(initial_budget),
+                    convert_numpy_to_python(round(budg_with_profit_USD, 4)),
+                    convert_numpy_to_python(profit_perc),
+                    convert_numpy_to_python(n_purchase),
+                    convert_numpy_to_python(n_sale),
+                    convert_numpy_to_python(round(middle_time_sale_second, 4)),
+                    convert_numpy_to_python(round(middle_time_sale_day, 4)),
+                    title_better_profit, 
+                    title_worse_profit,
                     notes
                 )
             )
@@ -408,27 +263,32 @@ def insertInTesting(id, agent, numberTest, initial_date, end_date, profitPerc, p
                                                   #middleSale = mean_sale, middlePurchase = mean_purchase, middleTimeSale = mean_time_sale, middletitleBetterProfit = mean_titleBetterProfit,
                                                    # middletitleWorseProfit = mean_titleWorseProfit, notes=notes, cur=cur, conn=conn)
 
-def insertInMiddleProfit(testId, agent, roi, devstandard, var, middleProfitUSD, middleSale, middlePurchase, middleTimeSale,middletitleBetterProfit, middletitleWorseProfit, notes, cur, conn):
+def insert_in_data_simulation(test_id, agent, mean_perc_profit, std_dev, variance,initial_budget, mean_budget_with_profit_usd, avg_sale, avg_purchase, avg_time_sale, best_symbol, worst_symbol, timestamp_in, timestamp_fin, notes, cur, conn):
     if cur is not None and conn is not None:
         #print("\nConnessione al database nasdaq avvenuta con successo.\n")
         
         try:
             # Esegue l'inserimento nella tabella loginDate
             cur.execute(
-                "INSERT INTO MiddleProfit (testId, agent, roi, devstand, var, profitUSD, middSale, middPurch, middTimeSale, middtitleBettProf, middletiteWorseProf, notes) "
-                "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s ,%s, %s, %s) ",
+                """
+                INSERT INTO simulation_data (test_id, agent, mean_perc_profit, std_dev, variance, initial_budget, mean_budget_with_profit_usd, avg_sale, avg_purchase, avg_time_sale, best_symbol, worst_symbol, timestamp_in, timestamp_fin, notes) 
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s ,%s, %s, %s, %s, %s, %s) 
+                """,
                 (
-                    convert_numpy_to_python(testId),
+                    convert_numpy_to_python(test_id),
                     agent, 
-                    convert_numpy_to_python(round(roi, 4)),
-                    convert_numpy_to_python(round(devstandard, 4)),
-                    convert_numpy_to_python(round(var, 4)),
-                    convert_numpy_to_python(round(middleProfitUSD, 4)),
-                    convert_numpy_to_python(round(middleSale, 4)),
-                    convert_numpy_to_python(round(middlePurchase, 4)),
-                    convert_numpy_to_python(round(middleTimeSale, 4)),
-                    middletitleBetterProfit,
-                    middletitleWorseProfit,
+                    convert_numpy_to_python(round(mean_perc_profit, 4)),
+                    convert_numpy_to_python(round(std_dev, 4)),
+                    convert_numpy_to_python(round(variance, 4)),
+                    convert_numpy_to_python(initial_budget),
+                    convert_numpy_to_python(round(mean_budget_with_profit_usd, 4)),
+                    convert_numpy_to_python(round(avg_sale, 4)),
+                    convert_numpy_to_python(round(avg_purchase, 4)),
+                    convert_numpy_to_python(round(avg_time_sale, 4)),
+                    best_symbol,
+                    worst_symbol,
+                    timestamp_in,
+                    timestamp_fin,
                     notes
                 )
             )
@@ -439,6 +299,5 @@ def insertInMiddleProfit(testId, agent, roi, devstandard, var, middleProfitUSD, 
         conn.commit()
             
         #print("Dati relativi al  salvati nel db.\n")
-
 
 ################################################################################################################################################################################################

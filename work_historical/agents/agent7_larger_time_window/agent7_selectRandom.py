@@ -90,7 +90,7 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
 
     try:
         # Connessione al database
-        cur, conn = connectDB.connect_nasdaq()
+        cur, conn = connectDB.connect_data_backtesting()
         
         logger_agent7.info(f"Start agent7_selectRandom: {datetime.now()} \n")
 
@@ -110,10 +110,12 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
             logger_agent7.info(f"\n\nWork with market {m} : {datetime.now()}")
 
             # Viene selezionato l'ultimo id del test inserito nel database
-            idTest = utils.getLastIdTest(cur)
+            idTest = utils.get_last_id_test(cur) 
             
             # viene registrata una riga vuota nel database per separare le simulazioni
-            insertDataDB.insertInMiddleProfit(idTest, "------", roi=0, devstandard=0, var=0, middleProfitUSD=0, middleSale=0, middlePurchase=0, middleTimeSale=0,  middletitleBetterProfit='----', middletitleWorseProfit=0, notes='---', cur=cur, conn=conn)
+            insertDataDB.insert_in_data_simulation(idTest, "------", mean_perc_profit=0, std_dev=0, variance=0, middleProfitUSD=0, initial_budget= 0, mean_budget_with_profit_usd=0, 
+                                                    avg_sale=0, avg_purchase=0, avg_time_sale=0,  best_symbol='----', worst_symbol=0, timestamp_in = '',timestamp_fin='', 
+                                                    notes='---', cur=cur, conn=conn)
             
             # Recupero dei simboli azionari per il mercato scelto
             if m == 'nasdaq_actions':
@@ -146,22 +148,25 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
 
                 total_steps = len(datesToTrade)  # 
                 for step in range(total_steps):
+                    time_stamp_in = datetime.now()
+                    
                     # Logica principale
                     
-                    utils.clearSomeTablesDB(cur, conn)
+                    utils.clear_tables_db(cur, conn)
                     
                     trade_date, initial_date, endDate = datesToTrade1[step]
                     logger_agent7.info(f"Start test with {TK} agent7_selectRandom in initial date {initial_date} : {datetime.now()}")
 
-                    profitPerc, profitUSD, nSale, nPurchase, middleTimeSale, titleBetterProfit, titleWorseProfit = tradingYear_purchase_one_after_the_other( cur, conn, symbols, trade_date, m, TK, initial_date, endDate, dizMarkCap, symbolsDispoInDates, pricesDispoInDates, totaledates[m])
+                    profitPerc, profitUSD, nSale, nPurchase, middleTimeSale, titleBetterProfit, titleWorseProfit, initial_budget = tradingYear_purchase_one_after_the_other( cur, conn, symbols, trade_date, m, TK, initial_date, endDate, dizMarkCap, symbolsDispoInDates, pricesDispoInDates, totaledates[m])
 
                     # profitNotReinvestedPerc, profitNotReinvested, ticketSale, ticketPur, float(np.mean( # middleTimeSale)), max(titleProfit[symbol]), min(titleProfit[symbol])
 
                     print( f"\nProfitto per il test {idTest}: agent7_symb_rnd con TP={TK}%, {m}, buy one after the other: {profitPerc}, rimangono {total_steps - step - 1} iterazioni\n")
 
                     profitPerc = round(profitPerc, 4)
-                    insertDataDB.insertInTesting(idTest, "agent7_symb_rnd", step, initial_date=initial_date, end_date=endDate, profitPerc=profitPerc, profitUSD=profitUSD, market=m, nPurchase=nPurchase, nSale=nSale, middleTimeSaleSecond=middleTimeSale,
-                                                 middleTimeSaleDay=(middleTimeSale / 86400), titleBetterProfit=titleBetterProfit, titleWorseProfit=titleWorseProfit, notes=f"TAKE PROFIT = {TK}% ", cur=cur, conn=conn)
+                    notes = f"TP:{TK}%, {m}, buy no randomly but one after the other in a larger time window and choices 100 symbols randomly."
+                    insertDataDB.insert_in_data_testing(idTest, "agent7_symb_rnd", step, initial_date=initial_date, end_date=endDate, initial_budget=initial_budget, profit_perc=profitPerc, budg_with_profit_USD=profitUSD, market=m, n_purchase=nPurchase, n_sale=nSale, middle_time_sale_second=middleTimeSale,
+                                                 middle_time_sale_day=(middleTimeSale / 86400), title_better_profit=titleBetterProfit, title_worse_profit=titleWorseProfit, notes=notes, cur=cur, conn=conn)
 
                     profTot.append(profitUSD)
                     profitsPerc.append(profitPerc)
@@ -204,8 +209,9 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
                 # logging.info(f"Profitto medio: {mean_profit}, Deviazione standard: {std_deviation}")
 
                 notes = f"TP:{TK}%, {m}, buy no randomly but one after the other in a larger time window and choices 100 symbols randomly."
-                insertDataDB.insertInMiddleProfit(idTest, "agent7_symb_rnd", roi=mean_profit_perc, devstandard=std_deviation, var=varianza, middleProfitUSD=mean_profit_usd, middleSale=mean_sale, middlePurchase=mean_purchase,
-                                                  middleTimeSale=(mean_time_sale / 86400), middletitleBetterProfit=mean_titleBetterProfit, middletitleWorseProfit=mean_titleWorseProfit, notes=notes, cur=cur, conn=conn)
+                insertDataDB.insert_in_data_simulation(idTest, "agent7_symb_rnd", mean_perc_profit=mean_profit_perc, std_dev=std_deviation, variance=varianza, initial_budget= initial_budget, 
+                                                       mean_budget_with_profit_usd=mean_profit_usd, avg_sale=mean_sale, avg_purchase=mean_purchase, avg_time_sale=(mean_time_sale / 86400), best_symbol=mean_titleBetterProfit, 
+                                                       worst_symbol=mean_titleWorseProfit, timestamp_in=time_stamp_in, timestamp_fin=datetime.now(), notes=notes, cur=cur, conn=conn)
 
     except Exception as e:
         logger_agent7.critical(f"Errore non gestito: {e}")
@@ -293,7 +299,7 @@ def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, mar
                             dateObject = datetime.strptime(trade_date, '%Y-%m-%d %H:%M:%S')
 
                             # Inserimento dei dati relativi alla vendita del simbolo azionario nel database
-                            insertDataDB.insertInSale(dateObject, datePur, ticketP, ticketSale, volume, symbol, price_current, price_open, profit, perc_profit, cur, conn)
+                            insertDataDB.insert_sale(dateObject, datePur, ticketP, ticketSale, volume, symbol, price_current, price_open, profit, perc_profit, cur, conn)
 
                             middleTimeSale.append((dateObject - datePur).total_seconds())
 
@@ -373,7 +379,7 @@ def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, mar
                     dateObject = datetime.strptime(trade_date, '%Y-%m-%d %H:%M:%S')
 
                     # Inserimento nel database
-                    insertDataDB.insertInPurchase(trade_date, ticketPur, volumeAcq, chosen_symbol, price, cur, conn)
+                    insertDataDB.insert_purchase(trade_date, ticketPur, volumeAcq, chosen_symbol, price, cur, conn)
                     numb_purch += 1
                     budgetInvestimenti -= (price * volumeAcq)
                     
@@ -427,7 +433,7 @@ def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, mar
                                 # datePur = datetime.strptime(datePur, '%Y-%m-%d %H:%M:%S')
 
                                 # Inserimento dei dati relativi alla vendita del simbolo azionario nel database
-                                insertDataDB.insertInSale(dateObject, datePur, ticketP, ticketSale, volume, symbol,
+                                insertDataDB.insert_sale(dateObject, datePur, ticketP, ticketSale, volume, symbol,
                                                           price_current, price_open, profit, perc_profit, cur, conn)
 
                                 sales.add(ticketP)
@@ -452,7 +458,7 @@ def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, mar
                                 # datePur = datetime.strptime(datePur, '%Y-%m-%d %H:%M:%S')
 
                                 # Inserimento dei dati relativi alla vendita del simbolo azionario nel database
-                                insertDataDB.insertInSale(dateObject, datePur, ticketP, ticketSale, volume, symbol,
+                                insertDataDB.insert_sale(dateObject, datePur, ticketP, ticketSale, volume, symbol,
                                                           price_current, price_open, 0, 0, cur, conn)
 
                                 sales.add(ticketP)
@@ -498,11 +504,10 @@ def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, mar
             logger_agent7.info(f"{tick}: date purchase: {infoS[1]}, data sale: {infoS[0]}, ticketAcq: {infoS[2]}, volume: {infoS[3]}, simbolo: {infoS[4]}, prezzo corrente di vendita: {infoS[5]}, prezzo acquisto: {infoS[6]}, profitto: {infoS[7]}, profitto percentuale: {infoS[8]}")
 
     if middleTimeSale == []:
-        return profitNotReinvestedPerc, profitNotReinvested, nSaleProfit, ticketPur, 0, maxT, minT
+        return profitNotReinvestedPerc, profitNotReinvested, nSaleProfit, ticketPur, 0, maxT, minT, initial_budget
 
     else:
-        return profitNotReinvestedPerc, profitNotReinvested, nSaleProfit, ticketPur, float(
-            np.mean(middleTimeSale)), maxT, minT
+        return profitNotReinvestedPerc, profitNotReinvested, nSaleProfit, ticketPur, float(np.mean(middleTimeSale)), maxT, minT, initial_budget
 
 
 if __name__ == "__main__":
