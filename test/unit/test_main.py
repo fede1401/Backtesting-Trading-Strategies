@@ -132,12 +132,12 @@ def main():
     # creiamo un dizionario in cui per ogni data iniziale della lista datesToTrade1, inseriamo la lista delle date di trading che vanno da quella data iniziale fino alla data finale (cioè un anno dopo la data iniziale)
     # questo permette la ripetzione di questo passaggi per ogni agente che effettua simulazioni.
     totalDates = {}
-    markets = ['nasdaq_actions', 'nyse_actions', 'larg_comp_eu_actions'] # markets = ['nasdaq_actions']
+    markets = ['data_market_nasdaq_symbols', 'data_market_nyse_symbols', 'data_market_larg_comp_eu_symbols'] # markets = ['nasdaq_actions']
     for market in markets:
         totalDates[market] = {}
         for date_ in datesToTrade1:
             # Ottengo tutte le date per l'iterazione:
-            cur.execute(f"SELECT distinct time_value_it FROM {market} WHERE time_value_it > '{date_[0]}' and time_value_it < '{date_[2]}' order by time_value_it;")
+            cur.execute(f"SELECT distinct time_value FROM {market} WHERE time_value > '{date_[0]}' and time_value < '{date_[2]}' order by time_value;")
             totalDates[market][date_[0]] = [date_[1]] + [d[0] for d in cur.fetchall()]
             
             #datesTrade = cur.fetchall()
@@ -184,14 +184,14 @@ def main():
     symbolsDispoInDatesNasd = {}
     symbolsDispoInDatesNyse = {}
     symbolsDispoInDatesLarge = {} 
-    markets = ['nasdaq_actions', 'nyse_actions', 'larg_comp_eu_actions'] # markets = ['nasdaq_actions']
+    markets = ['data_market_nasdaq_symbols', 'data_market_nyse_symbols', 'data_market_larg_comp_eu_symbols'] # markets = ['nasdaq_actions']
     for mark in markets:
         for date in datesToTrade1:
             # Recupero dei simboli azionari disponibili per le date di trading scelte in "symbolDisp"
-            cur.execute(f"SELECT distinct(symbol) FROM {mark} WHERE time_value_it BETWEEN '{date[0]}' AND '{date[2]}';")
-            if mark == 'nasdaq_actions':
+            cur.execute(f"SELECT distinct(symbol) FROM {mark} WHERE time_value BETWEEN '{date[0]}' AND '{date[2]}';")
+            if mark == 'data_market_nasdaq_symbols':
                 symbolsDispoInDatesNasd[date[1]] = [sy[0] for sy in cur.fetchall()]
-            elif mark == 'nyse_actions':
+            elif mark == 'data_market_nyse_symbols':
                 symbolsDispoInDatesNyse[date[1]] = [sy[0] for sy in cur.fetchall()]
             else:
                 symbolsDispoInDatesLarge[date[1]] = [sy[0] for sy in cur.fetchall()]
@@ -204,7 +204,7 @@ def main():
     pricesDispoInDatesNasd = {}
     pricesDispoInDatesNyse = {}
     pricesDispoInDatesLarge = {}
-    markets = ['nasdaq_actions', 'nyse_actions', 'larg_comp_eu_actions']  #markets = ['nasdaq_actions']
+    markets = ['data_market_nasdaq_symbols', 'data_market_nyse_symbols', 'data_market_larg_comp_eu_symbols']  #markets = ['nasdaq_actions']
     for mark in markets:
         for date in datesToTrade1:
                 
@@ -225,23 +225,22 @@ def main():
                 """    
             
                 # Recupero dei prezzi di apertura e chiusura per i simboli azionari disponibili nelle date di trading scelte in "priceDisp"
-                cur.execute(f"SELECT symbol, time_value_it, open_price, high_price FROM {mark} WHERE time_value_it BETWEEN '{date[0]}' AND '{date[2]}'")
-                #cur.execute( f"SELECT symbol, time_value_it, open_price, high_price FROM {market} WHERE time_value_it BETWEEN '{initial_date}' AND '{endDate}';")
+                cur.execute(f"SELECT symbol, time_value, open_price, high_price FROM {mark} WHERE time_value BETWEEN '{date[0]}' AND '{date[2]}'")
 
-                if mark == 'nasdaq_actions':
+                if mark == 'data_market_nasdaq_symbols':
                     prices_dict = {}
-                    for symbol, time_value_it, open_price, high_price in cur.fetchall():
-                        prices_dict[(symbol, time_value_it.strftime('%Y-%m-%d %H:%M:%S'))] = (open_price, high_price)    
+                    for symbol, time_value, open_price, high_price in cur.fetchall():
+                        prices_dict[(symbol, time_value.strftime('%Y-%m-%d %H:%M:%S'))] = (open_price, high_price)    
                     pricesDispoInDatesNasd[date[1]] = [prices_dict]
-                elif mark == 'nyse_actions':
+                elif mark == 'data_market_nyse_symbols':
                     prices_dict = {}
-                    for symbol, time_value_it, open_price, high_price in cur.fetchall():
-                        prices_dict[(symbol, time_value_it.strftime('%Y-%m-%d %H:%M:%S'))] = (open_price, high_price)    
+                    for symbol, time_value, open_price, high_price in cur.fetchall():
+                        prices_dict[(symbol, time_value.strftime('%Y-%m-%d %H:%M:%S'))] = (open_price, high_price)    
                     pricesDispoInDatesNyse[date[1]] = [prices_dict]
                 else:
                     prices_dict = {}
-                    for symbol, time_value_it, open_price, high_price in cur.fetchall():
-                        prices_dict[(symbol, time_value_it.strftime('%Y-%m-%d %H:%M:%S'))] = (open_price, high_price)    
+                    for symbol, time_value, open_price, high_price in cur.fetchall():
+                        prices_dict[(symbol, time_value.strftime('%Y-%m-%d %H:%M:%S'))] = (open_price, high_price)    
                     pricesDispoInDatesLarge[date[1]] = [prices_dict]    
     
     logger_main.info(f"Find prices available. \n")
