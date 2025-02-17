@@ -221,6 +221,15 @@ def generateiRandomDates2(cursor, i):
 ###############################################################
 
 def getLastIdTest(cur):
+    """
+    Funzione utilizzata per recuperare l'ultimo id presente ai testing effettuati e restituire il nuovo che dovrà esere utilizzato.
+    
+    Args:
+        - cur: cursore relativo alla connessione del database.
+        
+    Returns:
+        - l'id che sarà utilizzato per il test attuale.
+    """
     # Recupera l'ultimo id del testing
     cur.execute("SELECT id FROM Testing ORDER BY id desc;")
     idTest = cur.fetchone()

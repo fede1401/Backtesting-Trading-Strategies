@@ -1,4 +1,3 @@
-# import MetaTrader5 as mt5
 import sys
 import psycopg2
 import time
@@ -57,16 +56,27 @@ if not logger_agent4.handlers:
 
 logger_agent4.propagate = False
 
+SYMB_NASD_ANOMALIE= [ 'IDEX', 'CYRX', 'QUBT', 'POCI', 'MULN', 'BTCS', 'HEPA', 'OLB', 'NITO', 'XELA', 'ABVC', 'GMGI', 
+                      'CELZ', 'IMTX', 'AREC', 'MNMD', 'PRTG', 'CHRD', 'ACCD', 'SPI',  'PRTG', 'NCPL', 'BBLGW', 'COSM', 
+                      'ATXG', 'SILO', 'KWE', 'TOP',  'TPST', 'NXTT', 'OCTO', 'EGRX', 'AAGR', 'MYNZ', 'IDEX', 'CSSE', 
+                      'BFI', 'EFTR', 'DRUG', 'GROM', 'HPCO', 'NCNC', 'SMFL', 'IPA']
+
+SYMB_NYSE_ANOMALIE = [ 'WT', 'EMP', 'IVT', 'EMP', 'AMPY', 'ARCH', 'ODV' ]
+
+SYMB_LARGE_ANOMALIE = [ 'SNK', 'CBE', 'BST', 'BOL', 'GEA', 'NTG', 'MBK', 'MOL', 'MAN', '1913', 
+                       'SBB-B', 'SES', 'DIA', 'H2O', 'EVO', 'LOCAL', 'ATO', 'FRAG', 'MYNZ' ]
+    
 SYMB_TOT_ANOMALIE = ['IDEX', 'CYRX', 'QUBT', 'POCI', 'MULN', 'BTCS', 'HEPA', 'OLB', 'NITO', 'XELA', 'ABVC', 'GMGI', 
                       'CELZ', 'IMTX', 'AREC', 'MNMD', 'PRTG', 'CHRD', 'ACCD', 'SPI',  'PRTG', 'NCPL', 'BBLGW', 'COSM', 
                       'ATXG', 'SILO', 'KWE', 'TOP',  'TPST', 'NXTT', 'OCTO', 'EGRX', 'AAGR', 'MYNZ', 'IDEX', 'CSSE', 
                       'BFI', 'EFTR', 'DRUG', 'GROM', 'HPCO', 'NCNC', 'SMFL', 'WT', 'EMP', 'IVT', 'EMP', 'AMPY', 'ARCH', 'ODV',
                       'SNK', 'CBE', 'BST', 'BOL', 'GEA', 'NTG', 'MBK', 'MOL', 'MAN', '1913', 
-                       'SBB-B', 'SES', 'DIA', 'H2O', 'EVO', 'LOCAL', 'ATO', 'FRAG', 'MYNZ' ]
+                       'SBB-B', 'SES', 'DIA', 'H2O', 'EVO', 'LOCAL', 'ATO', 'FRAG', 'MYNZ', 'IPA']
 
 
 # Funzione principale per il trading e il caricamento
-def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totaledates):            
+def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, 
+         pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totaledates):            
     try:
         logger_agent4.info(f"Start agent4_markCapDayInitial: {datetime.now()} \n")
 
@@ -127,7 +137,8 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
                     TK = list_take_profit[i]
                     
                     # get last idTest
-                    idTest = utils.getLastIdTest(cur) 
+                    #idTest = utils.getLastIdTest(cur) 
+                    idTest += 1
                     
                     total_steps = len(datesToTrade)  #
                     for step in range(total_steps):
@@ -139,10 +150,10 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
                         
                         # profitNotReinvestedPerc, profitNotReinvested, ticketSale, ticketPur, float(np.mean(middleTimeSale)), max(titleProfit[symbol]), min(titleProfit[symbol])
                         
-                        print(f"\nProfitto per il test {idTest} con TP={TK}%, {m}, buy one after the other: {profitPerc}, rimangono {total_steps - step -1} iterazioni\n")
+                        print(f"\nProfitto per il test {idTest}: agent4_top_mark_cap con TP={TK}%, {m}, buy one after the other: {profitPerc}, rimangono {total_steps - step -1} iterazioni\n")
                         
                         profitPerc = round(profitPerc, 4)
-                        insertDataDB.insertInTesting( idTest, "agent4", step, initial_date=initial_date, end_date=endDate, profitPerc=profitPerc, profitUSD =profitUSD,
+                        insertDataDB.insertInTesting( idTest, "agent4_top_mark_cap", step, initial_date=initial_date, end_date=endDate, profitPerc=profitPerc, profitUSD =profitUSD,
                                                     market=m, nPurchase = nPurchase, nSale= nSale, middleTimeSaleSecond=middleTimeSale, middleTimeSaleDay= (middleTimeSale/86400),
                                                     titleBetterProfit=titleBetterProfit, titleWorseProfit=titleWorseProfit, notes=f"DELAY = {DELAY} days and TK = {TK}", cur=cur, conn=conn)
                         
@@ -190,7 +201,7 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
 
 
                     notes = f"TP:{TK}%, {m}, buy no randomly but one after the other and buy after sale same title in {DELAY} days and with mark Cap order by initial date"
-                    insertDataDB.insertInMiddleProfit(idTest, "agent4", roi=mean_profit_perc, devstandard = std_deviation, var= varianza, middleProfitUSD =mean_profit_usd,
+                    insertDataDB.insertInMiddleProfit(idTest, "agent4_top_mark_cap", roi=mean_profit_perc, devstandard = std_deviation, var= varianza, middleProfitUSD =mean_profit_usd,
                                                     middleSale = mean_sale, middlePurchase = mean_purchase, middleTimeSale = (mean_time_sale/86400), middletitleBetterProfit = mean_titleBetterProfit,
                                                         middletitleWorseProfit = mean_titleWorseProfit, notes=notes, cur=cur, conn=conn)
 
@@ -225,7 +236,7 @@ def tradingYear(cur, conn, symbols, trade_date, market, DELAY, TK, initial_date,
             
     # Recupero dei 100 simboli azionari disponibili a maggior capitalizzazione per le date di trading scelte. 
     symbolDisp =  manage_symbol.get_x_symbols_ordered_by_market_cap(market, initial_date, 100, dizMarkCap, symbolsDispoInDates, logger_agent4)
-    logger_agent4.info(f"Test with this symbols : {symbolDisp}")
+    logger_agent4.info(f"Test agent4_top_mark_cap in {market} with this symbols : {symbolDisp}")
     
     # Ottimizzazione 4: Recupera TUTTI i prezzi dei simboli disponibili per il periodo in una sola query
     prices_dict = (pricesDispoInDates[initial_date])[0]
@@ -519,6 +530,9 @@ def tradingYear(cur, conn, symbols, trade_date, market, DELAY, TK, initial_date,
     maxT, minT = '', ''
     maxP, minP = 0, 1000000000
     for k, v in titleProfit.items():
+        for value in v:
+            if value > 40:
+                logger_agent4.info(f"Profit high for {k}: {value}%")
         titleProfit[k] = float(np.mean(v))
         if titleProfit[k] > maxP:
             maxP = titleProfit[k]
@@ -533,7 +547,7 @@ def tradingYear(cur, conn, symbols, trade_date, market, DELAY, TK, initial_date,
     
     if profitNotReinvestedPerc > 250:
         for tick, infoS in salesDict.items():
-            logger_agent4.info(f"{tick}: date sale: {infoS[1]}, data purchase: {infoS[0]}, ticketAcq: {infoS[2]}, volume: {infoS[3]}, simbolo: {infoS[4]}, prezzo corrente di vendita: {infoS[5]}, prezzo acquisto: {infoS[6]}, profitto: {infoS[7]}, profitto percentuale: {infoS[8]}")
+            logger_agent4.info(f"{tick}: date purchase: {infoS[1]}, data sale: {infoS[0]}, ticketAcq: {infoS[2]}, volume: {infoS[3]}, simbolo: {infoS[4]}, prezzo corrente di vendita: {infoS[5]}, prezzo acquisto: {infoS[6]}, profitto: {infoS[7]}, profitto percentuale: {infoS[8]}")
 
     if middleTimeSale == []:
         return profitNotReinvestedPerc, profitNotReinvested, nSaleProfit, ticketPur, 0, maxT, minT

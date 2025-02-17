@@ -40,7 +40,7 @@ SYMB_TOT_ANOMALIE = ['IDEX', 'CYRX', 'QUBT', 'POCI', 'MULN', 'BTCS', 'HEPA', 'OL
                       'ATXG', 'SILO', 'KWE', 'TOP',  'TPST', 'NXTT', 'OCTO', 'EGRX', 'AAGR', 'MYNZ', 'IDEX', 'CSSE', 
                       'BFI', 'EFTR', 'DRUG', 'GROM', 'HPCO', 'NCNC', 'SMFL', 'WT', 'EMP', 'IVT', 'EMP', 'AMPY', 'ARCH', 'ODV',
                       'SNK', 'CBE', 'BST', 'BOL', 'GEA', 'NTG', 'MBK', 'MOL', 'MAN', '1913', 
-                       'SBB-B', 'SES', 'DIA', 'H2O', 'EVO', 'LOCAL', 'ATO', 'FRAG', 'MYNZ' ]
+                       'SBB-B', 'SES', 'DIA', 'H2O', 'EVO', 'LOCAL', 'ATO', 'FRAG', 'MYNZ', 'IPA']
     
 # Funzione per leggere i simboli Nasdaq da un file CSV
 def symbolsNyseCSV():    
@@ -169,13 +169,6 @@ def get_x_symbols_ordered_by_market_cap_for_sector( market, initial_date, perc, 
         
     symbXSelect = dizMarkCap[strMark][year][initial_date.strftime('%Y-%m-%d %H:%M:%S')]
     
-    if market == 'nasdaq_actions':
-        strMark = 'nasdaq'
-    elif market == 'nyse_actions':
-        strMark = 'nyse'
-    elif market == 'larg_comp_eu_actions':
-        strMark = 'larg_comp_eu'
-        
     symbXSelect = symbXSelect[0].split(';')
     symbXSelect = [symb.strip() for symb in symbXSelect]
     

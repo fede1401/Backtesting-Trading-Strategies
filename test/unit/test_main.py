@@ -254,9 +254,7 @@ def main():
     logger_main.info(f"Start agents. \n")
     
     # Esecuzione degli agenti con le varie strategie
-    
-    agent2.agent2_markCapDayInitial.main(datesToTrade1, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totalDates)
-    
+    """
     logger_main.info(f"Start agent2 with select title for better cap in day initial.")
     agent2_markCapDayInitial.main(datesToTrade1, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totalDates)
     logger_main.info(f"End agent2 with select title for better cap in day initial. \n")
@@ -299,7 +297,7 @@ def main():
     logger_main.info(f"End agent8 with random select title. \n\n")
     
     ####################################
-    
+    """
         # Creazione del dizionario per la simulazione dell'agente 6 con la suddivisione dei titoli in settori.
     """
     Il dizionario assumerà la forma seguente:
@@ -346,6 +344,7 @@ def main():
     
     ####################################
     
+    """
     logger_main.info(f"Start agent5 with select title for better cap in day initial.")
     agent5_markCapDayInitial.main(datesToTrade1, dizMarkCap, symbolsDispoInDatesNasd, 
                                                               symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, 
@@ -358,7 +357,7 @@ def main():
                                                          symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, 
                                                          pricesDispoInDatesNyse, pricesDispoInDatesLarge, totalDates)
     logger_main.info(f"End agent5 with random select title. \n\n")
-        
+     
     ####################################
     
     logger_main.info(f"Start agent4 with select title for better cap in day initial. ")
@@ -369,7 +368,7 @@ def main():
     logger_main.info(f"Start agent4 with random select title. ")
     agent4_selectRandom.main(datesToTrade1, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totalDates)
     logger_main.info(f"End agent4 with random select title. \n\n")
-
+    """
 
 
     logger_main.info("Fine simulazione !!!!!")

@@ -108,6 +108,34 @@ SIMBOLO: XELA
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+SIMBOLO : IPA
+Situazione di prezzo anomalo:
+2025-02-14 03:42:37,556 - INFO - 1970: date purchase: 2016-10-03 00:00:00, data sale: 2017-01-03 00:00:00, ticketAcq: 1755, volume: 2000.0000447034845, 
+                                      simbolo: IPA, prezzo corrente di vendita: 4.445000171661377, prezzo acquisto: 0.004999999888241291, profitto: 4.440000171773136, 
+                                      profitto percentuale: 888.0000542029751
+
+Nel mio caso un acquisto in data 2016-10-03 00:00:00 a 0.004999999888241291 USD, con un volume di 10/0.004999999888241291 (circa 2000.0000447034845 unità), se venduto il 2017-01-03 00:00:00 a 4.445000171661377 USD, 
+produce un profitto enorme: 4.445000171661377 × 2000.0000447034845 ≈ 8880 dollari, che corrisponde a un profitto percentuale di oltre l’888%.
+
+Nel log risulta che per questo stesso titolo ci sono stati circa 20 acquisti in data antecedente al 2017-01-03 e vendite nel  2017-01-03 con profitti così elevati da alterare in maniera drastica i risultati complessivi.
+
+La coerenza tra due fonti su tre mi ha indotto a ritenere che i dati potrebbero essere corretti, sebbene resti qualche perplessità. Questa situazione non riguarda solo il titolo IPA: ho riscontrato circostanze analoghe per un centinaio di altri simboli, anche con profitti potenzialmente superiori. 
+Per evitare che risultati così fuori scala alterino le simulazioni, ho provvisoriamente escluso questi titoli dal dataset di test.
+
+Scartare dai test e le simulazioni
+
+
+
+Stessa casistica IPA in un'altra situazione.
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 FINE ANALISI
 

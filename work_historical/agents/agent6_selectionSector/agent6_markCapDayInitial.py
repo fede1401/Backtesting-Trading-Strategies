@@ -1,6 +1,5 @@
 # import MetaTrader5 as mt5
 import sys
-
 import psycopg2
 import random
 import logging
@@ -61,7 +60,7 @@ logger_agent6.propagate = False
 SYMB_NASD_ANOMALIE= [ 'IDEX', 'CYRX', 'QUBT', 'POCI', 'MULN', 'BTCS', 'HEPA', 'OLB', 'NITO', 'XELA', 'ABVC', 'GMGI', 
                       'CELZ', 'IMTX', 'AREC', 'MNMD', 'PRTG', 'CHRD', 'ACCD', 'SPI',  'PRTG', 'NCPL', 'BBLGW', 'COSM', 
                       'ATXG', 'SILO', 'KWE', 'TOP',  'TPST', 'NXTT', 'OCTO', 'EGRX', 'AAGR', 'MYNZ', 'IDEX', 'CSSE', 
-                      'BFI', 'EFTR', 'DRUG', 'GROM', 'HPCO', 'NCNC', 'SMFL']
+                      'BFI', 'EFTR', 'DRUG', 'GROM', 'HPCO', 'NCNC', 'SMFL', 'IPA']
 
 SYMB_NYSE_ANOMALIE = [ 'WT', 'EMP', 'IVT', 'EMP', 'AMPY', 'ARCH', 'ODV' ]
 
@@ -73,7 +72,7 @@ SYMB_TOT_ANOMALIE = ['IDEX', 'CYRX', 'QUBT', 'POCI', 'MULN', 'BTCS', 'HEPA', 'OL
                       'ATXG', 'SILO', 'KWE', 'TOP',  'TPST', 'NXTT', 'OCTO', 'EGRX', 'AAGR', 'MYNZ', 'IDEX', 'CSSE', 
                       'BFI', 'EFTR', 'DRUG', 'GROM', 'HPCO', 'NCNC', 'SMFL', 'WT', 'EMP', 'IVT', 'EMP', 'AMPY', 'ARCH', 'ODV',
                       'SNK', 'CBE', 'BST', 'BOL', 'GEA', 'NTG', 'MBK', 'MOL', 'MAN', '1913', 
-                       'SBB-B', 'SES', 'DIA', 'H2O', 'EVO', 'LOCAL', 'ATO', 'FRAG', 'MYNZ' ]
+                       'SBB-B', 'SES', 'DIA', 'H2O', 'EVO', 'LOCAL', 'ATO', 'FRAG', 'MYNZ', 'IPA']
 
 
 # In questo agente andiamo ad investire sul 50% dei titoli a maggiore capitalizzazione per ogni settore del mercato corrispondente.
@@ -96,7 +95,9 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
         middletitleBetterProfit = []
         middletitleWorseProfit = []
         
+        # Definizione parametri
         list_take_profit = [0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09, 0.10, 0.15, 0.20, 0.30, 0.40, 0.50, 0.60, 0.70, 0.80, 0.90, 1.00]
+        percToValut = [0.1, 0.2, 0.3, 0.4, 0.5]
 
         # Inizio elaborazione per i diversi mercati
         market = ['nasdaq_actions', 'nyse_actions', 'larg_comp_eu_actions']
@@ -124,84 +125,96 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
                 symbolsDispoInDates = symbolsDispoInDatesLarge
                 pricesDispoInDates = pricesDispoInDatesLarge
             
-            for i in range(len(list_take_profit)):  # Per ogni valore di Take Profit (1%-10%)
-                profitsPerc = []
-                profTot = []
-                middleSale = []
-                middlePurchase= []
-                MmiddleTimeSale = []
-                middletitleBetterProfit = []
-                middletitleWorseProfit = []
-                
-                
-                TK = list_take_profit[i]
-                idTest = utils.getLastIdTest(cur) 
-                                
-                total_steps = len(datesToTrade)  # 
-                for step in range(total_steps):
-                    # Logica principale
-                    utils.clearSomeTablesDB(cur, conn)
-                    trade_date, initial_date, endDate = datesToTrade[step]
-                    logger_agent6.info(f"Start test with {TK} agent6_markCapDayInitial in initial date {initial_date} : {datetime.now()}")
+            # Ciclo per la variazione relativa alla percentuale da valutare e per il Take Profit
+            for indexPerc in range (len(percToValut)): 
+                for i in range(len(list_take_profit)):  # Per ogni valore di Take Profit (1%-10%)
+                    profitsPerc = []
+                    profTot = []
+                    middleSale = []
+                    middlePurchase= []
+                    MmiddleTimeSale = []
+                    middletitleBetterProfit = []
+                    middletitleWorseProfit = []
+                    
+                    # Definizione del Take Profit e della percentuale da valutare
+                    TK = list_take_profit[i]
+                    PERC = percToValut[indexPerc]
+                    
+                    #idTest = utils.getLastIdTest(cur) 
+                    idTest += 1
+                                    
+                    # Test per ogni data
+                    total_steps = len(datesToTrade)   
+                    #total_steps = 1 # for fast test
+                    for step in range(total_steps):
+                        # Logica principale
+                        utils.clearSomeTablesDB(cur, conn)
+                        trade_date, initial_date, endDate = datesToTrade[step]
+                        logger_agent6.info(f"Start test with take profit:{TK} and per to valute of sector:{PERC} agent6_markCapDayInitial in initial date {initial_date} : {datetime.now()}")
 
-                    profitPerc, profitUSD, nSale, nPurchase, middleTimeSale, titleBetterProfit, titleWorseProfit = tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, m, TK, initial_date, endDate,  dizMarkCap, 
-                                                                                                                                                            symbolsDispoInDates, pricesDispoInDates, totaledates[m], perc=0.2, 
-                                                                                                                                                            dizSymbSect=dizSymbSect)
-                    
-                    # profitNotReinvestedPerc, profitNotReinvested, ticketSale, ticketPur, float(np.mean(middleTimeSale)), max(titleProfit[symbol]), min(titleProfit[symbol])
-                    
-                    print(f"\nProfitto per il test {idTest} con TP={TK}%, {m}, buy one after the other: {profitPerc}, rimangono {total_steps - step -1} iterazioni\n")
-                    
-                    profitPerc = round(profitPerc, 4)
-                    insertDataDB.insertInTesting( idTest, "agent6", step, initial_date=initial_date, end_date=endDate, profitPerc=profitPerc, profitUSD =profitUSD,
-                                                 market=m, nPurchase=nPurchase, nSale=nSale, middleTimeSaleSecond=middleTimeSale, middleTimeSaleDay=(middleTimeSale/86400),
-                                                 titleBetterProfit=titleBetterProfit, titleWorseProfit=titleWorseProfit, notes=f"TAKE PROFIT = {TK}% ", cur=cur, conn=conn)
-                    
-                    profTot.append(profitUSD)
-                    profitsPerc.append(profitPerc)
-                    middleSale.append(nSale)
-                    middlePurchase.append(nPurchase)
-                    MmiddleTimeSale.append(middleTimeSale)
-                    middletitleBetterProfit.append(titleBetterProfit)
-                    middletitleWorseProfit.append(titleWorseProfit)
-                    logger_agent6.info(f"End test with {TK} agent6_markCapDayInitial in initial date {initial_date} : {datetime.now()}\n\n")
-
-
-                # Calcolo delle statistiche
-                mean_profit_perc = round(float(np.mean(profitsPerc)), 4)
-                std_deviation = round(float(np.std(profitsPerc)), 4)
-                varianza = round(float(np.var(profitsPerc)), 4)
-                mean_profit_usd = round(float(np.mean(profTot)), 4)
-                mean_sale = round(float(np.mean(middleSale)), 4)
-                mean_purchase = round(float(np.mean(middlePurchase)), 4)
-                mean_time_sale = round(float(np.mean(MmiddleTimeSale)), 4)
-                
-                dizBetterTitle = {}
-                for title in middletitleBetterProfit:
-                    if title != '':
-                        if title in dizBetterTitle:
-                            dizBetterTitle[title] += 1
-                        else:
-                            dizBetterTitle[title] = 1
-                    
-                dizWorseTitle = {}
-                for title in middletitleWorseProfit:
-                    if title != '':
-                        if title in dizWorseTitle:
-                            dizWorseTitle[title] += 1
-                        else:
-                            dizWorseTitle[title] = 1
+                        profitPerc, profitUSD, nSale, nPurchase, middleTimeSale, titleBetterProfit, titleWorseProfit = tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, m, TK, initial_date, endDate,  dizMarkCap, 
+                                                                                                                                                                symbolsDispoInDates, pricesDispoInDates, totaledates[m], PERC, 
+                                                                                                                                                                dizSymbSect=dizSymbSect)
                         
-                mean_titleBetterProfit = max(dizBetterTitle, key=dizBetterTitle.get)
-                mean_titleWorseProfit = max(dizWorseTitle, key=dizWorseTitle.get)
-                
-                #logging.info(f"Profitto medio: {mean_profit}, Deviazione standard: {std_deviation}")
-                logger_agent6.info(f"End simulation with {TK} agent6_markCapDayInitial : {datetime.now()} \n\n\n\n")
+                        # profitNotReinvestedPerc, profitNotReinvested, ticketSale, ticketPur, float(np.mean(middleTimeSale)), max(titleProfit[symbol]), min(titleProfit[symbol])
+                        
+                        print(f"\nProfitto per il test {idTest}: agent6_top_mark_cap con TP={TK}%, {m}, buy one after the other: {profitPerc}, rimangono {total_steps - step -1} iterazioni\n")
+                        
+                        profitPerc = round(profitPerc, 4)
+                        insertDataDB.insertInTesting( idTest, "agent6_top_mark_cap", step, initial_date=initial_date, end_date=endDate, profitPerc=profitPerc, profitUSD =profitUSD,
+                                                    market=m, nPurchase=nPurchase, nSale=nSale, middleTimeSaleSecond=middleTimeSale, middleTimeSaleDay=(middleTimeSale/86400),
+                                                    titleBetterProfit=titleBetterProfit, titleWorseProfit=titleWorseProfit, 
+                                                    notes=f"Perc for bettere title of the sector: {PERC}, TKP = {TK}% ", cur=cur, conn=conn)
+                        
+                        profTot.append(profitUSD)
+                        profitsPerc.append(profitPerc)
+                        middleSale.append(nSale)
+                        middlePurchase.append(nPurchase)
+                        MmiddleTimeSale.append(middleTimeSale)
+                        middletitleBetterProfit.append(titleBetterProfit)
+                        middletitleWorseProfit.append(titleWorseProfit)
+                        logger_agent6.info(f"End test with {TK} agent6_markCapDayInitial in initial date {initial_date} : {datetime.now()}\n\n")
 
-                notes = f"TP:{TK}%, {m}, buy no randomly but one after the other with 50% of the symbols with better cap of the sector."
-                insertDataDB.insertInMiddleProfit(idTest, "agent6", roi=mean_profit_perc, devstandard = std_deviation, var= varianza, middleProfitUSD =mean_profit_usd,
-                                                  middleSale = mean_sale, middlePurchase = mean_purchase, middleTimeSale = (mean_time_sale/86400), middletitleBetterProfit = mean_titleBetterProfit,
-                                                    middletitleWorseProfit = mean_titleWorseProfit, notes=notes, cur=cur, conn=conn)
+                    # end for step of the date to simulation
+                    
+                    # Calcolo delle statistiche
+                    mean_profit_perc = round(float(np.mean(profitsPerc)), 4)
+                    std_deviation = round(float(np.std(profitsPerc)), 4)
+                    varianza = round(float(np.var(profitsPerc)), 4)
+                    mean_profit_usd = round(float(np.mean(profTot)), 4)
+                    mean_sale = round(float(np.mean(middleSale)), 4)
+                    mean_purchase = round(float(np.mean(middlePurchase)), 4)
+                    mean_time_sale = round(float(np.mean(MmiddleTimeSale)), 4)
+                    
+                    dizBetterTitle = {}
+                    for title in middletitleBetterProfit:
+                        if title != '':
+                            if title in dizBetterTitle:
+                                dizBetterTitle[title] += 1
+                            else:
+                                dizBetterTitle[title] = 1
+                        
+                    dizWorseTitle = {}
+                    for title in middletitleWorseProfit:
+                        if title != '':
+                            if title in dizWorseTitle:
+                                dizWorseTitle[title] += 1
+                            else:
+                                dizWorseTitle[title] = 1
+                            
+                    mean_titleBetterProfit = max(dizBetterTitle, key=dizBetterTitle.get)
+                    mean_titleWorseProfit = max(dizWorseTitle, key=dizWorseTitle.get)
+                    
+                    #logging.info(f"Profitto medio: {mean_profit}, Deviazione standard: {std_deviation}")
+                    logger_agent6.info(f"End simulation with TK:{TK} and PERC: {PERC} agent6_markCapDayInitial : {datetime.now()} \n\n\n\n")
+
+                    notes = f"TP:{TK}% and PERC:{PERC}, {m}, buy no randomly but one after the other with 50% of the symbols with better cap of the sector."
+                    insertDataDB.insertInMiddleProfit(idTest, "agent6_top_mark_cap", roi=mean_profit_perc, devstandard = std_deviation, var= varianza, middleProfitUSD =mean_profit_usd,
+                                                    middleSale = mean_sale, middlePurchase = mean_purchase, middleTimeSale = (mean_time_sale/86400), middletitleBetterProfit = mean_titleBetterProfit,
+                                                        middletitleWorseProfit = mean_titleWorseProfit, notes=notes, cur=cur, conn=conn)
+
+                # end for of the take profit
+            # end for of the percentage to valutate: end simulation
 
     except Exception as e:
         logger_agent6.critical(f"Errore non gestito: {e}")
@@ -211,8 +224,6 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
         logger_agent6.info("Connessione chiusa e fine del trading agent.")
         cur.close()
         conn.close()
-        #logger_agent6.shutdown()
-
 
 ################################################################################
 
@@ -220,7 +231,7 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
 def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, market, TP, initial_date, endDate, dizMarkCap, symbolsDispoInDates, pricesDispoInDates, totaledates, perc, dizSymbSect):      
     # Recupero dei simboli azionari a maggior capitalizzazione divisi per settore di appartenenza 
     symbolDisp1 = manage_symbol.get_x_symbols_ordered_by_market_cap_for_sector( market, initial_date, perc, dizMarkCap, dizSymbSect)
-    logger_agent6.info(f"Test with this symbols : {symbolDisp1}")
+    logger_agent6.info(f"Test agent6_top_mark_cap in {market} with this symbols : {symbolDisp1}")
     
     # Inizializzazione delle variabili
     budgetInvestimenti = initial_budget = len(symbolDisp1) * 10
@@ -478,6 +489,9 @@ def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, mar
     maxT, minT = '', ''
     maxP, minP = 0, 1000000000
     for k, v in titleProfit.items():
+        for value in v:
+            if value > 40:
+                logger_agent6.info(f"Profit high for {k}: {value}%")
         titleProfit[k] = float(np.mean(v))
         if titleProfit[k] > maxP:
             maxP = titleProfit[k]
@@ -492,7 +506,7 @@ def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, mar
     
     if profitNotReinvestedPerc > 250:
         for tick, infoS in salesDict.items():
-            logger_agent6.info(f"{tick}: date sale: {infoS[1]}, data purchase: {infoS[0]}, ticketAcq: {infoS[2]}, volume: {infoS[3]}, simbolo: {infoS[4]}, prezzo corrente di vendita: {infoS[5]}, prezzo acquisto: {infoS[6]}, profitto: {infoS[7]}, profitto percentuale: {infoS[8]}")
+            logger_agent6.info(f"{tick}: date purchase: {infoS[1]}, data sale: {infoS[0]}, ticketAcq: {infoS[2]}, volume: {infoS[3]}, simbolo: {infoS[4]}, prezzo corrente di vendita: {infoS[5]}, prezzo acquisto: {infoS[6]}, profitto: {infoS[7]}, profitto percentuale: {infoS[8]}")
 
     if middleTimeSale == []:
         return profitNotReinvestedPerc, profitNotReinvested, nSaleProfit, ticketPur, 0, maxT, minT

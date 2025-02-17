@@ -28,19 +28,3 @@ setup(
     ],
     python_requires='>=3.6',
 )
-
-
-"""
-Creare le directory necessarie come:
-
-market = ['NASDAQ', 'NYSE', 'LARG_COMP_EU']
-    for mark in market:
-        if Path(f"{market_data_path}/csv_files/marketCap/{mark}").exists():
-            print(f"La cartella marketCap/{mark} esiste già")
-            continue
-        else:
-            print(f"La cartella marketCap/{mark} non esiste")
-            # Creo la cartella
-            os.mkdir(f"{market_data_path}/csv_files/marketCap/{mark}")
-
-"""

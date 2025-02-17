@@ -1,0 +1,8 @@
+# Ignora tutti i file temporanei di sistema
+.DS_Store
+Thumbs.db
+
+
+# Ignora la cartella dei file di log
+logs/
+*.log

@@ -1,125 +1,132 @@
-# Trading-agent
+# Backetesting-Trading-agent
 > [!IMPORTANT]
-> Sviluppo di **trading agent** per lo sviluppo di **trading automatico**. (senza intervento umano diretto)
+> Sviluppo di **trading agent** per l'analisi e la valutazione delle prestazioni di determinate strategie di trading attraverso simulazioni applicate a dati storici del mondo reale.
 
-Lo sviluppo di trading agent consiste nella **creazione di software autonomi in grado di eseguire operazioni di trading sui mercati finanziari senza intervento umano diretto**.
+L'obiettivo è trovare la strategia che rende maggiormente in termini di profitti.
 
-Per lo sviluppo di questi abbiamo necessita di alcuni strumenti e tool.
-Si utilizzerà:
-- **MetaTrader 5 (MT5)**: Una piattaforma potente e versatile per l'analisi di mercato e per effettuare operazioni di trading su diversi strumenti finanziari.
-- **Broker TickMill** con account demo: Utilizzato per testare strategie senza rischiare denaro reale.
+Il fine è quello di applicare la stessa strategia dal vivo sperando che i buoni risultati in passato vengano garantiti anche nelle condizioni attuali e future del mercato.
 
-Per la connessione della piattaforma MetaTrader5 a Python si utilizza la libreria '*mt5*' dell'API di Python.
-
-Si lavora sotto Linux con il layer di compatibilità Wine.
-
-Nel dominio della mia applicazione si effettua trading con i simboli azionari quotati sulla borsa del Nasdaq e messi a disposizione dal broker TickMill.
+Nel dominio della mia applicazione si effettuano simulazioni di trading con i simboli azionari quotati sulla borsa del Nasdaq, Nyse e di alcuni simboli azionari europei delle aziende più importanti (titoli a maggior capitalizzazione in europa).
 
 ***
 
-### Algoritmo per lo sviluppo di trading agent.
-1. Installare Metatrader.
+## Descrizione sullo sviluppo dei trading agents.
+Lo sviluppo sostanziale dell'applicazione si basa:
+- sull'implementazioe dei diversi agenti, la quale ognuno di questi, implementa una strategia e 
+- sulla valutazione di questi, che effettuate delle simulazioni salvando criteri importanti per la valutazione:
+	- profitto percentuale calcolato come : ((capitale finale - capitale iniziale)/capitale iniziale) * 100.
+	- variazione.
+	- deviazione standard.
+	- tempo medio che intercorre tra un acquisto e una vendita.
 
-2. Creare broker account demo TickMil con un conto di 1000 USDollars. 
+Per ogni agente, quindi per ogni strategia di trading, ci sono dei parametri che permettono di valutare la stessa strategia differenziando questi parametri. 
 
-3. Definizione di funzioni per connessione e login server MetaTrader5.
+Per ogni spiegazione dell'agente verranno specificati questi parametri.
 
-4. Sviluppo e creazione dell'agent1. (agente incaricato del download dei dati su DB PostgreSQL)
+#### Agente 1: scaricamento dataset.
+L'agente 1 è un agente particolare poiché non implementa una stratega, ma si occupa del raccoglimento e dello scaricamento dei dati di mercato relativi ai diversi mercati analizzati e dell'inserimento di questi all'interno del database postgreSQL.
+I dati di mercato memorizzati nel database sono i seguenti:
+- titolo azionario;
+- time frame: considera l'intervallo di tempo con cui sono presi i dati.
+- data di analisi: periodo di tempo per cui sono validi i dati.
+- prezzo iniziale: prezzo di apertura del titolo azionario all'inizio del periodo.
+- prezzo più alto: prezzo massimo raggiunto dal titolo azionario durante il periodo
+- prezzo più basso: prezzo minimo raggiunto dall'azione durante il periodo
+- prezzo di chisura: prezzo di chiusura dell'azione alla fine del periodo
 
-5. Sviluppo e creazione dell'agent2. (agente che funge da reference, e all'infinito compra azioni a random, le rivende quando guadagna l'1% e va in pausa per 15 minuti)
+Inizialmente i dati erano stati presi con un time frame di 15 minuti, ma questo non garantiva una velocità sufficientemente alta per le simulazioni.
+Per lo scaricamento dei dati è stata utilizzata l'API yfinance, questa garantisce uno scaricamento di i dati di mercato relativi alle date più remote e quelle attuale in maniera precisa, tutto su cadenza giornaliera.
 
-6. Sviluppo e creazione dell'agent3 (agente che utilizza gli algoritmi di Reinforcement Learning).
+L'obiettivo di questo agente è quello di creare uno storico dove gli altre agenti possono valutare le diverse strategie.
 
-Lo sviluppo del codice è reso modulare, cioè i file agent1.py e agent2.py utilizzano funzioni da file esterni. 
+È stato utilizzato il database postgreSQL per la memorizzazione dei dati.
 
-Non si ha un simulatore, questo verrà creato dallo storico dei dati online, grazie all'agent1.
+La spiegazione dei prossimi agenti è relativa alle varie strategie di trading implementate.
+#### Informazioni default per le seguenti strategie.
+Ogni strategia di trading corrisponderà ad azioni di acquisto e vendita di titoli azionari. 
+L'obiettivo del trading è sfruttare le variazioni di prezzo dei titoli: quindi il top sarebbe comprare e rivendere lo stesso titolo una volta che il prezzo del titolo è salito.
+Si mira a guadagni di breve termine. 
+- Per ogni acquisto si spende un importo fisso di 10 USD, questo permette di calcolare di conseguenza il volume. Ad esempio se vogliamo acquistare un'azione per il titolo AAPL, di cui il prezzo di acquisto è: 250, il volume corrisponderà a 10/250 = 0.04.
+- Per effettuare un acquisto si utilizza il prezzo di apertura del titolo del timestamp di cui si acquista, per la vendita si utilizza il prezzo massimo del titolo del timestamp di cui si acquista: questo permette di implementare nelle strategie la vendita possibile nella stessa giornata.
+- Si utilizza la strategia dell'investitore prudente che ad ogni vendita, il 10% del profitto lo utilizza per il reinvestimento e il 90% lo utilizza per il mantenimento.
+- Si lavora con gli x titoli a maggior capitalizzazione del mercato di cui si lavora: per selezionare i titoli corrispondenti viene implementato uno script. 
+
+#### Valutazione delle strategie.
+Per la valutazione delle strategie, ci sono da chiarire alcuni aspetti importanti:
+Le date per cui si valutano le strategie partono dal 1999 alla data attuale del 2025.
+Come si è detto, ogni strategia ha dei parametri sulla quale valutare la strategia.
+Quindi in base a questi parametri sono effettuati dei test di trading ben precisi:
+- vengono selezionate 75 della date random tra quelle presenti nel dataset relativo ai dati di mercato dei titoli azionari.
+Per ognuna di queste date (attraverso un semplice ciclo) viene valutata la strategia per 1 anno intero con il parametro considerati --> indichiamo con test
+AL termine della valutazione vengono memorizzate nel database delle informazioni importanti:
+- data di inizio e fine test;
+- profitto in percentuale;
+- profitto in dollari;
+- numero acquisti;
+- numero vendite;
+- tempio medio che intercorre tra la vendita e gli acquisti;
+- titolo che dà maggior profitti;
+- titolo che dà minor profitto;
+
+Una volta effettuati i 75 test per ognuna delle dati per il parametro considerato effettuiamo una media dellle informazioni già ottenute e salviamo nel database questi dati che rappresentano la valutazione della strategia per quel parametro specifico, con il salvataggio delle seguenti informazioni:
+- percentuale media di profitti;
+- profitti medi in dollari;
+- varianza;
+- deviazione standard;
+- numero medio di acquisti;
+- numero medio di vendite;
+- titolo che dà maggior profitti (calcolando una media);
+- titolo che dà minor profitto (calcolando una media);
+
+Grazie a queste informazioni è possibile calcolare una stima relativa alle prestazioni della strategia di trading.
+
+
+
+#### Agente 2: strategia semplice con take profit.
+L'agente 2 simula una strategia molto semplice: viene utilizzato come reference per le altre strategie.
+Questo utilizza un approccio iterativo per testare i seguenti parametri di take profit: 1,2,3,4,5,6,7,8,9,10,15,20,30,40,50,60,70,80,90,100 %.
+Grazie ai parametri si può valutare quale tra questi è il parametro che reagisce migliormente e dà più profitti.
+
+Ogni test sfrutta questa metodologia:
+- partendo con un budget iniziale di 1000 dollari, si acquistano inizialmente titoli (100 titoli a maggior capitalizzazione) fino ad esaurimento del budget. A questo punto, dato il parametro con cui si sta valutando la strategia si prosegue, quando è possibile, alle vendite del titolo quando si raggiunge un profitto dato dal parametro valutato. 
+Le vendite permettono di incrementare il budget per l'investimento e questo permette un ciclo continui di acquisti e vendite.
+
+Questo agente è utilizzato come base per la creazione delle altre strategie.
+
+#### Agente 3.
+L'agente 3 utilizza come base l'agente 2, aggiunge una condizione tale per cui, prima di acquistare, controlla se il prezzo attuale del titolo è minore del prezzo medio di quel titolo (precalcolato).
+Se il controllo va a buon fine si acquista il titolo poiché si aspetta una risalita del prezzo al prezzo medio.
+Viene mantenuto lo stesso schema di parametri da valutare dell'agente 2.
+
+#### Agente 4.
+L'agente utilizza come base l'agente 2, ma differisce poiché una volta venduto un titolo azionario si va a riacquistare lo stesso titolo dopo un delay definito.
+In questo caso, per i parametri di questo agente si utilizzano le metriche di take profit e anche i valori di delay per valutare quale sia il delay migliore tra 1 e 15 giorni.
+Questi parametri vengono combinati tra loro.
+
+
+#### Agente 5.
+Anche l'agente 5 si basa sulla strategia dell'agente 2. 
+In questo caso per ogni test e valutazione ci sono delle variazioni sul numero di titoli da considerare e sul budget iniziale. Questi sono strettamente collegati tra di loro, ad esempio: 
+- **100 titoli** azionari a maggiore capitalizzazione e **1000 USD** di budget iniziale;
+- **200 titoli** azionari a maggiore capitalizzazione e **2000 USD** di budget iniziale;
+- **300 titoli** azionari a maggiore capitalizzazione e **3000 USD** di budget iniziale;  
+...
+- **800 titoli** azionari a maggiore capitalizzazione e **8000 USD** di budget iniziale; 
+
+#### Agente 6.
+L'agente 6 permette di effettuare trading sulla base dell'agente 2, ma selezionando una percentuale specifica dei titoli a maggior capitalizzazione 
+
+#### Agente 7.
+
+#### Agente 8.
+
+
 
 ***
-
-#### Broker per trading agent: TickMill
-Realizzare un account demo in USD in TickMill con un budget di 1000 USD nel seguente sito:[https://www.tickmill.eu](TickMill).
-
-Impostare come deposit: 1000 USD con una leva di 1:1.
-
-Una volta effettuata la creazione, arriveranno le credenziali per email.
-
-Dato che i campi del numero del conto relativi all'account sono sempre utilizzati per i vari login nel programma possiamo immagazzinarli in un file "variableLocal.py" nel workspace.
-In questo caso li avremo sempre da qualche parte.
-
-Nel progetto si lavora solamente con i simboli azionari iscritti alla borsa del Nasdaq.
-Il broker non accetta tutti i simboli azionari, perciò nel codice ci sarà un file destinato ad ottenerli.
-
-Utilizzo della piattaforma **Metatrader5** che offre API Python per la realizzazione di trading agents.
-
-### Metatrader 5.
-##### Configurazione sistema.
-Utilizzare un elaboratore con architettura AMD che sia x_86, ... (poiché problemi con ARM).
-
-Utilizzare distribuzione Linux "Ubuntu".
-
-###### Seguire questi passi:
-https://www.mql5.com/en/forum/457940
-
-1. Install Wine with the following command (skip if you already installed)
-
-`sudo apt install wine`
-
-2. Install the MetaTrader 5 platform:
-For Ubuntu:
-`wget https://download.mql5.com/cdn/web/metaquotes.software.corp/mt5/mt5ubuntu.sh ; chmod +x mt5ubuntu.sh ; ./mt5ubuntu.sh` 
-
-For Debian:   
-`wget https://download.mql5.com/cdn/web/metaquotes.software.corp/mt5/mt5debian.sh ; chmod +x mt5debian.sh ; ./mt5debian.sh`
-
-Se l'installazione non va a buon fine, digitare sul terminale `winecfg` e selezionare come versione di Windows 10.
-
-3. Download Python 3.8 to your Downloads folder
-
-`cd ~/Downloads`
-`wget https://www.python.org/ftp/python/3.8.0/python-3.8.0-amd64.exe --no-check-certificate
-`
-
-4. Install Python 3.8 for the Windows environment in Wine. Assuming you are in the _~/Downloads_ folder
-
-`wine cmd`
-`python-3.8.0-amd64.exe``
-`
-
-5. A questo punto nuovamente digitare `python-3.8.0-amd64.exe`, dirigersi a Modify e aggiungere la spunta "Add Python to environment variables"
-
-
-### Wine.
-Wine (originariamente un acronimo di "Wine Is Not an Emulator") è un livello di compatibilità  open source che consente di eseguire software/applicazioni **Windows** anche su sistemi operativi compatibili con POSIX, come Linux, macOS e BSD.
-
-I coder di Wine lo definiscono precisamente come un "_non-emulatore_". 
-
-La strategia adottata dagli sviluppatori non prevede infatti una forma di emulazione diretta (come una macchina virtuale o un emulatore o un sistema di containerizzazione) ma procede convertendo le API di Windows in chiamate di sistema **POSIX**(_Portable Operating System Interface for Unix_) eliminando le prestazioni e le penalità di memoria di altri metodi e consentendoti di integrare in modo pulito le applicazioni Windows nel tuo desktop.
-
-#### A cosa è necessario Wine?
-Noi dobbiamo lavorare con l'API di python della libreria mt5 di Metatrader5. 
-Purtroppo l'installazione di questa libreria avviene soltanto con sistema operativo Windows, perciò con Wine riusciamo a utilizzare questa libreria.
-
-
-#### Installazione MetaTrader5.
-Per la connessione di TickMill a MetaTrader5 dobbiamo scrivere codice con Python grazie alla libreria mt5. 
-
-Per installare Metatrader 5:
-- `wine cmd`
-- `pip install MetaTrader5`
-
-
-Quello che faccio è:
-- Utilizzare Ubuntu e visual Studio code per programmare;
-- Se voglio runnare il programma che utilizza le libreria di Metatrader5 , utilizzo Wine:
-	- esegui su terminale Linux il comando "wine cmd" che apre il cmd di Windows
-	- A questo punto navigo per arrivare al path dove si trova il file python e lo eseguo da wine cmd con il comando "python nomefile.py"
-
-
 
 ## Database postgreSQL.
 Importante creare il DB postgreSQL per il salvataggio, la comprensione e l'apprendimento dei dati.
 
-Anche se utilizziamo Windows tramite Wine per eseguire il programma, è sufficiente installare postgreSQL su Linux.
 Recarsi su :  https://www.postgresql.org/download/linux/ubuntu/ per installare postgreSQL.
 
 Utilizzare la cartella "db-scripts" per:
@@ -164,20 +171,4 @@ Ecco i seguenti passaggi:
 3. ```DROP DATABASE nome_database; ``` OR ```DROP USER nome_utente; ```
 
 ****
-
-### Sviluppo Agent1 e Agent2.
-> [!IMPORTANT]
-> L'agent1 si occupa di:
-> - **Raccogliere i dati di mercato dei simboli azionari quotati sulla borsa Nasdaq accettati dal broker TickMill** e
-> - **Inserire questi dati all'interno del database postgreSQL**.
-
-Lo scopo di questo è ==creare uno storico su cui basare l'analisi e l'apprendimento dell'agent3==.
-
-
-> [!IMPORTANT]
-> L'Agent 2 svolge le seguenti operazioni:
->
-> - **Acquista azioni** in modo casuale da un pool di simboli azionari accettati dal broker TickMill (5% per capitalizzazione decrescente).
-> - **Rivende le azioni acquistate** quando il profitto raggiunge un Take Profit (TP) di almeno 1%.
-
 
