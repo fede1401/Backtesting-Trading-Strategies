@@ -7,9 +7,9 @@ def connect_nasdaq():
     try:
         # Configura i parametri di connessione per PostgreSQL
         conn = psycopg2.connect(
-            dbname="nasdaq3",  # Nome del database
-            user="federico",  # Nome utente
-            password="fede",  # Password utente
+            dbname="data_backtesting",  # Nome del database
+            user="reporting_user",  # Nome utente
+            password="1234",  # Password utente
             host="localhost",  # Indirizzo IP o nome host del server PostgreSQL
             port="5433"  # Porta di default per PostgreSQL
         )
@@ -28,16 +28,18 @@ def connect_nasdaq():
 # psql -U federico14 -h localhost -d nasdaq
 # psql -U federico -h localhost -d nasdaq3 -p 5433
 
+# psql -U reporting_user -h localhost -d data_backtesting -p 5433
+
 # Funzione di esempio per connettersi al database 'nasdaq' e eseguire una query di esempio.
 def connectDB_example():
     try:
         # Configura i parametri di connessione
         conn = psycopg2.connect(
-            dbname="nasdaq",  # Nome del database
-            user="federico",  # Nome utente
-            password="47002",  # Password utente
+            dbname="data_backtesting",  # Nome del database
+            user="reporting_user",  # Nome utente
+            password="1234",  # Password utente
             host="localhost",  # Indirizzo IP o nome host del server PostgreSQL
-            port="5432"  # Porta di default per PostgreSQL
+            port="5433"  # Porta di default per PostgreSQL
         )
 
         # Crea un oggetto cursore per eseguire le query

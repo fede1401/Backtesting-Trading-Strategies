@@ -158,7 +158,7 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
                         
                         # profitNotReinvestedPerc, profitNotReinvested, ticketSale, ticketPur, float(np.mean(middleTimeSale)), max(titleProfit[symbol]), min(titleProfit[symbol])
                         
-                        print(f"\nProfitto per il test {idTest}: agent6_top_mark_cap con TP={TK}%, {m}, buy one after the other: {profitPerc}, rimangono {total_steps - step -1} iterazioni\n")
+                        print(f"\nProfitto per il test {idTest}: agent6_top_mark_cap with TK:{TK} and PERC to select title for a sector: {PERC}, {m}, buy one after the other: {profitPerc}, rimangono {total_steps - step -1} iterazioni\n")
                         
                         profitPerc = round(profitPerc, 4)
                         insertDataDB.insertInTesting( idTest, "agent6_top_mark_cap", step, initial_date=initial_date, end_date=endDate, profitPerc=profitPerc, profitUSD =profitUSD,
@@ -173,7 +173,7 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
                         MmiddleTimeSale.append(middleTimeSale)
                         middletitleBetterProfit.append(titleBetterProfit)
                         middletitleWorseProfit.append(titleWorseProfit)
-                        logger_agent6.info(f"End test with {TK} agent6_markCapDayInitial in initial date {initial_date} : {datetime.now()}\n\n")
+                        logger_agent6.info(f"End test with TK:{TK} and PERC: {PERC} to select title for a sector for agent6_markCapDayInitial in initial date {initial_date} : {datetime.now()}\n\n")
 
                     # end for step of the date to simulation
                     

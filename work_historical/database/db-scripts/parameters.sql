@@ -1,2 +1,2 @@
-\set dbname nasdaq3
-\set username federico
+\set dbname data_backtesting
+\set username reporting_user
