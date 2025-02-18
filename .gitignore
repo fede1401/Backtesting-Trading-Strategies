@@ -6,3 +6,11 @@ Thumbs.db
 # Ignora la cartella dei file di log
 logs/
 *.log
+
+# Ignora i file relativi ai dati di mercato per ogni simbolo.
+data/dataset/history_market_data/
+
+# Ignora i file relativi ai dati di capitalizzazione di mercato per ogni simbolo.
+data/dataset/capitalization/NASDAQ/all_mark_cap
+data/dataset/capitalization/NYSE/all_mark_cap
+data/dataset/capitalization/LARG_COMP_EU/all_mark_cap

@@ -77,7 +77,7 @@ SYMB_TOT_ANOMALIE = ['IDEX', 'CYRX', 'QUBT', 'POCI', 'MULN', 'BTCS', 'HEPA', 'OL
 # Funzione principale per il trading e il caricamento
 def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totaledates):
     try:
-        logger_agent4.info(f"Start agent4_selectRandom: {datetime.now()} \n")
+        logger_agent4.info(f"[SIMULATION START] agent4_selectRandom initiated at {datetime.now()}\n")
 
         # Connessione al database
         cur, conn = connectDB.connect_data_backtesting()
@@ -96,13 +96,13 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
         
         #market = ['larg_comp_eu_actions']
         for m in market:
-            logger_agent4.info(f"\n\nWork with market {m} : {datetime.now()}")
+            logger_agent4.info(f"\n\n[MARKET INFO] Operating on market '{m}'\n")
             
             # Viene selezionato l'ultimo id del test inserito nel database
             idTest = utils.get_last_id_test(cur) 
             
             # viene registrata una riga vuota nel database per separare le simulazioni
-            insertDataDB.insert_in_data_simulation(idTest, "------", mean_perc_profit=0, std_dev=0, variance=0, middleProfitUSD=0, initial_budget= 0, mean_budget_with_profit_usd=0, 
+            insertDataDB.insert_in_data_simulation(idTest, "------", mean_perc_profit=0, std_dev=0, variance=0, initial_budget= 0, mean_budget_with_profit_usd=0, 
                                                     avg_sale=0, avg_purchase=0, avg_time_sale=0,  best_symbol='----', worst_symbol=0, timestamp_in = '',timestamp_fin='', 
                                                     notes='---', cur=cur, conn=conn)
             
@@ -144,7 +144,7 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
                         # Logica principale
                         utils.clear_tables_db(cur, conn)
                         trade_date, initial_date, endDate = datesToTrade[step]
-                        logger_agent4.info(f"Start test with {TK} agent4_selectRandom in initial date {initial_date} : {datetime.now()}")
+                        logger_agent4.info(f"[TEST START] Starting test for agent4_selectRandom with TP {TK}% and DELAY={DELAY} on initial date {initial_date} at {datetime.now()}\n")
                         profitPerc, profitUSD, nSale, nPurchase, middleTimeSale, titleBetterProfit, titleWorseProfit, initial_budget  = tradingYear(cur, conn, symbols, trade_date, m, DELAY, TK, initial_date, endDate, dizMarkCap, symbolsDispoInDates, pricesDispoInDates, totaledates[m])
                         
                         # profitNotReinvestedPerc, profitNotReinvested, ticketSale, ticketPur, float(np.mean(middleTimeSale)), max(titleProfit[symbol]), min(titleProfit[symbol])
@@ -152,7 +152,7 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
                         print(f"\nProfitto per il test {idTest}: agent4_symb_rnd con TP={TK}%, {m}, buy one after the other: {profitPerc}, rimangono {total_steps - step -1} iterazioni\n")
                         
                         profitPerc = round(profitPerc, 4)
-                        notes = f"TP:{TK}%, {m}, buy no randomly but one after the other and buy after sale same title in {DELAY} days and with choices random of 100 symbols."
+                        notes = f"TP:{TK}%, Market:{m}, Agent4 (Random). Uses {TK}% TP with a {DELAY}-day delay before repurchase, selecting 100 symbols randomly."
                         insertDataDB.insert_in_data_testing( idTest, "agent4_symb_rnd", step, initial_date=initial_date, end_date=endDate, initial_budget=initial_budget, profit_perc=profitPerc, budg_with_profit_USD=profitUSD, market=m, n_purchase=nPurchase, n_sale=nSale, middle_time_sale_second=middleTimeSale,
                                                  middle_time_sale_day=(middleTimeSale / 86400), title_better_profit=titleBetterProfit, title_worse_profit=titleWorseProfit, notes=notes, cur=cur, conn=conn)
                         
@@ -163,7 +163,7 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
                         MmiddleTimeSale.append(middleTimeSale)
                         middletitleBetterProfit.append(titleBetterProfit)
                         middletitleWorseProfit.append(titleWorseProfit)
-                        logger_agent4.info(f"End test with {TK} agent4_selectRandom in initial date {initial_date} : {datetime.now()}\n\n")
+                        logger_agent4.info(f"[TEST END] Completed test for agent4_selectRandom with TP {TK}% and DELAY={DELAY} on initial date {initial_date} at {datetime.now()}\n\n")
 
                 # end for take profit
 
@@ -196,10 +196,10 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
                     mean_titleWorseProfit = max(dizWorseTitle, key=dizWorseTitle.get)
                     
                     #logging.info(f"Profitto medio: {mean_profit}, Deviazione standard: {std_deviation}")
-                    logger_agent4.info(f"End simulation with {TK} agent4_selectRandom : {datetime.now()} \n\n\n\n")
+                    logger_agent4.info(f"[SIMULATION END] agent4_selectRandom simulation ended with TP {TK}% and DELAY={DELAY} at {datetime.now()}\n\n\n\n")
             
         
-                    notes = f"TP:{TK}%, {m}, buy no randomly but one after the other and buy after sale same title in {DELAY} days and with choices random of 100 symbols."
+                    notes = f"TP:{TK}%, Market:{m}, Agent4 (Random). Uses {TK}% TP with a {DELAY}-day delay before repurchase, selecting 100 symbols randomly."
                     insertDataDB.insert_in_data_simulation(idTest, "agent4_symb_rnd", mean_perc_profit=mean_profit_perc, std_dev=std_deviation, variance=varianza, initial_budget= initial_budget, 
                                                        mean_budget_with_profit_usd=mean_profit_usd, avg_sale=mean_sale, avg_purchase=mean_purchase, avg_time_sale=(mean_time_sale / 86400), best_symbol=mean_titleBetterProfit, 
                                                        worst_symbol=mean_titleWorseProfit, timestamp_in=time_stamp_in, timestamp_fin=datetime.now(), notes=notes, cur=cur, conn=conn)
@@ -237,7 +237,7 @@ def tradingYear(cur, conn, symbols, trade_date, market, DELAY, TK, initial_date,
             
     # Recupero dei 100 simboli azionari disponibili a maggior capitalizzazione per le date di trading scelte. 
     symbolDisp = manage_symbol.get_x_symbols_random(initial_date, symbolsDispoInDates, logger_agent4)
-    logger_agent4.info(f"Test agent4_symb_rnd in {market} with this symbols : {symbolDisp}")
+    logger_agent4.info(f"[SYMBOL SELECTION] Test 'agent4_selectRandom' in market '{market}' used symbols: {symbolDisp}\n")
 
     # Ottimizzazione 4: Recupera TUTTI i prezzi dei simboli disponibili per il periodo in una sola query
     prices_dict = (pricesDispoInDates[initial_date])[0]
@@ -522,7 +522,7 @@ def tradingYear(cur, conn, symbols, trade_date, market, DELAY, TK, initial_date,
     for k, v in titleProfit.items():
         #titleProfit[k] = round
         purForLog += f'{k}: {len(v)}, '
-    logger_agent4.info(f"Numero acquisti: {len(purchases)}, acquisti: {purForLog}")
+    logger_agent4.info(f"[PURCHASE INFO] Number of purchases: {len(purchases)}; Purchase details: {purForLog}\n")
     
     #return profitTotalPerc
     maxT, minT = '', ''
@@ -530,7 +530,7 @@ def tradingYear(cur, conn, symbols, trade_date, market, DELAY, TK, initial_date,
     for k, v in titleProfit.items():
         for value in v:
             if value > 40:
-                logger_agent4.info(f"Profit high for {k}: {value}%")
+                logger_agent4.info(f"[PROFIT INFO] Highest profit recorded for symbol {k}: {value}%\n")
         titleProfit[k] = float(np.mean(v))
         if titleProfit[k] > maxP:
             maxP = titleProfit[k]
@@ -540,11 +540,15 @@ def tradingYear(cur, conn, symbols, trade_date, market, DELAY, TK, initial_date,
             minT = k
             
     profitNotReinvestedPerc = ((profitNotReinvested - initial_budget) / initial_budget ) * 100
-    logger_agent4.info(f"Profitto in percentuale : {profitNotReinvestedPerc} %")
+    logger_agent4.info(f"[OVERALL PROFIT] Overall profit percentage: {profitNotReinvestedPerc}%\n")
     
     if profitNotReinvestedPerc > 250:
         for tick, infoS in salesDict.items():
-            logger_agent4.info(f"{tick}: date purchase: {infoS[1]}, data sale: {infoS[0]}, ticketAcq: {infoS[2]}, volume: {infoS[3]}, simbolo: {infoS[4]}, prezzo corrente di vendita: {infoS[5]}, prezzo acquisto: {infoS[6]}, profitto: {infoS[7]}, profitto percentuale: {infoS[8]}")
+            logger_agent4.info(
+                f"[TRANSACTION] {tick}: Purchase Date: {infoS[1]}, Sale Date: {infoS[0]}, TicketAcq: {infoS[2]}, "
+                f"Volume: {infoS[3]}, Symbol: {infoS[4]}, Current Sale Price: {infoS[5]}, "
+                f"Purchase Price: {infoS[6]}, Profit: {infoS[7]}, Profit Percentage: {infoS[8]}\n"
+            )
 
     if middleTimeSale == []:
         return profitNotReinvestedPerc, profitNotReinvested, nSaleProfit, ticketPur, 0, maxT, minT, initial_budget

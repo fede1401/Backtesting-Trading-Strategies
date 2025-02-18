@@ -43,6 +43,7 @@ if not os.path.exists(Path):
 
 
 #import work_historical.agents.agent1_downloadANDinsertDATA_DB
+import work_historical.agents.agent1_downloadANDinsertDATA_DB.agent1_Yahoo_Finance as agent1_Yahoo_Finance
 import work_historical.agents.agent2.agent2_markCapDayInitial as agent2_markCapDayInitial
 import work_historical.agents.agent2.agent2_selectRandom as agent2_selectRandom
 import work_historical.agents.agent3.agent3_markCapDayInitial as agent3_markCapDayInitial
@@ -76,8 +77,12 @@ logger_main.propagate = False  # Evita la propagazione
 
 
 def main():
-    cur, conn = connectDB.connect_nasdaq()
+    cur, conn = connectDB.connect_data_backtesting()
     #datesToTrade1 = generateiRandomDates2(cur, 80)
+    
+    #logger_main.info("Start download and save history market data.!\n")
+    #agent1_Yahoo_Finance.main()
+    #logger_main.info("End download and save history market data.!\n")
         
     logger_main.info("Start simulations!\n")
     

@@ -17,7 +17,7 @@ manage_symbols_path = main_project / "symbols"
 utils_path = main_project / "utils"
 
 # relativi ai dati
-history_market_data_path = project_root / "data" / "dataset" / "historical_market_data"
+history_market_data_path = project_root / "data" / "dataset" / "history_market_data"
 capitalization_path = project_root / "data" / "dataset" / "capitalization"
 symbols_info_path = project_root / "data" / "dataset" / "symbols_info"
 
@@ -43,12 +43,32 @@ marketFiles = [
 
 import sys
 
+
+
 def get_project_root() -> Path:
+    """
+    Funzione che permette di ottenere il percorso della root del progetto.
+    
+    Args: None
+    
+    Returns:
+        - project_root: percorso della root del progetto.
+    """
     return project_root
 
 
-# Aggiunge al path di sistema i moduli specificati: questo permette di importare i moduli in ogni file.
+
 def get_path_specify(which):
+    """
+    Funzione che permette di aggiungere al path di sistema i moduli specificati.
+
+    Args:
+        - which: lista di stringhe contenenti i percorsi dei moduli da aggiungere al path di sistema.
+        
+    Returns:
+        - 0 se l'operazione è andata a buon fine.
+    """
     #root = get_project_root()
     for w in which:
         sys.path.append(f"{w}")
+    return 0

@@ -7,7 +7,7 @@ import traceback
 import csv
 import sys
 from pathlib import Path
-
+import time
 
 # Trova dinamicamente la cartella Trading-Agent e la aggiunge al path
 current_path = Path(__file__).resolve()
@@ -29,69 +29,19 @@ from work_historical.symbols import manage_symbol as manage_symbol
 
 
 
-"""
-La funzione `downloadANDSaveStocksDataYahooFinance` utilizza la libreria `yfinance` per scaricare i dati storici di mercato di una lista di simboli e salvarli in file CSV nella cartella `marketData`.
-
-Funzionamento:
-1. Scarica i dati storici di ciascun simbolo. Se un file CSV esiste già per un simbolo, scarica solo i dati mancanti fino al giorno precedente rispetto alla data odierna.
-2. Se il file CSV non esiste, scarica l'intero storico ("max") e crea un nuovo file.
-3. I dati scaricati vengono salvati in CSV e successivamente inseriti nel database tramite la funzione `fillDB()`.
-4. La funzione è ottimizzata per evitare di scaricare nuovamente dati già presenti e aggiornati.
-
-Note:
-- Il codice verifica se i dati esistenti sono aggiornati alla data di ieri o di oggi. In tal caso, il download viene saltato.
-- È possibile ottimizzare ulteriormente l'inserimento nel database affinché vengano aggiunti solo i nuovi record, senza duplicare quelli già presenti.
-"""
-
-
-"""
-Il codice scarica dati di borsa per una lista di titoli specifici (NASDAQ, NYSE, o LARG_COMP_EU), li salva in file CSV e li registra in un database. In maniera semplificata, il processo svolto può essere riassunto così:
-
-1. **Scelta del mercato**:  In base al mercato specificato (es. `'NASDAQ'`), ottiene una lista di simboli azionari (`symbols`) e definisce una directory per salvare i dati.
-
-2. **Controllo e download dei dati**:
-   - Per ciascun simbolo nella lista:
-     - Controlla se esiste già un file CSV con i dati del titolo.
-     - Se il file esiste, verifica se i dati sono aggiornati fino al giorno precedente:
-       - Se aggiornati, salta il download.
-       - Se non aggiornati, scarica i dati mancanti a partire dall'ultima data registrata.
-     - Se il file non esiste, scarica tutti i dati disponibili.
-   - I dati vengono scaricati utilizzando `yfinance` e salvati nel file CSV.
-
-3. **Inserimento nel database**:
-   - Per ogni riga del file CSV:
-     - Estrae informazioni rilevanti (es. simbolo, prezzo di apertura, chiusura, ecc.).
-     - Inserisce i dati nel database corrispondente al mercato (`NASDAQ`, `NYSE`, o `LARG_COMP_EU`).
-
-4. **Chiusura delle connessioni**: Chiude la connessione al database e termina il programma.
-
-### Funzionamento delle funzioni principali:
-- **`downloadANDSaveStocksData`**: Scarica i dati dei titoli azionari e li salva in file CSV.
-- **`fillDB`**: Legge i file CSV e inserisce i dati nel database.
-- **`main`**: Coordina l'esecuzione, impostando il mercato da processare, gestendo la connessione al database e lanciando le funzioni principali.
-
-### Elementi chiave:
-- **Directory di salvataggio dei dati**: Differenziata per mercato.
-- **Check di aggiornamento**: Si assicura che i dati siano sempre aggiornati.
-- **Integrazione con il database**: Inserisce i dati scaricati nel database appropriato.
-- **Gestione robusta**: Previene errori grazie al logging e al controllo delle eccezioni.
-"""
-
-    
-
 def downloadANDSaveStocksData(cur, conn, market):
     """
     Scaricamento dei dati e salvataggio nel database: per lo scaricamento viene controllato se in precedenza i dati fossero già scaricati:
-    - se i dati sono già scaricati, vengono scaricati solo i dati mancanti a partire dall'ultimo giorno scaricato
-    - se i dati non sono scaricati, vengono scaricati tutti i dati storici
+    - se lo sono, vengono scaricati solo i dati mancanti a partire dall'ultimo giorno scaricato;
+    - se non lo sono, vengono scaricati i dati storici a partire dall'iscrizione del titolo in borsa.
     
     Args:
-        - cur: cursore per il database
-        - conn: connessione al database
-        - market: mercato di riferimento (es. 'NASDAQ', 'NYSE', 'LARG_COMP_EU')
+        cur: cursore per il database
+        conn: connessione al database
+        market: mercato di riferimento (es. 'NASDAQ', 'NYSE', 'LARG_COMP_EU')
         
     Returns:
-        - 0: se il processo è completato con successo
+        0: se il processo è completato con successo
     """
 
     if market == 'NASDAQ':
@@ -205,13 +155,13 @@ def fillDB(filename, cur, conn, market):
         - si estraggono i campi di interesse e si inseriscono nel database (grazie a funzioni specifiche per ogni mercato)
     
     Args:
-        - filename (str): nome del file csv contenente i dati.
-        - cur: cursore per il database
-        - conn: connessione al database
-        - market: mercato di riferimento (es. 'NASDAQ', 'NYSE', 'LARG_COMP_EU')
+        filename (str): nome del file csv contenente i dati.
+        cur: cursore per il database
+        conn: connessione al database
+        market: mercato di riferimento (es. 'NASDAQ', 'NYSE', 'LARG_COMP_EU')
     
     Returns:
-        - 0: se l'inserimento è completato con successo
+        0: se l'inserimento è completato con successo
     """
     
     with open(filename, 'r') as file:    
@@ -223,7 +173,7 @@ def fillDB(filename, cur, conn, market):
                 if infoF[0] != 'Date' and infoF[0] != 'Ticker' and infoF[0] != 'Price':
                     # vengono presi i valori della riga --> price 0, close 1, high 2, low 3, open 4, volume 5
                     
-                    symbol = filename.split('/')[4]
+                    symbol = filename.split('/')[13]
                     symbol = symbol.split('.')[0]
                     
                     time_value = infoF[0]
@@ -252,21 +202,39 @@ def fillDB(filename, cur, conn, market):
     return 0
        
 
-
-def getMarkCap(marketFiles):    
+def delete_files_about_history_market_data():
     """
-    Scarica i dati storici di market cap per ogni simbolo.
-    
-    Args: 
-        - marketFiles: lista di file csv contenenti i simboli delle azioni con le relative informazioni più importanti
+    Elimina i file contenenti i dati di market cap per ogni singolo titolo per pulizia.
+    Args:
     
     Returns:
         0: se la funzione è stata eseguita correttamente
     """
+    markets = ['NASDAQ', 'NYSE', 'LARG_COMP_EU']
+
+    for m in markets:
+        for f in os.listdir(f"{history_market_data_path}/{m}"):
+            os.remove(f"{history_market_data_path}/{m}/{f}")
     
+    return 0
+
+
+def getMarkCap(marketFiles):    
+    """
+    Scarica i dati storici di capitalizzazione di mercato per ogni simbolo. Per farlo si utilizza la libreria 'yfinance' che permette di scaricare 
+    shares_outstanding: cioè il numero di azioni in circolazione e il prezzo di chiusura. La market cap è data dal prodotto di questi due valori.
+    Questi dati vengono salvati in file CSV all'interno di percorsi specifiche per ogni mercato.
+    
+    Args:
+        marketFiles: lista di file csv contenenti i simboli delle azioni con le relative informazioni più importanti da cui selezionare tutti i simboli d'interesse.
+    
+    Returns:
+        0: se la funzione è stata eseguita correttamente
+    """
     # Funzione che può essere sostituita in qualche file poiché si ripete
     for fmark in marketFiles:
         fmark = str(fmark)
+        print(fmark)
         
         with open(f'{fmark}', mode='r') as file: # se dobbiamo utilizzarlo per il file agent1_YAHOO!Finance.py, altrimenti: with open('../marketData/csv_files/nasdaq_symbols_sorted.csv', mode='r') as file:
             # Crea un lettore CSV con DictReader
@@ -274,6 +242,19 @@ def getMarkCap(marketFiles):
             
             # Estrai i simboli. Sostituisci '/' con '-' per una corretta formattazione
             symbols = [col['Symbol'].replace('/', '-') for col in csv_reader]
+            
+        # Creare una directory per i file di market cap se non esistente:
+        Path(f"{capitalization_path}/NASDAQ/all_mark_cap").mkdir(parents=True, exist_ok=True)
+        Path(f"{capitalization_path}/NASDAQ/by_year").mkdir(parents=True, exist_ok=True)
+        Path(f"{capitalization_path}/NASDAQ/top_value").mkdir(parents=True, exist_ok=True)
+        
+        Path(f"{capitalization_path}/NYSE/all_mark_cap").mkdir(parents=True, exist_ok=True)
+        Path(f"{capitalization_path}/NYSE/by_year").mkdir(parents=True, exist_ok=True)
+        Path(f"{capitalization_path}/NYSE/top_value").mkdir(parents=True, exist_ok=True)
+        
+        Path(f"{capitalization_path}/LARG_COMP_EU/all_mark_cap").mkdir(parents=True, exist_ok=True)
+        Path(f"{capitalization_path}/LARG_COMP_EU/by_year").mkdir(parents=True, exist_ok=True)
+        Path(f"{capitalization_path}/LARG_COMP_EU/top_value").mkdir(parents=True, exist_ok=True)
         
         # Per ogni simbolo scarica i dati storici e calcola la market cap (data dalle azioni in circolazione * prezzo di chiusura)
         for sy in symbols:
@@ -314,7 +295,7 @@ def getMarkCap(marketFiles):
             historical_data["Market Cap"] = historical_data["Close"] * shares_outstanding
 
             # Salva i dati in un file CSV
-            if fmark == f'{symbols_info_path}/NASDAQ/nasdaq_symbols_sorted.csv"':
+            if fmark == f'{symbols_info_path}/NASDAQ/nasdaq_symbols_sorted.csv':
                 historical_data[["Close", "Market Cap"]].to_csv(f"{capitalization_path}/NASDAQ/all_mark_cap/market_cap_{sy}.csv")
                 print(f"Dati salvati in market_cap_{sy}.csv")
                 
@@ -335,8 +316,8 @@ def getMarkCap(marketFiles):
 
 def orderMarkCapYears():
     """
-    Ordina i file CSV di market cap per anno e li salva in una cartella separata. (/by_year/...)
-    Args:
+    Ordina i file CSV di capitalizzazione di mercato (salvati nel percorso /data/dataset/capitalization/{market}/all_mark_cap/*) per anno e 
+    li salva in una cartella separata. (/by_year/...). Questo ci garantisce di avere i dati ordinati per anno e pronti per l'analisi.
     
     Returns:
         0: se la funzione è stata eseguita correttamente
@@ -352,7 +333,7 @@ def orderMarkCapYears():
     
     countNasd = countNys = countEur = 0
     
-    # Conta il numero di file per ogni mercato
+    # Conta il numero di file per ogni mercato per un controllo
     for mark in market:
         for _ in os.listdir(f"{capitalization_path}/{mark}/all_mark_cap"):
             if mark == 'NASDAQ':
@@ -363,7 +344,6 @@ def orderMarkCapYears():
                 countEur += 1
     
     print("countNasd", ": ", countNasd, ",  " ,"countNys", ": ",  countNys,  ",  " ,"countEu", ": ", countEur)
-    
     
     i = 0
     
@@ -400,8 +380,9 @@ def orderMarkCapYears():
 
 def deleteFilesAboutSingleTitles():
     """
-    Elimina i file contenenti i dati di market cap per ogni singolo titolo per pulizia.
-    Args:
+    Elimina i file contenenti i dati di capitalizzazione di mercato per ogni singolo titolo per pulizia.
+    
+    Args: 
     
     Returns:
         0: se la funzione è stata eseguita correttamente
@@ -420,8 +401,10 @@ def deleteFilesAboutSingleTitles():
 
 def preprocess_topX_for_year():
     """
-    Preprocessa i file topX per ogni anno.
-    Args:
+    Preprocessa i file topX per ogni anno. Nel dettaglio si vanno a ordinare i simboli per ogni data dell'anno considerato in maniera decrescente per capitalizzazione e si 
+    salvano in un file CSV.
+    
+    Args: 
     
     Returns:
         0: se la funzione è stata eseguita correttamente
@@ -489,13 +472,15 @@ def main():
     
     try:
         # Connessione al database
-        cur, conn = connectDB.connect_nasdaq()
+        cur, conn = connectDB.connect_data_backtesting()
         
         # Scarica e salva i dati per i mercati specificati
-        market = ['NASDAQ', 'NYSE', 'LARG_COMP_EU']
-        for m in market:
-            downloadANDSaveStocksData(cur, conn, m)
+        #market = ['NASDAQ', 'NYSE', 'LARG_COMP_EU']
+        market = ['NYSE', 'LARG_COMP_EU']
+        #for m in market:
+        #    downloadANDSaveStocksData(cur, conn, m)
                 
+        #delete_files_about_history_market_data()
         getMarkCap(marketFiles)
         orderMarkCapYears()
         deleteFilesAboutSingleTitles()

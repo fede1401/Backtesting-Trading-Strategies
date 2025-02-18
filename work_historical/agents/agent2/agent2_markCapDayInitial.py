@@ -53,7 +53,7 @@ if not logger_agent2.handlers:
 logger_agent2.propagate = False
 
 
-"Simboli che presentano anomalie nei dati di mercato"
+# Simboli che presentano anomalie nei dati di mercato
 SYMB_NASD_ANOMALIE= [ 'IDEX', 'CYRX', 'QUBT', 'POCI', 'MULN', 'BTCS', 'HEPA', 'OLB', 'NITO', 'XELA', 'ABVC', 'GMGI', 
                       'CELZ', 'IMTX', 'AREC', 'MNMD', 'PRTG', 'CHRD', 'ACCD', 'SPI',  'PRTG', 'NCPL', 'BBLGW', 'COSM', 
                       'ATXG', 'SILO', 'KWE', 'TOP',  'TPST', 'NXTT', 'OCTO', 'EGRX', 'AAGR', 'MYNZ', 'IDEX', 'CSSE', 
@@ -71,10 +71,27 @@ SYMB_TOT_ANOMALIE = ['IDEX', 'CYRX', 'QUBT', 'POCI', 'MULN', 'BTCS', 'HEPA', 'OL
                       'SNK', 'CBE', 'BST', 'BOL', 'GEA', 'NTG', 'MBK', 'MOL', 'MAN', '1913', 
                        'SBB-B', 'SES', 'DIA', 'H2O', 'EVO', 'LOCAL', 'ATO', 'FRAG', 'MYNZ', 'IPA']
 
-# Funzione principale per il trading e il caricamento
+
 def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totaledates):
+    """
+    Funzione principale che permette di eseguire le simulazioni per il trading agent2_markCapDayInitial.
+
+    Args:
+        datesToTrade (list): Lista delle date su cui effettuare i test.
+        dizMarkCap (dict): Dizionario contenente i valori di capitalizzazione di mercato per ogni simbolo azionario.
+        symbolsDispoInDatesNasd (dict): Dizionario contenente i simboli azionari disponibili per ogni data di trading per il mercato Nasdaq.
+        symbolsDispoInDatesNyse (dict): Dizionario contenente i simboli azionari disponibili per ogni data di trading per il mercato Nyse.
+        symbolsDispoInDatesLarge (dict): Dizionario contenente i simboli azionari disponibili per ogni data di trading per il mercato Large.
+        pricesDispoinDatesNasd (dict): Dizionario contenente i prezzi per ogni simbolo azionario disponibili per ogni data di trading per il mercato Nasdaq.
+        pricesDispoinDatesNyse (dict): Dizionario contenente i prezzi per ogni simbolo azionario disponibili per ogni data di trading per il mercato Nyse.
+        pricesDispoinDatesLarge (dict): Dizionario contenente i prezzi per ogni simbolo azionario disponibili per ogni data di trading per il mercato Large.
+        totaledates (dict): Dizionario contenente le date di trading per ogni data di trading.
+        
+    Returns:
+        None
+    """
     try:
-        logger_agent2.info(f"Start agent2_markCapDayInitial: {datetime.now()} \n")
+        logger_agent2.info(f"[SIMULATION START] agent2_markCapDayInitial initiated at {datetime.now()}\n")
         
         # Connessione al database
         cur, conn = connectDB.connect_data_backtesting()
@@ -93,16 +110,16 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
         market = ['nasdaq_actions', 'nyse_actions', 'larg_comp_eu_actions']  
         
         for m in market:
-            logger_agent2.info(f"\n\nWork with market {m} : {datetime.now()}")
+            logger_agent2.info(f"\n\n[MARKET INFO] Operating on market '{m}'\n")
             
             # Viene selezionato l'ultimo id del test inserito nel database
             idTest = utils.get_last_id_test(cur) 
             
             # viene registrata una riga vuota nel database per separare le simulazioni
-            insertDataDB.insert_in_data_simulation(idTest, "------", mean_perc_profit=0, std_dev=0, variance=0, middleProfitUSD=0, initial_budget= 0, mean_budget_with_profit_usd=0, 
+            insertDataDB.insert_in_data_simulation(idTest, "------", mean_perc_profit=0, std_dev=0, variance=0, initial_budget= 0, mean_budget_with_profit_usd=0, 
                                                     avg_sale=0, avg_purchase=0, avg_time_sale=0,  best_symbol='----', worst_symbol=0, timestamp_in = '',timestamp_fin='', 
                                                     notes='---', cur=cur, conn=conn)
-            
+
             # Recupero dei simboli azionari per il mercato scelto
             if m == 'nasdaq_actions':
                 symbols = manage_symbol.get_symbols('NASDAQ', -1)
@@ -128,8 +145,10 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
                 middletitleBetterProfit = []
                 middletitleWorseProfit = []
 
+                # Viene selezionato il valore di Take Profit
                 TK = list_take_profit[i]
-                #idTest = utils.getLastIdTest(cur) 
+                
+                # modificare il valore di idTest da registrare nel database
                 idTest += 1
 
                 total_steps = len(datesToTrade)  
@@ -138,14 +157,14 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
                     # Logica principale
                     utils.clear_tables_db(cur, conn)
                     trade_date, initial_date, endDate = datesToTrade[step]
-                    logger_agent2.info(f"Start test with {TK} agent2_markCapDayInitial in initial date {initial_date} : {datetime.now()}")
+                    logger_agent2.info(f"[TEST START] Starting test for agent2_markCapDayInitial with TP {TK}% on initial date {initial_date} at {datetime.now()}\n")
                     profitPerc, profitUSD, nSale, nPurchase, middleTimeSale, titleBetterProfit, titleWorseProfit, initial_budget = tradingYear_purchase_one_after_the_other( cur, conn, symbols, trade_date, m, TK, initial_date, endDate, dizMarkCap, symbolsDispoInDates, pricesDispoInDates, totaledates[m])
 
                     # profitNotReinvestedPerc, profitNotReinvested, ticketSale, ticketPur, float(np.mean( # middleTimeSale)), max(titleProfit[symbol]), min(titleProfit[symbol])
                     print( f"\nProfitto per il test {idTest}: agent2_top_mark_cap con TP={TK}%, {m}, buy one after the other: {profitPerc}, rimangono {total_steps - step - 1} iterazioni\n")
 
                     profitPerc = round(profitPerc, 4)
-                    notes = f"TP:{TK}%, {m}, agent2 that purchase and sale with TK and select symbol with mark Cap order by initial date."
+                    notes = f"TP:{TK}%, Market:{m}, Agent2 (Top MktCap). Buys & sells with {TK}% TP, sorting symbols by descending market cap."
                     insertDataDB.insert_in_data_testing(idTest, "agent2_top_mark_cap", step, initial_date=initial_date, end_date=endDate, initial_budget=initial_budget, profit_perc=profitPerc, budg_with_profit_USD=profitUSD, market=m, n_purchase=nPurchase, n_sale=nSale, middle_time_sale_second=middleTimeSale,
                                                  middle_time_sale_day=(middleTimeSale / 86400), title_better_profit=titleBetterProfit, title_worse_profit=titleWorseProfit, notes=notes, cur=cur, conn=conn)
 
@@ -156,7 +175,7 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
                     MmiddleTimeSale.append(middleTimeSale)
                     middletitleBetterProfit.append(titleBetterProfit)
                     middletitleWorseProfit.append(titleWorseProfit)
-                    logger_agent2.info(f"End test with {TK} agent2_markCapDayInitial in initial date {initial_date} : {datetime.now()}\n\n")
+                    logger_agent2.info(f"[TEST END] Completed test for agent2_markCapDayInitial with TP {TK}% on initial date {initial_date} at {datetime.now()}\n\n")
 
                 # Calcolo delle statistiche
                 mean_profit_perc = round(float(np.mean(profitsPerc)), 4)
@@ -167,6 +186,7 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
                 mean_purchase = round(float(np.mean(middlePurchase)), 4)
                 mean_time_sale = round(float(np.mean(MmiddleTimeSale)), 4)
 
+                # Calcolo del titolo azionario con il profitto medio migliore e peggiore
                 dizBetterTitle = {}
                 for title in middletitleBetterProfit:
                     if title != '':
@@ -187,9 +207,9 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
                 mean_titleWorseProfit = max(dizWorseTitle, key=dizWorseTitle.get)
 
                 # logging.info(f"Profitto medio: {mean_profit}, Deviazione standard: {std_deviation}")
-                logger_agent2.info(f"End simulation with {TK} agent2_markCapDayInitial : {datetime.now()} \n\n\n\n")
+                logger_agent2.info(f"[SIMULATION END] agent2_markCapDayInitial simulation ended with TP {TK}% at {datetime.now()}\n\n\n\n")
 
-                notes = f"TP:{TK}%, {m}, agent2 that purchase and sale with TK and select symbol with mark Cap order by initial date."
+                notes = f"TP:{TK}%, Market:{m}, Agent2 (Top MktCap). Buys & sells with {TK}% TP, sorting symbols by descending market cap."
                 insertDataDB.insert_in_data_simulation(idTest, "agent2_top_mark_cap", mean_perc_profit=mean_profit_perc, std_dev=std_deviation, variance=varianza, initial_budget= initial_budget, 
                                                        mean_budget_with_profit_usd=mean_profit_usd, avg_sale=mean_sale, avg_purchase=mean_purchase, avg_time_sale=(mean_time_sale / 86400), best_symbol=mean_titleBetterProfit, 
                                                        worst_symbol=mean_titleWorseProfit, timestamp_in=time_stamp_in, timestamp_fin=datetime.now(), notes=notes, cur=cur, conn=conn)
@@ -210,6 +230,40 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
 ################################################################################
 
 def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, market, TP, initial_date, endDate, dizMarkCap, symbolsDispoInDates, pricesDispoInDates, totaledates):
+    """
+    Funzione che effettua il trading per un anno con la strategia definita. La selezione dei titoli azionari avviene in ordine decrescente di capitalizzazione di mercato per la data iniziale.
+    Le date di trading su cui iterare per effettuare i controlli per l'acquisto e le vendite sono definiti in totaledates.
+    Si seguirà un approccio di acquisto e vendita uno dopo l'altro con la definizione dei diversi stati:
+        - SALE: stato in cui si effettua la vendita dei titoli azionari acquistati.
+        - SALE_IMMEDIATE: stato in cui si effettua la vendita immediata dei titoli azionari acquistati nella data corrente.
+        - PURCHASE: stato in cui si effettua l'acquisto dei titoli azionari.
+        - WAIT: stato in cui si attende la prossima data di trading per effettuare le operazioni di acquisto e vendita, se possibile.
+    
+    Args:
+        cur: cursore relativo alla connessione del database.
+        conn: connessione al database.
+        symbols: lista dei simboli azionari totali del mercato di analisi.
+        trade_date: variabile contenente la data di trading ad ogni iterazione.
+        market: mercato di analisi.
+        TP: valore di Take Profit.
+        initial_date: data iniziale di trading.
+        endDate: data finale di trading.
+        dizMarkCap: dizionario contenente i dati di capitalizzazione di mercato per i simboli azionari.
+        symbolsDispoInDates: dizionario contenente i simboli azionari disponibili per ogni data di trading.
+        pricesDispoInDates: dizionario contenente i prezzi per ogni simbolo azionario disponibili per ogni data di trading.
+        totaledates: dizionario contenente le date di trading.
+        
+    Returns:
+        profitNotReinvestedPerc: profitto in percentuale non reinvestito.
+        profitNotReinvested: profitto non reinvestito in valore di dollari
+        nSaleProfit: numero di vendite con profitto.
+        ticketPur: numero di acquisti.
+        middleTimeSale: tempo medio di vendita.
+        maxT: titolo azionario con il profitto medio migliore.
+        minT: titolo azionario con il profitto medio peggiore.
+        initial_budget: budget iniziale.
+    """
+    
     # Inizializzazione a ogni iterazione
     budgetInvestimenti = initial_budget = 1000 # budget = 
     profitTotalUSD = profitTotalPerc = profitNotReinvested = profitNotReinvestedPerc = ticketPur = ticketSale = budgetMantenimento = nSaleProfit = 0 # equity = margin = 0 
@@ -226,7 +280,7 @@ def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, mar
 
     # Recupero dei simboli azionari disponibili per le date di trading scelte. 
     symbolDisp1 = manage_symbol.get_x_symbols_ordered_by_market_cap(market, initial_date, 100, dizMarkCap, symbolsDispoInDates, logger_agent2)
-    logger_agent2.info(f"Test agent2_top_mark_cap in {market} with this symbols : {symbolDisp1}")
+    logger_agent2.info(f"[SYMBOL SELECTION] Test 'agent2_top_mark_cap' in market '{market}' used symbols: {symbolDisp1}.")
         
     # Ottimizzazione 4: Recupera TUTTI i prezzi dei simboli disponibili per il periodo in una sola query
     prices_dict = (pricesDispoInDates[initial_date])[0]
@@ -457,7 +511,7 @@ def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, mar
     for k, v in titleProfit.items():
         #titleProfit[k] = round
         purForLog += f'{k}: {len(v)}, '
-    logger_agent2.info(f"Numero acquisti: {len(purchases)}, acquisti: {purForLog}")
+    logger_agent2.info(f"[PURCHASE INFO] Number of purchases: {len(purchases)}; Purchase details: {purForLog}")
     
     # return profitTotalPerc
     maxT, minT = '', ''
@@ -465,7 +519,7 @@ def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, mar
     for k, v in titleProfit.items():
         for value in v:
             if value > 40:
-                logger_agent2.info(f"Profit high for {k}: {value}%")
+                logger_agent2.info(f"[PROFIT INFO] Highest profit recorded for symbol {k}: {value}%\n")
         titleProfit[k] = float(np.mean(v))
         if titleProfit[k] > maxP:
             maxP = titleProfit[k]
@@ -476,11 +530,16 @@ def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, mar
         
     profitNotReinvestedPerc = ((profitNotReinvested - initial_budget) / initial_budget ) * 100
 
-    logger_agent2.info(f"Profitto in percentuale : {profitNotReinvestedPerc} %")
+    logger_agent2.info(f"[OVERALL PROFIT] Overall profit percentage (non-reinvested): {profitNotReinvestedPerc}%\n")
     
     if profitNotReinvestedPerc > 250:
         for tick, infoS in salesDict.items():
-            logger_agent2.info(f"{tick}: date purchase: {infoS[1]}, data sale: {infoS[0]}, ticketAcq: {infoS[2]}, volume: {infoS[3]}, simbolo: {infoS[4]}, prezzo corrente di vendita: {infoS[5]}, prezzo acquisto: {infoS[6]}, profitto: {infoS[7]}, profitto percentuale: {infoS[8]}")
+            logger_agent2.info(
+                f"[TRANSACTION] {tick}: Purchase Date: {infoS[1]}, Sale Date: {infoS[0]}, TicketAcq: {infoS[2]}, "
+                f"Volume: {infoS[3]}, Symbol: {infoS[4]}, Current Sale Price: {infoS[5]}, "
+                f"Purchase Price: {infoS[6]}, Profit: {infoS[7]}, Profit Percentage: {infoS[8]}\n"
+            )
+
             
     if middleTimeSale == []:
         return profitNotReinvestedPerc, profitNotReinvested, nSaleProfit, ticketPur, 0, maxT, minT, initial_budget

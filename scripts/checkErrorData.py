@@ -36,7 +36,6 @@ def checkErr(initial_date, end_date, market_data):
         
     Returns:
         - data_by_symbol: dizionario contenente i simboli come chiave e come valore una lista di tuple contenente il tempo, il prezzo di apertura e il prezzo massimo.
-    
     """
     try:
         # Connessione al database
