@@ -155,11 +155,11 @@ def get_x_symbols_ordered_by_market_cap(market, initial_date, x, dizMarkCap, sym
         year = str(initial_date).split('-')[0]
         
         # selezione della nomenclatura corretta per il mercato
-        if market == 'nasdaq_actions':
+        if market == 'data_market_nasdaq_symbols':
             strMark = 'NASDAQ'
-        elif market == 'nyse_actions':
+        elif market == 'data_market_nyse_symbols':
             strMark = 'NYSE'
-        elif market == 'larg_comp_eu_actions':
+        elif market == 'data_market_larg_comp_eu_symbols':
             strMark = 'LARG_COMP_EU'
         
         # selezione dei simboli in base alla capitalizzazione di mercato per l'anno selezionato e la data iniziale della simulazione
@@ -229,11 +229,11 @@ def get_x_symbols_ordered_by_market_cap_for_sector( market, initial_date, perc, 
     # estrazione della data iniziale su cui effettuare la simulazione di trading
     year = str(initial_date).split('-')[0]
         
-    if market == 'nasdaq_actions':
+    if market == 'data_market_nasdaq_symbols':
         strMark = 'NASDAQ'
-    elif market == 'nyse_actions':
+    elif market == 'data_market_nyse_symbols':
         strMark = 'NYSE'
-    elif market == 'larg_comp_eu_actions':
+    elif market == 'data_market_larg_comp_eu_symbols':
         strMark = 'LARG_COMP_EU'
         
     # selezione dei simboli in base alla capitalizzazione di mercato per l'anno selezionato e la data iniziale della simulazione

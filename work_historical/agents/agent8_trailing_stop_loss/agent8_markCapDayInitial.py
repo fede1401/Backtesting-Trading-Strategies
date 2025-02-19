@@ -159,14 +159,14 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
         market = ['nasdaq_actions', 'nyse_actions', 'larg_comp_eu_actions']  #market = ['larg_comp_eu_actions']
         
         for m in market:
-            logger_agent8.info(f"\n\n[MARKET INFO] Operating on market '{m}'\n")
+            logger_agent8.info(f"[MARKET INFO] Operating on market '{m}'\n")
             
             # Viene selezionato l'ultimo id del test inserito nel database
             idTest = utils.get_last_id_test(cur) 
             
             # viene registrata una riga vuota nel database per separare le simulazioni
             insertDataDB.insert_in_data_simulation(idTest, "------", mean_perc_profit=0, std_dev=0, variance=0, initial_budget= 0, mean_budget_with_profit_usd=0, 
-                                                    avg_sale=0, avg_purchase=0, avg_time_sale=0,  best_symbol='----', worst_symbol=0, timestamp_in = '',timestamp_fin='', 
+                                                    avg_sale=0, avg_purchase=0, avg_time_sale=0,  best_symbol='----', worst_symbol='-----', timestamp_in = datetime.now(),timestamp_fin=datetime.now(), 
                                                     notes='---', cur=cur, conn=conn)
             
             # Recupero dei simboli azionari per il mercato scelto
@@ -174,14 +174,17 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
                 symbols = manage_symbol.get_symbols('NASDAQ', -1)
                 symbolsDispoInDates = symbolsDispoInDatesNasd
                 pricesDispoInDates = pricesDispoInDatesNasd
+                m = 'data_market_nasdaq_symbols'
             elif m == 'nyse_actions':
                 symbols = manage_symbol.get_symbols('NYSE', -1)
                 symbolsDispoInDates = symbolsDispoInDatesNyse
                 pricesDispoInDates = pricesDispoInDatesNyse
+                m = 'data_market_nyse_symbols'
             elif m == 'larg_comp_eu_actions':
                 symbols = manage_symbol.get_symbols('LARG_COMP_EU', -1)
                 symbolsDispoInDates = symbolsDispoInDatesLarge
                 pricesDispoInDates = pricesDispoInDatesLarge
+                m = 'data_market_larg_comp_eu_symbols'
 
             for alpha in alpha_parameters:
                 for beta in beta_parameters:
@@ -202,15 +205,23 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
                         # Logica principale
                         utils.clear_tables_db(cur, conn)
                         trade_date, initial_date, endDate = datesToTrade[step]
-                        logger_agent8.info(f"[TEST START] Starting test for agent8_markCapDayInitial with ALPHA:{alpha} and BETA:{beta} on initial date {initial_date} at {datetime.now()}\n")
+                        logger_agent8.info(f"[TEST START] Starting test for agent8_markCapDayInitial with ALPHA:{alpha} and BETA:{beta} on initial date {initial_date} at {datetime.now()}")
                         profitPerc, profitUSD, nSale, nPurchase, middleTimeSale, titleBetterProfit, titleWorseProfit, initial_budget = tradingYear_purchase_one_after_the_other( cur, conn, symbols, trade_date, m, alpha, beta, initial_date, endDate, dizMarkCap, symbolsDispoInDates, pricesDispoInDates, totaledates[m])
 
                         # profitNotReinvestedPerc, profitNotReinvested, ticketSale, ticketPur, float(np.mean( # middleTimeSale)), max(titleProfit[symbol]), min(titleProfit[symbol])
                         print( f"\nProfitto per il test {idTest}: agent8_top_mark_cap con ALPHA:{alpha} and BETA:{beta}, {m}, buy one after the other: {profitPerc}, rimangono {total_steps - step - 1} iterazioni\n")
 
                         profitPerc = round(profitPerc, 4)
-                        notes = f"Agent8 (TSL, Top MktCap), Market:{m}, alpha:{alpha}, beta:{beta}. Uses TSL with symbols sorted by descending market cap."
-                        insertDataDB.insert_in_data_testing(idTest, "agent8_top_mark_cap", step, initial_date=initial_date, end_date=endDate, initial_budget=initial_budget, profit_perc=profitPerc, budg_with_profit_USD=profitUSD, market=m, n_purchase=nPurchase, n_sale=nSale, middle_time_sale_second=middleTimeSale,
+                        
+                        if m == 'data_market_nasdaq_symbols':
+                            market_to_insert = 'nasdaq'
+                        elif m == 'data_market_nyse_symbols':
+                            market_to_insert = 'nyse'
+                        elif m == 'data_market_larg_comp_eu_symbols':
+                            market_to_insert = 'european'    
+                        
+                        notes = f"Agent8 (TSL, Top MktCap), Market:{market_to_insert}, alpha:{alpha}, beta:{beta}. Uses TSL with symbols sorted by descending market cap."
+                        insertDataDB.insert_in_data_testing(idTest, "agent8_top_mark_cap", step, initial_date=initial_date, end_date=endDate, initial_budget=initial_budget, profit_perc=profitPerc, budg_with_profit_USD=profitUSD, market=market_to_insert, n_purchase=nPurchase, n_sale=nSale, middle_time_sale_second=middleTimeSale,
                                                  middle_time_sale_day=(middleTimeSale / 86400), title_better_profit=titleBetterProfit, title_worse_profit=titleWorseProfit, notes=notes, cur=cur, conn=conn)
 
                         profTot.append(profitUSD)
@@ -253,7 +264,14 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
                     # logging.info(f"Profitto medio: {mean_profit}, Deviazione standard: {std_deviation}")
                     logger_agent8.info(f"[SIMULATION END] agent8_markCapDayInitial simulation ended with ALPHA:{alpha} and BETA:{beta} at {datetime.now()}\n\n\n\n")
 
-                    notes = f"Agent8 (TSL, Top MktCap), Market:{m}, alpha:{alpha}, beta:{beta}. Uses TSL with symbols sorted by descending market cap."
+                    if m == 'data_market_nasdaq_symbols':
+                        market_to_insert = 'nasdaq'
+                    elif m == 'data_market_nyse_symbols':
+                        market_to_insert = 'nyse'
+                    elif m == 'data_market_larg_comp_eu_symbols':
+                        market_to_insert = 'european'    
+
+                    notes = f"Agent8 (TSL, Top MktCap), Market:{market_to_insert}, alpha:{alpha}, beta:{beta}. Uses TSL with symbols sorted by descending market cap."
                     insertDataDB.insert_in_data_simulation(idTest, "agent8_top_mark_cap", mean_perc_profit=mean_profit_perc, std_dev=std_deviation, variance=varianza, initial_budget= initial_budget, 
                                                        mean_budget_with_profit_usd=mean_profit_usd, avg_sale=mean_sale, avg_purchase=mean_purchase, avg_time_sale=(mean_time_sale / 86400), best_symbol=mean_titleBetterProfit, 
                                                        worst_symbol=mean_titleWorseProfit, timestamp_in=time_stamp_in, timestamp_fin=datetime.now(), notes=notes, cur=cur, conn=conn)
@@ -289,7 +307,7 @@ def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, mar
 
     # Recupero dei simboli azionari disponibili per le date di trading scelte. 
     symbolDisp1 = manage_symbol.get_x_symbols_ordered_by_market_cap(market, initial_date, 100, dizMarkCap, symbolsDispoInDates, logger_agent8)
-    logger_agent8.info(f"[SYMBOL SELECTION] Test 'agent8_markCapDayInitial' in market '{market}' used symbols: {symbolDisp1}\n")
+    logger_agent8.info(f"[SYMBOL SELECTION] Test 'agent8_markCapDayInitial' in market '{market}' used symbols: {symbolDisp1}")
 
     # Ottimizzazione 4: Recupera TUTTI i prezzi dei simboli disponibili per il periodo in una sola query
     prices_dict = (pricesDispoInDates[initial_date])[0]
@@ -561,7 +579,7 @@ def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, mar
     for k, v in titleProfit.items():
         #titleProfit[k] = round
         purForLog += f'{k}: {len(v)}, '
-    logger_agent8.info(f"[PURCHASE INFO] Number of purchases: {len(purchases)}; Purchase details: {purForLog}\n")
+    logger_agent8.info(f"[PURCHASE INFO] Number of purchases: {len(purchases)}; Purchase details: {purForLog}")
     
 
     # return profitTotalPerc
@@ -570,7 +588,7 @@ def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, mar
     for k, v in titleProfit.items():
         for value in v:
             if value > 40:
-                logger_agent8.info(f"[PROFIT INFO] Highest profit recorded for symbol {k}: {value}%\n")
+                logger_agent8.info(f"[PROFIT INFO] Highest profit recorded for symbol {k}: {value}%")
         titleProfit[k] = float(np.mean(v))
         if titleProfit[k] > maxP:
             maxP = titleProfit[k]
@@ -581,14 +599,14 @@ def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, mar
         
     profitNotReinvestedPerc = ((profitNotReinvested - initial_budget) / initial_budget ) * 100
 
-    logger_agent8.info(f"[OVERALL PROFIT] Overall profit percentage: {profitNotReinvestedPerc}%\n")
+    logger_agent8.info(f"[OVERALL PROFIT] Overall profit percentage: {profitNotReinvestedPerc}%")
     
     if profitNotReinvestedPerc > 250:
         for tick, infoS in salesDict.items():
             logger_agent8.info(
                 f"[TRANSACTION] {tick}: Purchase Date: {infoS[1]}, Sale Date: {infoS[0]}, TicketAcq: {infoS[2]}, "
                 f"Volume: {infoS[3]}, Symbol: {infoS[4]}, Current Sale Price: {infoS[5]}, "
-                f"Purchase Price: {infoS[6]}, Profit: {infoS[7]}, Profit Percentage: {infoS[8]}\n"
+                f"Purchase Price: {infoS[6]}, Profit: {infoS[7]}, Profit Percentage: {infoS[8]}"
             )
 
     if middleTimeSale == []:

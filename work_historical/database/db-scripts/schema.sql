@@ -111,7 +111,7 @@ CREATE TABLE IF NOT EXISTS testing_data (
     best_profit_symbol      VARCHAR(20)       NOT NULL,
     worst_profit_symbol     VARCHAR(20)       NOT NULL,
     notes                   VARCHAR(1000),
-    PRIMARY KEY (id)
+    PRIMARY KEY (id, agent, number_test)
 );
 
 CREATE TABLE IF NOT EXISTS simulation_data (
