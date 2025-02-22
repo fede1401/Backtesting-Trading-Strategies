@@ -3,13 +3,13 @@ import logging
 import os
 from pathlib import Path
 import traceback
+import datetime
 
-
-# Trova dinamicamente la cartella Trading-Agent e la aggiunge al path
+# Trova dinamicamente la cartella Backtesting-Trading-Strategies e la aggiunge al path
 current_path = Path(__file__).resolve()
-while current_path.name != 'trading-agent':
-    if current_path == current_path.parent:  # Se raggiungiamo la root senza trovare Trading-Agent
-        raise RuntimeError("Errore: Impossibile trovare la cartella Trading-Agent!")
+while current_path.name != 'Backtesting-Trading-Strategies':
+    if current_path == current_path.parent:  # Se raggiungiamo la root senza trovare Backtesting-Trading-Strategies
+        raise RuntimeError("Errore: Impossibile trovare la cartella Backtesting-Trading-Strategies!")
     current_path = current_path.parent
 
 # Aggiunge la root al sys.path solo se non è già presente
@@ -60,9 +60,13 @@ def checkErr(initial_date, end_date, market_data):
         threshold_abs = 1000
         threshold_pct = 30 #--> 30*100% = 3000% di variazione
         
-        # Apriamo il file di report in modalità append        
-        with open(f'{main_project}/data/anomalies/errorData_{market_data}.txt', 'a') as file_out:
-            file_out.write(f"---------------------------------------------\nControllo anomalie per il mercato: {market_data}\n")
+        # Apriamo il file di report in modalità append   
+        output_path =Path(f'{project_root}/data/anomalies/errorData_{market_data}.txt')
+        if not output_path.exists():
+            output_path.touch()
+        
+        with open(output_path, 'a') as file_out:
+            file_out.write(f"---------------------------------------------\n\n\n\n{datetime.datetime.now()}\nControllo anomalie per il mercato: {market_data}\n")
             for symbol, values in data_by_symbol.items():
                 # Ordiniamo per data (se non già ordinati)
                 values.sort(key=lambda x: x[0])

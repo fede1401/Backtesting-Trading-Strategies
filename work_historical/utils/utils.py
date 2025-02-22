@@ -17,11 +17,11 @@ import time
 from pathlib import Path
 
 
-# Trova dinamicamente la cartella Trading-Agent e la aggiunge al path
+# Trova dinamicamente la cartella Backtesting-Trading-Strategies e la aggiunge al path
 current_path = Path(__file__).resolve()
-while current_path.name != 'trading-agent':
-    if current_path == current_path.parent:  # Se raggiungiamo la root senza trovare Trading-Agent
-        raise RuntimeError("Errore: Impossibile trovare la cartella Trading-Agent!")
+while current_path.name != 'Backtesting-Trading-Strategies':
+    if current_path == current_path.parent:  # Se raggiungiamo la root senza trovare Backtesting-Trading-Strategies
+        raise RuntimeError("Errore: Impossibile trovare la cartella Backtesting-Trading-Strategies!")
     current_path = current_path.parent
 
 # Aggiunge la root al sys.path solo se non è già presente

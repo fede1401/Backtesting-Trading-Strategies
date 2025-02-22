@@ -1,0 +1,4805 @@
+---------------------------------------------
+
+
+
+2025-02-21 17:25:50.477145
+Controllo anomalie per il mercato: data_market_nasdaq_symbols
+Symbol: FCEL
+Data: Minimum open price: 5805.0 in date: 1999-03-16 00:00:00
+      Maximum high price: 33075.0 in date: 1999-12-08 00:00:00
+
+Symbol: XOMA
+Data: Minimum open price: 609.375 in date: 1999-10-22 00:00:00
+      Maximum high price: 2400.0 in date: 1999-07-09 00:00:00
+
+Symbol: GILT
+Data: Minimum open price: 840.0 in date: 1999-10-15 00:00:00
+      Maximum high price: 2505.0 in date: 1999-12-29 00:00:00
+
+Symbol: SMTI
+Data: Minimum open price: 200.0 in date: 1999-09-28 00:00:00
+      Maximum high price: 2300.0 in date: 1999-04-08 00:00:00
+
+Symbol: SWKH
+Data: Minimum open price: 2300.0 in date: 1999-09-30 00:00:00
+      Maximum high price: 12250.0 in date: 1999-12-28 00:00:00
+
+Symbol: ABEO
+Data: Minimum open price: 7226.5625 in date: 1999-10-07 00:00:00
+      Maximum high price: 27343.75 in date: 1999-06-02 00:00:00
+
+Symbol: ACHV
+Data: Minimum open price: 87862.5 in date: 1999-12-29 00:00:00
+      Maximum high price: 430650.0 in date: 1999-01-06 00:00:00
+
+Symbol: STCN
+Data: Minimum open price: 1295.466552734375 in date: 1999-01-04 00:00:00
+      Maximum high price: 13439.9990234375 in date: 1999-12-30 00:00:00
+
+Symbol: QMCO
+Data: Minimum open price: 1880.0 in date: 1999-10-08 00:00:00
+      Maximum high price: 3480.0 in date: 1999-08-16 00:00:00
+
+Symbol: GEG
+Data: Minimum open price: 594.0 in date: 1999-06-16 00:00:00
+      Maximum high price: 6300.0 in date: 1999-11-29 00:00:00
+
+Symbol: USAU
+Data: Minimum open price: 3240.0 in date: 1999-04-13 00:00:00
+      Maximum high price: 17460.0 in date: 1999-12-30 00:00:00
+
+Symbol: CASI
+Data: Minimum open price: 1471.25 in date: 1999-02-10 00:00:00
+      Maximum high price: 3884.375 in date: 1999-01-15 00:00:00
+
+Symbol: NEON
+Data: Minimum open price: 4453.125 in date: 1999-10-26 00:00:00
+      Maximum high price: 14843.75 in date: 1999-11-26 00:00:00
+
+Symbol: LSTA
+Data: Minimum open price: 135937.5 in date: 1999-11-04 00:00:00
+      Maximum high price: 393750.0 in date: 1999-12-28 00:00:00
+
+Symbol: NXPL
+Data: Minimum open price: 31640625152.0 in date: 1999-12-17 00:00:00
+      Maximum high price: 80999997440.0 in date: 1999-11-03 00:00:00
+
+Symbol: ASTC
+Data: Minimum open price: 5859.375 in date: 1999-10-19 00:00:00
+      Maximum high price: 16875.0 in date: 1999-01-07 00:00:00
+
+Symbol: MBOT
+Data: Minimum open price: 10125.0 in date: 1999-06-28 00:00:00
+      Maximum high price: 38475.0 in date: 1999-08-02 00:00:00
+
+Symbol: ERNA
+Data: Minimum open price: 1125.0 in date: 1999-01-04 00:00:00
+      Maximum high price: 10375.0 in date: 1999-12-14 00:00:00
+
+Symbol: SLNH
+Data: Minimum open price: 1016.6666870117188 in date: 1999-12-01 00:00:00
+      Maximum high price: 2433.333251953125 in date: 1999-07-13 00:00:00
+
+Symbol: DOMH
+Data: Minimum open price: 1034247.125 in date: 1999-09-08 00:00:00
+      Maximum high price: 1975875.0 in date: 1999-03-29 00:00:00
+
+Symbol: IMNN
+Data: Minimum open price: 9976.7734375 in date: 1999-05-28 00:00:00
+      Maximum high price: 58530.40625 in date: 1999-12-16 00:00:00
+
+Symbol: BCDA
+Data: Minimum open price: 5568.75 in date: 1999-02-19 00:00:00
+      Maximum high price: 74925.0 in date: 1999-07-27 00:00:00
+
+Symbol: TTNP
+Data: Minimum open price: 55939.2265625 in date: 1999-05-14 00:00:00
+      Maximum high price: 387845.3125 in date: 1999-12-30 00:00:00
+
+Symbol: TENX
+Data: Minimum open price: 912000.0 in date: 1999-02-18 00:00:00
+      Maximum high price: 2544000.0 in date: 1999-04-08 00:00:00
+
+Symbol: SNGX
+Data: Minimum open price: 60000.0 in date: 1999-10-29 00:00:00
+      Maximum high price: 150000.0 in date: 1999-12-28 00:00:00
+
+Symbol: BKYI
+Data: Minimum open price: 810.0 in date: 1999-12-16 00:00:00
+      Maximum high price: 6696.0 in date: 1999-01-05 00:00:00
+
+Symbol: AEMD
+Data: Minimum open price: 52500.0 in date: 1999-08-11 00:00:00
+      Maximum high price: 65625.0 in date: 1999-09-27 00:00:00
+
+Symbol: OBLG
+Data: Minimum open price: 69000.0 in date: 1999-09-16 00:00:00
+      Maximum high price: 198000.0 in date: 1999-01-22 00:00:00
+
+Symbol: WINT
+Data: Minimum open price: 13289062.0 in date: 1999-07-22 00:00:00
+      Maximum high price: 45360000.0 in date: 1999-02-05 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:25:51.038387
+Controllo anomalie per il mercato: data_market_nasdaq_symbols
+Symbol: KTOS
+Data: Minimum open price: 316.875 in date: 2000-11-30 00:00:00
+      Maximum high price: 1635.0 in date: 2000-03-06 00:00:00
+
+Symbol: CLDX
+Data: Minimum open price: 405.0 in date: 2000-01-04 00:00:00
+      Maximum high price: 3375.0 in date: 2000-03-07 00:00:00
+
+Symbol: VCEL
+Data: Minimum open price: 115.0 in date: 2000-01-04 00:00:00
+      Maximum high price: 1450.0 in date: 2000-03-07 00:00:00
+
+Symbol: PLUG
+Data: Minimum open price: 94.375 in date: 2000-12-21 00:00:00
+      Maximum high price: 1565.0 in date: 2000-01-24 00:00:00
+
+Symbol: FCEL
+Data: Minimum open price: 24300.0 in date: 2000-01-05 00:00:00
+      Maximum high price: 234900.0 in date: 2000-10-03 00:00:00
+
+Symbol: AGEN
+Data: Minimum open price: 1236.50634765625 in date: 2000-10-13 00:00:00
+      Maximum high price: 7065.7509765625 in date: 2000-03-09 00:00:00
+
+Symbol: XOMA
+Data: Minimum open price: 825.0 in date: 2000-01-05 00:00:00
+      Maximum high price: 4800.0 in date: 2000-03-07 00:00:00
+
+Symbol: GILT
+Data: Minimum open price: 580.0 in date: 2000-12-27 00:00:00
+      Maximum high price: 3630.0 in date: 2000-02-18 00:00:00
+
+Symbol: SMTI
+Data: Minimum open price: 200.0 in date: 2000-01-03 00:00:00
+      Maximum high price: 3700.0 in date: 2000-03-06 00:00:00
+
+Symbol: INO
+Data: Minimum open price: 144.0 in date: 2000-12-22 00:00:00
+      Maximum high price: 2352.0 in date: 2000-03-06 00:00:00
+
+Symbol: SWKH
+Data: Minimum open price: 890.625 in date: 2000-12-28 00:00:00
+      Maximum high price: 17550.0 in date: 2000-03-10 00:00:00
+
+Symbol: ABEO
+Data: Minimum open price: 10156.25 in date: 2000-01-04 00:00:00
+      Maximum high price: 93750.0 in date: 2000-03-07 00:00:00
+
+Symbol: ACHV
+Data: Minimum open price: 18562.5 in date: 2000-12-21 00:00:00
+      Maximum high price: 445500.0 in date: 2000-03-06 00:00:00
+
+Symbol: INSG
+Data: Minimum open price: 1200.0 in date: 2000-11-24 00:00:00
+      Maximum high price: 2437.5 in date: 2000-12-12 00:00:00
+
+Symbol: INVE
+Data: Minimum open price: 240.0 in date: 2000-11-22 00:00:00
+      Maximum high price: 1305.0 in date: 2000-02-25 00:00:00
+
+Symbol: SIFY
+Data: Minimum open price: 87.0 in date: 2000-12-27 00:00:00
+      Maximum high price: 2712.0 in date: 2000-02-24 00:00:00
+
+Symbol: STCN
+Data: Minimum open price: 531.066650390625 in date: 2000-12-21 00:00:00
+      Maximum high price: 15259.9990234375 in date: 2000-01-03 00:00:00
+
+Symbol: QMCO
+Data: Minimum open price: 1420.0 in date: 2000-01-12 00:00:00
+      Maximum high price: 2620.0 in date: 2000-11-10 00:00:00
+
+Symbol: GEG
+Data: Minimum open price: 1449.0 in date: 2000-12-22 00:00:00
+      Maximum high price: 7488.0 in date: 2000-03-10 00:00:00
+
+Symbol: USAU
+Data: Minimum open price: 7020.0 in date: 2000-12-22 00:00:00
+      Maximum high price: 34200.0 in date: 2000-07-17 00:00:00
+
+Symbol: CASI
+Data: Minimum open price: 1870.0 in date: 2000-12-29 00:00:00
+      Maximum high price: 11137.5 in date: 2000-03-01 00:00:00
+
+Symbol: NEON
+Data: Minimum open price: 4218.75 in date: 2000-12-27 00:00:00
+      Maximum high price: 32968.75 in date: 2000-06-12 00:00:00
+
+Symbol: GREE
+Data: Minimum open price: 1283.9674072265625 in date: 2000-11-13 00:00:00
+      Maximum high price: 5679.34765625 in date: 2000-07-19 00:00:00
+
+Symbol: NTWK
+Data: Minimum open price: 226.5625 in date: 2000-10-26 00:00:00
+      Maximum high price: 4000.0 in date: 2000-03-03 00:00:00
+
+Symbol: LSTA
+Data: Minimum open price: 65625.0 in date: 2000-12-28 00:00:00
+      Maximum high price: 637500.0 in date: 2000-01-24 00:00:00
+
+Symbol: NXPL
+Data: Minimum open price: 8859374592.0 in date: 2000-12-22 00:00:00
+      Maximum high price: 80999997440.0 in date: 2000-02-24 00:00:00
+
+Symbol: AWH
+Data: Minimum open price: 1764.84375 in date: 2000-12-01 00:00:00
+      Maximum high price: 5915.625 in date: 2000-10-02 00:00:00
+
+Symbol: APTO
+Data: Minimum open price: 270.0 in date: 2000-12-21 00:00:00
+      Maximum high price: 2205.0 in date: 2000-03-06 00:00:00
+
+Symbol: BOSC
+Data: Minimum open price: 200.0 in date: 2000-12-21 00:00:00
+      Maximum high price: 1490.0 in date: 2000-03-02 00:00:00
+
+Symbol: MBOT
+Data: Minimum open price: 23540.625 in date: 2000-01-04 00:00:00
+      Maximum high price: 324000.0 in date: 2000-03-03 00:00:00
+
+Symbol: VRME
+Data: Minimum open price: 1062.5 in date: 2000-12-15 00:00:00
+      Maximum high price: 2125.0 in date: 2000-12-07 00:00:00
+
+Symbol: SLNH
+Data: Minimum open price: 425.0 in date: 2000-12-21 00:00:00
+      Maximum high price: 6733.33349609375 in date: 2000-03-13 00:00:00
+
+Symbol: ASTC
+Data: Minimum open price: 3046.875 in date: 2000-12-28 00:00:00
+      Maximum high price: 9750.0 in date: 2000-07-12 00:00:00
+
+Symbol: ERNA
+Data: Minimum open price: 1000.0 in date: 2000-12-22 00:00:00
+      Maximum high price: 15500.0 in date: 2000-03-14 00:00:00
+
+Symbol: DOMH
+Data: Minimum open price: 1049683.625 in date: 2000-08-07 00:00:00
+      Maximum high price: 3704765.75 in date: 2000-02-07 00:00:00
+
+Symbol: IMNN
+Data: Minimum open price: 14189.189453125 in date: 2000-12-21 00:00:00
+      Maximum high price: 145439.1875 in date: 2000-03-03 00:00:00
+
+Symbol: EMKR
+Data: Minimum open price: 680.0 in date: 2000-01-03 00:00:00
+      Maximum high price: 3460.0 in date: 2000-02-18 00:00:00
+
+Symbol: EFOI
+Data: Minimum open price: 1706.25 in date: 2000-01-31 00:00:00
+      Maximum high price: 4615.625 in date: 2000-04-12 00:00:00
+
+Symbol: INTZ
+Data: Minimum open price: 242.5 in date: 2000-12-27 00:00:00
+      Maximum high price: 2520.0 in date: 2000-03-10 00:00:00
+
+Symbol: TTNP
+Data: Minimum open price: 313259.65625 in date: 2000-01-07 00:00:00
+      Maximum high price: 1298784.5 in date: 2000-09-29 00:00:00
+
+Symbol: TENX
+Data: Minimum open price: 1104000.0 in date: 2000-01-14 00:00:00
+      Maximum high price: 21600000.0 in date: 2000-03-02 00:00:00
+
+Symbol: BCDA
+Data: Minimum open price: 5568.75 in date: 2000-12-28 00:00:00
+      Maximum high price: 78468.75 in date: 2000-02-23 00:00:00
+
+Symbol: OBLG
+Data: Minimum open price: 105750.0 in date: 2000-12-01 00:00:00
+      Maximum high price: 432000.0 in date: 2000-02-14 00:00:00
+
+Symbol: SNGX
+Data: Minimum open price: 39000.0 in date: 2000-12-29 00:00:00
+      Maximum high price: 477000.0 in date: 2000-03-01 00:00:00
+
+Symbol: BKYI
+Data: Minimum open price: 459.0 in date: 2000-12-26 00:00:00
+      Maximum high price: 2808.0 in date: 2000-02-25 00:00:00
+
+Symbol: AEMD
+Data: Minimum open price: 22500.0 in date: 2000-07-06 00:00:00
+      Maximum high price: 67500.0 in date: 2000-01-10 00:00:00
+
+Symbol: WINT
+Data: Minimum open price: 29058750.0 in date: 2000-01-04 00:00:00
+      Maximum high price: 143167504.0 in date: 2000-03-08 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:25:51.641812
+Controllo anomalie per il mercato: data_market_nasdaq_symbols
+Symbol: CLDX
+Data: Minimum open price: 442.79998779296875 in date: 2001-09-17 00:00:00
+      Maximum high price: 1530.0 in date: 2001-01-30 00:00:00
+
+Symbol: FCEL
+Data: Minimum open price: 46656.0 in date: 2001-09-17 00:00:00
+      Maximum high price: 201830.40625 in date: 2001-05-22 00:00:00
+
+Symbol: AGEN
+Data: Minimum open price: 1280.6673583984375 in date: 2001-01-09 00:00:00
+      Maximum high price: 2517.762451171875 in date: 2001-06-12 00:00:00
+
+Symbol: XOMA
+Data: Minimum open price: 1716.0 in date: 2001-04-09 00:00:00
+      Maximum high price: 5325.0 in date: 2001-06-27 00:00:00
+
+Symbol: SMTI
+Data: Minimum open price: 400.0 in date: 2001-11-23 00:00:00
+      Maximum high price: 2300.0 in date: 2001-01-12 00:00:00
+
+Symbol: SWKH
+Data: Minimum open price: 37.0 in date: 2001-10-01 00:00:00
+      Maximum high price: 1300.0 in date: 2001-01-17 00:00:00
+
+Symbol: ABEO
+Data: Minimum open price: 15562.5 in date: 2001-04-09 00:00:00
+      Maximum high price: 40625.0 in date: 2001-01-25 00:00:00
+
+Symbol: ACHV
+Data: Minimum open price: 22275.0 in date: 2001-01-02 00:00:00
+      Maximum high price: 348480.0 in date: 2001-12-14 00:00:00
+
+Symbol: INSG
+Data: Minimum open price: 52.5 in date: 2001-10-02 00:00:00
+      Maximum high price: 2362.5 in date: 2001-02-06 00:00:00
+
+Symbol: QMCO
+Data: Minimum open price: 1201.5999755859375 in date: 2001-09-27 00:00:00
+      Maximum high price: 2400.0 in date: 2001-01-11 00:00:00
+
+Symbol: GEG
+Data: Minimum open price: 244.0800018310547 in date: 2001-10-04 00:00:00
+      Maximum high price: 2742.75 in date: 2001-01-30 00:00:00
+
+Symbol: USAU
+Data: Minimum open price: 3816.0 in date: 2001-11-02 00:00:00
+      Maximum high price: 13320.0 in date: 2001-01-24 00:00:00
+
+Symbol: CASI
+Data: Minimum open price: 809.5999755859375 in date: 2001-09-18 00:00:00
+      Maximum high price: 3114.375 in date: 2001-01-24 00:00:00
+
+Symbol: NEON
+Data: Minimum open price: 600.0 in date: 2001-12-31 00:00:00
+      Maximum high price: 7187.5 in date: 2001-01-31 00:00:00
+
+Symbol: GREE
+Data: Minimum open price: 297.1014404296875 in date: 2001-10-02 00:00:00
+      Maximum high price: 2925.724609375 in date: 2001-01-02 00:00:00
+
+Symbol: LSTA
+Data: Minimum open price: 28125.0 in date: 2001-04-04 00:00:00
+      Maximum high price: 123000.0 in date: 2001-07-19 00:00:00
+
+Symbol: AWH
+Data: Minimum open price: 310.5 in date: 2001-09-21 00:00:00
+      Maximum high price: 2025.0 in date: 2001-01-02 00:00:00
+
+Symbol: NXPL
+Data: Minimum open price: 1417500032.0 in date: 2001-12-21 00:00:00
+      Maximum high price: 14554687488.0 in date: 2001-01-19 00:00:00
+
+Symbol: VRME
+Data: Minimum open price: 1062.5 in date: 2001-01-02 00:00:00
+      Maximum high price: 3315.0 in date: 2001-11-28 00:00:00
+
+Symbol: MBOT
+Data: Minimum open price: 24046.875 in date: 2001-04-05 00:00:00
+      Maximum high price: 117450.0 in date: 2001-07-23 00:00:00
+
+Symbol: ASTC
+Data: Minimum open price: 900.0 in date: 2001-12-20 00:00:00
+      Maximum high price: 5250.0 in date: 2001-01-04 00:00:00
+
+Symbol: SLNH
+Data: Minimum open price: 480.0 in date: 2001-12-24 00:00:00
+      Maximum high price: 2330.0 in date: 2001-05-21 00:00:00
+
+Symbol: ERNA
+Data: Minimum open price: 900.0 in date: 2001-04-04 00:00:00
+      Maximum high price: 2460.0 in date: 2001-01-31 00:00:00
+
+Symbol: DOMH
+Data: Minimum open price: 1250358.375 in date: 2001-01-02 00:00:00
+      Maximum high price: 2904536.25 in date: 2001-10-29 00:00:00
+
+Symbol: EMKR
+Data: Minimum open price: 320.0 in date: 2001-10-03 00:00:00
+      Maximum high price: 2100.0 in date: 2001-01-12 00:00:00
+
+Symbol: PSTV
+Data: Minimum open price: 303750.0 in date: 2001-09-10 00:00:00
+      Maximum high price: 716625.0 in date: 2001-07-27 00:00:00
+
+Symbol: IMNN
+Data: Minimum open price: 5675.67578125 in date: 2001-10-22 00:00:00
+      Maximum high price: 53209.4609375 in date: 2001-01-26 00:00:00
+
+Symbol: EFOI
+Data: Minimum open price: 1032.5 in date: 2001-12-18 00:00:00
+      Maximum high price: 3062.5 in date: 2001-01-25 00:00:00
+
+Symbol: TTNP
+Data: Minimum open price: 111381.21875 in date: 2001-10-02 00:00:00
+      Maximum high price: 788618.8125 in date: 2001-01-30 00:00:00
+
+Symbol: TENX
+Data: Minimum open price: 1344000.0 in date: 2001-12-31 00:00:00
+      Maximum high price: 5184000.0 in date: 2001-05-04 00:00:00
+
+Symbol: BCDA
+Data: Minimum open price: 1890.0 in date: 2001-10-24 00:00:00
+      Maximum high price: 10631.25 in date: 2001-01-16 00:00:00
+
+Symbol: SNGX
+Data: Minimum open price: 36480.0 in date: 2001-04-26 00:00:00
+      Maximum high price: 84000.0 in date: 2001-03-09 00:00:00
+
+Symbol: PRSO
+Data: Minimum open price: 58960.0 in date: 2001-09-27 00:00:00
+      Maximum high price: 169920.0 in date: 2001-12-06 00:00:00
+
+Symbol: OBLG
+Data: Minimum open price: 40500.0 in date: 2001-04-04 00:00:00
+      Maximum high price: 245280.0 in date: 2001-11-02 00:00:00
+
+Symbol: BKYI
+Data: Minimum open price: 224.63999938964844 in date: 2001-07-20 00:00:00
+      Maximum high price: 1848.9599609375 in date: 2001-12-05 00:00:00
+
+Symbol: WINT
+Data: Minimum open price: 23360400.0 in date: 2001-09-25 00:00:00
+      Maximum high price: 66976876.0 in date: 2001-01-17 00:00:00
+
+Symbol: AEMD
+Data: Minimum open price: 15000.0 in date: 2001-03-02 00:00:00
+      Maximum high price: 27000.0 in date: 2001-11-06 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:25:52.249788
+Controllo anomalie per il mercato: data_market_nasdaq_symbols
+Symbol: FCEL
+Data: Minimum open price: 19915.19921875 in date: 2002-10-10 00:00:00
+      Maximum high price: 98496.0 in date: 2002-01-09 00:00:00
+
+Symbol: AGEN
+Data: Minimum open price: 824.3375854492188 in date: 2002-10-10 00:00:00
+      Maximum high price: 1986.653564453125 in date: 2002-01-08 00:00:00
+
+Symbol: XOMA
+Data: Minimum open price: 951.0 in date: 2002-06-13 00:00:00
+      Maximum high price: 3657.0 in date: 2002-02-12 00:00:00
+
+Symbol: ABEO
+Data: Minimum open price: 7187.5 in date: 2002-11-18 00:00:00
+      Maximum high price: 35875.0 in date: 2002-01-17 00:00:00
+
+Symbol: ACHV
+Data: Minimum open price: 51876.0 in date: 2002-11-04 00:00:00
+      Maximum high price: 340164.0 in date: 2002-01-11 00:00:00
+
+Symbol: RCAT
+Data: Minimum open price: 12600.0 in date: 2002-10-02 00:00:00
+      Maximum high price: 990000.0 in date: 2002-03-22 00:00:00
+
+Symbol: QMCO
+Data: Minimum open price: 232.0 in date: 2002-10-10 00:00:00
+      Maximum high price: 1760.0 in date: 2002-01-07 00:00:00
+
+Symbol: USAU
+Data: Minimum open price: 1468.800048828125 in date: 2002-10-14 00:00:00
+      Maximum high price: 7120.7998046875 in date: 2002-01-07 00:00:00
+
+Symbol: MRKR
+Data: Minimum open price: 1116000.0 in date: 2002-08-15 00:00:00
+      Maximum high price: 6120000.0 in date: 2002-11-14 00:00:00
+
+Symbol: NEON
+Data: Minimum open price: 700.0 in date: 2002-01-03 00:00:00
+      Maximum high price: 2937.5 in date: 2002-04-22 00:00:00
+
+Symbol: LSTA
+Data: Minimum open price: 6000.0 in date: 2002-12-13 00:00:00
+      Maximum high price: 102000.0 in date: 2002-01-09 00:00:00
+
+Symbol: NXPL
+Data: Minimum open price: 202500000.0 in date: 2002-05-16 00:00:00
+      Maximum high price: 2024999936.0 in date: 2002-01-03 00:00:00
+
+Symbol: VRME
+Data: Minimum open price: 637.5 in date: 2002-10-11 00:00:00
+      Maximum high price: 2125.0 in date: 2002-01-22 00:00:00
+
+Symbol: MBOT
+Data: Minimum open price: 8424.0 in date: 2002-10-14 00:00:00
+      Maximum high price: 63990.0 in date: 2002-01-08 00:00:00
+
+Symbol: ASTC
+Data: Minimum open price: 975.0 in date: 2002-09-18 00:00:00
+      Maximum high price: 3960.0 in date: 2002-02-19 00:00:00
+
+Symbol: ERNA
+Data: Minimum open price: 1360.0 in date: 2002-10-09 00:00:00
+      Maximum high price: 3500.0 in date: 2002-04-24 00:00:00
+
+Symbol: PSTV
+Data: Minimum open price: 309375.0 in date: 2002-02-15 00:00:00
+      Maximum high price: 562500.0 in date: 2002-03-11 00:00:00
+
+Symbol: DOMH
+Data: Minimum open price: 1012635.9375 in date: 2002-07-24 00:00:00
+      Maximum high price: 2642733.0 in date: 2002-01-03 00:00:00
+
+Symbol: IMNN
+Data: Minimum open price: 5108.10791015625 in date: 2002-08-02 00:00:00
+      Maximum high price: 13905.4052734375 in date: 2002-01-18 00:00:00
+
+Symbol: BCDA
+Data: Minimum open price: 1539.0 in date: 2002-10-23 00:00:00
+      Maximum high price: 7803.0 in date: 2002-01-08 00:00:00
+
+Symbol: TTNP
+Data: Minimum open price: 25060.7734375 in date: 2002-10-03 00:00:00
+      Maximum high price: 195116.015625 in date: 2002-01-02 00:00:00
+
+Symbol: TENX
+Data: Minimum open price: 1200000.0 in date: 2002-10-30 00:00:00
+      Maximum high price: 4896000.0 in date: 2002-01-11 00:00:00
+
+Symbol: PRSO
+Data: Minimum open price: 56000.0 in date: 2002-10-03 00:00:00
+      Maximum high price: 182160.0 in date: 2002-01-04 00:00:00
+
+Symbol: SNGX
+Data: Minimum open price: 7200.0 in date: 2002-08-01 00:00:00
+      Maximum high price: 100800.0 in date: 2002-01-29 00:00:00
+
+Symbol: OBLG
+Data: Minimum open price: 18480.0 in date: 2002-07-29 00:00:00
+      Maximum high price: 170160.0 in date: 2002-01-03 00:00:00
+
+Symbol: WINT
+Data: Minimum open price: 11907000.0 in date: 2002-07-24 00:00:00
+      Maximum high price: 47514600.0 in date: 2002-01-03 00:00:00
+
+Symbol: BKYI
+Data: Minimum open price: 449.2799987792969 in date: 2002-08-28 00:00:00
+      Maximum high price: 2125.43994140625 in date: 2002-01-25 00:00:00
+
+Symbol: AEMD
+Data: Minimum open price: 1125.0 in date: 2002-12-31 00:00:00
+      Maximum high price: 17250.0 in date: 2002-02-04 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:25:52.874311
+Controllo anomalie per il mercato: data_market_nasdaq_symbols
+Symbol: FCEL
+Data: Minimum open price: 22075.19921875 in date: 2003-04-14 00:00:00
+      Maximum high price: 76852.796875 in date: 2003-11-06 00:00:00
+
+Symbol: XOMA
+Data: Minimum open price: 876.0 in date: 2003-02-14 00:00:00
+      Maximum high price: 3210.0 in date: 2003-09-10 00:00:00
+
+Symbol: AGEN
+Data: Minimum open price: 836.1138305664062 in date: 2003-03-17 00:00:00
+      Maximum high price: 1884.2001953125 in date: 2003-06-12 00:00:00
+
+Symbol: ABEO
+Data: Minimum open price: 9625.0 in date: 2003-01-02 00:00:00
+      Maximum high price: 34375.0 in date: 2003-12-09 00:00:00
+
+Symbol: ACHV
+Data: Minimum open price: 76824.0 in date: 2003-03-07 00:00:00
+      Maximum high price: 255420.0 in date: 2003-09-24 00:00:00
+
+Symbol: RCAT
+Data: Minimum open price: 5400.0 in date: 2003-03-25 00:00:00
+      Maximum high price: 54000.0 in date: 2003-08-11 00:00:00
+
+SIMBOLO: CODA
+  Data: 2003-09-30 00:00:00 - open_i=0.8399999737739563 - high_i=0.8399999737739563
+  Data next: 2003-10-01 00:00:00 - high_next=126.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=125.16 (14900.00%)
+
+------------------------------------------------------
+Symbol: USAU
+Data: Minimum open price: 1526.4000244140625 in date: 2003-03-13 00:00:00
+      Maximum high price: 3628.800048828125 in date: 2003-11-10 00:00:00
+
+Symbol: MRKR
+Data: Minimum open price: 255000.0 in date: 2003-12-11 00:00:00
+      Maximum high price: 3075000.0 in date: 2003-02-24 00:00:00
+
+Symbol: NEON
+Data: Minimum open price: 700.0 in date: 2003-01-29 00:00:00
+      Maximum high price: 10625.0 in date: 2003-12-01 00:00:00
+
+Symbol: GREE
+Data: Minimum open price: 282.60870361328125 in date: 2003-03-06 00:00:00
+      Maximum high price: 2210.14501953125 in date: 2003-12-03 00:00:00
+
+Symbol: PLUR
+Data: Minimum open price: 8960.0 in date: 2003-12-18 00:00:00
+      Maximum high price: 30400.0 in date: 2003-06-30 00:00:00
+
+Symbol: LSTA
+Data: Minimum open price: 4500.0 in date: 2003-01-27 00:00:00
+      Maximum high price: 51000.0 in date: 2003-09-25 00:00:00
+
+Symbol: NXPL
+Data: Minimum open price: 202500000.0 in date: 2003-01-02 00:00:00
+      Maximum high price: 1417500032.0 in date: 2003-07-30 00:00:00
+
+Symbol: AWH
+Data: Minimum open price: 487.5 in date: 2003-01-02 00:00:00
+      Maximum high price: 2095.5 in date: 2003-10-03 00:00:00
+
+Symbol: MEIP
+Data: Minimum open price: 7500.0 in date: 2003-12-18 00:00:00
+      Maximum high price: 15588.0 in date: 2003-12-24 00:00:00
+
+Symbol: ASTC
+Data: Minimum open price: 1020.0 in date: 2003-02-28 00:00:00
+      Maximum high price: 2745.0 in date: 2003-12-04 00:00:00
+
+Symbol: MBOT
+Data: Minimum open price: 11826.0 in date: 2003-04-02 00:00:00
+      Maximum high price: 50544.0 in date: 2003-11-07 00:00:00
+
+Symbol: SLNH
+Data: Minimum open price: 320.0 in date: 2003-01-03 00:00:00
+      Maximum high price: 1378.0 in date: 2003-10-31 00:00:00
+
+Symbol: DOMH
+Data: Minimum open price: 1313956.875 in date: 2003-02-11 00:00:00
+      Maximum high price: 2296954.75 in date: 2003-08-26 00:00:00
+
+Symbol: PSTV
+Data: Minimum open price: 0.0 in date: 2003-10-22 00:00:00
+      Maximum high price: 502875.0 in date: 2003-01-21 00:00:00
+
+Symbol: IMNN
+Data: Minimum open price: 5533.78369140625 in date: 2003-03-07 00:00:00
+      Maximum high price: 25540.541015625 in date: 2003-06-19 00:00:00
+
+Symbol: OTRK
+Data: Minimum open price: 1566000.0 in date: 2003-12-29 00:00:00
+      Maximum high price: 1624320.0 in date: 2003-12-15 00:00:00
+
+Symbol: ERNA
+Data: Minimum open price: 1960.0 in date: 2003-01-30 00:00:00
+      Maximum high price: 8220.0 in date: 2003-11-24 00:00:00
+
+Symbol: EFOI
+Data: Minimum open price: 1053.5 in date: 2003-04-04 00:00:00
+      Maximum high price: 2887.5 in date: 2003-12-01 00:00:00
+
+Symbol: BCDA
+Data: Minimum open price: 675.0 in date: 2003-03-27 00:00:00
+      Maximum high price: 6210.0 in date: 2003-10-08 00:00:00
+
+Symbol: TTNP
+Data: Minimum open price: 27646.408203125 in date: 2003-02-20 00:00:00
+      Maximum high price: 79558.0078125 in date: 2003-10-17 00:00:00
+
+Symbol: KZIA
+Data: Minimum open price: 497.03753662109375 in date: 2003-03-11 00:00:00
+      Maximum high price: 2100.06591796875 in date: 2003-12-08 00:00:00
+
+Symbol: TENX
+Data: Minimum open price: 1228800.0 in date: 2003-03-31 00:00:00
+      Maximum high price: 8640000.0 in date: 2003-12-04 00:00:00
+
+Symbol: OBLG
+Data: Minimum open price: 31200.0 in date: 2003-11-26 00:00:00
+      Maximum high price: 88800.0 in date: 2003-08-21 00:00:00
+
+Symbol: SNGX
+Data: Minimum open price: 22560.0 in date: 2003-01-02 00:00:00
+      Maximum high price: 82080.0 in date: 2003-01-31 00:00:00
+
+Symbol: AYRO
+Data: Minimum open price: 1649894.375 in date: 2003-12-11 00:00:00
+      Maximum high price: 3069158.5 in date: 2003-10-13 00:00:00
+
+Symbol: PRSO
+Data: Minimum open price: 46640.0 in date: 2003-04-23 00:00:00
+      Maximum high price: 104960.0 in date: 2003-07-14 00:00:00
+
+Symbol: WINT
+Data: Minimum open price: 17123400.0 in date: 2003-03-10 00:00:00
+      Maximum high price: 121905000.0 in date: 2003-12-31 00:00:00
+
+Symbol: APDN
+Data: Minimum open price: 117600.0 in date: 2003-08-14 00:00:00
+      Maximum high price: 169920.0 in date: 2003-12-12 00:00:00
+
+Symbol: BKYI
+Data: Minimum open price: 535.6799926757812 in date: 2003-05-28 00:00:00
+      Maximum high price: 2505.60009765625 in date: 2003-12-12 00:00:00
+
+Symbol: AEMD
+Data: Minimum open price: 1425.0 in date: 2003-02-13 00:00:00
+      Maximum high price: 7575.0 in date: 2003-09-23 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:25:53.512348
+Controllo anomalie per il mercato: data_market_nasdaq_symbols
+Symbol: FCEL
+Data: Minimum open price: 32356.80078125 in date: 2004-08-13 00:00:00
+      Maximum high price: 87696.0 in date: 2004-04-20 00:00:00
+
+Symbol: XOMA
+Data: Minimum open price: 585.0 in date: 2004-11-10 00:00:00
+      Maximum high price: 2313.0 in date: 2004-01-09 00:00:00
+
+Symbol: ABEO
+Data: Minimum open price: 15750.0 in date: 2004-08-23 00:00:00
+      Maximum high price: 50000.0 in date: 2004-04-12 00:00:00
+
+Symbol: ACHV
+Data: Minimum open price: 90684.0 in date: 2004-11-10 00:00:00
+      Maximum high price: 348876.0 in date: 2004-02-19 00:00:00
+
+Symbol: RCAT
+Data: Minimum open price: 3600.0 in date: 2004-12-20 00:00:00
+      Maximum high price: 66600.0 in date: 2004-04-26 00:00:00
+
+Symbol: USAU
+Data: Minimum open price: 2966.39990234375 in date: 2004-01-09 00:00:00
+      Maximum high price: 7480.7998046875 in date: 2004-06-07 00:00:00
+
+Symbol: NCTY
+Data: Minimum open price: 5715.0 in date: 2004-12-15 00:00:00
+      Maximum high price: 7575.0 in date: 2004-12-20 00:00:00
+
+Symbol: MRKR
+Data: Minimum open price: 69000.0 in date: 2004-11-10 00:00:00
+      Maximum high price: 450000.0 in date: 2004-03-09 00:00:00
+
+Symbol: NEON
+Data: Minimum open price: 3312.5 in date: 2004-09-22 00:00:00
+      Maximum high price: 9500.0 in date: 2004-01-26 00:00:00
+
+Symbol: GREE
+Data: Minimum open price: 715.9420166015625 in date: 2004-10-26 00:00:00
+      Maximum high price: 2469.565185546875 in date: 2004-01-20 00:00:00
+
+Symbol: PLUR
+Data: Minimum open price: 2720.0 in date: 2004-07-22 00:00:00
+      Maximum high price: 17920.0 in date: 2004-03-04 00:00:00
+
+Symbol: LSTA
+Data: Minimum open price: 7500.0 in date: 2004-11-04 00:00:00
+      Maximum high price: 45000.0 in date: 2004-06-03 00:00:00
+
+Symbol: ONCT
+Data: Minimum open price: 11914.01171875 in date: 2004-07-23 00:00:00
+      Maximum high price: 22400.021484375 in date: 2004-02-03 00:00:00
+
+Symbol: BIMI
+Data: Minimum open price: 6562.60107421875 in date: 2004-12-14 00:00:00
+      Maximum high price: 13138.328125 in date: 2004-07-23 00:00:00
+
+Symbol: NXPL
+Data: Minimum open price: 139218752.0 in date: 2004-11-29 00:00:00
+      Maximum high price: 683437504.0 in date: 2004-05-28 00:00:00
+
+Symbol: AWH
+Data: Minimum open price: 397.5 in date: 2004-08-12 00:00:00
+      Maximum high price: 1752.0 in date: 2004-01-27 00:00:00
+
+Symbol: MEIP
+Data: Minimum open price: 6960.0 in date: 2004-08-13 00:00:00
+      Maximum high price: 15720.0 in date: 2004-01-09 00:00:00
+
+Symbol: VRME
+Data: Minimum open price: 212.5 in date: 2004-11-17 00:00:00
+      Maximum high price: 1997.5 in date: 2004-01-05 00:00:00
+
+Symbol: MBOT
+Data: Minimum open price: 21060.0 in date: 2004-05-25 00:00:00
+      Maximum high price: 78894.0 in date: 2004-10-25 00:00:00
+
+Symbol: ASTC
+Data: Minimum open price: 1425.0 in date: 2004-10-14 00:00:00
+      Maximum high price: 7215.0 in date: 2004-04-29 00:00:00
+
+Symbol: DOMH
+Data: Minimum open price: 642159.375 in date: 2004-10-13 00:00:00
+      Maximum high price: 1926478.125 in date: 2004-01-14 00:00:00
+
+Symbol: PSTV
+Data: Minimum open price: 0.0 in date: 2004-01-07 00:00:00
+      Maximum high price: 506250.0 in date: 2004-05-06 00:00:00
+
+Symbol: OTRK
+Data: Minimum open price: 421200.0 in date: 2004-07-29 00:00:00
+      Maximum high price: 1846800.0 in date: 2004-01-30 00:00:00
+
+Symbol: IMNN
+Data: Minimum open price: 5959.45947265625 in date: 2004-11-10 00:00:00
+      Maximum high price: 29797.296875 in date: 2004-02-19 00:00:00
+
+Symbol: ERNA
+Data: Minimum open price: 3500.0 in date: 2004-08-11 00:00:00
+      Maximum high price: 8500.0 in date: 2004-01-07 00:00:00
+
+Symbol: EFOI
+Data: Minimum open price: 2215.5 in date: 2004-01-06 00:00:00
+      Maximum high price: 3832.5 in date: 2004-06-28 00:00:00
+
+Symbol: NURO
+Data: Minimum open price: 672768.0 in date: 2004-08-13 00:00:00
+      Maximum high price: 1155686.375 in date: 2004-12-31 00:00:00
+
+Symbol: TTNP
+Data: Minimum open price: 37988.94921875 in date: 2004-08-10 00:00:00
+      Maximum high price: 117149.171875 in date: 2004-03-25 00:00:00
+
+Symbol: BCDA
+Data: Minimum open price: 810.0 in date: 2004-07-01 00:00:00
+      Maximum high price: 5940.0 in date: 2004-01-05 00:00:00
+
+Symbol: AYRO
+Data: Minimum open price: 691891.1875 in date: 2004-12-15 00:00:00
+      Maximum high price: 2554675.25 in date: 2004-01-06 00:00:00
+
+Symbol: TENX
+Data: Minimum open price: 2064000.0 in date: 2004-12-13 00:00:00
+      Maximum high price: 7488000.0 in date: 2004-01-05 00:00:00
+
+Symbol: PRSO
+Data: Minimum open price: 30960.0 in date: 2004-08-05 00:00:00
+      Maximum high price: 107600.0 in date: 2004-04-05 00:00:00
+
+Symbol: SNGX
+Data: Minimum open price: 18720.0 in date: 2004-07-21 00:00:00
+      Maximum high price: 75840.0 in date: 2004-02-04 00:00:00
+
+Symbol: OBLG
+Data: Minimum open price: 22080.0 in date: 2004-10-04 00:00:00
+      Maximum high price: 77040.0 in date: 2004-01-26 00:00:00
+
+Symbol: CYCC
+Data: Minimum open price: 521640.0 in date: 2004-10-29 00:00:00
+      Maximum high price: 2142000.0 in date: 2004-03-16 00:00:00
+
+Symbol: BKYI
+Data: Minimum open price: 1296.0 in date: 2004-11-09 00:00:00
+      Maximum high price: 5184.0 in date: 2004-04-12 00:00:00
+
+Symbol: WINT
+Data: Minimum open price: 66565800.0 in date: 2004-08-11 00:00:00
+      Maximum high price: 157626000.0 in date: 2004-03-08 00:00:00
+
+Symbol: APDN
+Data: Minimum open price: 20160.0 in date: 2004-11-03 00:00:00
+      Maximum high price: 170400.0 in date: 2004-02-02 00:00:00
+
+Symbol: AEMD
+Data: Minimum open price: 2775.0 in date: 2004-01-02 00:00:00
+      Maximum high price: 31875.0 in date: 2004-03-09 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:25:54.202170
+Controllo anomalie per il mercato: data_market_nasdaq_symbols
+Symbol: GYRE
+Data: Minimum open price: 8426.25 in date: 2006-09-11 00:00:00
+      Maximum high price: 15435.0 in date: 2006-12-27 00:00:00
+
+Symbol: FCEL
+Data: Minimum open price: 25963.19921875 in date: 2006-12-20 00:00:00
+      Maximum high price: 64800.0 in date: 2006-04-25 00:00:00
+
+Symbol: ESEA
+Data: Minimum open price: 460.0 in date: 2006-11-20 00:00:00
+      Maximum high price: 1514.4000244140625 in date: 2006-05-05 00:00:00
+
+Symbol: ABEO
+Data: Minimum open price: 500.0 in date: 2006-06-06 00:00:00
+      Maximum high price: 3750.0 in date: 2006-12-14 00:00:00
+
+Symbol: ACHV
+Data: Minimum open price: 169488.0 in date: 2006-07-19 00:00:00
+      Maximum high price: 274032.0 in date: 2006-03-21 00:00:00
+
+Symbol: CLRB
+Data: Minimum open price: 1897200.0 in date: 2006-11-15 00:00:00
+      Maximum high price: 6885000.0 in date: 2006-02-07 00:00:00
+
+Symbol: ALTO
+Data: Minimum open price: 1059.449951171875 in date: 2006-01-18 00:00:00
+      Maximum high price: 4672.5 in date: 2006-05-11 00:00:00
+
+Symbol: RCAT
+Data: Minimum open price: 7200.0 in date: 2006-07-27 00:00:00
+      Maximum high price: 30600.0 in date: 2006-03-09 00:00:00
+
+Symbol: USAU
+Data: Minimum open price: 2887.199951171875 in date: 2006-08-29 00:00:00
+      Maximum high price: 4392.0 in date: 2006-03-20 00:00:00
+
+Symbol: CREX
+Data: Minimum open price: 1665.0 in date: 2006-11-27 00:00:00
+      Maximum high price: 3451.5 in date: 2006-11-30 00:00:00
+
+Symbol: NCTY
+Data: Minimum open price: 4650.0 in date: 2006-01-03 00:00:00
+      Maximum high price: 9861.0 in date: 2006-12-28 00:00:00
+
+Symbol: MRKR
+Data: Minimum open price: 21000.0 in date: 2006-12-19 00:00:00
+      Maximum high price: 105000.0 in date: 2006-01-09 00:00:00
+
+Symbol: LTBR
+Data: Minimum open price: 342.0 in date: 2006-01-03 00:00:00
+      Maximum high price: 1584.0 in date: 2006-01-31 00:00:00
+
+Symbol: NEON
+Data: Minimum open price: 400.0 in date: 2006-11-29 00:00:00
+      Maximum high price: 2250.0 in date: 2006-01-17 00:00:00
+
+Symbol: PLUR
+Data: Minimum open price: 160.0 in date: 2006-11-22 00:00:00
+      Maximum high price: 1760.0 in date: 2006-01-12 00:00:00
+
+Symbol: LSTA
+Data: Minimum open price: 6000.0 in date: 2006-07-27 00:00:00
+      Maximum high price: 15150.0 in date: 2006-09-29 00:00:00
+
+Symbol: ONCT
+Data: Minimum open price: 10612.0107421875 in date: 2006-01-03 00:00:00
+      Maximum high price: 26236.025390625 in date: 2006-12-21 00:00:00
+
+Symbol: VIRX
+Data: Minimum open price: 5204.21044921875 in date: 2006-12-13 00:00:00
+      Maximum high price: 9347.3681640625 in date: 2006-03-28 00:00:00
+
+Symbol: BIMI
+Data: Minimum open price: 191.2501983642578 in date: 2006-11-09 00:00:00
+      Maximum high price: 3937.560791015625 in date: 2006-03-31 00:00:00
+
+Symbol: MEIP
+Data: Minimum open price: 3024.0 in date: 2006-06-08 00:00:00
+      Maximum high price: 8748.0 in date: 2006-01-10 00:00:00
+
+Symbol: NXPL
+Data: Minimum open price: 11137500.0 in date: 2006-12-29 00:00:00
+      Maximum high price: 131625000.0 in date: 2006-01-03 00:00:00
+
+Symbol: DLPN
+Data: Minimum open price: 1920.0 in date: 2006-11-02 00:00:00
+      Maximum high price: 3060.0 in date: 2006-12-06 00:00:00
+
+Symbol: ASTC
+Data: Minimum open price: 855.0 in date: 2006-11-03 00:00:00
+      Maximum high price: 2115.0 in date: 2006-06-02 00:00:00
+
+Symbol: MBOT
+Data: Minimum open price: 29160.0 in date: 2006-06-20 00:00:00
+      Maximum high price: 65934.0 in date: 2006-02-01 00:00:00
+
+Symbol: DOMH
+Data: Minimum open price: 301320.9375 in date: 2006-08-14 00:00:00
+      Maximum high price: 968178.75 in date: 2006-01-10 00:00:00
+
+Symbol: SSKN
+Data: Minimum open price: 2370.0 in date: 2006-08-31 00:00:00
+      Maximum high price: 4460.0 in date: 2006-06-07 00:00:00
+
+Symbol: CNVS
+Data: Minimum open price: 1636.0 in date: 2006-08-25 00:00:00
+      Maximum high price: 2946.0 in date: 2006-05-08 00:00:00
+
+Symbol: PSTV
+Data: Minimum open price: 461250.0 in date: 2006-11-22 00:00:00
+      Maximum high price: 1035000.0 in date: 2006-03-30 00:00:00
+
+Symbol: IMNN
+Data: Minimum open price: 1712.162109375 in date: 2006-12-28 00:00:00
+      Maximum high price: 5581.0810546875 in date: 2006-04-07 00:00:00
+
+Symbol: OTRK
+Data: Minimum open price: 1054080.0 in date: 2006-07-28 00:00:00
+      Maximum high price: 2112480.0 in date: 2006-04-03 00:00:00
+
+Symbol: ERNA
+Data: Minimum open price: 2300.0 in date: 2006-08-17 00:00:00
+      Maximum high price: 3840.0 in date: 2006-05-09 00:00:00
+
+Symbol: MTEM
+Data: Minimum open price: 1415.6986083984375 in date: 2006-07-25 00:00:00
+      Maximum high price: 16810.18359375 in date: 2006-04-17 00:00:00
+
+Symbol: EFOI
+Data: Minimum open price: 1995.0 in date: 2006-11-28 00:00:00
+      Maximum high price: 3265.5 in date: 2006-01-30 00:00:00
+
+Symbol: NURO
+Data: Minimum open price: 1232179.25 in date: 2006-12-20 00:00:00
+      Maximum high price: 3796070.5 in date: 2006-04-21 00:00:00
+
+Symbol: TTNP
+Data: Minimum open price: 28640.884765625 in date: 2006-01-04 00:00:00
+      Maximum high price: 99248.6171875 in date: 2006-03-03 00:00:00
+
+Symbol: MIND
+Data: Minimum open price: 975.0 in date: 2006-10-04 00:00:00
+      Maximum high price: 2618.0 in date: 2006-01-31 00:00:00
+
+Symbol: TENX
+Data: Minimum open price: 614400.0 in date: 2006-10-12 00:00:00
+      Maximum high price: 2448000.0 in date: 2006-04-13 00:00:00
+
+Symbol: SNGX
+Data: Minimum open price: 10080.0 in date: 2006-08-18 00:00:00
+      Maximum high price: 33120.0 in date: 2006-01-31 00:00:00
+
+Symbol: SONN
+Data: Minimum open price: 3203200.0 in date: 2006-11-14 00:00:00
+      Maximum high price: 8008000.0 in date: 2006-10-31 00:00:00
+
+Symbol: AYRO
+Data: Minimum open price: 990528.0 in date: 2006-08-11 00:00:00
+      Maximum high price: 1889395.25 in date: 2006-01-27 00:00:00
+
+Symbol: CYCC
+Data: Minimum open price: 111636.0 in date: 2006-09-07 00:00:00
+      Maximum high price: 219240.0 in date: 2006-01-10 00:00:00
+
+Symbol: PRSO
+Data: Minimum open price: 42240.0 in date: 2006-01-11 00:00:00
+      Maximum high price: 79680.0 in date: 2006-12-05 00:00:00
+
+Symbol: OBLG
+Data: Minimum open price: 6000.0 in date: 2006-11-20 00:00:00
+      Maximum high price: 18000.0 in date: 2006-03-08 00:00:00
+
+Symbol: SPCB
+Data: Minimum open price: 2600.020751953125 in date: 2006-06-20 00:00:00
+      Maximum high price: 6250.0498046875 in date: 2006-02-02 00:00:00
+
+Symbol: APDN
+Data: Minimum open price: 3840.0 in date: 2006-07-25 00:00:00
+      Maximum high price: 17760.0 in date: 2006-01-03 00:00:00
+
+Symbol: AEMD
+Data: Minimum open price: 1575.0 in date: 2006-11-20 00:00:00
+      Maximum high price: 7350.0 in date: 2006-03-17 00:00:00
+
+Symbol: WINT
+Data: Minimum open price: 14628600.0 in date: 2006-06-14 00:00:00
+      Maximum high price: 97524000.0 in date: 2006-02-23 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:25:54.880509
+Controllo anomalie per il mercato: data_market_nasdaq_symbols
+Symbol: GYRE
+Data: Minimum open price: 12647.25 in date: 2007-03-22 00:00:00
+      Maximum high price: 19451.25 in date: 2007-07-27 00:00:00
+
+Symbol: FCEL
+Data: Minimum open price: 25401.599609375 in date: 2007-01-19 00:00:00
+      Maximum high price: 56764.80078125 in date: 2007-12-21 00:00:00
+
+Symbol: ESEA
+Data: Minimum open price: 561.5999755859375 in date: 2007-01-05 00:00:00
+      Maximum high price: 1721.5999755859375 in date: 2007-10-16 00:00:00
+
+Symbol: ABEO
+Data: Minimum open price: 2875.0 in date: 2007-12-14 00:00:00
+      Maximum high price: 13325.0 in date: 2007-02-14 00:00:00
+
+Symbol: ACHV
+Data: Minimum open price: 16236.0 in date: 2007-11-15 00:00:00
+      Maximum high price: 247500.0 in date: 2007-06-05 00:00:00
+
+Symbol: CAPR
+Data: Minimum open price: 575.0 in date: 2007-07-30 00:00:00
+      Maximum high price: 3500.0 in date: 2007-10-24 00:00:00
+
+Symbol: CLRB
+Data: Minimum open price: 1315800.0 in date: 2007-11-28 00:00:00
+      Maximum high price: 4284000.0 in date: 2007-04-03 00:00:00
+
+Symbol: ALTO
+Data: Minimum open price: 451.5 in date: 2007-11-23 00:00:00
+      Maximum high price: 1972.949951171875 in date: 2007-01-23 00:00:00
+
+Symbol: RCAT
+Data: Minimum open price: 1800.0 in date: 2007-11-19 00:00:00
+      Maximum high price: 12600.0 in date: 2007-01-10 00:00:00
+
+Symbol: USAU
+Data: Minimum open price: 2160.0 in date: 2007-11-02 00:00:00
+      Maximum high price: 3441.60009765625 in date: 2007-02-02 00:00:00
+
+Symbol: CREX
+Data: Minimum open price: 1188.0 in date: 2007-11-23 00:00:00
+      Maximum high price: 4711.5 in date: 2007-04-19 00:00:00
+
+Symbol: NCTY
+Data: Minimum open price: 5925.0 in date: 2007-11-20 00:00:00
+      Maximum high price: 15732.0 in date: 2007-07-16 00:00:00
+
+Symbol: MRKR
+Data: Minimum open price: 16800.0 in date: 2007-12-21 00:00:00
+      Maximum high price: 120000.0 in date: 2007-07-13 00:00:00
+
+Symbol: NEON
+Data: Minimum open price: 412.5 in date: 2007-01-17 00:00:00
+      Maximum high price: 2075.0 in date: 2007-07-11 00:00:00
+
+Symbol: PLUR
+Data: Minimum open price: 260.0 in date: 2007-12-28 00:00:00
+      Maximum high price: 2400.0 in date: 2007-04-16 00:00:00
+
+Symbol: LSTA
+Data: Minimum open price: 2130.0 in date: 2007-12-13 00:00:00
+      Maximum high price: 12000.0 in date: 2007-01-03 00:00:00
+
+Symbol: VIRX
+Data: Minimum open price: 2096.842041015625 in date: 2007-12-28 00:00:00
+      Maximum high price: 6947.36865234375 in date: 2007-01-10 00:00:00
+
+Symbol: ONCT
+Data: Minimum open price: 19446.01953125 in date: 2007-11-27 00:00:00
+      Maximum high price: 33194.03125 in date: 2007-04-17 00:00:00
+
+Symbol: TXMD
+Data: Minimum open price: 1683.3333740234375 in date: 2007-12-12 00:00:00
+      Maximum high price: 4166.66650390625 in date: 2007-05-09 00:00:00
+
+Symbol: NXPL
+Data: Minimum open price: 7593750.0 in date: 2007-03-08 00:00:00
+      Maximum high price: 50625000.0 in date: 2007-07-19 00:00:00
+
+Symbol: MEIP
+Data: Minimum open price: 2856.0 in date: 2007-08-16 00:00:00
+      Maximum high price: 5880.0 in date: 2007-01-19 00:00:00
+
+Symbol: DLPN
+Data: Minimum open price: 260.0 in date: 2007-09-06 00:00:00
+      Maximum high price: 15000.0 in date: 2007-01-05 00:00:00
+
+Symbol: ASTC
+Data: Minimum open price: 196.5 in date: 2007-11-29 00:00:00
+      Maximum high price: 1845.0 in date: 2007-01-31 00:00:00
+
+Symbol: MBOT
+Data: Minimum open price: 23976.0 in date: 2007-12-31 00:00:00
+      Maximum high price: 58806.0 in date: 2007-01-09 00:00:00
+
+Symbol: CNVS
+Data: Minimum open price: 606.0 in date: 2007-11-13 00:00:00
+      Maximum high price: 1936.0 in date: 2007-07-17 00:00:00
+
+Symbol: DOMH
+Data: Minimum open price: 274152.65625 in date: 2007-12-28 00:00:00
+      Maximum high price: 778000.8125 in date: 2007-03-30 00:00:00
+
+Symbol: SSKN
+Data: Minimum open price: 2080.0 in date: 2007-11-21 00:00:00
+      Maximum high price: 3730.0 in date: 2007-06-14 00:00:00
+
+Symbol: BLIN
+Data: Minimum open price: 3750.0 in date: 2007-11-09 00:00:00
+      Maximum high price: 6362.5 in date: 2007-07-02 00:00:00
+
+Symbol: PSTV
+Data: Minimum open price: 518625.0 in date: 2007-03-15 00:00:00
+      Maximum high price: 787500.0 in date: 2007-01-03 00:00:00
+
+Symbol: OTRK
+Data: Minimum open price: 544320.0 in date: 2007-12-14 00:00:00
+      Maximum high price: 2263680.0 in date: 2007-01-18 00:00:00
+
+Symbol: ERNA
+Data: Minimum open price: 1000.0 in date: 2007-12-19 00:00:00
+      Maximum high price: 3260.0 in date: 2007-01-16 00:00:00
+
+Symbol: IMNN
+Data: Minimum open price: 1835.1351318359375 in date: 2007-01-03 00:00:00
+      Maximum high price: 7255.4052734375 in date: 2007-05-29 00:00:00
+
+Symbol: MTEM
+Data: Minimum open price: 504.8995056152344 in date: 2007-11-13 00:00:00
+      Maximum high price: 4058.99609375 in date: 2007-02-22 00:00:00
+
+Symbol: EFOI
+Data: Minimum open price: 1715.0 in date: 2007-08-29 00:00:00
+      Maximum high price: 3482.5 in date: 2007-10-15 00:00:00
+
+Symbol: NURO
+Data: Minimum open price: 668160.0 in date: 2007-08-20 00:00:00
+      Maximum high price: 1412812.75 in date: 2007-01-03 00:00:00
+
+Symbol: TTNP
+Data: Minimum open price: 29834.25390625 in date: 2007-12-20 00:00:00
+      Maximum high price: 66828.7265625 in date: 2007-01-03 00:00:00
+
+Symbol: BCDA
+Data: Minimum open price: 972.0 in date: 2007-01-25 00:00:00
+      Maximum high price: 10044.0 in date: 2007-10-02 00:00:00
+
+Symbol: MIND
+Data: Minimum open price: 1138.0 in date: 2007-01-10 00:00:00
+      Maximum high price: 2198.0 in date: 2007-10-29 00:00:00
+
+Symbol: TENX
+Data: Minimum open price: 816000.0 in date: 2007-09-21 00:00:00
+      Maximum high price: 3648000.0 in date: 2007-12-26 00:00:00
+
+Symbol: AYRO
+Data: Minimum open price: 1377868.75 in date: 2007-12-31 00:00:00
+      Maximum high price: 2106720.0 in date: 2007-07-09 00:00:00
+
+Symbol: SONN
+Data: Minimum open price: 3331328.0 in date: 2007-12-31 00:00:00
+      Maximum high price: 7047040.0 in date: 2007-01-03 00:00:00
+
+Symbol: PALI
+Data: Minimum open price: 2679300.0 in date: 2007-08-08 00:00:00
+      Maximum high price: 4878900.0 in date: 2007-04-27 00:00:00
+
+Symbol: SNGX
+Data: Minimum open price: 7200.0 in date: 2007-11-21 00:00:00
+      Maximum high price: 45600.0 in date: 2007-04-25 00:00:00
+
+Symbol: CYCC
+Data: Minimum open price: 125496.0 in date: 2007-11-16 00:00:00
+      Maximum high price: 239400.0 in date: 2007-06-04 00:00:00
+
+Symbol: OBLG
+Data: Minimum open price: 8880.0 in date: 2007-01-03 00:00:00
+      Maximum high price: 20640.0 in date: 2007-09-24 00:00:00
+
+Symbol: PRSO
+Data: Minimum open price: 38320.0 in date: 2007-12-19 00:00:00
+      Maximum high price: 77920.0 in date: 2007-01-05 00:00:00
+
+Symbol: SNOA
+Data: Minimum open price: 24003.0 in date: 2007-12-27 00:00:00
+      Maximum high price: 72324.0 in date: 2007-07-17 00:00:00
+
+Symbol: SPCB
+Data: Minimum open price: 1232.5 in date: 2007-05-14 00:00:00
+      Maximum high price: 5250.0419921875 in date: 2007-04-26 00:00:00
+
+Symbol: AEMD
+Data: Minimum open price: 1950.0 in date: 2007-01-10 00:00:00
+      Maximum high price: 6600.0 in date: 2007-07-23 00:00:00
+
+Symbol: WINT
+Data: Minimum open price: 22566600.0 in date: 2007-03-07 00:00:00
+      Maximum high price: 42525000.0 in date: 2007-05-14 00:00:00
+
+Symbol: APDN
+Data: Minimum open price: 3840.0 in date: 2007-09-25 00:00:00
+      Maximum high price: 13440.0 in date: 2007-02-15 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:25:55.575917
+Controllo anomalie per il mercato: data_market_nasdaq_symbols
+Symbol: GYRE
+Data: Minimum open price: 2614.5 in date: 2008-12-02 00:00:00
+      Maximum high price: 15923.25 in date: 2008-08-15 00:00:00
+
+Symbol: FCEL
+Data: Minimum open price: 11016.0 in date: 2008-11-21 00:00:00
+      Maximum high price: 44798.3984375 in date: 2008-01-03 00:00:00
+
+Symbol: ESEA
+Data: Minimum open price: 264.0 in date: 2008-11-21 00:00:00
+      Maximum high price: 1399.199951171875 in date: 2008-05-19 00:00:00
+
+Symbol: SHIP
+Data: Minimum open price: 586800.0 in date: 2008-10-30 00:00:00
+      Maximum high price: 1809000.0 in date: 2008-05-22 00:00:00
+
+Symbol: ABEO
+Data: Minimum open price: 1000.0 in date: 2008-11-25 00:00:00
+      Maximum high price: 4812.5 in date: 2008-05-06 00:00:00
+
+Symbol: ACHV
+Data: Minimum open price: 4664.0 in date: 2008-10-10 00:00:00
+      Maximum high price: 22572.0 in date: 2008-02-08 00:00:00
+
+Symbol: CRVO
+Data: Minimum open price: 1597500.0 in date: 2008-11-07 00:00:00
+      Maximum high price: 2531250.0 in date: 2008-09-22 00:00:00
+
+Symbol: CAPR
+Data: Minimum open price: 200.0 in date: 2008-12-09 00:00:00
+      Maximum high price: 2755.0 in date: 2008-01-04 00:00:00
+
+Symbol: CLRB
+Data: Minimum open price: 581400.0 in date: 2008-11-25 00:00:00
+      Maximum high price: 2509200.0 in date: 2008-01-16 00:00:00
+
+Symbol: RCAT
+Data: Minimum open price: 0.0 in date: 2008-08-27 00:00:00
+      Maximum high price: 3600.0 in date: 2008-09-24 00:00:00
+
+Symbol: SLS
+Data: Minimum open price: 166200.0 in date: 2008-05-20 00:00:00
+      Maximum high price: 718500.0 in date: 2008-03-12 00:00:00
+
+Symbol: USAU
+Data: Minimum open price: 777.5999755859375 in date: 2008-11-21 00:00:00
+      Maximum high price: 2556.0 in date: 2008-02-06 00:00:00
+
+Symbol: CREX
+Data: Minimum open price: 180.0 in date: 2008-12-05 00:00:00
+      Maximum high price: 3321.0 in date: 2008-06-05 00:00:00
+
+Symbol: NCTY
+Data: Minimum open price: 2991.0 in date: 2008-11-20 00:00:00
+      Maximum high price: 8550.0 in date: 2008-07-23 00:00:00
+
+Symbol: GLBS
+Data: Minimum open price: 12800.0 in date: 2008-12-23 00:00:00
+      Maximum high price: 176000.0 in date: 2008-05-15 00:00:00
+
+Symbol: MRKR
+Data: Minimum open price: 2400.0 in date: 2008-12-18 00:00:00
+      Maximum high price: 61200.0 in date: 2008-06-02 00:00:00
+
+Symbol: LSTA
+Data: Minimum open price: 615.0 in date: 2008-10-10 00:00:00
+      Maximum high price: 3360.0 in date: 2008-01-25 00:00:00
+
+Symbol: VIRX
+Data: Minimum open price: 391.5789489746094 in date: 2008-11-20 00:00:00
+      Maximum high price: 2652.631591796875 in date: 2008-06-02 00:00:00
+
+Symbol: ONCT
+Data: Minimum open price: 15302.015625 in date: 2008-02-21 00:00:00
+      Maximum high price: 28280.02734375 in date: 2008-09-19 00:00:00
+
+Symbol: TXMD
+Data: Minimum open price: 850.0 in date: 2008-02-29 00:00:00
+      Maximum high price: 6500.0 in date: 2008-09-10 00:00:00
+
+Symbol: NXPL
+Data: Minimum open price: 3037500.0 in date: 2008-11-18 00:00:00
+      Maximum high price: 17212500.0 in date: 2008-03-03 00:00:00
+
+Symbol: MEIP
+Data: Minimum open price: 540.0 in date: 2008-12-31 00:00:00
+      Maximum high price: 4920.0 in date: 2008-04-17 00:00:00
+
+Symbol: SGLY
+Data: Minimum open price: 120.5 in date: 2008-10-14 00:00:00
+      Maximum high price: 1374.5 in date: 2008-05-23 00:00:00
+
+Symbol: MBOT
+Data: Minimum open price: 10854.0 in date: 2008-10-10 00:00:00
+      Maximum high price: 40176.0 in date: 2008-11-10 00:00:00
+
+Symbol: AYTU
+Data: Minimum open price: 2341463.5 in date: 2008-10-02 00:00:00
+      Maximum high price: 11824390.0 in date: 2008-10-22 00:00:00
+
+Symbol: PSTV
+Data: Minimum open price: 216000.0 in date: 2008-11-26 00:00:00
+      Maximum high price: 963000.0 in date: 2008-06-09 00:00:00
+
+Symbol: DOMH
+Data: Minimum open price: 49396.875 in date: 2008-12-31 00:00:00
+      Maximum high price: 321079.6875 in date: 2008-01-24 00:00:00
+
+Symbol: SSKN
+Data: Minimum open price: 1210.0 in date: 2008-11-20 00:00:00
+      Maximum high price: 4995.0 in date: 2008-05-27 00:00:00
+
+Symbol: OTRK
+Data: Minimum open price: 84240.0 in date: 2008-12-30 00:00:00
+      Maximum high price: 719280.0 in date: 2008-02-14 00:00:00
+
+Symbol: BLIN
+Data: Minimum open price: 687.5 in date: 2008-12-31 00:00:00
+      Maximum high price: 5250.0 in date: 2008-05-01 00:00:00
+
+Symbol: ERNA
+Data: Minimum open price: 200.0 in date: 2008-12-10 00:00:00
+      Maximum high price: 1300.0 in date: 2008-03-05 00:00:00
+
+Symbol: IMNN
+Data: Minimum open price: 1920.270263671875 in date: 2008-11-26 00:00:00
+      Maximum high price: 6318.9189453125 in date: 2008-02-26 00:00:00
+
+Symbol: DGLY
+Data: Minimum open price: 424.0 in date: 2008-12-31 00:00:00
+      Maximum high price: 1825.5999755859375 in date: 2008-05-15 00:00:00
+
+Symbol: EFOI
+Data: Minimum open price: 350.0 in date: 2008-12-05 00:00:00
+      Maximum high price: 2558.5 in date: 2008-01-02 00:00:00
+
+Symbol: NURO
+Data: Minimum open price: 47923.19921875 in date: 2008-10-17 00:00:00
+      Maximum high price: 1041408.0 in date: 2008-01-29 00:00:00
+
+Symbol: TTNP
+Data: Minimum open price: 397.7900695800781 in date: 2008-12-05 00:00:00
+      Maximum high price: 33613.2578125 in date: 2008-01-02 00:00:00
+
+Symbol: AYRO
+Data: Minimum open price: 264633.59375 in date: 2008-12-31 00:00:00
+      Maximum high price: 1423699.25 in date: 2008-01-02 00:00:00
+
+Symbol: SONN
+Data: Minimum open price: 704704.0 in date: 2008-10-28 00:00:00
+      Maximum high price: 6406400.0 in date: 2008-03-11 00:00:00
+
+Symbol: BCDA
+Data: Minimum open price: 1701.0 in date: 2008-05-23 00:00:00
+      Maximum high price: 6318.0 in date: 2008-01-03 00:00:00
+
+Symbol: MIND
+Data: Minimum open price: 347.0 in date: 2008-12-29 00:00:00
+      Maximum high price: 2187.0 in date: 2008-06-02 00:00:00
+
+Symbol: TENX
+Data: Minimum open price: 2064000.0 in date: 2008-01-24 00:00:00
+      Maximum high price: 9696000.0 in date: 2008-03-28 00:00:00
+
+Symbol: BPTH
+Data: Minimum open price: 1000.0 in date: 2008-12-11 00:00:00
+      Maximum high price: 24000.0 in date: 2008-05-14 00:00:00
+
+Symbol: PALI
+Data: Minimum open price: 1158300.0 in date: 2008-10-10 00:00:00
+      Maximum high price: 4446000.0 in date: 2008-01-02 00:00:00
+
+Symbol: SNGX
+Data: Minimum open price: 2880.0 in date: 2008-10-09 00:00:00
+      Maximum high price: 12000.0 in date: 2008-02-15 00:00:00
+
+Symbol: PRSO
+Data: Minimum open price: 14320.0 in date: 2008-12-22 00:00:00
+      Maximum high price: 50880.0 in date: 2008-05-06 00:00:00
+
+Symbol: SNOA
+Data: Minimum open price: 2520.0 in date: 2008-11-19 00:00:00
+      Maximum high price: 45927.0 in date: 2008-03-27 00:00:00
+
+Symbol: OBLG
+Data: Minimum open price: 5040.0 in date: 2008-11-17 00:00:00
+      Maximum high price: 17040.0 in date: 2008-06-05 00:00:00
+
+Symbol: CYCC
+Data: Minimum open price: 6804.0 in date: 2008-12-17 00:00:00
+      Maximum high price: 138852.0 in date: 2008-01-02 00:00:00
+
+Symbol: SPCB
+Data: Minimum open price: 272.0 in date: 2008-12-31 00:00:00
+      Maximum high price: 3986.5 in date: 2008-01-02 00:00:00
+
+Symbol: WINT
+Data: Minimum open price: 9298800.0 in date: 2008-12-02 00:00:00
+      Maximum high price: 34246800.0 in date: 2008-04-29 00:00:00
+
+Symbol: AEMD
+Data: Minimum open price: 1425.0 in date: 2008-11-14 00:00:00
+      Maximum high price: 5625.0 in date: 2008-01-02 00:00:00
+
+Symbol: APDN
+Data: Minimum open price: 1440.0 in date: 2008-10-06 00:00:00
+      Maximum high price: 10560.0 in date: 2008-02-12 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:25:56.343936
+Controllo anomalie per il mercato: data_market_nasdaq_symbols
+Symbol: GYRE
+Data: Minimum open price: 29090.25 in date: 2010-08-27 00:00:00
+      Maximum high price: 43548.75 in date: 2010-12-23 00:00:00
+
+Symbol: FCEL
+Data: Minimum open price: 4492.7998046875 in date: 2010-09-23 00:00:00
+      Maximum high price: 17366.400390625 in date: 2010-01-04 00:00:00
+
+Symbol: BLNK
+Data: Minimum open price: 162.5 in date: 2010-04-07 00:00:00
+      Maximum high price: 3750.0 in date: 2010-08-02 00:00:00
+
+Symbol: SHIP
+Data: Minimum open price: 162000.0 in date: 2010-12-29 00:00:00
+      Maximum high price: 540000.0 in date: 2010-01-06 00:00:00
+
+Symbol: ABEO
+Data: Minimum open price: 2250.0 in date: 2010-07-12 00:00:00
+      Maximum high price: 4225.0 in date: 2010-12-09 00:00:00
+
+Symbol: ACHV
+Data: Minimum open price: 26070.0 in date: 2010-09-20 00:00:00
+      Maximum high price: 49962.0 in date: 2010-03-15 00:00:00
+
+Symbol: CRVO
+Data: Minimum open price: 315000.0 in date: 2010-11-17 00:00:00
+      Maximum high price: 2531250.0 in date: 2010-01-04 00:00:00
+
+Symbol: CLRB
+Data: Minimum open price: 61200.0 in date: 2010-12-10 00:00:00
+      Maximum high price: 9333000.0 in date: 2010-01-04 00:00:00
+
+Symbol: RCAT
+Data: Minimum open price: 1800.0 in date: 2010-01-04 00:00:00
+      Maximum high price: 16200.0 in date: 2010-01-06 00:00:00
+
+Symbol: SLS
+Data: Minimum open price: 52800.0 in date: 2010-09-01 00:00:00
+      Maximum high price: 269700.0 in date: 2010-03-22 00:00:00
+
+Symbol: USAU
+Data: Minimum open price: 914.4000244140625 in date: 2010-07-02 00:00:00
+      Maximum high price: 3240.0 in date: 2010-01-06 00:00:00
+
+Symbol: CREX
+Data: Minimum open price: 495.0 in date: 2010-06-14 00:00:00
+      Maximum high price: 1723.5 in date: 2010-01-13 00:00:00
+
+Symbol: NCTY
+Data: Minimum open price: 1125.0 in date: 2010-06-18 00:00:00
+      Maximum high price: 2598.0 in date: 2010-01-19 00:00:00
+
+Symbol: GLBS
+Data: Minimum open price: 14880.0 in date: 2010-01-04 00:00:00
+      Maximum high price: 54360.0 in date: 2010-12-16 00:00:00
+
+Symbol: MRKR
+Data: Minimum open price: 960.0 in date: 2010-08-25 00:00:00
+      Maximum high price: 8400.0 in date: 2010-01-25 00:00:00
+
+Symbol: LSTA
+Data: Minimum open price: 1965.0 in date: 2010-02-16 00:00:00
+      Maximum high price: 5250.0 in date: 2010-05-14 00:00:00
+
+Symbol: VIRX
+Data: Minimum open price: 378.9473571777344 in date: 2010-10-08 00:00:00
+      Maximum high price: 2046.3157958984375 in date: 2010-01-06 00:00:00
+
+Symbol: TXMD
+Data: Minimum open price: 150.0 in date: 2010-12-14 00:00:00
+      Maximum high price: 8000.0 in date: 2010-02-02 00:00:00
+
+Symbol: ONCT
+Data: Minimum open price: 2800.002685546875 in date: 2010-05-26 00:00:00
+      Maximum high price: 6251.00634765625 in date: 2010-01-27 00:00:00
+
+Symbol: NXPL
+Data: Minimum open price: 6750.0 in date: 2010-06-24 00:00:00
+      Maximum high price: 47250.0 in date: 2010-01-07 00:00:00
+
+Symbol: AEHL
+Data: Minimum open price: 1248.0 in date: 2010-08-11 00:00:00
+      Maximum high price: 2424.0 in date: 2010-11-04 00:00:00
+
+Symbol: AYTU
+Data: Minimum open price: 1170731.75 in date: 2010-06-09 00:00:00
+      Maximum high price: 5853658.5 in date: 2010-01-04 00:00:00
+
+Symbol: MBOT
+Data: Minimum open price: 12312.0 in date: 2010-08-31 00:00:00
+      Maximum high price: 25596.0 in date: 2010-01-08 00:00:00
+
+Symbol: EDSA
+Data: Minimum open price: 588.0 in date: 2010-06-21 00:00:00
+      Maximum high price: 4410.0 in date: 2010-12-31 00:00:00
+
+Symbol: PSTV
+Data: Minimum open price: 387000.0 in date: 2010-07-07 00:00:00
+      Maximum high price: 1068750.0 in date: 2010-01-20 00:00:00
+
+Symbol: DOMH
+Data: Minimum open price: 130901.71875 in date: 2010-11-30 00:00:00
+      Maximum high price: 518667.1875 in date: 2010-10-07 00:00:00
+
+Symbol: SSKN
+Data: Minimum open price: 1265.0 in date: 2010-11-18 00:00:00
+      Maximum high price: 6120.0 in date: 2010-01-14 00:00:00
+
+Symbol: OTRK
+Data: Minimum open price: 6480.0 in date: 2010-11-02 00:00:00
+      Maximum high price: 138240.0 in date: 2010-01-05 00:00:00
+
+Symbol: XWEL
+Data: Minimum open price: 15360.0 in date: 2010-09-09 00:00:00
+      Maximum high price: 43200.0 in date: 2010-09-21 00:00:00
+
+Symbol: IMNN
+Data: Minimum open price: 1939.189208984375 in date: 2010-12-17 00:00:00
+      Maximum high price: 5325.67578125 in date: 2010-04-16 00:00:00
+
+Symbol: NURO
+Data: Minimum open price: 44236.80078125 in date: 2010-11-12 00:00:00
+      Maximum high price: 253440.0 in date: 2010-01-05 00:00:00
+
+Symbol: TENX
+Data: Minimum open price: 1216000.0 in date: 2010-12-31 00:00:00
+      Maximum high price: 4953600.0 in date: 2010-01-15 00:00:00
+
+Symbol: BCDA
+Data: Minimum open price: 81.0 in date: 2010-12-21 00:00:00
+      Maximum high price: 1636.199951171875 in date: 2010-04-26 00:00:00
+
+Symbol: TTNP
+Data: Minimum open price: 17303.8671875 in date: 2010-09-27 00:00:00
+      Maximum high price: 49524.86328125 in date: 2010-01-06 00:00:00
+
+Symbol: POAI
+Data: Minimum open price: 37500.0 in date: 2010-12-06 00:00:00
+      Maximum high price: 150000.0 in date: 2010-05-12 00:00:00
+
+Symbol: AYRO
+Data: Minimum open price: 365164.8125 in date: 2010-08-09 00:00:00
+      Maximum high price: 700761.625 in date: 2010-09-22 00:00:00
+
+Symbol: SOBR
+Data: Minimum open price: 1100.0 in date: 2010-12-16 00:00:00
+      Maximum high price: 15950.0 in date: 2010-01-28 00:00:00
+
+Symbol: SONN
+Data: Minimum open price: 1601600.0 in date: 2010-01-19 00:00:00
+      Maximum high price: 2722720.0 in date: 2010-03-31 00:00:00
+
+Symbol: PALI
+Data: Minimum open price: 2047500.0 in date: 2010-08-24 00:00:00
+      Maximum high price: 4083300.0 in date: 2010-06-16 00:00:00
+
+Symbol: PRSO
+Data: Minimum open price: 26880.0 in date: 2010-02-12 00:00:00
+      Maximum high price: 48480.0 in date: 2010-12-23 00:00:00
+
+Symbol: SNGX
+Data: Minimum open price: 7200.0 in date: 2010-11-30 00:00:00
+      Maximum high price: 15360.0 in date: 2010-04-14 00:00:00
+
+Symbol: CJJD
+Data: Minimum open price: 864.0 in date: 2010-01-13 00:00:00
+      Maximum high price: 2640.0 in date: 2010-04-05 00:00:00
+
+Symbol: BPTH
+Data: Minimum open price: 1200.0 in date: 2010-01-27 00:00:00
+      Maximum high price: 2840.0 in date: 2010-03-15 00:00:00
+
+Symbol: WINT
+Data: Minimum open price: 1927800.0 in date: 2010-12-09 00:00:00
+      Maximum high price: 9525600.0 in date: 2010-01-12 00:00:00
+
+Symbol: OBLG
+Data: Minimum open price: 9600.0 in date: 2010-08-25 00:00:00
+      Maximum high price: 18960.0 in date: 2010-02-04 00:00:00
+
+Symbol: CYCC
+Data: Minimum open price: 25452.0 in date: 2010-01-06 00:00:00
+      Maximum high price: 102816.0 in date: 2010-01-08 00:00:00
+
+Symbol: ADD
+Data: Minimum open price: 146880.0 in date: 2010-09-24 00:00:00
+      Maximum high price: 372000.0 in date: 2010-01-08 00:00:00
+
+Symbol: SNOA
+Data: Minimum open price: 8946.0 in date: 2010-09-29 00:00:00
+      Maximum high price: 20160.0 in date: 2010-03-10 00:00:00
+
+Symbol: APDN
+Data: Minimum open price: 1440.0 in date: 2010-08-23 00:00:00
+      Maximum high price: 6240.0 in date: 2010-01-12 00:00:00
+
+Symbol: AEMD
+Data: Minimum open price: 1350.0 in date: 2010-12-20 00:00:00
+      Maximum high price: 3600.0 in date: 2010-03-25 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:25:57.161770
+Controllo anomalie per il mercato: data_market_nasdaq_symbols
+Symbol: GYRE
+Data: Minimum open price: 7906.5 in date: 2011-12-21 00:00:00
+      Maximum high price: 47990.25 in date: 2011-03-01 00:00:00
+
+Symbol: FCEL
+Data: Minimum open price: 3628.800048828125 in date: 2011-11-25 00:00:00
+      Maximum high price: 10411.2001953125 in date: 2011-01-03 00:00:00
+
+Symbol: BLNK
+Data: Minimum open price: 34.5 in date: 2011-10-06 00:00:00
+      Maximum high price: 1325.0 in date: 2011-01-03 00:00:00
+
+Symbol: SHIP
+Data: Minimum open price: 23520.0 in date: 2011-12-29 00:00:00
+      Maximum high price: 185400.0 in date: 2011-01-05 00:00:00
+
+Symbol: ABEO
+Data: Minimum open price: 1575.0 in date: 2011-12-27 00:00:00
+      Maximum high price: 3250.0 in date: 2011-01-26 00:00:00
+
+Symbol: ACHV
+Data: Minimum open price: 19976.0 in date: 2011-10-04 00:00:00
+      Maximum high price: 41778.0 in date: 2011-06-06 00:00:00
+
+Symbol: CRVO
+Data: Minimum open price: 337500.0 in date: 2011-02-15 00:00:00
+      Maximum high price: 1147500.0 in date: 2011-04-27 00:00:00
+
+Symbol: GEVO
+Data: Minimum open price: 32700.0 in date: 2011-11-25 00:00:00
+      Maximum high price: 158160.0 in date: 2011-04-07 00:00:00
+
+Symbol: CLRB
+Data: Minimum open price: 7000.0 in date: 2011-10-12 00:00:00
+      Maximum high price: 153000.0 in date: 2011-01-04 00:00:00
+
+Symbol: RCAT
+Data: Minimum open price: 1800.0 in date: 2011-02-02 00:00:00
+      Maximum high price: 30600.0 in date: 2011-03-03 00:00:00
+
+Symbol: SLS
+Data: Minimum open price: 11100.0 in date: 2011-12-21 00:00:00
+      Maximum high price: 79500.0 in date: 2011-01-06 00:00:00
+
+Symbol: NSPR
+Data: Minimum open price: 1215000.0 in date: 2011-10-13 00:00:00
+      Maximum high price: 2167500.0 in date: 2011-06-01 00:00:00
+
+Symbol: USAU
+Data: Minimum open price: 583.2000122070312 in date: 2011-12-29 00:00:00
+      Maximum high price: 1908.0 in date: 2011-02-11 00:00:00
+
+Symbol: BLRX
+Data: Minimum open price: 1722.0 in date: 2011-09-30 00:00:00
+      Maximum high price: 3264.0 in date: 2011-08-01 00:00:00
+
+Symbol: NCTY
+Data: Minimum open price: 885.0 in date: 2011-10-06 00:00:00
+      Maximum high price: 2547.0 in date: 2011-01-14 00:00:00
+
+Symbol: GLBS
+Data: Minimum open price: 10640.0 in date: 2011-12-29 00:00:00
+      Maximum high price: 43680.0 in date: 2011-06-14 00:00:00
+
+Symbol: MRKR
+Data: Minimum open price: 1440.0 in date: 2011-10-03 00:00:00
+      Maximum high price: 4680.0 in date: 2011-04-11 00:00:00
+
+Symbol: LSTA
+Data: Minimum open price: 690.0 in date: 2011-12-28 00:00:00
+      Maximum high price: 3150.0 in date: 2011-03-08 00:00:00
+
+Symbol: PSHG
+Data: Minimum open price: 3445092.0 in date: 2011-12-12 00:00:00
+      Maximum high price: 11483640.0 in date: 2011-01-03 00:00:00
+
+Symbol: ONCT
+Data: Minimum open price: 3220.003173828125 in date: 2011-03-03 00:00:00
+      Maximum high price: 9609.609375 in date: 2011-06-09 00:00:00
+
+Symbol: NXPL
+Data: Minimum open price: 30375.0 in date: 2011-10-26 00:00:00
+      Maximum high price: 168750.0 in date: 2011-05-02 00:00:00
+
+Symbol: AEHL
+Data: Minimum open price: 607.2000122070312 in date: 2011-10-19 00:00:00
+      Maximum high price: 2035.199951171875 in date: 2011-01-10 00:00:00
+
+Symbol: AYTU
+Data: Minimum open price: 2341463.5 in date: 2011-01-03 00:00:00
+      Maximum high price: 9014634.0 in date: 2011-10-06 00:00:00
+
+Symbol: MBOT
+Data: Minimum open price: 1166.4000244140625 in date: 2011-12-21 00:00:00
+      Maximum high price: 18306.0 in date: 2011-01-06 00:00:00
+
+Symbol: EDSA
+Data: Minimum open price: 999.5999755859375 in date: 2011-10-04 00:00:00
+      Maximum high price: 4351.2001953125 in date: 2011-01-04 00:00:00
+
+Symbol: DOMH
+Data: Minimum open price: 28403.203125 in date: 2011-12-29 00:00:00
+      Maximum high price: 269212.96875 in date: 2011-01-14 00:00:00
+
+Symbol: PSTV
+Data: Minimum open price: 223875.0 in date: 2011-12-29 00:00:00
+      Maximum high price: 949500.0 in date: 2011-04-05 00:00:00
+
+Symbol: SSKN
+Data: Minimum open price: 905.0 in date: 2011-08-10 00:00:00
+      Maximum high price: 3480.0 in date: 2011-10-14 00:00:00
+
+Symbol: OTRK
+Data: Minimum open price: 918.0 in date: 2011-12-29 00:00:00
+      Maximum high price: 25920.0 in date: 2011-01-04 00:00:00
+
+Symbol: BLIN
+Data: Minimum open price: 600.0 in date: 2011-10-25 00:00:00
+      Maximum high price: 1950.0 in date: 2011-01-04 00:00:00
+
+Symbol: IMNN
+Data: Minimum open price: 1589.189208984375 in date: 2011-12-29 00:00:00
+      Maximum high price: 4133.78369140625 in date: 2011-07-19 00:00:00
+
+Symbol: XWEL
+Data: Minimum open price: 11880.0 in date: 2011-12-30 00:00:00
+      Maximum high price: 39600.0 in date: 2011-03-08 00:00:00
+
+Symbol: NURO
+Data: Minimum open price: 19660.80078125 in date: 2011-12-30 00:00:00
+      Maximum high price: 63590.3984375 in date: 2011-01-03 00:00:00
+
+Symbol: TENX
+Data: Minimum open price: 896000.0 in date: 2011-12-23 00:00:00
+      Maximum high price: 2272000.0 in date: 2011-06-23 00:00:00
+
+Symbol: TTNP
+Data: Minimum open price: 21281.767578125 in date: 2011-10-12 00:00:00
+      Maximum high price: 44154.6953125 in date: 2011-06-02 00:00:00
+
+Symbol: MIND
+Data: Minimum open price: 989.0 in date: 2011-10-04 00:00:00
+      Maximum high price: 2426.0 in date: 2011-12-28 00:00:00
+
+Symbol: XXII
+Data: Minimum open price: 11340.0 in date: 2011-12-28 00:00:00
+      Maximum high price: 45684.0 in date: 2011-03-04 00:00:00
+
+Symbol: SONN
+Data: Minimum open price: 2665062.5 in date: 2011-06-07 00:00:00
+      Maximum high price: 6406400.0 in date: 2011-12-07 00:00:00
+
+Symbol: POAI
+Data: Minimum open price: 18750.0 in date: 2011-04-29 00:00:00
+      Maximum high price: 378750.0 in date: 2011-07-11 00:00:00
+
+Symbol: PALI
+Data: Minimum open price: 1053000.0 in date: 2011-12-30 00:00:00
+      Maximum high price: 2749500.0 in date: 2011-02-09 00:00:00
+
+Symbol: AYRO
+Data: Minimum open price: 236544.0 in date: 2011-12-22 00:00:00
+      Maximum high price: 449433.59375 in date: 2011-06-16 00:00:00
+
+Symbol: SOBR
+Data: Minimum open price: 1100.0 in date: 2011-01-03 00:00:00
+      Maximum high price: 15400.0 in date: 2011-10-03 00:00:00
+
+Symbol: SNGX
+Data: Minimum open price: 1440.0 in date: 2011-11-17 00:00:00
+      Maximum high price: 16800.0 in date: 2011-07-14 00:00:00
+
+Symbol: PRSO
+Data: Minimum open price: 22480.0 in date: 2011-12-14 00:00:00
+      Maximum high price: 53120.0 in date: 2011-01-11 00:00:00
+
+Symbol: CJJD
+Data: Minimum open price: 259.20001220703125 in date: 2011-12-21 00:00:00
+      Maximum high price: 1344.0 in date: 2011-01-13 00:00:00
+
+Symbol: BPTH
+Data: Minimum open price: 1040.0 in date: 2011-07-22 00:00:00
+      Maximum high price: 3400.0 in date: 2011-01-19 00:00:00
+
+Symbol: ADD
+Data: Minimum open price: 72000.0 in date: 2011-10-10 00:00:00
+      Maximum high price: 258720.0 in date: 2011-01-06 00:00:00
+
+Symbol: SNOA
+Data: Minimum open price: 6174.0 in date: 2011-08-08 00:00:00
+      Maximum high price: 16695.0 in date: 2011-02-08 00:00:00
+
+Symbol: CYCC
+Data: Minimum open price: 9072.0 in date: 2011-10-04 00:00:00
+      Maximum high price: 46368.0 in date: 2011-05-13 00:00:00
+
+Symbol: WINT
+Data: Minimum open price: 1111320.0 in date: 2011-12-20 00:00:00
+      Maximum high price: 3160080.0 in date: 2011-01-06 00:00:00
+
+Symbol: OBLG
+Data: Minimum open price: 10620.0 in date: 2011-09-27 00:00:00
+      Maximum high price: 18000.0 in date: 2011-01-19 00:00:00
+
+Symbol: AEMD
+Data: Minimum open price: 375.0 in date: 2011-09-30 00:00:00
+      Maximum high price: 1650.0 in date: 2011-01-05 00:00:00
+
+Symbol: APDN
+Data: Minimum open price: 2400.0 in date: 2011-04-20 00:00:00
+      Maximum high price: 4800.0 in date: 2011-07-22 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:25:57.901841
+Controllo anomalie per il mercato: data_market_nasdaq_symbols
+Symbol: GYRE
+Data: Minimum open price: 6300.0 in date: 2012-10-31 00:00:00
+      Maximum high price: 12127.5 in date: 2012-03-13 00:00:00
+
+Symbol: FCEL
+Data: Minimum open price: 3672.0 in date: 2012-09-27 00:00:00
+      Maximum high price: 8424.0 in date: 2012-03-15 00:00:00
+
+Symbol: SHIP
+Data: Minimum open price: 13080.0 in date: 2012-12-18 00:00:00
+      Maximum high price: 57000.0 in date: 2012-04-12 00:00:00
+
+Symbol: ABEO
+Data: Minimum open price: 275.0 in date: 2012-12-20 00:00:00
+      Maximum high price: 1800.0 in date: 2012-02-02 00:00:00
+
+Symbol: ACHV
+Data: Minimum open price: 25344.0 in date: 2012-01-06 00:00:00
+      Maximum high price: 38456.0 in date: 2012-03-15 00:00:00
+
+Symbol: CRVO
+Data: Minimum open price: 135000.0 in date: 2012-12-20 00:00:00
+      Maximum high price: 618750.0 in date: 2012-02-10 00:00:00
+
+Symbol: GEVO
+Data: Minimum open price: 8400.0 in date: 2012-12-13 00:00:00
+      Maximum high price: 67740.0 in date: 2012-02-15 00:00:00
+
+Symbol: CLRB
+Data: Minimum open price: 8000.0 in date: 2012-01-04 00:00:00
+      Maximum high price: 44000.0 in date: 2012-04-25 00:00:00
+
+Symbol: VTGN
+Data: Minimum open price: 72.0 in date: 2012-08-21 00:00:00
+      Maximum high price: 1890.0 in date: 2012-01-04 00:00:00
+
+Symbol: RCAT
+Data: Minimum open price: 0.0 in date: 2012-12-28 00:00:00
+      Maximum high price: 16200.0 in date: 2012-04-24 00:00:00
+
+Symbol: SLS
+Data: Minimum open price: 13200.0 in date: 2012-01-05 00:00:00
+      Maximum high price: 106200.0 in date: 2012-03-22 00:00:00
+
+Symbol: NSPR
+Data: Minimum open price: 450000.0 in date: 2012-05-31 00:00:00
+      Maximum high price: 1905000.0 in date: 2012-10-08 00:00:00
+
+Symbol: CENN
+Data: Minimum open price: 7500000.0 in date: 2012-09-25 00:00:00
+      Maximum high price: 7800000.0 in date: 2012-10-24 00:00:00
+
+Symbol: BLRX
+Data: Minimum open price: 1350.0 in date: 2012-08-14 00:00:00
+      Maximum high price: 4122.0 in date: 2012-01-24 00:00:00
+
+Symbol: NCTY
+Data: Minimum open price: 861.0 in date: 2012-11-23 00:00:00
+      Maximum high price: 2394.0 in date: 2012-02-15 00:00:00
+
+Symbol: GLBS
+Data: Minimum open price: 5920.0 in date: 2012-12-27 00:00:00
+      Maximum high price: 24000.0 in date: 2012-03-05 00:00:00
+
+Symbol: MRKR
+Data: Minimum open price: 960.0 in date: 2012-10-31 00:00:00
+      Maximum high price: 3240.0 in date: 2012-04-12 00:00:00
+
+Symbol: IZEA
+Data: Minimum open price: 12.0 in date: 2012-12-24 00:00:00
+      Maximum high price: 2720.0 in date: 2012-02-13 00:00:00
+
+Symbol: MIGI
+Data: Minimum open price: 842.4000244140625 in date: 2012-09-12 00:00:00
+      Maximum high price: 21708.0 in date: 2012-03-08 00:00:00
+
+Symbol: PSHG
+Data: Minimum open price: 3874802.5 in date: 2012-08-27 00:00:00
+      Maximum high price: 5838134.5 in date: 2012-05-14 00:00:00
+
+Symbol: VIRX
+Data: Minimum open price: 248.42105102539062 in date: 2012-01-03 00:00:00
+      Maximum high price: 1442.105224609375 in date: 2012-10-05 00:00:00
+
+Symbol: COCP
+Data: Minimum open price: 183.60000610351562 in date: 2012-10-10 00:00:00
+      Maximum high price: 1440.0 in date: 2012-05-31 00:00:00
+
+Symbol: ONCT
+Data: Minimum open price: 3780.003662109375 in date: 2012-06-05 00:00:00
+      Maximum high price: 9170.0087890625 in date: 2012-02-02 00:00:00
+
+Symbol: NXPL
+Data: Minimum open price: 13500.0 in date: 2012-10-09 00:00:00
+      Maximum high price: 60750.0 in date: 2012-01-23 00:00:00
+
+Symbol: AYTU
+Data: Minimum open price: 2341463.5 in date: 2012-03-07 00:00:00
+      Maximum high price: 9014634.0 in date: 2012-02-08 00:00:00
+
+Symbol: MBOT
+Data: Minimum open price: 972.0 in date: 2012-06-05 00:00:00
+      Maximum high price: 4325.39990234375 in date: 2012-09-04 00:00:00
+
+Symbol: BRTX
+Data: Minimum open price: 92000.0 in date: 2012-12-14 00:00:00
+      Maximum high price: 136000.0 in date: 2012-12-05 00:00:00
+
+Symbol: DOMH
+Data: Minimum open price: 7557.72216796875 in date: 2012-11-08 00:00:00
+      Maximum high price: 43716.234375 in date: 2012-01-11 00:00:00
+
+Symbol: PSTV
+Data: Minimum open price: 229500.0 in date: 2012-04-10 00:00:00
+      Maximum high price: 554625.0 in date: 2012-09-28 00:00:00
+
+Symbol: OTRK
+Data: Minimum open price: 540.0 in date: 2012-11-29 00:00:00
+      Maximum high price: 1620.0 in date: 2012-02-24 00:00:00
+
+Symbol: SSKN
+Data: Minimum open price: 900.0 in date: 2012-12-31 00:00:00
+      Maximum high price: 2565.0 in date: 2012-02-23 00:00:00
+
+Symbol: VISL
+Data: Minimum open price: 345600.0 in date: 2012-09-10 00:00:00
+      Maximum high price: 1224000.0 in date: 2012-04-24 00:00:00
+
+Symbol: BLIN
+Data: Minimum open price: 687.5 in date: 2012-01-12 00:00:00
+      Maximum high price: 4050.0 in date: 2012-06-05 00:00:00
+
+Symbol: IMNN
+Data: Minimum open price: 1541.891845703125 in date: 2012-03-19 00:00:00
+      Maximum high price: 8381.0810546875 in date: 2012-12-13 00:00:00
+
+Symbol: XWEL
+Data: Minimum open price: 10200.0 in date: 2012-01-25 00:00:00
+      Maximum high price: 68760.0 in date: 2012-10-09 00:00:00
+
+Symbol: MTEM
+Data: Minimum open price: 207.90020751953125 in date: 2012-01-03 00:00:00
+      Maximum high price: 1531.2015380859375 in date: 2012-09-05 00:00:00
+
+Symbol: WHLR
+Data: Minimum open price: 8017920.0 in date: 2012-11-30 00:00:00
+      Maximum high price: 9455616.0 in date: 2012-12-28 00:00:00
+
+Symbol: NURO
+Data: Minimum open price: 6912.0 in date: 2012-12-19 00:00:00
+      Maximum high price: 24268.80078125 in date: 2012-01-27 00:00:00
+
+Symbol: TENX
+Data: Minimum open price: 339200.0 in date: 2012-10-03 00:00:00
+      Maximum high price: 2048000.0 in date: 2012-02-09 00:00:00
+
+Symbol: TTNP
+Data: Minimum open price: 12530.38671875 in date: 2012-08-13 00:00:00
+      Maximum high price: 28640.884765625 in date: 2012-01-31 00:00:00
+
+Symbol: MIND
+Data: Minimum open price: 1178.0 in date: 2012-12-05 00:00:00
+      Maximum high price: 2676.0 in date: 2012-02-24 00:00:00
+
+Symbol: XXII
+Data: Minimum open price: 5022.0 in date: 2012-11-26 00:00:00
+      Maximum high price: 36612.0 in date: 2012-04-30 00:00:00
+
+Symbol: POAI
+Data: Minimum open price: 16875.0 in date: 2012-05-03 00:00:00
+      Maximum high price: 123750.0 in date: 2012-01-27 00:00:00
+
+Symbol: SONN
+Data: Minimum open price: 1921920.0 in date: 2012-05-25 00:00:00
+      Maximum high price: 5125120.0 in date: 2012-06-11 00:00:00
+
+Symbol: AYRO
+Data: Minimum open price: 51744.0 in date: 2012-12-27 00:00:00
+      Maximum high price: 277939.1875 in date: 2012-01-04 00:00:00
+
+Symbol: SOBR
+Data: Minimum open price: 660.0 in date: 2012-12-20 00:00:00
+      Maximum high price: 10120.0 in date: 2012-03-21 00:00:00
+
+Symbol: XTIA
+Data: Minimum open price: 425249996800.0 in date: 2012-12-19 00:00:00
+      Maximum high price: 3067874902016.0 in date: 2012-10-03 00:00:00
+
+Symbol: PALI
+Data: Minimum open price: 561600.0 in date: 2012-08-27 00:00:00
+      Maximum high price: 2293200.0 in date: 2012-09-13 00:00:00
+
+Symbol: SNGX
+Data: Minimum open price: 552.0 in date: 2012-06-12 00:00:00
+      Maximum high price: 2424.0 in date: 2012-02-02 00:00:00
+
+Symbol: TNXP
+Data: Minimum open price: 3200000000.0 in date: 2012-11-15 00:00:00
+      Maximum high price: 19200000000.0 in date: 2012-05-10 00:00:00
+
+Symbol: BPTH
+Data: Minimum open price: 520.0 in date: 2012-01-27 00:00:00
+      Maximum high price: 1680.0 in date: 2012-06-07 00:00:00
+
+Symbol: PRSO
+Data: Minimum open price: 22880.0 in date: 2012-05-24 00:00:00
+      Maximum high price: 35600.0 in date: 2012-02-03 00:00:00
+
+Symbol: ADD
+Data: Minimum open price: 17280.0 in date: 2012-09-07 00:00:00
+      Maximum high price: 122400.0 in date: 2012-01-10 00:00:00
+
+Symbol: PHIO
+Data: Minimum open price: 285120.0 in date: 2012-07-12 00:00:00
+      Maximum high price: 4544100.0 in date: 2012-07-05 00:00:00
+
+Symbol: NUWE
+Data: Minimum open price: 3025260032.0 in date: 2012-07-02 00:00:00
+      Maximum high price: 20197799936.0 in date: 2012-03-01 00:00:00
+
+Symbol: OBLG
+Data: Minimum open price: 10920.0 in date: 2012-12-06 00:00:00
+      Maximum high price: 19680.0 in date: 2012-03-28 00:00:00
+
+Symbol: SNOA
+Data: Minimum open price: 3528.0 in date: 2012-12-28 00:00:00
+      Maximum high price: 9135.0 in date: 2012-02-22 00:00:00
+
+Symbol: CYCC
+Data: Minimum open price: 11088.0 in date: 2012-05-21 00:00:00
+      Maximum high price: 29448.0 in date: 2012-12-05 00:00:00
+
+Symbol: WINT
+Data: Minimum open price: 1292760.0 in date: 2012-01-03 00:00:00
+      Maximum high price: 4074840.0 in date: 2012-03-07 00:00:00
+
+Symbol: APDN
+Data: Minimum open price: 1440.0 in date: 2012-07-11 00:00:00
+      Maximum high price: 14880.0 in date: 2012-12-14 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:25:58.678025
+Controllo anomalie per il mercato: data_market_nasdaq_symbols
+Symbol: GYRE
+Data: Minimum open price: 3622.5 in date: 2014-10-16 00:00:00
+      Maximum high price: 8237.25 in date: 2014-03-17 00:00:00
+
+Symbol: VRDN
+Data: Minimum open price: 486.0 in date: 2014-12-23 00:00:00
+      Maximum high price: 2247.75 in date: 2014-06-18 00:00:00
+
+Symbol: FCEL
+Data: Minimum open price: 5961.60009765625 in date: 2014-01-17 00:00:00
+      Maximum high price: 20476.80078125 in date: 2014-03-11 00:00:00
+
+Symbol: SHIP
+Data: Minimum open price: 9600.0 in date: 2014-12-31 00:00:00
+      Maximum high price: 31200.0 in date: 2014-02-20 00:00:00
+
+Symbol: ACHV
+Data: Minimum open price: 4576.0 in date: 2014-11-20 00:00:00
+      Maximum high price: 31350.0 in date: 2014-03-11 00:00:00
+
+Symbol: CRVO
+Data: Minimum open price: 22500.0 in date: 2014-02-24 00:00:00
+      Maximum high price: 114750.0 in date: 2014-03-27 00:00:00
+
+Symbol: RGLS
+Data: Minimum open price: 672.0 in date: 2014-05-09 00:00:00
+      Maximum high price: 3072.0 in date: 2014-11-10 00:00:00
+
+Symbol: GEVO
+Data: Minimum open price: 1500.0 in date: 2014-12-17 00:00:00
+      Maximum high price: 9300.0 in date: 2014-03-12 00:00:00
+
+Symbol: CLRB
+Data: Minimum open price: 1990.0 in date: 2014-10-15 00:00:00
+      Maximum high price: 9200.0 in date: 2014-05-02 00:00:00
+
+Symbol: ELDN
+Data: Minimum open price: 1863.0 in date: 2014-10-10 00:00:00
+      Maximum high price: 4860.0 in date: 2014-09-17 00:00:00
+
+Symbol: RCAT
+Data: Minimum open price: 1440.0 in date: 2014-12-30 00:00:00
+      Maximum high price: 19800.0 in date: 2014-04-14 00:00:00
+
+Symbol: SLS
+Data: Minimum open price: 45000.0 in date: 2014-12-24 00:00:00
+      Maximum high price: 233100.0 in date: 2014-01-14 00:00:00
+
+Symbol: BNTC
+Data: Minimum open price: 2468.39990234375 in date: 2014-10-30 00:00:00
+      Maximum high price: 5916.0 in date: 2014-06-24 00:00:00
+
+Symbol: NSPR
+Data: Minimum open price: 131250.0 in date: 2014-12-26 00:00:00
+      Maximum high price: 712500.0 in date: 2014-02-26 00:00:00
+
+Symbol: CENN
+Data: Minimum open price: 360000.0 in date: 2014-02-24 00:00:00
+      Maximum high price: 2099400.0 in date: 2014-08-11 00:00:00
+
+Symbol: BLRX
+Data: Minimum open price: 726.0 in date: 2014-12-03 00:00:00
+      Maximum high price: 1872.0 in date: 2014-01-23 00:00:00
+
+Symbol: TTOO
+Data: Minimum open price: 67500.0 in date: 2014-08-11 00:00:00
+      Maximum high price: 122500.0 in date: 2014-08-21 00:00:00
+
+Symbol: GLBS
+Data: Minimum open price: 9000.0 in date: 2014-12-22 00:00:00
+      Maximum high price: 17800.0 in date: 2014-03-24 00:00:00
+
+Symbol: LFWD
+Data: Minimum open price: 2100.0 in date: 2014-09-12 00:00:00
+      Maximum high price: 7648.5498046875 in date: 2014-09-15 00:00:00
+
+Symbol: MIGI
+Data: Minimum open price: 849.5999755859375 in date: 2014-11-20 00:00:00
+      Maximum high price: 4176.0 in date: 2014-01-02 00:00:00
+
+Symbol: PSHG
+Data: Minimum open price: 1348401.625 in date: 2014-11-20 00:00:00
+      Maximum high price: 3274689.5 in date: 2014-02-19 00:00:00
+
+Symbol: VIRX
+Data: Minimum open price: 221.05262756347656 in date: 2014-10-13 00:00:00
+      Maximum high price: 1781.0526123046875 in date: 2014-08-27 00:00:00
+
+Symbol: ONCT
+Data: Minimum open price: 601.860595703125 in date: 2014-10-13 00:00:00
+      Maximum high price: 3290.003173828125 in date: 2014-01-17 00:00:00
+
+Symbol: AKTX
+Data: Minimum open price: 940.0 in date: 2014-12-24 00:00:00
+      Maximum high price: 2380.0 in date: 2014-01-15 00:00:00
+
+Symbol: BYU
+Data: Minimum open price: 3337.5 in date: 2014-07-28 00:00:00
+      Maximum high price: 12037.5 in date: 2014-02-28 00:00:00
+
+Symbol: NXPL
+Data: Minimum open price: 1147.5 in date: 2014-12-16 00:00:00
+      Maximum high price: 22387.5 in date: 2014-04-30 00:00:00
+
+Symbol: ANY
+Data: Minimum open price: 7294.0 in date: 2014-12-19 00:00:00
+      Maximum high price: 16044.0 in date: 2014-07-01 00:00:00
+
+Symbol: AYTU
+Data: Minimum open price: 1990243.875 in date: 2014-08-13 00:00:00
+      Maximum high price: 9951220.0 in date: 2014-04-21 00:00:00
+
+Symbol: MBOT
+Data: Minimum open price: 1377.0 in date: 2014-12-17 00:00:00
+      Maximum high price: 3936.60009765625 in date: 2014-07-03 00:00:00
+
+Symbol: TRAW
+Data: Minimum open price: 194062.5 in date: 2014-12-31 00:00:00
+      Maximum high price: 912375.0 in date: 2014-01-30 00:00:00
+
+Symbol: BRTX
+Data: Minimum open price: 19608.0 in date: 2014-06-27 00:00:00
+      Maximum high price: 72000.0 in date: 2014-01-13 00:00:00
+
+Symbol: EDSA
+Data: Minimum open price: 1969.800048828125 in date: 2014-07-21 00:00:00
+      Maximum high price: 6938.39990234375 in date: 2014-08-28 00:00:00
+
+Symbol: GCTK
+Data: Minimum open price: 6565.0 in date: 2014-12-09 00:00:00
+      Maximum high price: 11570.0 in date: 2014-01-29 00:00:00
+
+Symbol: DOMH
+Data: Minimum open price: 1000.2867431640625 in date: 2014-09-25 00:00:00
+      Maximum high price: 12843.1875 in date: 2014-01-02 00:00:00
+
+Symbol: VERB
+Data: Minimum open price: 162000.0 in date: 2014-11-21 00:00:00
+      Maximum high price: 240000.0 in date: 2014-12-02 00:00:00
+
+Symbol: RDHL
+Data: Minimum open price: 7980.0 in date: 2014-11-18 00:00:00
+      Maximum high price: 21000.0 in date: 2014-06-12 00:00:00
+
+Symbol: PSTV
+Data: Minimum open price: 43875.0 in date: 2014-11-12 00:00:00
+      Maximum high price: 390375.0 in date: 2014-02-21 00:00:00
+
+Symbol: BLIN
+Data: Minimum open price: 587.5 in date: 2014-12-31 00:00:00
+      Maximum high price: 1912.5 in date: 2014-01-22 00:00:00
+
+Symbol: VISL
+Data: Minimum open price: 763200.0 in date: 2014-12-31 00:00:00
+      Maximum high price: 7214400.0 in date: 2014-03-05 00:00:00
+
+Symbol: XWEL
+Data: Minimum open price: 6000.0 in date: 2014-12-31 00:00:00
+      Maximum high price: 65400.0 in date: 2014-01-29 00:00:00
+
+Symbol: WHLR
+Data: Minimum open price: 5460480.0 in date: 2014-12-16 00:00:00
+      Maximum high price: 7133184.0 in date: 2014-08-11 00:00:00
+
+Symbol: NURO
+Data: Minimum open price: 4096.0 in date: 2014-09-23 00:00:00
+      Maximum high price: 8064.0 in date: 2014-07-08 00:00:00
+
+Symbol: TRVN
+Data: Minimum open price: 2481.25 in date: 2014-12-09 00:00:00
+      Maximum high price: 6218.75 in date: 2014-03-05 00:00:00
+
+Symbol: PULM
+Data: Minimum open price: 1680.0 in date: 2014-12-29 00:00:00
+      Maximum high price: 4235.0 in date: 2014-03-21 00:00:00
+
+Symbol: MIND
+Data: Minimum open price: 556.0 in date: 2014-12-23 00:00:00
+      Maximum high price: 1769.0 in date: 2014-01-03 00:00:00
+
+Symbol: JXJT
+Data: Minimum open price: 2549.9873046875 in date: 2014-12-18 00:00:00
+      Maximum high price: 6299.96826171875 in date: 2014-07-29 00:00:00
+
+Symbol: TTNP
+Data: Minimum open price: 8751.380859375 in date: 2014-11-20 00:00:00
+      Maximum high price: 17303.8671875 in date: 2014-07-08 00:00:00
+
+Symbol: TENX
+Data: Minimum open price: 111360.0 in date: 2014-10-14 00:00:00
+      Maximum high price: 274560.0 in date: 2014-01-13 00:00:00
+
+Symbol: SONN
+Data: Minimum open price: 960960.0 in date: 2014-12-22 00:00:00
+      Maximum high price: 3414611.25 in date: 2014-01-02 00:00:00
+
+Symbol: POAI
+Data: Minimum open price: 18750.0 in date: 2014-12-30 00:00:00
+      Maximum high price: 108750.0 in date: 2014-01-02 00:00:00
+
+Symbol: XXII
+Data: Minimum open price: 49572.0 in date: 2014-12-30 00:00:00
+      Maximum high price: 206064.0 in date: 2014-03-11 00:00:00
+
+Symbol: PCSA
+Data: Minimum open price: 1234.800048828125 in date: 2014-09-22 00:00:00
+      Maximum high price: 2695.0 in date: 2014-05-02 00:00:00
+
+Symbol: CEAD
+Data: Minimum open price: 450.0 in date: 2014-12-29 00:00:00
+      Maximum high price: 15714.0 in date: 2014-03-31 00:00:00
+
+Symbol: XTIA
+Data: Minimum open price: 1564312469504.0 in date: 2014-12-16 00:00:00
+      Maximum high price: 27367875543040.0 in date: 2014-03-13 00:00:00
+
+Symbol: PALI
+Data: Minimum open price: 2796300.0 in date: 2014-12-16 00:00:00
+      Maximum high price: 5627700.0 in date: 2014-06-04 00:00:00
+
+Symbol: AYRO
+Data: Minimum open price: 6124.7998046875 in date: 2014-12-30 00:00:00
+      Maximum high price: 60192.0 in date: 2014-01-02 00:00:00
+
+Symbol: EVOK
+Data: Minimum open price: 702.719970703125 in date: 2014-10-27 00:00:00
+      Maximum high price: 1929.5999755859375 in date: 2014-01-22 00:00:00
+
+Symbol: SNGX
+Data: Minimum open price: 2280.0 in date: 2014-12-22 00:00:00
+      Maximum high price: 6000.0 in date: 2014-01-21 00:00:00
+
+Symbol: BPTH
+Data: Minimum open price: 7920.0 in date: 2014-10-02 00:00:00
+      Maximum high price: 21000.0 in date: 2014-01-03 00:00:00
+
+Symbol: PRSO
+Data: Minimum open price: 12240.0 in date: 2014-12-29 00:00:00
+      Maximum high price: 47920.0 in date: 2014-01-15 00:00:00
+
+Symbol: ADD
+Data: Minimum open price: 14000.0 in date: 2014-06-23 00:00:00
+      Maximum high price: 36960.0 in date: 2014-01-17 00:00:00
+
+Symbol: SINT
+Data: Minimum open price: 5463000.0 in date: 2014-12-05 00:00:00
+      Maximum high price: 84330000.0 in date: 2014-02-24 00:00:00
+
+Symbol: TNXP
+Data: Minimum open price: 3507200000.0 in date: 2014-10-20 00:00:00
+      Maximum high price: 13440000000.0 in date: 2014-01-13 00:00:00
+
+Symbol: PHIO
+Data: Minimum open price: 926640.0 in date: 2014-12-24 00:00:00
+      Maximum high price: 4062960.0 in date: 2014-02-24 00:00:00
+
+Symbol: OBLG
+Data: Minimum open price: 6300.0 in date: 2014-12-30 00:00:00
+      Maximum high price: 12240.0 in date: 2014-09-04 00:00:00
+
+Symbol: NUWE
+Data: Minimum open price: 3148740096.0 in date: 2014-12-18 00:00:00
+      Maximum high price: 10134179840.0 in date: 2014-01-10 00:00:00
+
+Symbol: SNOA
+Data: Minimum open price: 1197.0 in date: 2014-12-09 00:00:00
+      Maximum high price: 5391.0 in date: 2014-03-18 00:00:00
+
+Symbol: HSDT
+Data: Minimum open price: 17587.5 in date: 2014-10-16 00:00:00
+      Maximum high price: 24412.5 in date: 2014-11-24 00:00:00
+
+Symbol: INM
+Data: Minimum open price: 1650.0 in date: 2014-06-06 00:00:00
+      Maximum high price: 16665.0 in date: 2014-06-06 00:00:00
+
+Symbol: CYCC
+Data: Minimum open price: 2196.0 in date: 2014-12-17 00:00:00
+      Maximum high price: 17424.0 in date: 2014-01-09 00:00:00
+
+Symbol: SPCB
+Data: Minimum open price: 948.0 in date: 2014-01-02 00:00:00
+      Maximum high price: 2830.0 in date: 2014-10-29 00:00:00
+
+Symbol: WINT
+Data: Minimum open price: 816480.0 in date: 2014-12-10 00:00:00
+      Maximum high price: 2094120.0 in date: 2014-02-28 00:00:00
+
+Symbol: CYTO
+Data: Minimum open price: 281200.0 in date: 2014-12-24 00:00:00
+      Maximum high price: 606400.0 in date: 2014-09-12 00:00:00
+
+Symbol: STAF
+Data: Minimum open price: 10200.0 in date: 2014-12-16 00:00:00
+      Maximum high price: 66000.0 in date: 2014-06-19 00:00:00
+
+Symbol: EAST
+Data: Minimum open price: 420.00042724609375 in date: 2014-05-15 00:00:00
+      Maximum high price: 6000.005859375 in date: 2014-12-19 00:00:00
+
+Symbol: AEMD
+Data: Minimum open price: 825.0 in date: 2014-08-26 00:00:00
+      Maximum high price: 5400.0 in date: 2014-11-24 00:00:00
+
+Symbol: LGMK
+Data: Minimum open price: 71500.0 in date: 2014-09-22 00:00:00
+      Maximum high price: 260000.0 in date: 2014-01-17 00:00:00
+
+Symbol: APDN
+Data: Minimum open price: 1640.0 in date: 2014-12-02 00:00:00
+      Maximum high price: 8640.0 in date: 2014-02-10 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:25:59.495924
+Controllo anomalie per il mercato: data_market_nasdaq_symbols
+Symbol: GYRE
+Data: Minimum open price: 438.75 in date: 2015-12-17 00:00:00
+      Maximum high price: 5087.25 in date: 2015-03-25 00:00:00
+
+Symbol: FCEL
+Data: Minimum open price: 1825.199951171875 in date: 2015-12-31 00:00:00
+      Maximum high price: 6868.7998046875 in date: 2015-01-02 00:00:00
+
+Symbol: SKYE
+Data: Minimum open price: 127.5 in date: 2015-09-29 00:00:00
+      Maximum high price: 1937.5 in date: 2015-01-06 00:00:00
+
+Symbol: SHIP
+Data: Minimum open price: 6600.0 in date: 2015-06-09 00:00:00
+      Maximum high price: 17280.0 in date: 2015-07-16 00:00:00
+
+Symbol: ACHV
+Data: Minimum open price: 2442.0 in date: 2015-12-16 00:00:00
+      Maximum high price: 9020.0 in date: 2015-07-28 00:00:00
+
+Symbol: CRVO
+Data: Minimum open price: 4950.0 in date: 2015-11-12 00:00:00
+      Maximum high price: 42187.5 in date: 2015-01-15 00:00:00
+
+Symbol: RGLS
+Data: Minimum open price: 739.2000122070312 in date: 2015-10-02 00:00:00
+      Maximum high price: 2546.39990234375 in date: 2015-03-05 00:00:00
+
+Symbol: GEVO
+Data: Minimum open price: 244.0 in date: 2015-12-16 00:00:00
+      Maximum high price: 2896.0 in date: 2015-05-08 00:00:00
+
+Symbol: CLRB
+Data: Minimum open price: 650.0 in date: 2015-12-31 00:00:00
+      Maximum high price: 3890.0 in date: 2015-07-20 00:00:00
+
+Symbol: ELDN
+Data: Minimum open price: 1394.8199462890625 in date: 2015-12-31 00:00:00
+      Maximum high price: 2607.389892578125 in date: 2015-01-06 00:00:00
+
+Symbol: BLUE
+Data: Minimum open price: 667.0984497070312 in date: 2015-12-08 00:00:00
+      Maximum high price: 2556.34716796875 in date: 2015-05-29 00:00:00
+
+Symbol: IMUX
+Data: Minimum open price: 121.5999984741211 in date: 2015-09-11 00:00:00
+      Maximum high price: 1186.800048828125 in date: 2015-04-27 00:00:00
+
+Symbol: RCAT
+Data: Minimum open price: 240.0 in date: 2015-12-23 00:00:00
+      Maximum high price: 2400.0 in date: 2015-02-17 00:00:00
+
+Symbol: SLS
+Data: Minimum open price: 38100.0 in date: 2015-08-24 00:00:00
+      Maximum high price: 71700.0 in date: 2015-06-08 00:00:00
+
+Symbol: BNTC
+Data: Minimum open price: 1045.5 in date: 2015-12-30 00:00:00
+      Maximum high price: 4202.39990234375 in date: 2015-01-07 00:00:00
+
+Symbol: NSPR
+Data: Minimum open price: 12937.5 in date: 2015-11-19 00:00:00
+      Maximum high price: 189375.0 in date: 2015-01-13 00:00:00
+
+Symbol: CENN
+Data: Minimum open price: 526500.0 in date: 2015-11-09 00:00:00
+      Maximum high price: 912000.0 in date: 2015-01-22 00:00:00
+
+Symbol: ATRA
+Data: Minimum open price: 434.0 in date: 2015-02-10 00:00:00
+      Maximum high price: 1639.0 in date: 2015-07-14 00:00:00
+
+Symbol: TTOO
+Data: Minimum open price: 43950.0 in date: 2015-10-01 00:00:00
+      Maximum high price: 120200.0 in date: 2015-01-15 00:00:00
+
+Symbol: NCTY
+Data: Minimum open price: 273.0 in date: 2015-10-16 00:00:00
+      Maximum high price: 1347.0 in date: 2015-11-30 00:00:00
+
+Symbol: GLBS
+Data: Minimum open price: 600.0 in date: 2015-12-31 00:00:00
+      Maximum high price: 10720.0 in date: 2015-01-06 00:00:00
+
+Symbol: LFWD
+Data: Minimum open price: 1004.5 in date: 2015-12-14 00:00:00
+      Maximum high price: 3979.5 in date: 2015-01-13 00:00:00
+
+Symbol: MIGI
+Data: Minimum open price: 504.0 in date: 2015-08-20 00:00:00
+      Maximum high price: 2880.0 in date: 2015-07-09 00:00:00
+
+Symbol: PSHG
+Data: Minimum open price: 518616.0 in date: 2015-12-15 00:00:00
+      Maximum high price: 2000376.0 in date: 2015-04-27 00:00:00
+
+Symbol: ONCT
+Data: Minimum open price: 854.0008544921875 in date: 2015-02-04 00:00:00
+      Maximum high price: 2226.002197265625 in date: 2015-06-22 00:00:00
+
+Symbol: AKTX
+Data: Minimum open price: 80.0 in date: 2015-05-27 00:00:00
+      Maximum high price: 1240.0 in date: 2015-02-10 00:00:00
+
+Symbol: BYU
+Data: Minimum open price: 431.25 in date: 2015-12-28 00:00:00
+      Maximum high price: 3725.125 in date: 2015-01-02 00:00:00
+
+Symbol: NXPL
+Data: Minimum open price: 1777.5 in date: 2015-06-17 00:00:00
+      Maximum high price: 5400.0 in date: 2015-03-05 00:00:00
+
+Symbol: JAGX
+Data: Minimum open price: 25373250.0 in date: 2015-12-14 00:00:00
+      Maximum high price: 100075504.0 in date: 2015-05-15 00:00:00
+
+Symbol: ANY
+Data: Minimum open price: 1834.0 in date: 2015-12-18 00:00:00
+      Maximum high price: 10486.0 in date: 2015-03-09 00:00:00
+
+Symbol: SLRX
+Data: Minimum open price: 49100.0 in date: 2015-10-22 00:00:00
+      Maximum high price: 124100.0 in date: 2015-04-22 00:00:00
+
+Symbol: AYTU
+Data: Minimum open price: 364800.0 in date: 2015-06-11 00:00:00
+      Maximum high price: 11356098.0 in date: 2015-04-24 00:00:00
+
+Symbol: KPRX
+Data: Minimum open price: 13716.0 in date: 2015-12-17 00:00:00
+      Maximum high price: 145800.0 in date: 2015-07-22 00:00:00
+
+Symbol: MBOT
+Data: Minimum open price: 583.2000122070312 in date: 2015-08-24 00:00:00
+      Maximum high price: 2251.800048828125 in date: 2015-03-03 00:00:00
+
+Symbol: TRAW
+Data: Minimum open price: 52875.0 in date: 2015-12-21 00:00:00
+      Maximum high price: 249187.5 in date: 2015-01-09 00:00:00
+
+Symbol: TCRT
+Data: Minimum open price: 745.5 in date: 2015-01-09 00:00:00
+      Maximum high price: 2239.5 in date: 2015-11-10 00:00:00
+
+Symbol: BRTX
+Data: Minimum open price: 12200.0 in date: 2015-11-02 00:00:00
+      Maximum high price: 49000.0 in date: 2015-07-09 00:00:00
+
+Symbol: EDSA
+Data: Minimum open price: 1558.199951171875 in date: 2015-07-09 00:00:00
+      Maximum high price: 3498.60009765625 in date: 2015-01-08 00:00:00
+
+Symbol: GCTK
+Data: Minimum open price: 4225.0 in date: 2015-12-11 00:00:00
+      Maximum high price: 9750.0 in date: 2015-04-30 00:00:00
+
+Symbol: DOMH
+Data: Minimum open price: 172.88906860351562 in date: 2015-12-10 00:00:00
+      Maximum high price: 1457.2078857421875 in date: 2015-01-21 00:00:00
+
+Symbol: CHEK
+Data: Minimum open price: 458.3999938964844 in date: 2015-12-31 00:00:00
+      Maximum high price: 1512.0 in date: 2015-03-18 00:00:00
+
+Symbol: RDHL
+Data: Minimum open price: 11060.0 in date: 2015-11-06 00:00:00
+      Maximum high price: 22220.0 in date: 2015-06-15 00:00:00
+
+Symbol: VERB
+Data: Minimum open price: 4800.0 in date: 2015-12-10 00:00:00
+      Maximum high price: 360000.0 in date: 2015-08-05 00:00:00
+
+Symbol: GWAV
+Data: Minimum open price: 37125.0 in date: 2015-07-29 00:00:00
+      Maximum high price: 315450.0 in date: 2015-04-20 00:00:00
+
+Symbol: PSTV
+Data: Minimum open price: 21375.0 in date: 2015-12-22 00:00:00
+      Maximum high price: 165375.0 in date: 2015-03-11 00:00:00
+
+Symbol: AVTX
+Data: Minimum open price: 8640.0 in date: 2015-12-15 00:00:00
+      Maximum high price: 19152.0 in date: 2015-10-15 00:00:00
+
+Symbol: OTRK
+Data: Minimum open price: 167.39999389648438 in date: 2015-10-23 00:00:00
+      Maximum high price: 1323.0 in date: 2015-01-07 00:00:00
+
+Symbol: VISL
+Data: Minimum open price: 31680.0 in date: 2015-12-21 00:00:00
+      Maximum high price: 921600.0 in date: 2015-01-13 00:00:00
+
+Symbol: XWEL
+Data: Minimum open price: 2664.0 in date: 2015-12-15 00:00:00
+      Maximum high price: 11760.0 in date: 2015-02-10 00:00:00
+
+Symbol: WHLR
+Data: Minimum open price: 2308608.0 in date: 2015-12-16 00:00:00
+      Maximum high price: 5723136.0 in date: 2015-01-05 00:00:00
+
+Symbol: NURO
+Data: Minimum open price: 1273.5999755859375 in date: 2015-12-31 00:00:00
+      Maximum high price: 5248.0 in date: 2015-01-02 00:00:00
+
+Symbol: TRVN
+Data: Minimum open price: 3018.75 in date: 2015-02-06 00:00:00
+      Maximum high price: 8481.25 in date: 2015-09-18 00:00:00
+
+Symbol: PULM
+Data: Minimum open price: 676.0 in date: 2015-10-29 00:00:00
+      Maximum high price: 2910.0 in date: 2015-06-16 00:00:00
+
+Symbol: TTNP
+Data: Minimum open price: 9149.1708984375 in date: 2015-01-08 00:00:00
+      Maximum high price: 20232.0 in date: 2015-10-12 00:00:00
+
+Symbol: JXJT
+Data: Minimum open price: 1272.0535888671875 in date: 2015-12-30 00:00:00
+      Maximum high price: 8255.958984375 in date: 2015-04-27 00:00:00
+
+Symbol: TENX
+Data: Minimum open price: 94080.0 in date: 2015-03-17 00:00:00
+      Maximum high price: 127360.0 in date: 2015-08-17 00:00:00
+
+Symbol: TANH
+Data: Minimum open price: 744.0 in date: 2015-11-02 00:00:00
+      Maximum high price: 8152.7998046875 in date: 2015-09-01 00:00:00
+
+Symbol: ENVB
+Data: Minimum open price: 1004464.3125 in date: 2015-05-04 00:00:00
+      Maximum high price: 7875000.0 in date: 2015-12-11 00:00:00
+
+Symbol: SONN
+Data: Minimum open price: 538137.625 in date: 2015-12-22 00:00:00
+      Maximum high price: 2677875.25 in date: 2015-05-18 00:00:00
+
+Symbol: XXII
+Data: Minimum open price: 19180.80078125 in date: 2015-08-17 00:00:00
+      Maximum high price: 57672.0 in date: 2015-01-05 00:00:00
+
+Symbol: POAI
+Data: Minimum open price: 12750.0 in date: 2015-06-10 00:00:00
+      Maximum high price: 35750.0 in date: 2015-04-20 00:00:00
+
+Symbol: XTIA
+Data: Minimum open price: 850499993600.0 in date: 2015-12-23 00:00:00
+      Maximum high price: 4662562390016.0 in date: 2015-04-23 00:00:00
+
+Symbol: PCSA
+Data: Minimum open price: 225.39999389648438 in date: 2015-12-24 00:00:00
+      Maximum high price: 2156.0 in date: 2015-01-02 00:00:00
+
+Symbol: RKDA
+Data: Minimum open price: 2164.0 in date: 2015-11-18 00:00:00
+      Maximum high price: 7040.0 in date: 2015-06-12 00:00:00
+
+Symbol: BDRX
+Data: Minimum open price: 8180000.0 in date: 2015-12-28 00:00:00
+      Maximum high price: 16180000.0 in date: 2015-12-07 00:00:00
+
+Symbol: AYRO
+Data: Minimum open price: 1008.0 in date: 2015-08-19 00:00:00
+      Maximum high price: 7392.0 in date: 2015-02-23 00:00:00
+
+Symbol: PALI
+Data: Minimum open price: 1170000.0 in date: 2015-12-15 00:00:00
+      Maximum high price: 4586400.0 in date: 2015-02-19 00:00:00
+
+Symbol: SNGX
+Data: Minimum open price: 1272.0 in date: 2015-12-14 00:00:00
+      Maximum high price: 7080.0 in date: 2015-06-24 00:00:00
+
+Symbol: PRSO
+Data: Minimum open price: 8480.0 in date: 2015-12-31 00:00:00
+      Maximum high price: 21360.0 in date: 2015-04-15 00:00:00
+
+Symbol: BPTH
+Data: Minimum open price: 4000.0 in date: 2015-09-24 00:00:00
+      Maximum high price: 10760.0 in date: 2015-01-02 00:00:00
+
+Symbol: ADD
+Data: Minimum open price: 5840.0 in date: 2015-12-31 00:00:00
+      Maximum high price: 23880.0 in date: 2015-02-11 00:00:00
+
+Symbol: OPGN
+Data: Minimum open price: 151000.0 in date: 2015-11-24 00:00:00
+      Maximum high price: 544000.0 in date: 2015-05-06 00:00:00
+
+Symbol: SINT
+Data: Minimum open price: 900000.0 in date: 2015-11-18 00:00:00
+      Maximum high price: 10080000.0 in date: 2015-01-06 00:00:00
+
+Symbol: TNXP
+Data: Minimum open price: 3430400000.0 in date: 2015-10-02 00:00:00
+      Maximum high price: 6860800000.0 in date: 2015-06-22 00:00:00
+
+Symbol: TCON
+Data: Minimum open price: 1750.0 in date: 2015-11-04 00:00:00
+      Maximum high price: 4200.0 in date: 2015-03-03 00:00:00
+
+Symbol: PHIO
+Data: Minimum open price: 211464.0 in date: 2015-08-19 00:00:00
+      Maximum high price: 1027620.0 in date: 2015-03-09 00:00:00
+
+Symbol: NUWE
+Data: Minimum open price: 1102499968.0 in date: 2015-12-23 00:00:00
+      Maximum high price: 6085799936.0 in date: 2015-02-25 00:00:00
+
+Symbol: OBLG
+Data: Minimum open price: 2700.0 in date: 2015-11-30 00:00:00
+      Maximum high price: 6780.0 in date: 2015-02-19 00:00:00
+
+Symbol: AVGR
+Data: Minimum open price: 1224000.0 in date: 2015-03-10 00:00:00
+      Maximum high price: 3013200.0 in date: 2015-12-28 00:00:00
+
+Symbol: XYLO
+Data: Minimum open price: 4128.0 in date: 2015-12-31 00:00:00
+      Maximum high price: 8272.0 in date: 2015-09-18 00:00:00
+
+Symbol: CYCC
+Data: Minimum open price: 1764.0 in date: 2015-10-02 00:00:00
+      Maximum high price: 7668.0 in date: 2015-02-27 00:00:00
+
+Symbol: HSDT
+Data: Minimum open price: 5092.5 in date: 2015-10-30 00:00:00
+      Maximum high price: 23625.0 in date: 2015-02-27 00:00:00
+
+Symbol: SNOA
+Data: Minimum open price: 648.0 in date: 2015-05-06 00:00:00
+      Maximum high price: 1773.0 in date: 2015-06-09 00:00:00
+
+Symbol: CETX
+Data: Minimum open price: 1346520.0 in date: 2015-08-26 00:00:00
+      Maximum high price: 3051720.0 in date: 2015-09-14 00:00:00
+
+Symbol: SPCB
+Data: Minimum open price: 896.0 in date: 2015-12-18 00:00:00
+      Maximum high price: 2888.0 in date: 2015-06-17 00:00:00
+
+Symbol: CYTO
+Data: Minimum open price: 249600.0 in date: 2015-11-17 00:00:00
+      Maximum high price: 572000.0 in date: 2015-02-06 00:00:00
+
+Symbol: WINT
+Data: Minimum open price: 151200.0 in date: 2015-12-16 00:00:00
+      Maximum high price: 1375920.0 in date: 2015-03-10 00:00:00
+
+Symbol: INM
+Data: Minimum open price: 1386.0 in date: 2015-01-29 00:00:00
+      Maximum high price: 5280.0 in date: 2015-03-06 00:00:00
+
+Symbol: AEMD
+Data: Minimum open price: 930.0 in date: 2015-12-15 00:00:00
+      Maximum high price: 3000.0 in date: 2015-01-05 00:00:00
+
+Symbol: STAF
+Data: Minimum open price: 7500.0 in date: 2015-04-08 00:00:00
+      Maximum high price: 30720.0 in date: 2015-09-29 00:00:00
+
+Symbol: EAST
+Data: Minimum open price: 180.00018310546875 in date: 2015-11-18 00:00:00
+      Maximum high price: 2712.002685546875 in date: 2015-07-16 00:00:00
+
+Symbol: QLGN
+Data: Minimum open price: 206250.0 in date: 2015-12-18 00:00:00
+      Maximum high price: 687500.0 in date: 2015-06-24 00:00:00
+
+Symbol: LGMK
+Data: Minimum open price: 9700.0 in date: 2015-12-23 00:00:00
+      Maximum high price: 210000.0 in date: 2015-03-23 00:00:00
+
+Symbol: APDN
+Data: Minimum open price: 1856.0 in date: 2015-05-07 00:00:00
+      Maximum high price: 7760.0 in date: 2015-10-19 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:00.333075
+Controllo anomalie per il mercato: data_market_nasdaq_symbols
+Symbol: FCEL
+Data: Minimum open price: 648.0 in date: 2016-12-30 00:00:00
+      Maximum high price: 3196.800048828125 in date: 2016-06-07 00:00:00
+
+Symbol: SHIP
+Data: Minimum open price: 2760.0 in date: 2016-12-30 00:00:00
+      Maximum high price: 20760.0 in date: 2016-11-16 00:00:00
+
+Symbol: ACHV
+Data: Minimum open price: 726.0 in date: 2016-10-19 00:00:00
+      Maximum high price: 3124.0 in date: 2016-04-26 00:00:00
+
+Symbol: CRVO
+Data: Minimum open price: 900.0 in date: 2016-09-14 00:00:00
+      Maximum high price: 19125.0 in date: 2016-01-25 00:00:00
+
+Symbol: ELDN
+Data: Minimum open price: 129.60000610351562 in date: 2016-11-04 00:00:00
+      Maximum high price: 1425.5999755859375 in date: 2016-04-07 00:00:00
+
+Symbol: RCAT
+Data: Minimum open price: 240.0 in date: 2016-01-04 00:00:00
+      Maximum high price: 3000.0 in date: 2016-11-14 00:00:00
+
+Symbol: SLS
+Data: Minimum open price: 2925.0 in date: 2016-12-23 00:00:00
+      Maximum high price: 74700.0 in date: 2016-06-20 00:00:00
+
+Symbol: NSPR
+Data: Minimum open price: 1185.0 in date: 2016-10-31 00:00:00
+      Maximum high price: 17812.5 in date: 2016-03-09 00:00:00
+
+Symbol: CENN
+Data: Minimum open price: 125460.0 in date: 2016-11-16 00:00:00
+      Maximum high price: 597000.0 in date: 2016-01-05 00:00:00
+
+Symbol: TTOO
+Data: Minimum open price: 24650.0 in date: 2016-12-13 00:00:00
+      Maximum high price: 56500.0 in date: 2016-04-08 00:00:00
+
+Symbol: GLBS
+Data: Minimum open price: 200.0 in date: 2016-01-20 00:00:00
+      Maximum high price: 23600.0 in date: 2016-11-16 00:00:00
+
+Symbol: LFWD
+Data: Minimum open price: 455.0 in date: 2016-11-02 00:00:00
+      Maximum high price: 2766.75 in date: 2016-01-05 00:00:00
+
+Symbol: PSHG
+Data: Minimum open price: 198185.40625 in date: 2016-12-15 00:00:00
+      Maximum high price: 2423603.75 in date: 2016-11-16 00:00:00
+
+Symbol: SISI
+Data: Minimum open price: 7776.0 in date: 2016-11-03 00:00:00
+      Maximum high price: 75340.796875 in date: 2016-09-28 00:00:00
+
+Symbol: BYU
+Data: Minimum open price: 313.75 in date: 2016-01-26 00:00:00
+      Maximum high price: 4000.0 in date: 2016-09-08 00:00:00
+
+Symbol: NXPL
+Data: Minimum open price: 45.0 in date: 2016-10-18 00:00:00
+      Maximum high price: 2362.5 in date: 2016-01-04 00:00:00
+
+Symbol: JAGX
+Data: Minimum open price: 8788500.0 in date: 2016-12-30 00:00:00
+      Maximum high price: 65205000.0 in date: 2016-01-13 00:00:00
+
+Symbol: ANY
+Data: Minimum open price: 294.0 in date: 2016-12-21 00:00:00
+      Maximum high price: 2800.0 in date: 2016-02-09 00:00:00
+
+Symbol: SLRX
+Data: Minimum open price: 23250.0 in date: 2016-11-04 00:00:00
+      Maximum high price: 69850.0 in date: 2016-05-25 00:00:00
+
+Symbol: AYTU
+Data: Minimum open price: 84000.0 in date: 2016-11-30 00:00:00
+      Maximum high price: 3590400.0 in date: 2016-01-04 00:00:00
+
+Symbol: KPRX
+Data: Minimum open price: 6534.0 in date: 2016-11-08 00:00:00
+      Maximum high price: 27540.0 in date: 2016-03-02 00:00:00
+
+Symbol: BRTX
+Data: Minimum open price: 12000.0 in date: 2016-08-09 00:00:00
+      Maximum high price: 17920.0 in date: 2016-04-01 00:00:00
+
+Symbol: TRAW
+Data: Minimum open price: 12656.25 in date: 2016-12-20 00:00:00
+      Maximum high price: 57937.5 in date: 2016-01-05 00:00:00
+
+Symbol: EDSA
+Data: Minimum open price: 540.9600219726562 in date: 2016-12-29 00:00:00
+      Maximum high price: 2037.4200439453125 in date: 2016-02-26 00:00:00
+
+Symbol: LMFA
+Data: Minimum open price: 1218.0 in date: 2016-12-22 00:00:00
+      Maximum high price: 2967.0 in date: 2016-01-29 00:00:00
+
+Symbol: GCTK
+Data: Minimum open price: 2600.0 in date: 2016-01-07 00:00:00
+      Maximum high price: 5850.0 in date: 2016-01-25 00:00:00
+
+Symbol: VERB
+Data: Minimum open price: 3000.0 in date: 2016-02-01 00:00:00
+      Maximum high price: 23880.0 in date: 2016-09-26 00:00:00
+
+Symbol: GWAV
+Data: Minimum open price: 18360.0 in date: 2016-09-30 00:00:00
+      Maximum high price: 75150.0 in date: 2016-04-12 00:00:00
+
+Symbol: RDHL
+Data: Minimum open price: 8230.0 in date: 2016-02-09 00:00:00
+      Maximum high price: 16540.0 in date: 2016-08-04 00:00:00
+
+Symbol: PSTV
+Data: Minimum open price: 10200.0 in date: 2016-12-30 00:00:00
+      Maximum high price: 40500.0 in date: 2016-04-27 00:00:00
+
+Symbol: AVTX
+Data: Minimum open price: 2419.199951171875 in date: 2016-12-22 00:00:00
+      Maximum high price: 16128.0 in date: 2016-11-23 00:00:00
+
+Symbol: VISL
+Data: Minimum open price: 1524.0 in date: 2016-12-29 00:00:00
+      Maximum high price: 41760.0 in date: 2016-05-23 00:00:00
+
+Symbol: XWEL
+Data: Minimum open price: 1680.0 in date: 2016-02-18 00:00:00
+      Maximum high price: 4860.0 in date: 2016-10-17 00:00:00
+
+Symbol: WHLR
+Data: Minimum open price: 1548288.0 in date: 2016-02-22 00:00:00
+      Maximum high price: 2695680.0 in date: 2016-07-26 00:00:00
+
+Symbol: TRVN
+Data: Minimum open price: 2362.5 in date: 2016-11-04 00:00:00
+      Maximum high price: 6568.75 in date: 2016-01-04 00:00:00
+
+Symbol: BCDA
+Data: Minimum open price: 113.4000015258789 in date: 2016-01-06 00:00:00
+      Maximum high price: 2073.60009765625 in date: 2016-12-29 00:00:00
+
+Symbol: JXJT
+Data: Minimum open price: 86.51956939697266 in date: 2016-05-12 00:00:00
+      Maximum high price: 1405.1929931640625 in date: 2016-01-04 00:00:00
+
+Symbol: VINO
+Data: Minimum open price: 4499.97998046875 in date: 2016-09-23 00:00:00
+      Maximum high price: 53999.76171875 in date: 2016-10-11 00:00:00
+
+Symbol: TENX
+Data: Minimum open price: 42880.0 in date: 2016-11-16 00:00:00
+      Maximum high price: 107840.0 in date: 2016-01-05 00:00:00
+
+Symbol: TTNP
+Data: Minimum open price: 10332.0 in date: 2016-01-19 00:00:00
+      Maximum high price: 31464.0 in date: 2016-05-27 00:00:00
+
+Symbol: XXII
+Data: Minimum open price: 23684.400390625 in date: 2016-04-11 00:00:00
+      Maximum high price: 55404.0 in date: 2016-10-04 00:00:00
+
+Symbol: ENVB
+Data: Minimum open price: 4500000.0 in date: 2016-04-12 00:00:00
+      Maximum high price: 9011250.0 in date: 2016-03-23 00:00:00
+
+Symbol: XTIA
+Data: Minimum open price: 243000000512.0 in date: 2016-11-09 00:00:00
+      Maximum high price: 1122356297728.0 in date: 2016-12-09 00:00:00
+
+Symbol: ENTO
+Data: Minimum open price: 168840.0 in date: 2016-12-28 00:00:00
+      Maximum high price: 235200.0 in date: 2016-10-13 00:00:00
+
+Symbol: SONN
+Data: Minimum open price: 256256.0 in date: 2016-08-23 00:00:00
+      Maximum high price: 653452.8125 in date: 2016-01-05 00:00:00
+
+Symbol: POAI
+Data: Minimum open price: 368.0 in date: 2016-11-01 00:00:00
+      Maximum high price: 19300.0 in date: 2016-01-21 00:00:00
+
+Symbol: BDRX
+Data: Minimum open price: 5000000.0 in date: 2016-12-19 00:00:00
+      Maximum high price: 11440000.0 in date: 2016-01-08 00:00:00
+
+Symbol: PALI
+Data: Minimum open price: 234000.0 in date: 2016-08-15 00:00:00
+      Maximum high price: 1275300.0 in date: 2016-01-06 00:00:00
+
+Symbol: RSLS
+Data: Minimum open price: 246500.0 in date: 2016-11-09 00:00:00
+      Maximum high price: 460520.0 in date: 2016-10-06 00:00:00
+
+Symbol: RKDA
+Data: Minimum open price: 824.0 in date: 2016-12-22 00:00:00
+      Maximum high price: 2736.0 in date: 2016-03-04 00:00:00
+
+Symbol: SNGX
+Data: Minimum open price: 535.2000122070312 in date: 2016-12-29 00:00:00
+      Maximum high price: 3000.0 in date: 2016-01-04 00:00:00
+
+Symbol: BPTH
+Data: Minimum open price: 4000.0 in date: 2016-11-03 00:00:00
+      Maximum high price: 12760.0 in date: 2016-04-05 00:00:00
+
+Symbol: EVOK
+Data: Minimum open price: 201.60000610351562 in date: 2016-11-10 00:00:00
+      Maximum high price: 1599.8399658203125 in date: 2016-07-13 00:00:00
+
+Symbol: PRSO
+Data: Minimum open price: 1920.0 in date: 2016-12-30 00:00:00
+      Maximum high price: 10000.0 in date: 2016-01-04 00:00:00
+
+Symbol: TNXP
+Data: Minimum open price: 243200000.0 in date: 2016-12-02 00:00:00
+      Maximum high price: 5088000000.0 in date: 2016-01-05 00:00:00
+
+Symbol: ADD
+Data: Minimum open price: 5840.0 in date: 2016-02-23 00:00:00
+      Maximum high price: 22720.0 in date: 2016-07-22 00:00:00
+
+Symbol: NUWE
+Data: Minimum open price: 141120000.0 in date: 2016-11-23 00:00:00
+      Maximum high price: 1428839936.0 in date: 2016-07-20 00:00:00
+
+Symbol: OPGN
+Data: Minimum open price: 87000.0 in date: 2016-11-08 00:00:00
+      Maximum high price: 465000.0 in date: 2016-07-20 00:00:00
+
+Symbol: SINT
+Data: Minimum open price: 360000.0 in date: 2016-11-04 00:00:00
+      Maximum high price: 2172000.0 in date: 2016-01-29 00:00:00
+
+Symbol: OBLG
+Data: Minimum open price: 1500.0 in date: 2016-09-13 00:00:00
+      Maximum high price: 3780.0 in date: 2016-01-12 00:00:00
+
+Symbol: SNES
+Data: Minimum open price: 384000.0 in date: 2016-12-13 00:00:00
+      Maximum high price: 431040.0 in date: 2016-12-27 00:00:00
+
+Symbol: PHIO
+Data: Minimum open price: 43362.0 in date: 2016-12-30 00:00:00
+      Maximum high price: 237600.0 in date: 2016-01-06 00:00:00
+
+Symbol: XYLO
+Data: Minimum open price: 889.5999755859375 in date: 2016-12-27 00:00:00
+      Maximum high price: 5200.0 in date: 2016-07-27 00:00:00
+
+Symbol: AVGR
+Data: Minimum open price: 420000.0 in date: 2016-10-31 00:00:00
+      Maximum high price: 2695200.0 in date: 2016-01-04 00:00:00
+
+Symbol: CETX
+Data: Minimum open price: 1023120.0 in date: 2016-02-16 00:00:00
+      Maximum high price: 4398240.0 in date: 2016-12-30 00:00:00
+
+Symbol: QNRX
+Data: Minimum open price: 6900.0 in date: 2016-12-23 00:00:00
+      Maximum high price: 16080.0 in date: 2016-08-01 00:00:00
+
+Symbol: HSDT
+Data: Minimum open price: 6098.75 in date: 2016-04-01 00:00:00
+      Maximum high price: 15837.5 in date: 2016-12-05 00:00:00
+
+Symbol: CYCC
+Data: Minimum open price: 1005.0 in date: 2016-11-09 00:00:00
+      Maximum high price: 2916.0 in date: 2016-08-22 00:00:00
+
+Symbol: APVO
+Data: Minimum open price: 42165.19921875 in date: 2016-12-02 00:00:00
+      Maximum high price: 188945.6875 in date: 2016-07-27 00:00:00
+
+Symbol: CYTO
+Data: Minimum open price: 68000.0 in date: 2016-11-09 00:00:00
+      Maximum high price: 636800.0 in date: 2016-01-06 00:00:00
+
+Symbol: INM
+Data: Minimum open price: 825.0 in date: 2016-05-31 00:00:00
+      Maximum high price: 3646.5 in date: 2016-12-28 00:00:00
+
+Symbol: WINT
+Data: Minimum open price: 66960.0 in date: 2016-12-30 00:00:00
+      Maximum high price: 238680.0 in date: 2016-08-19 00:00:00
+
+Symbol: STAF
+Data: Minimum open price: 2040.0 in date: 2016-11-01 00:00:00
+      Maximum high price: 14280.0 in date: 2016-04-01 00:00:00
+
+Symbol: LGMK
+Data: Minimum open price: 11500.0 in date: 2016-01-08 00:00:00
+      Maximum high price: 67500.0 in date: 2016-01-20 00:00:00
+
+Symbol: MYSZ
+Data: Minimum open price: 14850.0 in date: 2016-08-17 00:00:00
+      Maximum high price: 16350.0 in date: 2016-09-07 00:00:00
+
+Symbol: QLGN
+Data: Minimum open price: 130000.0 in date: 2016-02-09 00:00:00
+      Maximum high price: 407500.0 in date: 2016-10-24 00:00:00
+
+Symbol: APDN
+Data: Minimum open price: 1400.0 in date: 2016-12-29 00:00:00
+      Maximum high price: 2992.0 in date: 2016-03-22 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:01.239053
+Controllo anomalie per il mercato: data_market_nasdaq_symbols
+Symbol: ALAR
+Data: Minimum open price: 502.0 in date: 2018-12-28 00:00:00
+      Maximum high price: 2634.0 in date: 2018-08-22 00:00:00
+
+Symbol: DCTH
+Data: Minimum open price: 173.60000610351562 in date: 2018-12-20 00:00:00
+      Maximum high price: 7210.0 in date: 2018-09-19 00:00:00
+
+Symbol: SHIP
+Data: Minimum open price: 1200.0 in date: 2018-12-26 00:00:00
+      Maximum high price: 2856.0 in date: 2018-03-07 00:00:00
+
+Symbol: CRVO
+Data: Minimum open price: 146.25 in date: 2018-12-21 00:00:00
+      Maximum high price: 2340.0 in date: 2018-01-09 00:00:00
+
+Symbol: BLUE
+Data: Minimum open price: 1173.9637451171875 in date: 2018-12-24 00:00:00
+      Maximum high price: 3059.19677734375 in date: 2018-03-13 00:00:00
+
+Symbol: NAAS
+Data: Minimum open price: 698.0 in date: 2018-12-24 00:00:00
+      Maximum high price: 1860.0 in date: 2018-03-13 00:00:00
+
+Symbol: NSPR
+Data: Minimum open price: 97.5 in date: 2018-01-02 00:00:00
+      Maximum high price: 5850.0 in date: 2018-02-14 00:00:00
+
+Symbol: CENN
+Data: Minimum open price: 120300.0 in date: 2018-12-21 00:00:00
+      Maximum high price: 1704000.0 in date: 2018-06-20 00:00:00
+
+Symbol: BNGO
+Data: Minimum open price: 2916.0 in date: 2018-12-31 00:00:00
+      Maximum high price: 6000.0 in date: 2018-09-21 00:00:00
+
+Symbol: TTOO
+Data: Minimum open price: 14900.0 in date: 2018-12-31 00:00:00
+      Maximum high price: 49900.0 in date: 2018-06-15 00:00:00
+
+Symbol: GLBS
+Data: Minimum open price: 252.0 in date: 2018-12-26 00:00:00
+      Maximum high price: 1460.0 in date: 2018-01-10 00:00:00
+
+Symbol: VYNE
+Data: Minimum open price: 272.8800048828125 in date: 2018-12-28 00:00:00
+      Maximum high price: 2869.919921875 in date: 2018-02-06 00:00:00
+
+Symbol: GAME
+Data: Minimum open price: 135.0 in date: 2018-12-26 00:00:00
+      Maximum high price: 2893.5 in date: 2018-01-26 00:00:00
+
+Symbol: SISI
+Data: Minimum open price: 1080.0 in date: 2018-12-28 00:00:00
+      Maximum high price: 5572.7998046875 in date: 2018-01-05 00:00:00
+
+Symbol: ONCT
+Data: Minimum open price: 105.00010681152344 in date: 2018-12-27 00:00:00
+      Maximum high price: 3584.003662109375 in date: 2018-09-13 00:00:00
+
+Symbol: BIMI
+Data: Minimum open price: 44.0 in date: 2018-03-01 00:00:00
+      Maximum high price: 1250.0 in date: 2018-12-12 00:00:00
+
+Symbol: BYU
+Data: Minimum open price: 362.5 in date: 2018-12-24 00:00:00
+      Maximum high price: 2750.0 in date: 2018-01-05 00:00:00
+
+Symbol: JAGX
+Data: Minimum open price: 170100.0 in date: 2018-12-24 00:00:00
+      Maximum high price: 6237000.0 in date: 2018-03-08 00:00:00
+
+Symbol: FBRX
+Data: Minimum open price: 2553.75 in date: 2018-12-24 00:00:00
+      Maximum high price: 5925.0 in date: 2018-09-28 00:00:00
+
+Symbol: SLRX
+Data: Minimum open price: 1350.0 in date: 2018-12-26 00:00:00
+      Maximum high price: 44900.0 in date: 2018-03-15 00:00:00
+
+Symbol: AYTU
+Data: Minimum open price: 140.0 in date: 2018-12-26 00:00:00
+      Maximum high price: 17040.0 in date: 2018-01-18 00:00:00
+
+Symbol: KPRX
+Data: Minimum open price: 1566.0 in date: 2018-10-29 00:00:00
+      Maximum high price: 7236.0 in date: 2018-01-11 00:00:00
+
+Symbol: TRAW
+Data: Minimum open price: 660.0 in date: 2018-12-27 00:00:00
+      Maximum high price: 15018.75 in date: 2018-01-17 00:00:00
+
+Symbol: BRTX
+Data: Minimum open price: 2052.800048828125 in date: 2018-12-12 00:00:00
+      Maximum high price: 16000.0 in date: 2018-08-02 00:00:00
+
+Symbol: GCTK
+Data: Minimum open price: 130.0 in date: 2018-12-20 00:00:00
+      Maximum high price: 2795.0 in date: 2018-01-04 00:00:00
+
+Symbol: VERB
+Data: Minimum open price: 10920.0 in date: 2018-01-24 00:00:00
+      Maximum high price: 364800.0 in date: 2018-04-20 00:00:00
+
+Symbol: GWAV
+Data: Minimum open price: 2745.0 in date: 2018-12-24 00:00:00
+      Maximum high price: 52650.0 in date: 2018-01-03 00:00:00
+
+Symbol: PIXY
+Data: Minimum open price: 2304147.5 in date: 2018-12-31 00:00:00
+      Maximum high price: 9144585.0 in date: 2018-03-09 00:00:00
+
+Symbol: RDHL
+Data: Minimum open price: 4800.0 in date: 2018-05-02 00:00:00
+      Maximum high price: 11489.0 in date: 2018-07-16 00:00:00
+
+Symbol: AVTX
+Data: Minimum open price: 6393.60009765625 in date: 2018-01-11 00:00:00
+      Maximum high price: 16528.3203125 in date: 2018-02-27 00:00:00
+
+Symbol: PSTV
+Data: Minimum open price: 202.5 in date: 2018-12-26 00:00:00
+      Maximum high price: 4050.0 in date: 2018-01-05 00:00:00
+
+Symbol: VCNX
+Data: Minimum open price: 756.0 in date: 2018-12-31 00:00:00
+      Maximum high price: 2520.0 in date: 2018-08-09 00:00:00
+
+Symbol: WISA
+Data: Minimum open price: 918009.1875 in date: 2018-12-27 00:00:00
+      Maximum high price: 1682416.875 in date: 2018-10-29 00:00:00
+
+Symbol: XWEL
+Data: Minimum open price: 168.0 in date: 2018-09-11 00:00:00
+      Maximum high price: 2160.0 in date: 2018-01-08 00:00:00
+
+Symbol: VISL
+Data: Minimum open price: 288.0 in date: 2018-12-24 00:00:00
+      Maximum high price: 1968.0 in date: 2018-01-02 00:00:00
+
+Symbol: RETO
+Data: Minimum open price: 1230.0 in date: 2018-12-21 00:00:00
+      Maximum high price: 11320.0 in date: 2018-01-19 00:00:00
+
+Symbol: WHLR
+Data: Minimum open price: 146880.0 in date: 2018-12-27 00:00:00
+      Maximum high price: 1769472.0 in date: 2018-01-02 00:00:00
+
+Symbol: TRVN
+Data: Minimum open price: 243.75 in date: 2018-12-24 00:00:00
+      Maximum high price: 2236.25 in date: 2018-10-03 00:00:00
+
+Symbol: TTNP
+Data: Minimum open price: 720.0 in date: 2018-10-03 00:00:00
+      Maximum high price: 5220.0 in date: 2018-01-08 00:00:00
+
+Symbol: VINO
+Data: Minimum open price: 5399.97607421875 in date: 2018-09-25 00:00:00
+      Maximum high price: 17999.919921875 in date: 2018-01-04 00:00:00
+
+Symbol: TENX
+Data: Minimum open price: 1728.0 in date: 2018-12-27 00:00:00
+      Maximum high price: 20208.0 in date: 2018-03-01 00:00:00
+
+Symbol: VERO
+Data: Minimum open price: 101.25 in date: 2018-12-26 00:00:00
+      Maximum high price: 1845.0 in date: 2018-03-20 00:00:00
+
+Symbol: ENVB
+Data: Minimum open price: 189000.0 in date: 2018-12-27 00:00:00
+      Maximum high price: 15187500.0 in date: 2018-01-10 00:00:00
+
+Symbol: ENTO
+Data: Minimum open price: 44100.0 in date: 2018-12-27 00:00:00
+      Maximum high price: 171360.0 in date: 2018-01-09 00:00:00
+
+Symbol: XXII
+Data: Minimum open price: 64800.0 in date: 2018-04-30 00:00:00
+      Maximum high price: 143856.0 in date: 2018-01-23 00:00:00
+
+Symbol: SONN
+Data: Minimum open price: 85205.1171875 in date: 2018-12-28 00:00:00
+      Maximum high price: 329288.96875 in date: 2018-01-02 00:00:00
+
+Symbol: FAMI
+Data: Minimum open price: 570.0 in date: 2018-08-13 00:00:00
+      Maximum high price: 2064.0 in date: 2018-05-25 00:00:00
+
+Symbol: XTIA
+Data: Minimum open price: 232875008.0 in date: 2018-12-26 00:00:00
+      Maximum high price: 55485001728.0 in date: 2018-01-17 00:00:00
+
+Symbol: RSLS
+Data: Minimum open price: 44080.0 in date: 2018-08-03 00:00:00
+      Maximum high price: 237365.0 in date: 2018-01-11 00:00:00
+
+Symbol: BDRX
+Data: Minimum open price: 266000.0 in date: 2018-12-21 00:00:00
+      Maximum high price: 5300000.0 in date: 2018-01-02 00:00:00
+
+Symbol: AYRO
+Data: Minimum open price: 57.599998474121094 in date: 2018-12-24 00:00:00
+      Maximum high price: 1507.199951171875 in date: 2018-01-16 00:00:00
+
+Symbol: PALI
+Data: Minimum open price: 29700.0 in date: 2018-12-28 00:00:00
+      Maximum high price: 212400.0 in date: 2018-01-11 00:00:00
+
+Symbol: RKDA
+Data: Minimum open price: 114.80000305175781 in date: 2018-12-28 00:00:00
+      Maximum high price: 2662.39990234375 in date: 2018-03-15 00:00:00
+
+Symbol: GTBP
+Data: Minimum open price: 295.79998779296875 in date: 2018-12-27 00:00:00
+      Maximum high price: 1428.0 in date: 2018-07-25 00:00:00
+
+Symbol: ENSC
+Data: Minimum open price: 34380.0 in date: 2018-03-15 00:00:00
+      Maximum high price: 35460.0 in date: 2018-12-10 00:00:00
+
+Symbol: MBIO
+Data: Minimum open price: 1710.0 in date: 2018-12-27 00:00:00
+      Maximum high price: 9667.5 in date: 2018-01-10 00:00:00
+
+Symbol: BPTH
+Data: Minimum open price: 68.0 in date: 2018-12-28 00:00:00
+      Maximum high price: 1236.0 in date: 2018-04-03 00:00:00
+
+Symbol: PRSO
+Data: Minimum open price: 104.0 in date: 2018-12-24 00:00:00
+      Maximum high price: 1784.0 in date: 2018-05-11 00:00:00
+
+Symbol: NUWE
+Data: Minimum open price: 661500.0 in date: 2018-12-28 00:00:00
+      Maximum high price: 7056000.0 in date: 2018-01-29 00:00:00
+
+Symbol: ADD
+Data: Minimum open price: 8000.0 in date: 2018-04-04 00:00:00
+      Maximum high price: 40800.0 in date: 2018-06-22 00:00:00
+
+Symbol: ATXI
+Data: Minimum open price: 2362.5 in date: 2018-10-11 00:00:00
+      Maximum high price: 6750.0 in date: 2018-11-19 00:00:00
+
+Symbol: TNXP
+Data: Minimum open price: 11712000.0 in date: 2018-12-26 00:00:00
+      Maximum high price: 327040000.0 in date: 2018-06-07 00:00:00
+
+Symbol: OPGN
+Data: Minimum open price: 3600.0 in date: 2018-12-21 00:00:00
+      Maximum high price: 30400.0 in date: 2018-01-24 00:00:00
+
+Symbol: SINT
+Data: Minimum open price: 97200.0 in date: 2018-12-24 00:00:00
+      Maximum high price: 2472000.0 in date: 2018-05-09 00:00:00
+
+Symbol: SNES
+Data: Minimum open price: 15024.0 in date: 2018-05-17 00:00:00
+      Maximum high price: 113760.0 in date: 2018-06-06 00:00:00
+
+Symbol: OBLG
+Data: Minimum open price: 660.0 in date: 2018-12-26 00:00:00
+      Maximum high price: 2760.0 in date: 2018-01-03 00:00:00
+
+Symbol: PHIO
+Data: Minimum open price: 1603.800048828125 in date: 2018-12-26 00:00:00
+      Maximum high price: 40154.3984375 in date: 2018-03-15 00:00:00
+
+Symbol: AVGR
+Data: Minimum open price: 540.0 in date: 2018-12-24 00:00:00
+      Maximum high price: 29280.0 in date: 2018-01-18 00:00:00
+
+Symbol: QNRX
+Data: Minimum open price: 6900.0 in date: 2018-12-31 00:00:00
+      Maximum high price: 40500.0 in date: 2018-01-04 00:00:00
+
+Symbol: CETX
+Data: Minimum open price: 346920.0 in date: 2018-12-28 00:00:00
+      Maximum high price: 2099160.0 in date: 2018-01-24 00:00:00
+
+Symbol: HSDT
+Data: Minimum open price: 12512.5 in date: 2018-04-11 00:00:00
+      Maximum high price: 23100.0 in date: 2018-06-18 00:00:00
+
+Symbol: APVO
+Data: Minimum open price: 28262.080078125 in date: 2018-12-26 00:00:00
+      Maximum high price: 144729.203125 in date: 2018-05-17 00:00:00
+
+Symbol: FRGT
+Data: Minimum open price: 3496.696044921875 in date: 2018-12-24 00:00:00
+      Maximum high price: 264207.0625 in date: 2018-02-07 00:00:00
+
+Symbol: WINT
+Data: Minimum open price: 6831.0 in date: 2018-10-17 00:00:00
+      Maximum high price: 15687.0 in date: 2018-01-05 00:00:00
+
+Symbol: INM
+Data: Minimum open price: 3663.0 in date: 2018-12-26 00:00:00
+      Maximum high price: 32175.0 in date: 2018-01-08 00:00:00
+
+Symbol: CYTO
+Data: Minimum open price: 1920.0 in date: 2018-08-16 00:00:00
+      Maximum high price: 51984.0 in date: 2018-01-03 00:00:00
+
+Symbol: STAF
+Data: Minimum open price: 732.0 in date: 2018-06-28 00:00:00
+      Maximum high price: 3390.0 in date: 2018-07-09 00:00:00
+
+Symbol: IONM
+Data: Minimum open price: 2069.999755859375 in date: 2018-04-05 00:00:00
+      Maximum high price: 6205.1396484375 in date: 2018-02-02 00:00:00
+
+Symbol: TBLT
+Data: Minimum open price: 80827.5 in date: 2018-12-27 00:00:00
+      Maximum high price: 438750.0 in date: 2018-12-03 00:00:00
+
+Symbol: MYSZ
+Data: Minimum open price: 1980.0 in date: 2018-01-02 00:00:00
+      Maximum high price: 10740.0 in date: 2018-01-08 00:00:00
+
+Symbol: LGMK
+Data: Minimum open price: 3000.0 in date: 2018-12-24 00:00:00
+      Maximum high price: 19900.0 in date: 2018-01-03 00:00:00
+
+Symbol: QLGN
+Data: Minimum open price: 6500.0 in date: 2018-12-27 00:00:00
+      Maximum high price: 50000.0 in date: 2018-06-04 00:00:00
+
+Symbol: APDN
+Data: Minimum open price: 280.0 in date: 2018-12-24 00:00:00
+      Maximum high price: 1472.0 in date: 2018-09-25 00:00:00
+
+Symbol: NDRA
+Data: Minimum open price: 54250.0 in date: 2018-12-31 00:00:00
+      Maximum high price: 201250.0 in date: 2018-10-29 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:02.212061
+Controllo anomalie per il mercato: data_market_nasdaq_symbols
+Symbol: SHIP
+Data: Minimum open price: 73.5999984741211 in date: 2019-11-22 00:00:00
+      Maximum high price: 1584.0 in date: 2019-01-08 00:00:00
+
+Symbol: XTKG
+Data: Minimum open price: 622.6414794921875 in date: 2019-12-30 00:00:00
+      Maximum high price: 1777.3585205078125 in date: 2019-04-03 00:00:00
+
+Symbol: BLUE
+Data: Minimum open price: 946.2435302734375 in date: 2019-11-12 00:00:00
+      Maximum high price: 2116.968994140625 in date: 2019-04-03 00:00:00
+
+Symbol: BNGO
+Data: Minimum open price: 306.0 in date: 2019-10-15 00:00:00
+      Maximum high price: 3744.0 in date: 2019-03-05 00:00:00
+
+Symbol: CENN
+Data: Minimum open price: 2370.0 in date: 2019-12-31 00:00:00
+      Maximum high price: 140190.0 in date: 2019-01-16 00:00:00
+
+Symbol: GRYP
+Data: Minimum open price: 1484.0 in date: 2019-11-14 00:00:00
+      Maximum high price: 29060.0 in date: 2019-06-20 00:00:00
+
+Symbol: PHUN
+Data: Minimum open price: 55.5 in date: 2019-12-19 00:00:00
+      Maximum high price: 27500.0 in date: 2019-01-10 00:00:00
+
+Symbol: TTOO
+Data: Minimum open price: 2760.0 in date: 2019-08-01 00:00:00
+      Maximum high price: 26900.0 in date: 2019-02-28 00:00:00
+
+Symbol: CTRM
+Data: Minimum open price: 181.0 in date: 2019-12-31 00:00:00
+      Maximum high price: 1899.9000244140625 in date: 2019-03-11 00:00:00
+
+Symbol: SONM
+Data: Minimum open price: 217.0 in date: 2019-11-08 00:00:00
+      Maximum high price: 1825.800048828125 in date: 2019-06-07 00:00:00
+
+Symbol: SISI
+Data: Minimum open price: 978.47998046875 in date: 2019-02-14 00:00:00
+      Maximum high price: 3585.60009765625 in date: 2019-04-04 00:00:00
+
+Symbol: JAGX
+Data: Minimum open price: 7830.0 in date: 2019-12-11 00:00:00
+      Maximum high price: 491400.0 in date: 2019-03-18 00:00:00
+
+Symbol: FBRX
+Data: Minimum open price: 159.375 in date: 2019-12-18 00:00:00
+      Maximum high price: 4500.0 in date: 2019-03-05 00:00:00
+
+Symbol: SLRX
+Data: Minimum open price: 604.0 in date: 2019-11-20 00:00:00
+      Maximum high price: 4890.0 in date: 2019-07-11 00:00:00
+
+Symbol: KPRX
+Data: Minimum open price: 837.0 in date: 2019-08-21 00:00:00
+      Maximum high price: 4640.39990234375 in date: 2019-12-30 00:00:00
+
+Symbol: BRTX
+Data: Minimum open price: 24.799999237060547 in date: 2019-12-31 00:00:00
+      Maximum high price: 3680.0 in date: 2019-01-02 00:00:00
+
+Symbol: TRAW
+Data: Minimum open price: 48.75 in date: 2019-11-27 00:00:00
+      Maximum high price: 1811.25 in date: 2019-03-21 00:00:00
+
+Symbol: VERB
+Data: Minimum open price: 6240.0 in date: 2019-11-15 00:00:00
+      Maximum high price: 149680.0 in date: 2019-02-15 00:00:00
+
+Symbol: GHSI
+Data: Minimum open price: 53.39989471435547 in date: 2019-11-21 00:00:00
+      Maximum high price: 1199.99755859375 in date: 2019-04-10 00:00:00
+
+Symbol: GWAV
+Data: Minimum open price: 135.0 in date: 2019-10-10 00:00:00
+      Maximum high price: 4455.0 in date: 2019-01-09 00:00:00
+
+Symbol: AVTX
+Data: Minimum open price: 8496.0 in date: 2019-08-08 00:00:00
+      Maximum high price: 22032.0 in date: 2019-02-27 00:00:00
+
+Symbol: PIXY
+Data: Minimum open price: 259559.796875 in date: 2019-12-17 00:00:00
+      Maximum high price: 2664170.5 in date: 2019-01-11 00:00:00
+
+Symbol: RDHL
+Data: Minimum open price: 5640.0 in date: 2019-01-02 00:00:00
+      Maximum high price: 9200.0 in date: 2019-03-13 00:00:00
+
+Symbol: LKCO
+Data: Minimum open price: 304.79998779296875 in date: 2019-11-26 00:00:00
+      Maximum high price: 5760.0 in date: 2019-01-15 00:00:00
+
+Symbol: OTRK
+Data: Minimum open price: 817.2000122070312 in date: 2019-01-11 00:00:00
+      Maximum high price: 1874.699951171875 in date: 2019-05-20 00:00:00
+
+Symbol: WISA
+Data: Minimum open price: 165601.65625 in date: 2019-12-17 00:00:00
+      Maximum high price: 1217352.125 in date: 2019-01-09 00:00:00
+
+Symbol: RETO
+Data: Minimum open price: 834.0 in date: 2019-11-13 00:00:00
+      Maximum high price: 2550.0 in date: 2019-01-23 00:00:00
+
+Symbol: WHLR
+Data: Minimum open price: 153273.59375 in date: 2019-01-03 00:00:00
+      Maximum high price: 473472.0 in date: 2019-04-24 00:00:00
+
+Symbol: KXIN
+Data: Minimum open price: 1071.0 in date: 2019-12-16 00:00:00
+      Maximum high price: 9360.0 in date: 2019-04-17 00:00:00
+
+Symbol: VINO
+Data: Minimum open price: 4067.982177734375 in date: 2019-05-31 00:00:00
+      Maximum high price: 11519.94921875 in date: 2019-06-13 00:00:00
+
+Symbol: TTNP
+Data: Minimum open price: 84.0 in date: 2019-11-21 00:00:00
+      Maximum high price: 1470.0 in date: 2019-02-25 00:00:00
+
+Symbol: TENX
+Data: Minimum open price: 1792.0 in date: 2019-08-20 00:00:00
+      Maximum high price: 4464.0 in date: 2019-03-08 00:00:00
+
+Symbol: ENVB
+Data: Minimum open price: 86400.0 in date: 2019-12-16 00:00:00
+      Maximum high price: 540000.0 in date: 2019-03-20 00:00:00
+
+Symbol: ENTO
+Data: Minimum open price: 21000.0 in date: 2019-10-11 00:00:00
+      Maximum high price: 130200.0 in date: 2019-05-08 00:00:00
+
+Symbol: XXII
+Data: Minimum open price: 26730.0 in date: 2019-12-17 00:00:00
+      Maximum high price: 93312.0 in date: 2019-01-09 00:00:00
+
+Symbol: SONN
+Data: Minimum open price: 32672.640625 in date: 2019-08-26 00:00:00
+      Maximum high price: 188988.796875 in date: 2019-05-08 00:00:00
+
+Symbol: ALBT
+Data: Minimum open price: 211.5 in date: 2019-11-13 00:00:00
+      Maximum high price: 2025.0 in date: 2019-01-22 00:00:00
+
+Symbol: XTIA
+Data: Minimum open price: 3206250.0 in date: 2019-12-13 00:00:00
+      Maximum high price: 451406240.0 in date: 2019-01-10 00:00:00
+
+Symbol: BDRX
+Data: Minimum open price: 114000.0 in date: 2019-12-16 00:00:00
+      Maximum high price: 2180000.0 in date: 2019-02-27 00:00:00
+
+Symbol: RSLS
+Data: Minimum open price: 4785.0 in date: 2019-11-12 00:00:00
+      Maximum high price: 67570.0 in date: 2019-01-02 00:00:00
+
+Symbol: PALI
+Data: Minimum open price: 3375.0 in date: 2019-11-20 00:00:00
+      Maximum high price: 62100.0 in date: 2019-03-20 00:00:00
+
+Symbol: MBIO
+Data: Minimum open price: 1957.5 in date: 2019-11-13 00:00:00
+      Maximum high price: 7650.0 in date: 2019-04-18 00:00:00
+
+Symbol: ENSC
+Data: Minimum open price: 35352.0 in date: 2019-01-02 00:00:00
+      Maximum high price: 37548.0 in date: 2019-12-31 00:00:00
+
+Symbol: XHG
+Data: Minimum open price: 41040.0 in date: 2019-12-19 00:00:00
+      Maximum high price: 81752.0 in date: 2019-11-08 00:00:00
+
+Symbol: OPGN
+Data: Minimum open price: 200.0 in date: 2019-11-20 00:00:00
+      Maximum high price: 8120.0 in date: 2019-01-09 00:00:00
+
+Symbol: ADD
+Data: Minimum open price: 5480.0 in date: 2019-12-31 00:00:00
+      Maximum high price: 22400.0 in date: 2019-01-18 00:00:00
+
+Symbol: SINT
+Data: Minimum open price: 28200.0 in date: 2019-08-29 00:00:00
+      Maximum high price: 209400.0 in date: 2019-02-14 00:00:00
+
+Symbol: NUWE
+Data: Minimum open price: 68250.0 in date: 2019-11-15 00:00:00
+      Maximum high price: 1459500.0 in date: 2019-01-15 00:00:00
+
+Symbol: ATXI
+Data: Minimum open price: 4848.75 in date: 2019-05-09 00:00:00
+      Maximum high price: 11025.0 in date: 2019-12-31 00:00:00
+
+Symbol: TNXP
+Data: Minimum open price: 576000.0 in date: 2019-12-11 00:00:00
+      Maximum high price: 26880000.0 in date: 2019-03-08 00:00:00
+
+Symbol: SNES
+Data: Minimum open price: 24960.0 in date: 2019-12-24 00:00:00
+      Maximum high price: 93600.0 in date: 2019-05-07 00:00:00
+
+Symbol: PHIO
+Data: Minimum open price: 635.5800170898438 in date: 2019-11-20 00:00:00
+      Maximum high price: 3118.5 in date: 2019-04-03 00:00:00
+
+Symbol: AVGR
+Data: Minimum open price: 236.10000610351562 in date: 2019-10-03 00:00:00
+      Maximum high price: 3780.0 in date: 2019-04-10 00:00:00
+
+Symbol: QNRX
+Data: Minimum open price: 960.0 in date: 2019-10-23 00:00:00
+      Maximum high price: 11490.0 in date: 2019-02-07 00:00:00
+
+Symbol: CETX
+Data: Minimum open price: 84525.0 in date: 2019-12-11 00:00:00
+      Maximum high price: 593880.0 in date: 2019-02-06 00:00:00
+
+Symbol: APVO
+Data: Minimum open price: 12079.759765625 in date: 2019-11-01 00:00:00
+      Maximum high price: 45584.0 in date: 2019-02-05 00:00:00
+
+Symbol: FRGT
+Data: Minimum open price: 4493.39208984375 in date: 2019-11-19 00:00:00
+      Maximum high price: 35462.5546875 in date: 2019-03-04 00:00:00
+
+Symbol: HSDT
+Data: Minimum open price: 698.25 in date: 2019-11-25 00:00:00
+      Maximum high price: 16537.5 in date: 2019-01-03 00:00:00
+
+Symbol: GNLN
+Data: Minimum open price: 5852.0 in date: 2019-12-12 00:00:00
+      Maximum high price: 63800.0 in date: 2019-04-18 00:00:00
+
+Symbol: INM
+Data: Minimum open price: 2805.0 in date: 2019-12-19 00:00:00
+      Maximum high price: 10345.5 in date: 2019-02-05 00:00:00
+
+Symbol: CYTO
+Data: Minimum open price: 520.0 in date: 2019-11-19 00:00:00
+      Maximum high price: 4359.2001953125 in date: 2019-01-15 00:00:00
+
+Symbol: STAF
+Data: Minimum open price: 396.0 in date: 2019-11-14 00:00:00
+      Maximum high price: 2070.0 in date: 2019-01-22 00:00:00
+
+Symbol: IONM
+Data: Minimum open price: 1781.9998779296875 in date: 2019-06-04 00:00:00
+      Maximum high price: 4150.61962890625 in date: 2019-02-07 00:00:00
+
+Symbol: TBLT
+Data: Minimum open price: 16087.5 in date: 2019-12-09 00:00:00
+      Maximum high price: 541125.0 in date: 2019-01-16 00:00:00
+
+Symbol: WINT
+Data: Minimum open price: 6399.0 in date: 2019-11-19 00:00:00
+      Maximum high price: 14445.0 in date: 2019-01-07 00:00:00
+
+Symbol: MYSZ
+Data: Minimum open price: 630.0 in date: 2019-12-03 00:00:00
+      Maximum high price: 3090.0 in date: 2019-05-17 00:00:00
+
+Symbol: LGMK
+Data: Minimum open price: 1560.0 in date: 2019-08-23 00:00:00
+      Maximum high price: 7000.0 in date: 2019-01-15 00:00:00
+
+Symbol: NDRA
+Data: Minimum open price: 23730.0 in date: 2019-11-21 00:00:00
+      Maximum high price: 122010.0 in date: 2019-03-21 00:00:00
+
+Symbol: QLGN
+Data: Minimum open price: 1937.5 in date: 2019-12-18 00:00:00
+      Maximum high price: 16875.0 in date: 2019-03-15 00:00:00
+
+Symbol: CNSP
+Data: Minimum open price: 5745.0 in date: 2019-12-23 00:00:00
+      Maximum high price: 8535.0 in date: 2019-11-19 00:00:00
+
+Symbol: SXTC
+Data: Minimum open price: 69.9000015258789 in date: 2019-12-20 00:00:00
+      Maximum high price: 2335.0 in date: 2019-01-10 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:03.236826
+Controllo anomalie per il mercato: data_market_nasdaq_symbols
+Symbol: NKLA
+Data: Minimum open price: 309.0 in date: 2020-01-03 00:00:00
+      Maximum high price: 2819.699951171875 in date: 2020-06-09 00:00:00
+
+Symbol: KRRO
+Data: Minimum open price: 740.0 in date: 2020-04-22 00:00:00
+      Maximum high price: 2144.550048828125 in date: 2020-12-17 00:00:00
+
+Symbol: FFIE
+Data: Minimum open price: 92736.0 in date: 2020-11-03 00:00:00
+      Maximum high price: 102624.0 in date: 2020-09-15 00:00:00
+
+Symbol: GOEV
+Data: Minimum open price: 6670.0 in date: 2020-12-31 00:00:00
+      Maximum high price: 9062.0 in date: 2020-12-24 00:00:00
+
+Symbol: MAXN
+Data: Minimum open price: 1270.0 in date: 2020-09-23 00:00:00
+      Maximum high price: 3799.0 in date: 2020-12-28 00:00:00
+
+Symbol: BNGO
+Data: Minimum open price: 162.0 in date: 2020-04-03 00:00:00
+      Maximum high price: 2082.0 in date: 2020-12-31 00:00:00
+
+Symbol: CENN
+Data: Minimum open price: 105.0 in date: 2020-10-27 00:00:00
+      Maximum high price: 3930.0 in date: 2020-06-09 00:00:00
+
+Symbol: GRYP
+Data: Minimum open price: 920.0 in date: 2020-10-29 00:00:00
+      Maximum high price: 4596.0 in date: 2020-06-08 00:00:00
+
+Symbol: TTOO
+Data: Minimum open price: 1350.0 in date: 2020-03-17 00:00:00
+      Maximum high price: 11550.0 in date: 2020-07-01 00:00:00
+
+Symbol: BIOR
+Data: Minimum open price: 795.0 in date: 2020-12-03 00:00:00
+      Maximum high price: 3980.0 in date: 2020-06-19 00:00:00
+
+Symbol: SISI
+Data: Minimum open price: 568.7999877929688 in date: 2020-09-08 00:00:00
+      Maximum high price: 1836.0 in date: 2020-07-27 00:00:00
+
+Symbol: FBRX
+Data: Minimum open price: 174.75 in date: 2020-02-14 00:00:00
+      Maximum high price: 1349.75 in date: 2020-09-24 00:00:00
+
+Symbol: JAGX
+Data: Minimum open price: 2605.5 in date: 2020-11-03 00:00:00
+      Maximum high price: 17415.0 in date: 2020-12-23 00:00:00
+
+Symbol: VRM
+Data: Minimum open price: 2577.424072265625 in date: 2020-12-07 00:00:00
+      Maximum high price: 6039.2001953125 in date: 2020-09-01 00:00:00
+
+Symbol: KPRX
+Data: Minimum open price: 1155.5999755859375 in date: 2020-11-12 00:00:00
+      Maximum high price: 3668.39990234375 in date: 2020-01-02 00:00:00
+
+Symbol: RDHL
+Data: Minimum open price: 3750.0 in date: 2020-03-12 00:00:00
+      Maximum high price: 11350.0 in date: 2020-09-16 00:00:00
+
+Symbol: VERB
+Data: Minimum open price: 7680.0 in date: 2020-03-19 00:00:00
+      Maximum high price: 21120.0 in date: 2020-07-21 00:00:00
+
+Symbol: AVTX
+Data: Minimum open price: 4636.7998046875 in date: 2020-03-16 00:00:00
+      Maximum high price: 15465.599609375 in date: 2020-01-02 00:00:00
+
+Symbol: PIXY
+Data: Minimum open price: 75959.9375 in date: 2020-11-02 00:00:00
+      Maximum high price: 989999.1875 in date: 2020-01-08 00:00:00
+
+Symbol: OTRK
+Data: Minimum open price: 891.0 in date: 2020-03-24 00:00:00
+      Maximum high price: 7500.60009765625 in date: 2020-09-10 00:00:00
+
+Symbol: VCNX
+Data: Minimum open price: 348.6000061035156 in date: 2020-10-07 00:00:00
+      Maximum high price: 2568.300048828125 in date: 2020-01-27 00:00:00
+
+Symbol: WISA
+Data: Minimum open price: 26699.986328125 in date: 2020-09-08 00:00:00
+      Maximum high price: 216002.15625 in date: 2020-01-10 00:00:00
+
+Symbol: MNTS
+Data: Minimum open price: 6580.0 in date: 2020-03-19 00:00:00
+      Maximum high price: 13895.0 in date: 2020-12-28 00:00:00
+
+Symbol: RETO
+Data: Minimum open price: 420.0 in date: 2020-04-27 00:00:00
+      Maximum high price: 1920.0 in date: 2020-07-10 00:00:00
+
+Symbol: WHLR
+Data: Minimum open price: 142041.59375 in date: 2020-03-30 00:00:00
+      Maximum high price: 673920.0 in date: 2020-11-16 00:00:00
+
+Symbol: TRVN
+Data: Minimum open price: 308.75 in date: 2020-04-07 00:00:00
+      Maximum high price: 2300.0 in date: 2020-08-10 00:00:00
+
+Symbol: KXIN
+Data: Minimum open price: 382.5 in date: 2020-09-09 00:00:00
+      Maximum high price: 12060.0 in date: 2020-10-19 00:00:00
+
+Symbol: VINO
+Data: Minimum open price: 3995.982421875 in date: 2020-06-30 00:00:00
+      Maximum high price: 11699.9482421875 in date: 2020-09-17 00:00:00
+
+Symbol: TENX
+Data: Minimum open price: 787.2000122070312 in date: 2020-03-18 00:00:00
+      Maximum high price: 4544.0 in date: 2020-12-29 00:00:00
+
+Symbol: ENVB
+Data: Minimum open price: 16650.0 in date: 2020-12-31 00:00:00
+      Maximum high price: 238500.0 in date: 2020-06-02 00:00:00
+
+Symbol: ENTO
+Data: Minimum open price: 18900.0 in date: 2020-03-12 00:00:00
+      Maximum high price: 81396.0 in date: 2020-01-10 00:00:00
+
+Symbol: SONN
+Data: Minimum open price: 5544.0 in date: 2020-12-17 00:00:00
+      Maximum high price: 134534.40625 in date: 2020-03-19 00:00:00
+
+Symbol: XXII
+Data: Minimum open price: 17852.400390625 in date: 2020-09-10 00:00:00
+      Maximum high price: 101412.0 in date: 2020-12-14 00:00:00
+
+Symbol: XTIA
+Data: Minimum open price: 1837500.0 in date: 2020-11-16 00:00:00
+      Maximum high price: 54843752.0 in date: 2020-01-03 00:00:00
+
+Symbol: RSLS
+Data: Minimum open price: 1853.0999755859375 in date: 2020-04-09 00:00:00
+      Maximum high price: 9077.0 in date: 2020-12-07 00:00:00
+
+Symbol: BDRX
+Data: Minimum open price: 48800.0 in date: 2020-04-07 00:00:00
+      Maximum high price: 282800.0 in date: 2020-07-21 00:00:00
+
+Symbol: PALI
+Data: Minimum open price: 2430.0 in date: 2020-09-25 00:00:00
+      Maximum high price: 18405.0 in date: 2020-01-17 00:00:00
+
+Symbol: NVVE
+Data: Minimum open price: 3880.0 in date: 2020-05-04 00:00:00
+      Maximum high price: 9096.0 in date: 2020-11-25 00:00:00
+
+Symbol: SOBR
+Data: Minimum open price: 22.440000534057617 in date: 2020-06-08 00:00:00
+      Maximum high price: 1815.0 in date: 2020-07-08 00:00:00
+
+Symbol: ENSC
+Data: Minimum open price: 36432.0 in date: 2020-10-01 00:00:00
+      Maximum high price: 49226.3984375 in date: 2020-06-19 00:00:00
+
+Symbol: MBIO
+Data: Minimum open price: 1500.0 in date: 2020-03-16 00:00:00
+      Maximum high price: 3637.5 in date: 2020-06-10 00:00:00
+
+Symbol: VS
+Data: Minimum open price: 476.1600036621094 in date: 2020-03-16 00:00:00
+      Maximum high price: 3576.048095703125 in date: 2020-12-16 00:00:00
+
+Symbol: REVB
+Data: Minimum open price: 163800.0 in date: 2020-11-17 00:00:00
+      Maximum high price: 181440.0 in date: 2020-11-27 00:00:00
+
+Symbol: ADD
+Data: Minimum open price: 1520.0 in date: 2020-04-06 00:00:00
+      Maximum high price: 8240.0 in date: 2020-07-17 00:00:00
+
+Symbol: XHG
+Data: Minimum open price: 10840.0 in date: 2020-12-30 00:00:00
+      Maximum high price: 61400.0 in date: 2020-01-16 00:00:00
+
+Symbol: ATXI
+Data: Minimum open price: 3352.5 in date: 2020-11-03 00:00:00
+      Maximum high price: 13882.5 in date: 2020-09-14 00:00:00
+
+Symbol: TNXP
+Data: Minimum open price: 268800.0 in date: 2020-02-24 00:00:00
+      Maximum high price: 1574400.0 in date: 2020-07-21 00:00:00
+
+Symbol: SINT
+Data: Minimum open price: 5600.0 in date: 2020-03-19 00:00:00
+      Maximum high price: 66000.0 in date: 2020-08-04 00:00:00
+
+Symbol: NUWE
+Data: Minimum open price: 20860.0 in date: 2020-11-11 00:00:00
+      Maximum high price: 135450.0 in date: 2020-01-22 00:00:00
+
+Symbol: OBLG
+Data: Minimum open price: 558.0 in date: 2020-05-05 00:00:00
+      Maximum high price: 7350.0 in date: 2020-11-30 00:00:00
+
+Symbol: DUO
+Data: Minimum open price: 1363.5 in date: 2020-03-16 00:00:00
+      Maximum high price: 29034.0 in date: 2020-06-09 00:00:00
+
+Symbol: SNES
+Data: Minimum open price: 3288.0 in date: 2020-09-01 00:00:00
+      Maximum high price: 31200.0 in date: 2020-01-06 00:00:00
+
+Symbol: PHIO
+Data: Minimum open price: 180.36000061035156 in date: 2020-04-06 00:00:00
+      Maximum high price: 1473.1199951171875 in date: 2020-01-09 00:00:00
+
+Symbol: QNRX
+Data: Minimum open price: 720.0 in date: 2020-03-16 00:00:00
+      Maximum high price: 4134.0 in date: 2020-01-07 00:00:00
+
+Symbol: ADTX
+Data: Minimum open price: 132800.0 in date: 2020-09-25 00:00:00
+      Maximum high price: 766400.0 in date: 2020-08-06 00:00:00
+
+Symbol: CETX
+Data: Minimum open price: 44100.0 in date: 2020-03-16 00:00:00
+      Maximum high price: 275625.0 in date: 2020-06-09 00:00:00
+
+Symbol: APVO
+Data: Minimum open price: 4968.65576171875 in date: 2020-03-23 00:00:00
+      Maximum high price: 97680.0 in date: 2020-11-09 00:00:00
+
+Symbol: SCNI
+Data: Minimum open price: 245.0 in date: 2020-11-10 00:00:00
+      Maximum high price: 6200.0 in date: 2020-07-13 00:00:00
+
+Symbol: HSDT
+Data: Minimum open price: 463.75 in date: 2020-04-09 00:00:00
+      Maximum high price: 2572.5 in date: 2020-01-23 00:00:00
+
+Symbol: FRGT
+Data: Minimum open price: 1954.8458251953125 in date: 2020-09-25 00:00:00
+      Maximum high price: 25991.189453125 in date: 2020-12-31 00:00:00
+
+Symbol: GNLN
+Data: Minimum open price: 2464.0 in date: 2020-03-18 00:00:00
+      Maximum high price: 10956.0 in date: 2020-12-03 00:00:00
+
+Symbol: INM
+Data: Minimum open price: 1500.0 in date: 2020-12-17 00:00:00
+      Maximum high price: 5313.0 in date: 2020-01-21 00:00:00
+
+Symbol: CYTO
+Data: Minimum open price: 268.0 in date: 2020-03-19 00:00:00
+      Maximum high price: 2640.0 in date: 2020-12-01 00:00:00
+
+Symbol: WINT
+Data: Minimum open price: 2970.0 in date: 2020-04-29 00:00:00
+      Maximum high price: 12015.0 in date: 2020-01-21 00:00:00
+
+Symbol: STAF
+Data: Minimum open price: 198.0 in date: 2020-03-19 00:00:00
+      Maximum high price: 2004.0 in date: 2020-10-15 00:00:00
+
+Symbol: IONM
+Data: Minimum open price: 1079.6219482421875 in date: 2020-04-02 00:00:00
+      Maximum high price: 3869.999755859375 in date: 2020-01-15 00:00:00
+
+Symbol: WNW
+Data: Minimum open price: 279.29998779296875 in date: 2020-12-15 00:00:00
+      Maximum high price: 5623.7998046875 in date: 2020-12-17 00:00:00
+
+Symbol: TBLT
+Data: Minimum open price: 6191.25 in date: 2020-09-18 00:00:00
+      Maximum high price: 46800.0 in date: 2020-01-09 00:00:00
+
+Symbol: LGMK
+Data: Minimum open price: 1065.0 in date: 2020-03-12 00:00:00
+      Maximum high price: 10600.0 in date: 2020-12-17 00:00:00
+
+Symbol: NDRA
+Data: Minimum open price: 21700.0 in date: 2020-04-03 00:00:00
+      Maximum high price: 78750.0 in date: 2020-01-06 00:00:00
+
+Symbol: UK
+Data: Minimum open price: 1344.0 in date: 2020-12-10 00:00:00
+      Maximum high price: 2896.800048828125 in date: 2020-11-12 00:00:00
+
+Symbol: ATNF
+Data: Minimum open price: 836.0 in date: 2020-11-17 00:00:00
+      Maximum high price: 4370.0 in date: 2020-06-17 00:00:00
+
+Symbol: QLGN
+Data: Minimum open price: 1540.0 in date: 2020-12-30 00:00:00
+      Maximum high price: 10750.0 in date: 2020-03-02 00:00:00
+
+Symbol: FRES
+Data: Minimum open price: 662.0 in date: 2020-11-19 00:00:00
+      Maximum high price: 2436.0 in date: 2020-01-30 00:00:00
+
+Symbol: SYTA
+Data: Minimum open price: 535500.0 in date: 2020-09-29 00:00:00
+      Maximum high price: 1499400.0 in date: 2020-12-16 00:00:00
+
+Symbol: CNSP
+Data: Minimum open price: 2340.0 in date: 2020-03-17 00:00:00
+      Maximum high price: 8430.0 in date: 2020-04-09 00:00:00
+
+Symbol: BKNG
+Data: Minimum open price: 1166.97998046875 in date: 2020-03-23 00:00:00
+      Maximum high price: 2227.969970703125 in date: 2020-12-31 00:00:00
+
+Symbol: MELI
+Data: Minimum open price: 445.4700012207031 in date: 2020-04-02 00:00:00
+      Maximum high price: 1735.75 in date: 2020-12-22 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:04.471974
+Controllo anomalie per il mercato: data_market_nasdaq_symbols
+Symbol: FFIE
+Data: Minimum open price: 2457.60009765625 in date: 2022-12-07 00:00:00
+      Maximum high price: 75360.0 in date: 2022-07-18 00:00:00
+
+Symbol: GOEV
+Data: Minimum open price: 487.6000061035156 in date: 2022-11-23 00:00:00
+      Maximum high price: 3790.400146484375 in date: 2022-01-03 00:00:00
+
+Symbol: MAXN
+Data: Minimum open price: 765.0 in date: 2022-02-24 00:00:00
+      Maximum high price: 2799.0 in date: 2022-09-19 00:00:00
+
+Symbol: BNGO
+Data: Minimum open price: 750.0 in date: 2022-05-12 00:00:00
+      Maximum high price: 2610.0 in date: 2022-08-11 00:00:00
+
+Symbol: TTOO
+Data: Minimum open price: 110.0 in date: 2022-12-27 00:00:00
+      Maximum high price: 2925.0 in date: 2022-04-01 00:00:00
+
+Symbol: MLGO
+Data: Minimum open price: 232.0 in date: 2022-12-29 00:00:00
+      Maximum high price: 14300.0 in date: 2022-12-13 00:00:00
+
+Symbol: NUTX
+Data: Minimum open price: 81.9000015258789 in date: 2022-10-13 00:00:00
+      Maximum high price: 7920.0 in date: 2022-04-04 00:00:00
+
+Symbol: SISI
+Data: Minimum open price: 173.52000427246094 in date: 2022-09-06 00:00:00
+      Maximum high price: 1579.199951171875 in date: 2022-01-03 00:00:00
+
+Symbol: CRKN
+Data: Minimum open price: 168750.0 in date: 2022-12-13 00:00:00
+      Maximum high price: 5251500.0 in date: 2022-01-03 00:00:00
+
+Symbol: JAGX
+Data: Minimum open price: 382.5 in date: 2022-12-29 00:00:00
+      Maximum high price: 5085.0 in date: 2022-01-04 00:00:00
+
+Symbol: YYAI
+Data: Minimum open price: 137.60000610351562 in date: 2022-12-08 00:00:00
+      Maximum high price: 2336.0 in date: 2022-06-15 00:00:00
+
+Symbol: OP
+Data: Minimum open price: 22.799999237060547 in date: 2022-12-28 00:00:00
+      Maximum high price: 4640.0 in date: 2022-01-12 00:00:00
+
+Symbol: ISPO
+Data: Minimum open price: 19.84000015258789 in date: 2022-12-29 00:00:00
+      Maximum high price: 2160.0 in date: 2022-02-17 00:00:00
+
+Symbol: CYN
+Data: Minimum open price: 8348.185546875 in date: 2022-12-29 00:00:00
+      Maximum high price: 85227.3125 in date: 2022-05-02 00:00:00
+
+Symbol: VERB
+Data: Minimum open price: 880.0 in date: 2022-12-29 00:00:00
+      Maximum high price: 13520.0 in date: 2022-02-10 00:00:00
+
+Symbol: GWAV
+Data: Minimum open price: 122.55000305175781 in date: 2022-12-22 00:00:00
+      Maximum high price: 2205.0 in date: 2022-01-03 00:00:00
+
+Symbol: PIXY
+Data: Minimum open price: 3150.0 in date: 2022-11-10 00:00:00
+      Maximum high price: 73079.9453125 in date: 2022-01-25 00:00:00
+
+Symbol: RDHL
+Data: Minimum open price: 126.0 in date: 2022-12-28 00:00:00
+      Maximum high price: 3270.0 in date: 2022-03-23 00:00:00
+
+Symbol: AVTX
+Data: Minimum open price: 702.719970703125 in date: 2022-05-16 00:00:00
+      Maximum high price: 5414.39990234375 in date: 2022-01-05 00:00:00
+
+Symbol: SIDU
+Data: Minimum open price: 98.0 in date: 2022-12-28 00:00:00
+      Maximum high price: 1245.0 in date: 2022-02-03 00:00:00
+
+Symbol: WISA
+Data: Minimum open price: 1354.499267578125 in date: 2022-12-21 00:00:00
+      Maximum high price: 22349.98828125 in date: 2022-01-03 00:00:00
+
+Symbol: MNTS
+Data: Minimum open price: 497.0 in date: 2022-12-29 00:00:00
+      Maximum high price: 3318.0 in date: 2022-04-07 00:00:00
+
+Symbol: RNAZ
+Data: Minimum open price: 8976.0 in date: 2022-12-23 00:00:00
+      Maximum high price: 82632.0 in date: 2022-01-04 00:00:00
+
+Symbol: RETO
+Data: Minimum open price: 340.0 in date: 2022-10-10 00:00:00
+      Maximum high price: 2770.0 in date: 2022-01-21 00:00:00
+
+Symbol: WHLR
+Data: Minimum open price: 195264.0 in date: 2022-09-27 00:00:00
+      Maximum high price: 582336.0 in date: 2022-09-02 00:00:00
+
+Symbol: ALLR
+Data: Minimum open price: 194040.0 in date: 2022-12-27 00:00:00
+      Maximum high price: 10800720.0 in date: 2022-01-03 00:00:00
+
+Symbol: HOLO
+Data: Minimum open price: 322.0 in date: 2022-09-26 00:00:00
+      Maximum high price: 7000.0 in date: 2022-09-19 00:00:00
+
+Symbol: KXIN
+Data: Minimum open price: 288.0 in date: 2022-12-29 00:00:00
+      Maximum high price: 1503.0 in date: 2022-03-28 00:00:00
+
+Symbol: VINO
+Data: Minimum open price: 100.0 in date: 2022-12-27 00:00:00
+      Maximum high price: 3588.000244140625 in date: 2022-04-14 00:00:00
+
+Symbol: TENX
+Data: Minimum open price: 137.60000610351562 in date: 2022-11-10 00:00:00
+      Maximum high price: 2334.39990234375 in date: 2022-01-04 00:00:00
+
+Symbol: SBFM
+Data: Minimum open price: 1240.0 in date: 2022-12-29 00:00:00
+      Maximum high price: 19740.0 in date: 2022-04-07 00:00:00
+
+Symbol: ENVB
+Data: Minimum open price: 364.5 in date: 2022-12-28 00:00:00
+      Maximum high price: 12600.0 in date: 2022-01-04 00:00:00
+
+Symbol: XXII
+Data: Minimum open price: 26892.0 in date: 2022-12-29 00:00:00
+      Maximum high price: 101412.0 in date: 2022-01-03 00:00:00
+
+Symbol: ENTO
+Data: Minimum open price: 64.4000015258789 in date: 2022-12-27 00:00:00
+      Maximum high price: 7035.0 in date: 2022-01-03 00:00:00
+
+Symbol: SONN
+Data: Minimum open price: 168.9600067138672 in date: 2022-12-20 00:00:00
+      Maximum high price: 1650.8800048828125 in date: 2022-03-16 00:00:00
+
+Symbol: TCBP
+Data: Minimum open price: 114800.0 in date: 2022-12-29 00:00:00
+      Maximum high price: 7000000.0 in date: 2022-02-11 00:00:00
+
+Symbol: XTIA
+Data: Minimum open price: 41250.0 in date: 2022-12-29 00:00:00
+      Maximum high price: 1181250.0 in date: 2022-01-03 00:00:00
+
+Symbol: NXU
+Data: Minimum open price: 505.5 in date: 2022-12-30 00:00:00
+      Maximum high price: 36598.5 in date: 2022-09-28 00:00:00
+
+Symbol: AKAN
+Data: Minimum open price: 108.80000305175781 in date: 2022-12-28 00:00:00
+      Maximum high price: 24800.0 in date: 2022-03-15 00:00:00
+
+Symbol: RSLS
+Data: Minimum open price: 316.1000061035156 in date: 2022-12-22 00:00:00
+      Maximum high price: 5394.0 in date: 2022-01-03 00:00:00
+
+Symbol: ZVSA
+Data: Minimum open price: 537.25 in date: 2022-12-29 00:00:00
+      Maximum high price: 8750.0 in date: 2022-12-12 00:00:00
+
+Symbol: IFBD
+Data: Minimum open price: 512.0 in date: 2022-12-29 00:00:00
+      Maximum high price: 5120.0 in date: 2022-02-09 00:00:00
+
+Symbol: PALI
+Data: Minimum open price: 26.850000381469727 in date: 2022-12-28 00:00:00
+      Maximum high price: 1215.0 in date: 2022-02-02 00:00:00
+
+Symbol: NVVE
+Data: Minimum open price: 180.0 in date: 2022-12-12 00:00:00
+      Maximum high price: 5552.0 in date: 2022-01-04 00:00:00
+
+Symbol: ENSC
+Data: Minimum open price: 113.4000015258789 in date: 2022-12-29 00:00:00
+      Maximum high price: 18144.0 in date: 2022-01-06 00:00:00
+
+Symbol: AGFY
+Data: Minimum open price: 91.5 in date: 2022-12-21 00:00:00
+      Maximum high price: 34500.0 in date: 2022-01-04 00:00:00
+
+Symbol: MBIO
+Data: Minimum open price: 240.0 in date: 2022-12-21 00:00:00
+      Maximum high price: 1376.25 in date: 2022-01-04 00:00:00
+
+Symbol: SMX
+Data: Minimum open price: 462000.0 in date: 2022-01-03 00:00:00
+      Maximum high price: 480385.71875 in date: 2022-12-28 00:00:00
+
+Symbol: REVB
+Data: Minimum open price: 3024.0 in date: 2022-12-30 00:00:00
+      Maximum high price: 189672.0 in date: 2022-01-05 00:00:00
+
+Symbol: ADD
+Data: Minimum open price: 66.0 in date: 2022-12-19 00:00:00
+      Maximum high price: 3600.0 in date: 2022-02-15 00:00:00
+
+Symbol: XHG
+Data: Minimum open price: 531.2000122070312 in date: 2022-05-12 00:00:00
+      Maximum high price: 3096.0 in date: 2022-08-09 00:00:00
+
+Symbol: ATXI
+Data: Minimum open price: 87.0 in date: 2022-12-20 00:00:00
+      Maximum high price: 1406.25 in date: 2022-03-01 00:00:00
+
+Symbol: SINT
+Data: Minimum open price: 1544.0 in date: 2022-12-28 00:00:00
+      Maximum high price: 14400.0 in date: 2022-01-06 00:00:00
+
+Symbol: TNXP
+Data: Minimum open price: 5800.0 in date: 2022-12-20 00:00:00
+      Maximum high price: 275200.0 in date: 2022-01-04 00:00:00
+
+Symbol: NUWE
+Data: Minimum open price: 227.14999389648438 in date: 2022-12-28 00:00:00
+      Maximum high price: 6475.0 in date: 2022-08-31 00:00:00
+
+Symbol: BDRX
+Data: Minimum open price: 5920.0 in date: 2022-12-27 00:00:00
+      Maximum high price: 53200.0 in date: 2022-01-06 00:00:00
+
+Symbol: ONCO
+Data: Minimum open price: 39.599998474121094 in date: 2022-12-28 00:00:00
+      Maximum high price: 3636.0 in date: 2022-02-22 00:00:00
+
+Symbol: SNES
+Data: Minimum open price: 291.6000061035156 in date: 2022-12-09 00:00:00
+      Maximum high price: 2760.0 in date: 2022-03-10 00:00:00
+
+Symbol: DBGI
+Data: Minimum open price: 4187.5 in date: 2022-12-02 00:00:00
+      Maximum high price: 343750.0 in date: 2022-01-05 00:00:00
+
+Symbol: ASTI
+Data: Minimum open price: 30000.0 in date: 2022-12-28 00:00:00
+      Maximum high price: 230000.0 in date: 2022-08-24 00:00:00
+
+Symbol: BSFC
+Data: Minimum open price: 357.0 in date: 2022-12-29 00:00:00
+      Maximum high price: 6800.0 in date: 2022-01-21 00:00:00
+
+Symbol: THAR
+Data: Minimum open price: 117.75 in date: 2022-12-29 00:00:00
+      Maximum high price: 1590.0 in date: 2022-02-02 00:00:00
+
+Symbol: ADTX
+Data: Minimum open price: 1616.0 in date: 2022-12-29 00:00:00
+      Maximum high price: 47200.0 in date: 2022-01-03 00:00:00
+
+Symbol: CETX
+Data: Minimum open price: 7276.5 in date: 2022-12-27 00:00:00
+      Maximum high price: 71295.0 in date: 2022-01-04 00:00:00
+
+Symbol: APVO
+Data: Minimum open price: 3207.159912109375 in date: 2022-12-20 00:00:00
+      Maximum high price: 13919.400390625 in date: 2022-01-03 00:00:00
+
+Symbol: AGRI
+Data: Minimum open price: 5000.0 in date: 2022-11-14 00:00:00
+      Maximum high price: 30500.0 in date: 2022-03-25 00:00:00
+
+Symbol: EJH
+Data: Minimum open price: 1950.0 in date: 2022-12-20 00:00:00
+      Maximum high price: 164000.0 in date: 2022-01-03 00:00:00
+
+Symbol: FRGT
+Data: Minimum open price: 475.0 in date: 2022-11-10 00:00:00
+      Maximum high price: 19438.326171875 in date: 2022-02-10 00:00:00
+
+Symbol: TNON
+Data: Minimum open price: 96.0 in date: 2022-10-10 00:00:00
+      Maximum high price: 4791.2001953125 in date: 2022-05-10 00:00:00
+
+Symbol: ACON
+Data: Minimum open price: 2144.0 in date: 2022-12-28 00:00:00
+      Maximum high price: 21708.0 in date: 2022-04-27 00:00:00
+
+Symbol: RELI
+Data: Minimum open price: 142.8000030517578 in date: 2022-12-29 00:00:00
+      Maximum high price: 2674.949951171875 in date: 2022-01-05 00:00:00
+
+Symbol: GNLN
+Data: Minimum open price: 30.799999237060547 in date: 2022-12-30 00:00:00
+      Maximum high price: 2310.0 in date: 2022-01-04 00:00:00
+
+Symbol: WINT
+Data: Minimum open price: 135.0 in date: 2022-11-07 00:00:00
+      Maximum high price: 1467.0 in date: 2022-01-03 00:00:00
+
+Symbol: IONM
+Data: Minimum open price: 95.86799621582031 in date: 2022-12-28 00:00:00
+      Maximum high price: 2934.0 in date: 2022-03-17 00:00:00
+
+Symbol: BBLG
+Data: Minimum open price: 43.68000030517578 in date: 2022-12-29 00:00:00
+      Maximum high price: 1627.199951171875 in date: 2022-01-10 00:00:00
+
+Symbol: TBLT
+Data: Minimum open price: 90.3499984741211 in date: 2022-06-22 00:00:00
+      Maximum high price: 3900.0 in date: 2022-01-04 00:00:00
+
+Symbol: ATNF
+Data: Minimum open price: 30.399999618530273 in date: 2022-12-23 00:00:00
+      Maximum high price: 1533.6800537109375 in date: 2022-01-05 00:00:00
+
+Symbol: NDRA
+Data: Minimum open price: 5582.5 in date: 2022-12-12 00:00:00
+      Maximum high price: 27650.0 in date: 2022-01-05 00:00:00
+
+Symbol: LGMK
+Data: Minimum open price: 190.5 in date: 2022-12-28 00:00:00
+      Maximum high price: 2235.0 in date: 2022-01-13 00:00:00
+
+Symbol: EDBL
+Data: Minimum open price: 120.0 in date: 2022-12-30 00:00:00
+      Maximum high price: 1800.0 in date: 2022-05-05 00:00:00
+
+Symbol: BJDX
+Data: Minimum open price: 2560.0 in date: 2022-12-29 00:00:00
+      Maximum high price: 25600.0 in date: 2022-01-12 00:00:00
+
+Symbol: VLCN
+Data: Minimum open price: 168300.0 in date: 2022-12-27 00:00:00
+      Maximum high price: 2093400.0 in date: 2022-01-04 00:00:00
+
+Symbol: GRI
+Data: Minimum open price: 578.760009765625 in date: 2022-12-09 00:00:00
+      Maximum high price: 22932.0 in date: 2022-01-06 00:00:00
+
+Symbol: SYTA
+Data: Minimum open price: 14238.0 in date: 2022-11-10 00:00:00
+      Maximum high price: 540540.0 in date: 2022-01-03 00:00:00
+
+Symbol: CNSP
+Data: Minimum open price: 105.0 in date: 2022-12-23 00:00:00
+      Maximum high price: 2070.0 in date: 2022-01-05 00:00:00
+
+Symbol: BCAN
+Data: Minimum open price: 7170.6005859375 in date: 2022-11-10 00:00:00
+      Maximum high price: 52907.40234375 in date: 2022-09-19 00:00:00
+
+Symbol: LYT
+Data: Minimum open price: 34.20000076293945 in date: 2022-12-29 00:00:00
+      Maximum high price: 2823.60009765625 in date: 2022-06-27 00:00:00
+
+Symbol: BKNG
+Data: Minimum open price: 1626.22998046875 in date: 2022-10-13 00:00:00
+      Maximum high price: 2715.659912109375 in date: 2022-02-16 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:05.873224
+Controllo anomalie per il mercato: data_market_nasdaq_symbols
+Symbol: BETR
+Data: Minimum open price: 19.0 in date: 2023-10-17 00:00:00
+      Maximum high price: 3145.5 in date: 2023-07-28 00:00:00
+
+Symbol: FFIE
+Data: Minimum open price: 28.920000076293945 in date: 2023-12-14 00:00:00
+      Maximum high price: 12672.0 in date: 2023-02-06 00:00:00
+
+Symbol: CDT
+Data: Minimum open price: 106.0 in date: 2023-11-15 00:00:00
+      Maximum high price: 2500.0 in date: 2023-09-19 00:00:00
+
+Symbol: MAXN
+Data: Minimum open price: 400.0 in date: 2023-12-13 00:00:00
+      Maximum high price: 3891.0 in date: 2023-05-12 00:00:00
+
+Symbol: BNGO
+Data: Minimum open price: 75.5999984741211 in date: 2023-11-13 00:00:00
+      Maximum high price: 1212.0 in date: 2023-02-02 00:00:00
+
+Symbol: MLGO
+Data: Minimum open price: 168.8000030517578 in date: 2023-12-29 00:00:00
+      Maximum high price: 3120.0 in date: 2023-12-07 00:00:00
+
+Symbol: CRKN
+Data: Minimum open price: 2722.5 in date: 2023-12-12 00:00:00
+      Maximum high price: 810000.0 in date: 2023-01-04 00:00:00
+
+Symbol: APLM
+Data: Minimum open price: 73.30000305175781 in date: 2023-11-03 00:00:00
+      Maximum high price: 4900.0 in date: 2023-03-30 00:00:00
+
+Symbol: UCAR
+Data: Minimum open price: 18.200000762939453 in date: 2023-12-22 00:00:00
+      Maximum high price: 7500.0 in date: 2023-04-20 00:00:00
+
+Symbol: CYN
+Data: Minimum open price: 2182.4990234375 in date: 2023-12-27 00:00:00
+      Maximum high price: 20712.28125 in date: 2023-04-19 00:00:00
+
+Symbol: VERB
+Data: Minimum open price: 31.799999237060547 in date: 2023-12-15 00:00:00
+      Maximum high price: 4640.0 in date: 2023-01-23 00:00:00
+
+Symbol: PIXY
+Data: Minimum open price: 76.04999542236328 in date: 2023-10-30 00:00:00
+      Maximum high price: 7560.0 in date: 2023-01-03 00:00:00
+
+Symbol: AVTX
+Data: Minimum open price: 8.15999984741211 in date: 2023-12-13 00:00:00
+      Maximum high price: 1296.0 in date: 2023-01-18 00:00:00
+
+Symbol: BENF
+Data: Minimum open price: 29.040000915527344 in date: 2023-12-12 00:00:00
+      Maximum high price: 1320.0 in date: 2023-06-08 00:00:00
+
+Symbol: WISA
+Data: Minimum open price: 17.44499969482422 in date: 2023-12-22 00:00:00
+      Maximum high price: 3434.998291015625 in date: 2023-01-24 00:00:00
+
+Symbol: GDHG
+Data: Minimum open price: 39.150001525878906 in date: 2023-12-29 00:00:00
+      Maximum high price: 1249.5 in date: 2023-11-13 00:00:00
+
+Symbol: RNAZ
+Data: Minimum open price: 200.63999938964844 in date: 2023-12-20 00:00:00
+      Maximum high price: 28248.0 in date: 2023-02-01 00:00:00
+
+Symbol: WHLR
+Data: Minimum open price: 2885.760009765625 in date: 2023-11-27 00:00:00
+      Maximum high price: 328492.8125 in date: 2023-01-18 00:00:00
+
+Symbol: ALLR
+Data: Minimum open price: 279.0 in date: 2023-11-13 00:00:00
+      Maximum high price: 394800.0 in date: 2023-01-23 00:00:00
+
+Symbol: HOLO
+Data: Minimum open price: 76.4000015258789 in date: 2023-12-12 00:00:00
+      Maximum high price: 3526.0 in date: 2023-01-24 00:00:00
+
+Symbol: JTAI
+Data: Minimum open price: 249.75 in date: 2023-11-03 00:00:00
+      Maximum high price: 3937.5 in date: 2023-08-07 00:00:00
+
+Symbol: SBFM
+Data: Minimum open price: 480.0 in date: 2023-12-18 00:00:00
+      Maximum high price: 2800.0 in date: 2023-05-11 00:00:00
+
+Symbol: XXII
+Data: Minimum open price: 399.6000061035156 in date: 2023-12-27 00:00:00
+      Maximum high price: 40986.0 in date: 2023-01-18 00:00:00
+
+Symbol: TCBP
+Data: Minimum open price: 420.0 in date: 2023-12-19 00:00:00
+      Maximum high price: 384400.0 in date: 2023-01-13 00:00:00
+
+Symbol: TRNR
+Data: Minimum open price: 3440.0 in date: 2023-12-12 00:00:00
+      Maximum high price: 34000.0 in date: 2023-04-28 00:00:00
+
+Symbol: XTIA
+Data: Minimum open price: 1375.0 in date: 2023-12-21 00:00:00
+      Maximum high price: 53750.0 in date: 2023-01-25 00:00:00
+
+Symbol: NXU
+Data: Minimum open price: 2.5899999141693115 in date: 2023-12-29 00:00:00
+      Maximum high price: 1695.0 in date: 2023-01-11 00:00:00
+
+Symbol: BDRX
+Data: Minimum open price: 52.0 in date: 2023-12-19 00:00:00
+      Maximum high price: 7920.0 in date: 2023-01-03 00:00:00
+
+Symbol: ZVSA
+Data: Minimum open price: 6.75 in date: 2023-12-13 00:00:00
+      Maximum high price: 1533.0 in date: 2023-01-13 00:00:00
+
+Symbol: IFBD
+Data: Minimum open price: 6.880000114440918 in date: 2023-12-27 00:00:00
+      Maximum high price: 1360.0 in date: 2023-02-21 00:00:00
+
+Symbol: SMX
+Data: Minimum open price: 1821.4285888671875 in date: 2023-12-29 00:00:00
+      Maximum high price: 890528.5625 in date: 2023-03-01 00:00:00
+
+Symbol: REVB
+Data: Minimum open price: 240.0 in date: 2023-12-29 00:00:00
+      Maximum high price: 5476.7998046875 in date: 2023-01-31 00:00:00
+
+Symbol: XHG
+Data: Minimum open price: 20.799999237060547 in date: 2023-12-13 00:00:00
+      Maximum high price: 3248.0 in date: 2023-01-05 00:00:00
+
+Symbol: SINT
+Data: Minimum open price: 68.0 in date: 2023-12-01 00:00:00
+      Maximum high price: 2428.0 in date: 2023-02-03 00:00:00
+
+Symbol: TNXP
+Data: Minimum open price: 1216.0 in date: 2023-12-22 00:00:00
+      Maximum high price: 31400.0 in date: 2023-01-13 00:00:00
+
+Symbol: DBGI
+Data: Minimum open price: 155.5 in date: 2023-12-28 00:00:00
+      Maximum high price: 5337.5 in date: 2023-01-11 00:00:00
+
+Symbol: ASTI
+Data: Minimum open price: 76.69999694824219 in date: 2023-11-13 00:00:00
+      Maximum high price: 32500.0 in date: 2023-01-03 00:00:00
+
+Symbol: CETX
+Data: Minimum open price: 8022.0 in date: 2023-10-31 00:00:00
+      Maximum high price: 30366.0 in date: 2023-02-10 00:00:00
+
+Symbol: ADTX
+Data: Minimum open price: 135.1999969482422 in date: 2023-12-04 00:00:00
+      Maximum high price: 3056.0 in date: 2023-04-20 00:00:00
+
+Symbol: APVO
+Data: Minimum open price: 284.8999938964844 in date: 2023-12-15 00:00:00
+      Maximum high price: 4200.240234375 in date: 2023-01-19 00:00:00
+
+Symbol: AGRI
+Data: Minimum open price: 41.79999923706055 in date: 2023-12-20 00:00:00
+      Maximum high price: 8400.0 in date: 2023-01-17 00:00:00
+
+Symbol: ACON
+Data: Minimum open price: 1163.1199951171875 in date: 2023-12-28 00:00:00
+      Maximum high price: 12703.2001953125 in date: 2023-04-24 00:00:00
+
+Symbol: EJH
+Data: Minimum open price: 45.5 in date: 2023-09-01 00:00:00
+      Maximum high price: 3000.0 in date: 2023-01-06 00:00:00
+
+Symbol: FRGT
+Data: Minimum open price: 66.25 in date: 2023-10-31 00:00:00
+      Maximum high price: 1675.0 in date: 2023-02-06 00:00:00
+
+Symbol: IVP
+Data: Minimum open price: 810.0 in date: 2023-12-27 00:00:00
+      Maximum high price: 10250.0 in date: 2023-08-30 00:00:00
+
+Symbol: NDRA
+Data: Minimum open price: 1575.0 in date: 2023-11-02 00:00:00
+      Maximum high price: 9432.5 in date: 2023-01-10 00:00:00
+
+Symbol: SYTA
+Data: Minimum open price: 516.5999755859375 in date: 2023-12-01 00:00:00
+      Maximum high price: 36792.0 in date: 2023-01-18 00:00:00
+
+Symbol: BJDX
+Data: Minimum open price: 488.0 in date: 2023-12-28 00:00:00
+      Maximum high price: 7040.0 in date: 2023-02-16 00:00:00
+
+Symbol: VLCN
+Data: Minimum open price: 2664.0 in date: 2023-12-21 00:00:00
+      Maximum high price: 360000.0 in date: 2023-02-02 00:00:00
+
+Symbol: BCAN
+Data: Minimum open price: 1098.2000732421875 in date: 2023-12-29 00:00:00
+      Maximum high price: 14664.201171875 in date: 2023-03-09 00:00:00
+
+Symbol: CISS
+Data: Minimum open price: 92.5 in date: 2023-09-13 00:00:00
+      Maximum high price: 5000.0 in date: 2023-06-14 00:00:00
+
+Symbol: GRI
+Data: Minimum open price: 30.030000686645508 in date: 2023-12-26 00:00:00
+      Maximum high price: 3357.89990234375 in date: 2023-02-13 00:00:00
+
+Symbol: BKNG
+Data: Minimum open price: 2038.8299560546875 in date: 2023-01-03 00:00:00
+      Maximum high price: 3580.6201171875 in date: 2023-12-27 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:07.289704
+Controllo anomalie per il mercato: data_market_nasdaq_symbols
+Symbol: CRKN
+Data: Minimum open price: 19.350000381469727 in date: 2024-12-24 00:00:00
+      Maximum high price: 13500.0 in date: 2024-05-17 00:00:00
+
+Symbol: CYN
+Data: Minimum open price: 55.5 in date: 2024-12-20 00:00:00
+      Maximum high price: 4723.49755859375 in date: 2024-01-26 00:00:00
+
+Symbol: WHLR
+Data: Minimum open price: 13.880000114440918 in date: 2024-12-30 00:00:00
+      Maximum high price: 5702.39990234375 in date: 2024-01-02 00:00:00
+
+Symbol: HOLO
+Data: Minimum open price: 1.2999999523162842 in date: 2024-12-19 00:00:00
+      Maximum high price: 1968.0 in date: 2024-02-16 00:00:00
+
+Symbol: CERO
+Data: Minimum open price: 5.0 in date: 2024-12-17 00:00:00
+      Maximum high price: 1280.0 in date: 2024-02-06 00:00:00
+
+Symbol: TRNR
+Data: Minimum open price: 2.799999952316284 in date: 2024-11-18 00:00:00
+      Maximum high price: 4760.0 in date: 2024-02-26 00:00:00
+
+Symbol: XTIA
+Data: Minimum open price: 10.0 in date: 2024-12-20 00:00:00
+      Maximum high price: 2000.0 in date: 2024-03-11 00:00:00
+
+Symbol: SMX
+Data: Minimum open price: 5.314286231994629 in date: 2024-12-03 00:00:00
+      Maximum high price: 1521.4285888671875 in date: 2024-01-02 00:00:00
+
+Symbol: TNXP
+Data: Minimum open price: 13.0 in date: 2024-09-25 00:00:00
+      Maximum high price: 1408.0 in date: 2024-01-02 00:00:00
+
+Symbol: CETX
+Data: Minimum open price: 2.940000057220459 in date: 2024-12-26 00:00:00
+      Maximum high price: 12096.0 in date: 2024-03-06 00:00:00
+
+Symbol: ACON
+Data: Minimum open price: 33.5 in date: 2024-12-17 00:00:00
+      Maximum high price: 2261.25 in date: 2024-01-08 00:00:00
+
+Symbol: IVP
+Data: Minimum open price: 4.5 in date: 2024-12-26 00:00:00
+      Maximum high price: 1250.0 in date: 2024-01-26 00:00:00
+
+Symbol: VLCN
+Data: Minimum open price: 3.6600000858306885 in date: 2024-11-19 00:00:00
+      Maximum high price: 6300.0 in date: 2024-01-12 00:00:00
+
+Symbol: NDRA
+Data: Minimum open price: 4.150000095367432 in date: 2024-11-19 00:00:00
+      Maximum high price: 3412.5 in date: 2024-01-02 00:00:00
+
+Symbol: BCAN
+Data: Minimum open price: 7.5 in date: 2024-12-23 00:00:00
+      Maximum high price: 1185.7330322265625 in date: 2024-01-03 00:00:00
+
+Symbol: BKNG
+Data: Minimum open price: 3205.0 in date: 2024-08-05 00:00:00
+      Maximum high price: 5337.240234375 in date: 2024-12-12 00:00:00
+

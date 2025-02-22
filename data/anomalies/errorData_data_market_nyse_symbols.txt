@@ -1,0 +1,278 @@
+---------------------------------------------
+
+
+
+2025-02-21 17:26:09.921729
+Controllo anomalie per il mercato: data_market_nyse_symbols
+---------------------------------------------
+
+
+
+2025-02-21 17:26:12.131306
+Controllo anomalie per il mercato: data_market_nyse_symbols
+---------------------------------------------
+
+
+
+2025-02-21 17:26:14.206405
+Controllo anomalie per il mercato: data_market_nyse_symbols
+Symbol: NBR
+Data: Minimum open price: 450.0 in date: 2001-09-21 00:00:00
+      Maximum high price: 1578.0 in date: 2001-01-26 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:15.581039
+Controllo anomalie per il mercato: data_market_nyse_symbols
+---------------------------------------------
+
+
+
+2025-02-21 17:26:16.266355
+Controllo anomalie per il mercato: data_market_nyse_symbols
+---------------------------------------------
+
+
+
+2025-02-21 17:26:17.018386
+Controllo anomalie per il mercato: data_market_nyse_symbols
+Symbol: AHT
+Data: Minimum open price: 5141.388671875 in date: 2004-05-19 00:00:00
+      Maximum high price: 6944.94482421875 in date: 2004-12-29 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:17.743338
+Controllo anomalie per il mercato: data_market_nyse_symbols
+Symbol: AHT
+Data: Minimum open price: 6437.69482421875 in date: 2006-05-15 00:00:00
+      Maximum high price: 8441.646484375 in date: 2006-12-04 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:18.542805
+Controllo anomalie per il mercato: data_market_nyse_symbols
+Symbol: TDW
+Data: Minimum open price: 1416.1290283203125 in date: 2007-01-12 00:00:00
+      Maximum high price: 2580.645263671875 in date: 2007-07-23 00:00:00
+
+Symbol: AHT
+Data: Minimum open price: 4483.841796875 in date: 2007-11-21 00:00:00
+      Maximum high price: 8266.30078125 in date: 2007-02-09 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:19.326871
+Controllo anomalie per il mercato: data_market_nyse_symbols
+Symbol: AIG
+Data: Minimum open price: 30.799999237060547 in date: 2008-12-31 00:00:00
+      Maximum high price: 1188.4000244140625 in date: 2008-01-14 00:00:00
+
+Symbol: TDW
+Data: Minimum open price: 1036.45166015625 in date: 2008-12-05 00:00:00
+      Maximum high price: 2301.290283203125 in date: 2008-06-06 00:00:00
+
+Symbol: NBR
+Data: Minimum open price: 521.0 in date: 2008-12-26 00:00:00
+      Maximum high price: 2529.0 in date: 2008-06-30 00:00:00
+
+Symbol: AHT
+Data: Minimum open price: 632.4972534179688 in date: 2008-11-21 00:00:00
+      Maximum high price: 4602.82666015625 in date: 2008-01-02 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:20.154203
+Controllo anomalie per il mercato: data_market_nyse_symbols
+Symbol: AHT
+Data: Minimum open price: 2943.303955078125 in date: 2010-01-04 00:00:00
+      Maximum high price: 6769.59912109375 in date: 2010-11-04 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:20.968040
+Controllo anomalie per il mercato: data_market_nyse_symbols
+Symbol: NBR
+Data: Minimum open price: 557.0 in date: 2011-10-04 00:00:00
+      Maximum high price: 1623.5 in date: 2011-04-21 00:00:00
+
+Symbol: AHT
+Data: Minimum open price: 3870.131591796875 in date: 2011-09-23 00:00:00
+      Maximum high price: 8967.68359375 in date: 2011-05-31 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:21.787592
+Controllo anomalie per il mercato: data_market_nyse_symbols
+Symbol: CIVI
+Data: Minimum open price: 1410.4722900390625 in date: 2012-01-03 00:00:00
+      Maximum high price: 3239.399658203125 in date: 2012-12-21 00:00:00
+
+Symbol: AHT
+Data: Minimum open price: 4671.71240234375 in date: 2012-07-27 00:00:00
+      Maximum high price: 6713.23779296875 in date: 2012-12-28 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:22.641698
+Controllo anomalie per il mercato: data_market_nyse_symbols
+Symbol: CIVI
+Data: Minimum open price: 1873.5625 in date: 2014-12-16 00:00:00
+      Maximum high price: 7023.3486328125 in date: 2014-06-20 00:00:00
+
+Symbol: TDW
+Data: Minimum open price: 927.741943359375 in date: 2014-12-15 00:00:00
+      Maximum high price: 1950.6451416015625 in date: 2014-01-07 00:00:00
+
+Symbol: NBR
+Data: Minimum open price: 507.5 in date: 2014-12-16 00:00:00
+      Maximum high price: 1512.0 in date: 2014-07-03 00:00:00
+
+Symbol: AHT
+Data: Minimum open price: 7679.33056640625 in date: 2014-01-02 00:00:00
+      Maximum high price: 11225.072265625 in date: 2014-07-24 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:23.570318
+Controllo anomalie per il mercato: data_market_nyse_symbols
+Symbol: CIVI
+Data: Minimum open price: 427.3820495605469 in date: 2015-10-02 00:00:00
+      Maximum high price: 3438.0263671875 in date: 2015-02-09 00:00:00
+
+Symbol: AHT
+Data: Minimum open price: 6017.78662109375 in date: 2015-10-01 00:00:00
+      Maximum high price: 10918.97265625 in date: 2015-01-28 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:24.462008
+Controllo anomalie per il mercato: data_market_nyse_symbols
+Symbol: AHT
+Data: Minimum open price: 4426.87744140625 in date: 2016-01-20 00:00:00
+      Maximum high price: 7816.20556640625 in date: 2016-12-08 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:25.373026
+Controllo anomalie per il mercato: data_market_nyse_symbols
+Symbol: NVR
+Data: Minimum open price: 2111.219970703125 in date: 2018-10-23 00:00:00
+      Maximum high price: 3700.0 in date: 2018-01-19 00:00:00
+
+Symbol: SOS
+Data: Minimum open price: 8250.0 in date: 2018-12-27 00:00:00
+      Maximum high price: 48750.0 in date: 2018-01-02 00:00:00
+
+Symbol: AHT
+Data: Minimum open price: 3883.399169921875 in date: 2018-12-28 00:00:00
+      Maximum high price: 8557.3125 in date: 2018-07-06 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:26.318966
+Controllo anomalie per il mercato: data_market_nyse_symbols
+Symbol: NVR
+Data: Minimum open price: 2384.050048828125 in date: 2019-01-04 00:00:00
+      Maximum high price: 3946.5 in date: 2019-10-21 00:00:00
+
+Symbol: SOS
+Data: Minimum open price: 1185.0 in date: 2019-12-11 00:00:00
+      Maximum high price: 13500.0 in date: 2019-03-05 00:00:00
+
+Symbol: AHT
+Data: Minimum open price: 2322.13427734375 in date: 2019-08-28 00:00:00
+      Maximum high price: 5820.158203125 in date: 2019-05-03 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:27.278819
+Controllo anomalie per il mercato: data_market_nyse_symbols
+Symbol: NVR
+Data: Minimum open price: 2151.85009765625 in date: 2020-03-18 00:00:00
+      Maximum high price: 4530.0 in date: 2020-10-16 00:00:00
+
+Symbol: CABO
+Data: Minimum open price: 1151.4000244140625 in date: 2020-03-18 00:00:00
+      Maximum high price: 2326.800048828125 in date: 2020-12-30 00:00:00
+
+Symbol: SOS
+Data: Minimum open price: 465.0 in date: 2020-03-19 00:00:00
+      Maximum high price: 3577.5 in date: 2020-06-23 00:00:00
+
+Symbol: AHT
+Data: Minimum open price: 130.0 in date: 2020-11-02 00:00:00
+      Maximum high price: 2840.0 in date: 2020-01-02 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:28.307657
+Controllo anomalie per il mercato: data_market_nyse_symbols
+Symbol: NVR
+Data: Minimum open price: 3737.31005859375 in date: 2022-06-22 00:00:00
+      Maximum high price: 5885.0 in date: 2022-01-05 00:00:00
+
+Symbol: CABO
+Data: Minimum open price: 644.7100219726562 in date: 2022-11-10 00:00:00
+      Maximum high price: 1766.2900390625 in date: 2022-01-04 00:00:00
+
+Symbol: HKD
+Data: Minimum open price: 10.319999694824219 in date: 2022-12-30 00:00:00
+      Maximum high price: 2555.300048828125 in date: 2022-08-02 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:29.351504
+Controllo anomalie per il mercato: data_market_nyse_symbols
+Symbol: NVR
+Data: Minimum open price: 4605.919921875 in date: 2023-01-05 00:00:00
+      Maximum high price: 7075.0 in date: 2023-12-27 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:30.450680
+Controllo anomalie per il mercato: data_market_nyse_symbols
+Symbol: FICO
+Data: Minimum open price: 1115.52001953125 in date: 2024-01-05 00:00:00
+      Maximum high price: 2402.52001953125 in date: 2024-11-13 00:00:00
+
+Symbol: TPL
+Data: Minimum open price: 478.3333435058594 in date: 2024-02-05 00:00:00
+      Maximum high price: 1769.1400146484375 in date: 2024-11-25 00:00:00
+
+Symbol: NVR
+Data: Minimum open price: 6829.77001953125 in date: 2024-01-25 00:00:00
+      Maximum high price: 9964.76953125 in date: 2024-10-18 00:00:00
+

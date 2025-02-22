@@ -3,10 +3,10 @@ from pathlib import Path
 # Trova il percorso assoluto dello script corrente (config.py)
 project_root = Path(__file__).resolve()
 
-# Risali finché non trovi 'Trading-Agent'
-while project_root.name != 'trading-agent':
+# Risali finché non trovi 'Backtesting-Trading-Strategies'
+while project_root.name != 'Backtesting-Trading-Strategies':
     if project_root == project_root.parent:  # Se arrivi alla root del file system
-        raise RuntimeError("Errore: Impossibile trovare la cartella Trading-Agent!")
+        raise RuntimeError("Errore: Impossibile trovare la cartella Backtesting-Trading-Strategies!")
     project_root = project_root.parent  # Risali di un livello
 
 # Percorsi principali del progetto
@@ -20,6 +20,7 @@ utils_path = main_project / "utils"
 history_market_data_path = project_root / "data" / "dataset" / "history_market_data"
 capitalization_path = project_root / "data" / "dataset" / "capitalization"
 symbols_info_path = project_root / "data" / "dataset" / "symbols_info"
+history_volume_data = history_market_data_path / "history_volume_data"
 
 # stampa dei percorsi
 print(f"""project_root: {project_root}\n

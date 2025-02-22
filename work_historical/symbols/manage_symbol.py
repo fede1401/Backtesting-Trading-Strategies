@@ -7,12 +7,12 @@ import sys
 from pathlib import Path
 
 
-# Trova dinamicamente la cartella Trading-Agent e la aggiunge al path
+# Trova dinamicamente la cartella Backtesting-Trading-Strategies e la aggiunge al path
 current_path = Path(__file__).resolve()
 print(current_path)
-while current_path.name != 'trading-agent':
-    if current_path == current_path.parent:  # Se raggiungiamo la root senza trovare Trading-Agent
-        raise RuntimeError("Errore: Impossibile trovare la cartella Trading-Agent!")
+while current_path.name != 'Backtesting-Trading-Strategies':
+    if current_path == current_path.parent:  # Se raggiungiamo la root senza trovare Backtesting-Trading-Strategies
+        raise RuntimeError("Errore: Impossibile trovare la cartella Backtesting-Trading-Strategies!")
     current_path = current_path.parent
 
 # Aggiunge la root al sys.path solo se non è già presente
@@ -40,7 +40,7 @@ SYMB_TOT_ANOMALIE = ['IDEX', 'CYRX', 'QUBT', 'POCI', 'MULN', 'BTCS', 'HEPA', 'OL
                       'ATXG', 'SILO', 'KWE', 'TOP',  'TPST', 'NXTT', 'OCTO', 'EGRX', 'AAGR', 'MYNZ', 'IDEX', 'CSSE', 
                       'BFI', 'EFTR', 'DRUG', 'GROM', 'HPCO', 'NCNC', 'SMFL', 'WT', 'EMP', 'IVT', 'EMP', 'AMPY', 'ARCH', 'ODV',
                       'SNK', 'CBE', 'BST', 'BOL', 'GEA', 'NTG', 'MBK', 'MOL', 'MAN', '1913', 
-                       'SBB-B', 'SES', 'DIA', 'H2O', 'EVO', 'LOCAL', 'ATO', 'FRAG', 'MYNZ', 'IPA']
+                       'SBB-B', 'SES', 'DIA', 'H2O', 'EVO', 'LOCAL', 'ATO', 'FRAG', 'MYNZ', 'IPA', 'CODA', 'PRO', 'XTP']
     
     
 
@@ -132,7 +132,9 @@ def get_symbols(market, i):
     return symbols
 
 
-
+############################################################################################################
+# FUNZIONI PER LA SELEZIONE DEI SIMBOLI AZIONARI PER IL BACKTESTING DI STRATEGIE DI TRADING
+# IN BASE ALLA CAPITALIZZAZIONE DI MERCATO.
 
 def get_x_symbols_ordered_by_market_cap(market, initial_date, x, dizMarkCap, symbolsDispoInDates, logger):
     """
@@ -181,33 +183,6 @@ def get_x_symbols_ordered_by_market_cap(market, initial_date, x, dizMarkCap, sym
         logger.critical(f"Dettagli del traceback:\n{traceback.format_exc()}")
     finally:
         return finalSymbXSelect
-
-
-
-
-def get_x_symbols_random(initial_date, symbolsDispoInDates, logger):
-    """
-    Funzione utilizzata per selezionare e restituire i simboli azionari del mercato specificato in modo casuale, evitando quelli che presentano anomalie nei dati di mercato.
-    Args:
-        - initial_date: data iniziale per comprendere il periodo su cui selezionare i titoli.
-        - symbolsDispoInDates: dizionario contenente i simboli disponibili per ogni data di trading.
-        - logger: logger per la scrittura dei log.
-        
-    Returns:
-        - symbSelect100: lista dei simboli azionari selezionati in modo casuale e con dati disponibili per la data iniziale.
-    """
-    try:        
-        # Estrai i simboli disponibili per la data iniziale della simulazione che non presentano anomalie nei dati di mercato
-        valid_symbols = [s for s in symbolsDispoInDates[initial_date] if s not in SYMB_TOT_ANOMALIE]
-
-        # Poi fai il sample dalla lista già filtrata:
-        symbSelect100 = random.sample(valid_symbols, 100)
-                
-    except Exception as e:
-        logger.critical(f"Errore non gestito: {e}")
-        logger.critical(f"Dettagli del traceback:\n{traceback.format_exc()}")
-    finally:
-        return symbSelect100
 
 
 
@@ -270,6 +245,157 @@ def get_x_symbols_ordered_by_market_cap_for_sector( market, initial_date, perc, 
                 
     # ritorno dei simboli selezionati
     return symbolToUse
+
+############################################################################################################
+
+
+
+############################################################################################################
+# FUNZIONI PER LA SELEZIONE DEI SIMBOLI AZIONARI PER IL BACKTESTING DI STRATEGIE DI TRADING
+# IN BASE AL VOLUME DI SCAMBIO.
+
+def get_x_symbols_ordered_by_volume(market, initial_date, x, diz_volume, symbols_dispo_in_dates, logger):
+    """
+    Funzione utilizzata per selezionare e restituire gli i simboli azionari del mercato specificato ordinati per volume di scambio per i 6 mesi precedenti
+    dalla data initial_date che non presentano anomalie nei dati di mercato. 
+
+    Args:
+        - market: stringa contenente il mercato di riferimento.
+        - initial_date: data iniziale per comprendere il periodo su cui selezionare i titoli in base di capitalizzazione decrescente.
+        - x: numero di simboli da selezionare.
+        - diz_volume: dizionario contenente i volumi di scambio per ogni simbolo azionario in qualsiasi data nel dataset.
+        - symbols_dispo_in_dates: dizionario contenente i simboli disponibili per ogni data di trading.
+        - logger: logger per la scrittura dei log.
+        
+    Returns:
+        - final_symb_x_select: lista dei simboli azionari selezionati ordinati per capitalizzazione di mercato e con dati disponibili per la data iniziale.
+    """
+    try:
+        # estrazione della data iniziale su cui effettuare la simulazione di trading
+        year = str(initial_date).split('-')[0]
+        
+        # selezione della nomenclatura corretta per il mercato
+        if market == 'data_market_nasdaq_symbols':
+            strMark = 'NASDAQ'
+        elif market == 'data_market_nyse_symbols':
+            strMark = 'NYSE'
+        elif market == 'data_market_larg_comp_eu_symbols':
+            strMark = 'LARG_COMP_EU'
+        
+        # selezione dei simboli in base alla capitalizzazione di mercato per l'anno selezionato e la data iniziale della simulazione
+        symbXSelect = diz_volume[strMark][year][initial_date.strftime('%Y-%m-%d')]
+        symbXSelect = symbXSelect[0].split(';')
+        # selezione dei primi x simboli
+        symbXSelect = symbXSelect[0:x]
+        
+        # selezione dei simboli disponibili per la data iniziale della simulazione
+        final_symb_x_select = []        
+        for symb in symbXSelect:
+            if symb.replace(' ', '') in symbols_dispo_in_dates[initial_date]:
+                # se il simbolo non presenta anomalie nei dati di mercato lo aggiungo alla lista
+                if symb.replace(' ', '') not in SYMB_TOT_ANOMALIE:
+                    final_symb_x_select.append(symb.replace(' ', ''))
+        
+    except Exception as e:
+        logger.critical(f"Errore non gestito: {e}")
+        logger.critical(f"Dettagli del traceback:\n{traceback.format_exc()}")
+    finally:
+        return final_symb_x_select
+
+
+def get_x_symbols_ordered_by_volume_for_sector( market, initial_date, perc, diz_volume, diz_symb_sect):
+    """
+    Funzione utilizzata per selezionare e restituire gli i simboli azionari del mercato specificato ordinati per volume di scambio per ogni settore 
+    che non presentano anomalie nei dati di mercato.
+
+    Args:
+        - market: stringa contenente il mercato di riferimento.
+        - initial_date: data iniziale per comprendere il periodo su cui selezionare i titoli in base di capitalizzazione decrescente.
+        - perc: percentuale di simboli da selezionare per ogni settore.
+        - diz_volume (dict): dizionario contenente per ogni mercato, anno e data i simboli per quella data ordinati per volume di scambio decrescente.
+        - diz_symb_sect: dizionario contenente i simboli azionari per ogni settore.
+        
+    Returns:
+        - symbolToUse: lista dei simboli azionari selezionati ordinati per capitalizzazione di mercato e con dati disponibili per la data iniziale.
+    """
+    # estrazione della data iniziale su cui effettuare la simulazione di trading
+    year = str(initial_date).split('-')[0]
+        
+    if market == 'data_market_nasdaq_symbols':
+        strMark = 'NASDAQ'
+    elif market == 'data_market_nyse_symbols':
+        strMark = 'NYSE'
+    elif market == 'data_market_larg_comp_eu_symbols':
+        strMark = 'LARG_COMP_EU'
+        
+    # selezione dei simboli in base alla capitalizzazione di mercato per l'anno selezionato e la data iniziale della simulazione
+    symbXSelect = diz_volume[strMark][year][initial_date.strftime('%Y-%m-%d')]
+    
+    # split dei simboli in base al simbolo ";"
+    symbXSelect = symbXSelect[0].split(';')
+    # rimozione degli spazi bianchi
+    symbXSelect = [symb.strip() for symb in symbXSelect]
+    
+    # a questo punto dobbiamo prendere il x% dei simboli azionari con maggiore capitalizzazione per ogni settore
+    
+    # selezione dei simboli che non presentano anomalie nei dati di mercato
+    symbXSelect2 = [s for s in symbXSelect if s not in SYMB_TOT_ANOMALIE]
+    
+    # dizionario per memorizzare i simboli da utilizzare per ogni settore
+    dizNew = {}
+    symbolToUse = []
+    for k, v in diz_symb_sect[strMark].items():
+        for s in symbXSelect2:
+            if s in v:
+                if k not in dizNew:
+                    dizNew[k] = [s]
+                else:
+                    dizNew[k].append(s)
+                
+    # selezione dei simboli per ogni settore in base alla percentuale specificata
+    for k,v in dizNew.items():
+        if len(v) > 1:
+            n = int(len(v) * perc)
+            symbolToUse += v[:n]
+        else:
+            symbolToUse += v            
+                
+    # ritorno dei simboli selezionati
+    return symbolToUse
+
+############################################################################################################
+
+
+
+############################################################################################################
+# FUNZIONI PER LA SELEZIONE RANDOMICA DEI SIMBOLI AZIONARI PER IL BACKTESTING DI STRATEGIE DI TRADING
+
+def get_x_symbols_random(initial_date, symbolsDispoInDates, logger):
+    """
+    Funzione utilizzata per selezionare e restituire i simboli azionari del mercato specificato in modo casuale, evitando quelli che presentano anomalie nei dati di mercato.
+    Args:
+        - initial_date: data iniziale per comprendere il periodo su cui selezionare i titoli.
+        - symbolsDispoInDates: dizionario contenente i simboli disponibili per ogni data di trading.
+        - logger: logger per la scrittura dei log.
+        
+    Returns:
+        - symbSelect100: lista dei simboli azionari selezionati in modo casuale e con dati disponibili per la data iniziale.
+    """
+    try:        
+        # Estrai i simboli disponibili per la data iniziale della simulazione che non presentano anomalie nei dati di mercato
+        valid_symbols = [s for s in symbolsDispoInDates[initial_date] if s not in SYMB_TOT_ANOMALIE]
+
+        # Poi fai il sample dalla lista già filtrata:
+        symbSelect100 = random.sample(valid_symbols, 100)
+                
+    except Exception as e:
+        logger.critical(f"Errore non gestito: {e}")
+        logger.critical(f"Dettagli del traceback:\n{traceback.format_exc()}")
+    finally:
+        return symbSelect100
+
+############################################################################################################
+
 
 
 

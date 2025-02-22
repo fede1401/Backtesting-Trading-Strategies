@@ -1,0 +1,2390 @@
+---------------------------------------------
+
+
+
+2025-02-21 17:26:32.048106
+Controllo anomalie per il mercato: data_market_larg_comp_eu_symbols
+Symbol: EUROB
+Data: Minimum open price: 17507.794921875 in date: 1999-08-11 00:00:00
+      Maximum high price: 32233.48828125 in date: 1999-02-16 00:00:00
+
+Symbol: ETE
+Data: Minimum open price: 14296.728515625 in date: 1999-01-01 00:00:00
+      Maximum high price: 27475.88671875 in date: 1999-09-21 00:00:00
+
+Symbol: BMPS
+Data: Minimum open price: 155377.546875 in date: 1999-12-20 00:00:00
+      Maximum high price: 201050.484375 in date: 1999-07-01 00:00:00
+
+Symbol: TPEIR
+Data: Minimum open price: 2949901.0 in date: 1999-01-15 00:00:00
+      Maximum high price: 5126286.0 in date: 1999-07-06 00:00:00
+
+Symbol: NEON
+Data: Minimum open price: 4453.125 in date: 1999-10-26 00:00:00
+      Maximum high price: 14843.75 in date: 1999-11-26 00:00:00
+
+Symbol: TSL
+Data: Minimum open price: 5640.88818359375 in date: 1999-11-02 00:00:00
+      Maximum high price: 39025.01171875 in date: 1999-12-28 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:32.409555
+Controllo anomalie per il mercato: data_market_larg_comp_eu_symbols
+Symbol: MAERSK-B
+Data: Minimum open price: 5259.828125 in date: 2000-12-12 00:00:00
+      Maximum high price: 8543.5888671875 in date: 2000-09-08 00:00:00
+
+Symbol: A5G
+Data: Minimum open price: 1987.5 in date: 2000-02-22 00:00:00
+      Maximum high price: 3312.5 in date: 2000-12-12 00:00:00
+
+Symbol: EUROB
+Data: Minimum open price: 14306.8818359375 in date: 2000-08-31 00:00:00
+      Maximum high price: 30945.203125 in date: 2000-01-06 00:00:00
+
+Symbol: ETE
+Data: Minimum open price: 19121.36328125 in date: 2000-04-17 00:00:00
+      Maximum high price: 44714.44140625 in date: 2000-04-28 00:00:00
+
+Symbol: BMPS
+Data: Minimum open price: 144183.1875 in date: 2000-02-16 00:00:00
+      Maximum high price: 240006.8125 in date: 2000-09-07 00:00:00
+
+Symbol: TPEIR
+Data: Minimum open price: 2229089.75 in date: 2000-11-29 00:00:00
+      Maximum high price: 3903232.25 in date: 2000-01-03 00:00:00
+
+Symbol: ARTO
+Data: Minimum open price: 870.0 in date: 2000-07-14 00:00:00
+      Maximum high price: 2250.0 in date: 2000-07-13 00:00:00
+
+SIMBOLO: CBE
+  Data: 2000-07-31 00:00:00 - open_i=0.1574999988079071 - high_i=0.1574999988079071
+  Data next: 2000-08-01 00:00:00 - high_next=7.5
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=7.34 (4661.90%)
+
+------------------------------------------------------
+Symbol: TABAK
+Data: Minimum open price: 5250.0 in date: 2000-09-20 00:00:00
+      Maximum high price: 7590.0 in date: 2000-01-24 00:00:00
+
+Symbol: CO
+Data: Minimum open price: 9000.0 in date: 2000-02-28 00:00:00
+      Maximum high price: 11790.0 in date: 2000-01-03 00:00:00
+
+Symbol: NTG
+Data: Minimum open price: 2835.8271484375 in date: 2000-12-22 00:00:00
+      Maximum high price: 9543.6494140625 in date: 2000-03-14 00:00:00
+
+Symbol: VIRI
+Data: Minimum open price: 6222.19580078125 in date: 2000-01-06 00:00:00
+      Maximum high price: 12310.5810546875 in date: 2000-09-12 00:00:00
+
+SIMBOLO: SNK
+  Data: 2000-06-29 00:00:00 - open_i=0.10000000149011612 - high_i=0.10000000149011612
+  Data next: 2000-06-30 00:00:00 - high_next=3.990000009536743
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=3.89 (3890.00%)
+
+  Data: 2000-11-14 00:00:00 - open_i=0.003000000026077032 - high_i=0.003000000026077032
+  Data next: 2000-11-15 00:00:00 - high_next=3.299999952316284
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=3.30 (109900.00%)
+
+------------------------------------------------------
+Symbol: NEON
+Data: Minimum open price: 4218.75 in date: 2000-12-27 00:00:00
+      Maximum high price: 32968.75 in date: 2000-06-12 00:00:00
+
+Symbol: ALECR
+Data: Minimum open price: 30000.0 in date: 2000-04-17 00:00:00
+      Maximum high price: 52000.0 in date: 2000-11-03 00:00:00
+
+Symbol: TSL
+Data: Minimum open price: 15964.7783203125 in date: 2000-12-20 00:00:00
+      Maximum high price: 106165.7734375 in date: 2000-03-06 00:00:00
+
+Symbol: VANTI
+Data: Minimum open price: 1658.7623291015625 in date: 2000-01-07 00:00:00
+      Maximum high price: 6144.96044921875 in date: 2000-08-21 00:00:00
+
+Symbol: ALATA
+Data: Minimum open price: 719.3690185546875 in date: 2000-12-21 00:00:00
+      Maximum high price: 2279.967529296875 in date: 2000-02-15 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:32.857590
+Controllo anomalie per il mercato: data_market_larg_comp_eu_symbols
+Symbol: MAERSK-B
+Data: Minimum open price: 3458.119140625 in date: 2001-10-02 00:00:00
+      Maximum high price: 6974.35791015625 in date: 2001-01-22 00:00:00
+
+Symbol: A5G
+Data: Minimum open price: 2275.0 in date: 2001-09-26 00:00:00
+      Maximum high price: 3462.5 in date: 2001-05-22 00:00:00
+
+Symbol: EUROB
+Data: Minimum open price: 10101.5712890625 in date: 2001-09-21 00:00:00
+      Maximum high price: 21807.337890625 in date: 2001-01-12 00:00:00
+
+Symbol: ETE
+Data: Minimum open price: 13318.1728515625 in date: 2001-09-21 00:00:00
+      Maximum high price: 41881.6484375 in date: 2001-05-01 00:00:00
+
+Symbol: BMPS
+Data: Minimum open price: 111943.4765625 in date: 2001-09-21 00:00:00
+      Maximum high price: 227693.03125 in date: 2001-01-30 00:00:00
+
+Symbol: TPEIR
+Data: Minimum open price: 1131596.25 in date: 2001-09-21 00:00:00
+      Maximum high price: 2681728.25 in date: 2001-01-09 00:00:00
+
+Symbol: TABAK
+Data: Minimum open price: 5370.0 in date: 2001-04-06 00:00:00
+      Maximum high price: 8500.0 in date: 2001-12-28 00:00:00
+
+Symbol: CO
+Data: Minimum open price: 7965.0 in date: 2001-09-21 00:00:00
+      Maximum high price: 11300.0 in date: 2001-02-15 00:00:00
+
+Symbol: NTG
+Data: Minimum open price: 1404.27978515625 in date: 2001-09-24 00:00:00
+      Maximum high price: 4090.135498046875 in date: 2001-02-02 00:00:00
+
+Symbol: VIRI
+Data: Minimum open price: 4429.1328125 in date: 2001-12-19 00:00:00
+      Maximum high price: 11039.3798828125 in date: 2001-05-08 00:00:00
+
+Symbol: NEON
+Data: Minimum open price: 600.0 in date: 2001-12-31 00:00:00
+      Maximum high price: 7187.5 in date: 2001-01-31 00:00:00
+
+Symbol: ALECR
+Data: Minimum open price: 23750.0 in date: 2001-09-24 00:00:00
+      Maximum high price: 56000.0 in date: 2001-02-08 00:00:00
+
+Symbol: TSL
+Data: Minimum open price: 3982.3251953125 in date: 2001-09-17 00:00:00
+      Maximum high price: 20488.1328125 in date: 2001-01-24 00:00:00
+
+Symbol: VANTI
+Data: Minimum open price: 1402.4080810546875 in date: 2001-09-17 00:00:00
+      Maximum high price: 4440.958984375 in date: 2001-01-19 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:33.328778
+Controllo anomalie per il mercato: data_market_larg_comp_eu_symbols
+Symbol: MAERSK-B
+Data: Minimum open price: 3022.2216796875 in date: 2002-12-05 00:00:00
+      Maximum high price: 5027.349609375 in date: 2002-02-04 00:00:00
+
+Symbol: A5G
+Data: Minimum open price: 2815.0 in date: 2002-07-25 00:00:00
+      Maximum high price: 3925.0 in date: 2002-05-15 00:00:00
+
+Symbol: EUROB
+Data: Minimum open price: 10393.2431640625 in date: 2002-11-14 00:00:00
+      Maximum high price: 15585.0029296875 in date: 2002-01-03 00:00:00
+
+Symbol: ETE
+Data: Minimum open price: 8404.9501953125 in date: 2002-10-10 00:00:00
+      Maximum high price: 25491.517578125 in date: 2002-01-01 00:00:00
+
+Symbol: BMPS
+Data: Minimum open price: 78360.4296875 in date: 2002-10-10 00:00:00
+      Maximum high price: 173736.265625 in date: 2002-04-26 00:00:00
+
+Symbol: TPEIR
+Data: Minimum open price: 886675.4375 in date: 2002-12-24 00:00:00
+      Maximum high price: 1578034.25 in date: 2002-01-03 00:00:00
+
+Symbol: TABAK
+Data: Minimum open price: 7550.0 in date: 2002-04-05 00:00:00
+      Maximum high price: 12820.0 in date: 2002-10-02 00:00:00
+
+Symbol: CO
+Data: Minimum open price: 5945.0 in date: 2002-10-25 00:00:00
+      Maximum high price: 8990.0 in date: 2002-04-22 00:00:00
+
+Symbol: NTG
+Data: Minimum open price: 599.8865356445312 in date: 2002-09-25 00:00:00
+      Maximum high price: 2767.658203125 in date: 2002-02-11 00:00:00
+
+Symbol: VIRI
+Data: Minimum open price: 1901.4495849609375 in date: 2002-10-09 00:00:00
+      Maximum high price: 6697.2236328125 in date: 2002-05-15 00:00:00
+
+Symbol: BNB
+Data: Minimum open price: 1725.0 in date: 2002-01-02 00:00:00
+      Maximum high price: 2960.0 in date: 2002-09-19 00:00:00
+
+SIMBOLO: BST
+  Data: 2002-09-17 00:00:00 - open_i=0.0024999999441206455 - high_i=0.7475000023841858
+  Data next: 2002-09-18 00:00:00 - high_next=0.6075000166893005
+    diff_same_day=0.75 (29800.00%)
+    diff_next_day=0.61 (24200.00%)
+
+  Data: 2002-09-19 00:00:00 - open_i=0.0024999999441206455 - high_i=0.4950000047683716
+  Data next: 2002-09-20 00:00:00 - high_next=0.4000000059604645
+    diff_same_day=0.49 (19700.00%)
+    diff_next_day=0.40 (15900.00%)
+
+  Data: 2002-09-20 00:00:00 - open_i=0.0024999999441206455 - high_i=0.4000000059604645
+  Data next: 2002-09-23 00:00:00 - high_next=0.32499998807907104
+    diff_same_day=0.40 (15900.00%)
+    diff_next_day=0.32 (12900.00%)
+
+  Data: 2002-09-23 00:00:00 - open_i=0.0024999999441206455 - high_i=0.32499998807907104
+  Data next: 2002-09-24 00:00:00 - high_next=0.26750001311302185
+    diff_same_day=0.32 (12900.00%)
+    diff_next_day=0.27 (10600.00%)
+
+------------------------------------------------------
+Symbol: NEON
+Data: Minimum open price: 700.0 in date: 2002-01-03 00:00:00
+      Maximum high price: 2937.5 in date: 2002-04-22 00:00:00
+
+Symbol: ALECR
+Data: Minimum open price: 17375.0 in date: 2002-10-10 00:00:00
+      Maximum high price: 50750.0 in date: 2002-04-18 00:00:00
+
+Symbol: TSL
+Data: Minimum open price: 3228.432861328125 in date: 2002-10-10 00:00:00
+      Maximum high price: 9703.037109375 in date: 2002-01-04 00:00:00
+
+Symbol: VANTI
+Data: Minimum open price: 923.6290283203125 in date: 2002-10-10 00:00:00
+      Maximum high price: 2801.04638671875 in date: 2002-01-09 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:33.802341
+Controllo anomalie per il mercato: data_market_larg_comp_eu_symbols
+Symbol: MAERSK-B
+Data: Minimum open price: 3719.657470703125 in date: 2003-02-24 00:00:00
+      Maximum high price: 9258.4599609375 in date: 2003-10-16 00:00:00
+
+Symbol: EUROB
+Data: Minimum open price: 8711.2685546875 in date: 2003-03-21 00:00:00
+      Maximum high price: 15497.501953125 in date: 2003-08-25 00:00:00
+
+Symbol: ETE
+Data: Minimum open price: 5638.28125 in date: 2003-04-01 00:00:00
+      Maximum high price: 19786.455078125 in date: 2004-01-01 00:00:00
+
+Symbol: BMPS
+Data: Minimum open price: 87092.0234375 in date: 2003-03-13 00:00:00
+      Maximum high price: 127615.5625 in date: 2003-12-09 00:00:00
+
+Symbol: TPEIR
+Data: Minimum open price: 694459.125 in date: 2003-04-18 00:00:00
+      Maximum high price: 1509828.5 in date: 2003-12-31 00:00:00
+
+Symbol: TABAK
+Data: Minimum open price: 10530.0 in date: 2003-02-03 00:00:00
+      Maximum high price: 15785.0 in date: 2003-12-30 00:00:00
+
+Symbol: CO
+Data: Minimum open price: 4947.0 in date: 2003-03-11 00:00:00
+      Maximum high price: 8140.0 in date: 2003-10-17 00:00:00
+
+Symbol: NTG
+Data: Minimum open price: 456.7317810058594 in date: 2003-03-27 00:00:00
+      Maximum high price: 2713.123291015625 in date: 2003-12-19 00:00:00
+
+Symbol: VIRI
+Data: Minimum open price: 1273.8775634765625 in date: 2003-03-13 00:00:00
+      Maximum high price: 4322.08447265625 in date: 2003-12-01 00:00:00
+
+Symbol: BNB
+Data: Minimum open price: 2821.0 in date: 2003-01-01 00:00:00
+      Maximum high price: 4189.0 in date: 2003-05-21 00:00:00
+
+Symbol: NEON
+Data: Minimum open price: 700.0 in date: 2003-01-29 00:00:00
+      Maximum high price: 10625.0 in date: 2003-12-01 00:00:00
+
+Symbol: ALECR
+Data: Minimum open price: 16475.0 in date: 2003-03-13 00:00:00
+      Maximum high price: 29625.0 in date: 2003-01-20 00:00:00
+
+Symbol: TSL
+Data: Minimum open price: 3077.654541015625 in date: 2003-03-13 00:00:00
+      Maximum high price: 6625.3828125 in date: 2003-12-02 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:34.288189
+Controllo anomalie per il mercato: data_market_larg_comp_eu_symbols
+Symbol: MAERSK-B
+Data: Minimum open price: 6573.33251953125 in date: 2004-05-27 00:00:00
+      Maximum high price: 9084.1015625 in date: 2004-03-02 00:00:00
+
+Symbol: OTP
+Data: Minimum open price: 2675.0 in date: 2004-01-01 00:00:00
+      Maximum high price: 5719.0 in date: 2004-12-17 00:00:00
+
+Symbol: EUROB
+Data: Minimum open price: 14933.6025390625 in date: 2004-01-01 00:00:00
+      Maximum high price: 24869.892578125 in date: 2004-12-30 00:00:00
+
+Symbol: BMPS
+Data: Minimum open price: 103659.65625 in date: 2004-09-29 00:00:00
+      Maximum high price: 122690.046875 in date: 2004-02-18 00:00:00
+
+Symbol: ETE
+Data: Minimum open price: 13747.484375 in date: 2004-03-26 00:00:00
+      Maximum high price: 28289.669921875 in date: 2004-12-30 00:00:00
+
+Symbol: TPEIR
+Data: Minimum open price: 1333113.5 in date: 2004-08-09 00:00:00
+      Maximum high price: 2012071.25 in date: 2004-12-30 00:00:00
+
+Symbol: TABAK
+Data: Minimum open price: 13900.0 in date: 2004-08-20 00:00:00
+      Maximum high price: 20780.0 in date: 2004-03-23 00:00:00
+
+Symbol: CO
+Data: Minimum open price: 5405.0 in date: 2004-11-01 00:00:00
+      Maximum high price: 8270.0 in date: 2004-02-19 00:00:00
+
+Symbol: NTG
+Data: Minimum open price: 2290.475830078125 in date: 2004-01-02 00:00:00
+      Maximum high price: 3653.854248046875 in date: 2004-07-19 00:00:00
+
+Symbol: VIRI
+Data: Minimum open price: 3974.1767578125 in date: 2004-01-02 00:00:00
+      Maximum high price: 7560.302734375 in date: 2004-09-28 00:00:00
+
+Symbol: NEON
+Data: Minimum open price: 3312.5 in date: 2004-09-22 00:00:00
+      Maximum high price: 9500.0 in date: 2004-01-26 00:00:00
+
+Symbol: ALECR
+Data: Minimum open price: 20500.0 in date: 2004-01-01 00:00:00
+      Maximum high price: 28000.0 in date: 2004-12-01 00:00:00
+
+Symbol: LOCAL
+Data: Minimum open price: 177805.046875 in date: 2004-07-09 00:00:00
+      Maximum high price: 226971.796875 in date: 2004-12-17 00:00:00
+
+Symbol: TSL
+Data: Minimum open price: 1951.2506103515625 in date: 2004-08-13 00:00:00
+      Maximum high price: 5401.41650390625 in date: 2004-01-06 00:00:00
+
+Symbol: TOPS
+Data: Minimum open price: 485352007532544.0 in date: 2004-08-17 00:00:00
+      Maximum high price: 1094990369390592.0 in date: 2004-11-29 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:34.774537
+Controllo anomalie per il mercato: data_market_larg_comp_eu_symbols
+Symbol: MAERSK-B
+Data: Minimum open price: 7375.38330078125 in date: 2006-06-28 00:00:00
+      Maximum high price: 11821.537109375 in date: 2006-01-04 00:00:00
+
+SIMBOLO: BOL
+  Data: 2006-04-13 00:00:00 - open_i=1.4500000476837158 - high_i=1.4570000171661377
+  Data next: 2006-04-14 00:00:00 - high_next=140.0
+    diff_same_day=0.01 (0.48%)
+    diff_next_day=138.55 (9555.17%)
+
+  Data: 2006-04-28 00:00:00 - open_i=1.4830000400543213 - high_i=1.496000051498413
+  Data next: 2006-05-01 00:00:00 - high_next=149.5
+    diff_same_day=0.01 (0.88%)
+    diff_next_day=148.02 (9980.92%)
+
+  Data: 2006-12-22 00:00:00 - open_i=1.625 - high_i=1.63100004196167
+  Data next: 2006-12-25 00:00:00 - high_next=171.5
+    diff_same_day=0.01 (0.37%)
+    diff_next_day=169.88 (10453.85%)
+
+------------------------------------------------------
+Symbol: A5G
+Data: Minimum open price: 4325.0 in date: 2006-06-14 00:00:00
+      Maximum high price: 5775.0 in date: 2006-12-22 00:00:00
+
+Symbol: OTP
+Data: Minimum open price: 5265.0 in date: 2006-06-27 00:00:00
+      Maximum high price: 8785.0 in date: 2006-12-29 00:00:00
+
+Symbol: EUROB
+Data: Minimum open price: 19833.69140625 in date: 2006-06-28 00:00:00
+      Maximum high price: 33658.94140625 in date: 2006-02-09 00:00:00
+
+Symbol: ETE
+Data: Minimum open price: 32518.857421875 in date: 2006-06-06 00:00:00
+      Maximum high price: 51593.609375 in date: 2006-02-27 00:00:00
+
+Symbol: BMPS
+Data: Minimum open price: 168362.984375 in date: 2006-01-18 00:00:00
+      Maximum high price: 227469.140625 in date: 2006-11-27 00:00:00
+
+Symbol: MOL
+Data: Minimum open price: 2287.5 in date: 2006-06-15 00:00:00
+      Maximum high price: 3333.125 in date: 2006-04-20 00:00:00
+
+Symbol: TPEIR
+Data: Minimum open price: 2635224.25 in date: 2006-06-15 00:00:00
+      Maximum high price: 4241161.0 in date: 2006-05-10 00:00:00
+
+Symbol: COL
+Data: Minimum open price: 364.379638671875 in date: 2006-01-02 00:00:00
+      Maximum high price: 1918.6336669921875 in date: 2006-12-12 00:00:00
+
+Symbol: ARTO
+Data: Minimum open price: 1350.0 in date: 2006-01-20 00:00:00
+      Maximum high price: 2761.0 in date: 2006-11-22 00:00:00
+
+Symbol: TABAK
+Data: Minimum open price: 9000.0 in date: 2006-09-08 00:00:00
+      Maximum high price: 18680.0 in date: 2006-01-16 00:00:00
+
+Symbol: CO
+Data: Minimum open price: 4831.0 in date: 2006-02-09 00:00:00
+      Maximum high price: 7170.0 in date: 2006-11-14 00:00:00
+
+Symbol: NTG
+Data: Minimum open price: 2017.8001708984375 in date: 2006-06-15 00:00:00
+      Maximum high price: 5264.5263671875 in date: 2006-12-21 00:00:00
+
+Symbol: VIRI
+Data: Minimum open price: 10967.6630859375 in date: 2006-01-02 00:00:00
+      Maximum high price: 24060.8984375 in date: 2006-12-29 00:00:00
+
+Symbol: ESEA
+Data: Minimum open price: 460.0 in date: 2006-11-20 00:00:00
+      Maximum high price: 1514.4000244140625 in date: 2006-05-05 00:00:00
+
+Symbol: NEON
+Data: Minimum open price: 400.0 in date: 2006-11-29 00:00:00
+      Maximum high price: 2250.0 in date: 2006-01-17 00:00:00
+
+Symbol: ALECR
+Data: Minimum open price: 15750.0 in date: 2006-10-17 00:00:00
+      Maximum high price: 31125.0 in date: 2006-01-10 00:00:00
+
+Symbol: LOCAL
+Data: Minimum open price: 182709.15625 in date: 2006-12-13 00:00:00
+      Maximum high price: 309838.5 in date: 2006-06-30 00:00:00
+
+Symbol: TOPS
+Data: Minimum open price: 217727998361600.0 in date: 2006-12-29 00:00:00
+      Maximum high price: 830995171377152.0 in date: 2006-03-22 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:35.285641
+Controllo anomalie per il mercato: data_market_larg_comp_eu_symbols
+Symbol: MAERSK-B
+Data: Minimum open price: 9084.1015625 in date: 2007-01-08 00:00:00
+      Maximum high price: 13181.5361328125 in date: 2007-07-19 00:00:00
+
+Symbol: OTP
+Data: Minimum open price: 7820.0 in date: 2007-11-28 00:00:00
+      Maximum high price: 10970.0 in date: 2007-07-24 00:00:00
+
+Symbol: A5G
+Data: Minimum open price: 3250.0 in date: 2007-11-22 00:00:00
+      Maximum high price: 6953.5 in date: 2007-10-01 00:00:00
+
+Symbol: ROCK-B
+Data: Minimum open price: 885.0 in date: 2007-01-02 00:00:00
+      Maximum high price: 2022.0 in date: 2007-08-29 00:00:00
+
+Symbol: EUROB
+Data: Minimum open price: 21525.388671875 in date: 2007-11-23 00:00:00
+      Maximum high price: 31092.228515625 in date: 2007-04-11 00:00:00
+
+Symbol: ETE
+Data: Minimum open price: 45662.734375 in date: 2007-01-01 00:00:00
+      Maximum high price: 62802.61328125 in date: 2007-11-07 00:00:00
+
+Symbol: BMPS
+Data: Minimum open price: 162429.984375 in date: 2007-11-23 00:00:00
+      Maximum high price: 238887.375 in date: 2007-05-22 00:00:00
+
+Symbol: LPP
+Data: Minimum open price: 730.0 in date: 2007-01-05 00:00:00
+      Maximum high price: 2708.0 in date: 2007-12-06 00:00:00
+
+SIMBOLO: MBK
+  Data: 2007-05-03 00:00:00 - open_i=5.5 - high_i=5.5
+  Data next: 2007-05-04 00:00:00 - high_next=520.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=514.50 (9354.55%)
+
+  Data: 2007-06-07 00:00:00 - open_i=6.0 - high_i=6.0
+  Data next: 2007-06-08 00:00:00 - high_next=550.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=544.00 (9066.67%)
+
+  Data: 2007-08-15 00:00:00 - open_i=5.099999904632568 - high_i=5.099999904632568
+  Data next: 2007-08-16 00:00:00 - high_next=502.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=496.90 (9743.14%)
+
+  Data: 2007-11-01 00:00:00 - open_i=5.5 - high_i=5.5
+  Data next: 2007-11-02 00:00:00 - high_next=565.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=559.50 (10172.73%)
+
+------------------------------------------------------
+Symbol: MOL
+Data: Minimum open price: 5.074999809265137 in date: 2007-08-20 00:00:00
+      Maximum high price: 3775.0 in date: 2007-06-26 00:00:00
+
+SIMBOLO: MOL
+  Data: 2007-08-20 00:00:00 - open_i=5.074999809265137 - high_i=5.135000228881836
+  Data next: 2007-08-21 00:00:00 - high_next=3199.375
+    diff_same_day=0.06 (1.18%)
+    diff_next_day=3194.30 (62941.87%)
+
+  Data: 2007-10-23 00:00:00 - open_i=5.300000190734863 - high_i=5.340000152587891
+  Data next: 2007-10-24 00:00:00 - high_next=3487.5
+    diff_same_day=0.04 (0.75%)
+    diff_next_day=3482.20 (65701.88%)
+
+  Data: 2007-11-02 00:00:00 - open_i=5.114999771118164 - high_i=5.349999904632568
+  Data next: 2007-11-05 00:00:00 - high_next=3331.25
+    diff_same_day=0.24 (4.59%)
+    diff_next_day=3326.14 (65027.08%)
+
+------------------------------------------------------
+Symbol: TPEIR
+Data: Minimum open price: 3597113.5 in date: 2007-08-17 00:00:00
+      Maximum high price: 4659304.5 in date: 2007-11-09 00:00:00
+
+Symbol: COL
+Data: Minimum open price: 750.8905639648438 in date: 2007-12-28 00:00:00
+      Maximum high price: 1946.423828125 in date: 2007-01-22 00:00:00
+
+Symbol: TABAK
+Data: Minimum open price: 7505.0 in date: 2007-12-18 00:00:00
+      Maximum high price: 12100.0 in date: 2007-01-09 00:00:00
+
+Symbol: CO
+Data: Minimum open price: 6400.0 in date: 2007-03-05 00:00:00
+      Maximum high price: 8655.0 in date: 2007-06-04 00:00:00
+
+Symbol: NTG
+Data: Minimum open price: 15.449999809265137 in date: 2007-06-05 00:00:00
+      Maximum high price: 6963.02001953125 in date: 2007-10-15 00:00:00
+
+SIMBOLO: NTG
+  Data: 2007-04-05 00:00:00 - open_i=19.0 - high_i=19.200000762939453
+  Data next: 2007-04-10 00:00:00 - high_next=4185.86181640625
+    diff_same_day=0.20 (1.05%)
+    diff_next_day=4166.86 (21930.85%)
+
+  Data: 2007-05-04 00:00:00 - open_i=19.0 - high_i=19.100000381469727
+  Data next: 2007-05-07 00:00:00 - high_next=4403.20458984375
+    diff_same_day=0.10 (0.53%)
+    diff_next_day=4384.20 (23074.76%)
+
+  Data: 2007-05-17 00:00:00 - open_i=17.93000030517578 - high_i=17.93000030517578
+  Data next: 2007-05-18 00:00:00 - high_next=4717.14404296875
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=4699.21 (26208.67%)
+
+  Data: 2007-06-05 00:00:00 - open_i=15.449999809265137 - high_i=15.699999809265137
+  Data next: 2007-06-06 00:00:00 - high_next=4974.73583984375
+    diff_same_day=0.25 (1.62%)
+    diff_next_day=4959.29 (32098.94%)
+
+------------------------------------------------------
+Symbol: VIRI
+Data: Minimum open price: 20402.599609375 in date: 2007-03-14 00:00:00
+      Maximum high price: 34918.66796875 in date: 2007-10-19 00:00:00
+
+Symbol: ESEA
+Data: Minimum open price: 561.5999755859375 in date: 2007-01-05 00:00:00
+      Maximum high price: 1721.5999755859375 in date: 2007-10-16 00:00:00
+
+SIMBOLO: GEA
+  Data: 2007-08-01 00:00:00 - open_i=0.057165998965501785 - high_i=0.057165998965501785
+  Data next: 2007-08-02 00:00:00 - high_next=6.199999809265137
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=6.14 (10745.61%)
+
+------------------------------------------------------
+Symbol: NEON
+Data: Minimum open price: 412.5 in date: 2007-01-17 00:00:00
+      Maximum high price: 2075.0 in date: 2007-07-11 00:00:00
+
+Symbol: ALECR
+Data: Minimum open price: 10600.0 in date: 2007-12-24 00:00:00
+      Maximum high price: 23750.0 in date: 2007-01-08 00:00:00
+
+Symbol: LOCAL
+Data: Minimum open price: 168248.34375 in date: 2007-12-27 00:00:00
+      Maximum high price: 216786.359375 in date: 2007-05-02 00:00:00
+
+Symbol: TOPS
+Data: Minimum open price: 137894396166144.0 in date: 2007-12-05 00:00:00
+      Maximum high price: 381023997132800.0 in date: 2007-07-24 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:35.806147
+Controllo anomalie per il mercato: data_market_larg_comp_eu_symbols
+Symbol: MAERSK-B
+Data: Minimum open price: 4603.076171875 in date: 2008-11-21 00:00:00
+      Maximum high price: 10583.587890625 in date: 2008-06-17 00:00:00
+
+Symbol: OTP
+Data: Minimum open price: 2390.0 in date: 2008-10-27 00:00:00
+      Maximum high price: 8985.0 in date: 2008-01-02 00:00:00
+
+Symbol: A5G
+Data: Minimum open price: 401.25 in date: 2008-12-30 00:00:00
+      Maximum high price: 4085.0 in date: 2008-01-25 00:00:00
+
+Symbol: EUROB
+Data: Minimum open price: 4958.4228515625 in date: 2008-12-23 00:00:00
+      Maximum high price: 23547.646484375 in date: 2008-01-02 00:00:00
+
+Symbol: ETE
+Data: Minimum open price: 15151.130859375 in date: 2008-10-27 00:00:00
+      Maximum high price: 62122.25390625 in date: 2008-01-09 00:00:00
+
+Symbol: BMPS
+Data: Minimum open price: 56464.2890625 in date: 2008-11-20 00:00:00
+      Maximum high price: 164668.84375 in date: 2008-01-02 00:00:00
+
+Symbol: LPP
+Data: Minimum open price: 930.0 in date: 2008-11-03 00:00:00
+      Maximum high price: 2655.0 in date: 2008-01-02 00:00:00
+
+SIMBOLO: MBK
+  Data: 2008-05-22 00:00:00 - open_i=5.900000095367432 - high_i=5.900000095367432
+  Data next: 2008-05-23 00:00:00 - high_next=388.8999938964844
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=383.00 (6491.53%)
+
+  Data: 2008-08-15 00:00:00 - open_i=5.400000095367432 - high_i=5.400000095367432
+  Data next: 2008-08-18 00:00:00 - high_next=378.70001220703125
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=373.30 (6912.96%)
+
+  Data: 2008-11-11 00:00:00 - open_i=5.400000095367432 - high_i=5.400000095367432
+  Data next: 2008-11-12 00:00:00 - high_next=197.89999389648438
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=192.50 (3564.81%)
+
+------------------------------------------------------
+Symbol: MOL
+Data: Minimum open price: 3.4000000953674316 in date: 2008-10-23 00:00:00
+      Maximum high price: 3061.25 in date: 2008-02-14 00:00:00
+
+SIMBOLO: MOL
+  Data: 2008-05-02 00:00:00 - open_i=4.039999961853027 - high_i=4.239999771118164
+  Data next: 2008-05-05 00:00:00 - high_next=2937.5
+    diff_same_day=0.20 (4.95%)
+    diff_next_day=2933.46 (72610.40%)
+
+  Data: 2008-05-12 00:00:00 - open_i=3.950000047683716 - high_i=3.950000047683716
+  Data next: 2008-05-13 00:00:00 - high_next=2970.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=2966.05 (75089.87%)
+
+  Data: 2008-08-20 00:00:00 - open_i=4.449999809265137 - high_i=4.5
+  Data next: 2008-08-21 00:00:00 - high_next=2061.25
+    diff_same_day=0.05 (1.12%)
+    diff_next_day=2056.80 (46220.23%)
+
+  Data: 2008-10-23 00:00:00 - open_i=3.4000000953674316 - high_i=3.4000000953674316
+  Data next: 2008-10-24 00:00:00 - high_next=1200.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=1196.60 (35194.12%)
+
+------------------------------------------------------
+Symbol: TPEIR
+Data: Minimum open price: 873212.3125 in date: 2008-12-19 00:00:00
+      Maximum high price: 4388869.5 in date: 2008-01-02 00:00:00
+
+Symbol: KBHL
+Data: Minimum open price: 1000.0 in date: 2008-12-23 00:00:00
+      Maximum high price: 2500.0 in date: 2008-01-15 00:00:00
+
+Symbol: TABAK
+Data: Minimum open price: 3900.0 in date: 2008-07-09 00:00:00
+      Maximum high price: 7996.0 in date: 2008-01-03 00:00:00
+
+Symbol: EMEIS
+Data: Minimum open price: 1324.6241455078125 in date: 2008-11-24 00:00:00
+      Maximum high price: 2724.395751953125 in date: 2008-01-02 00:00:00
+
+Symbol: CO
+Data: Minimum open price: 4342.0 in date: 2008-12-02 00:00:00
+      Maximum high price: 8468.0 in date: 2008-05-20 00:00:00
+
+Symbol: NTG
+Data: Minimum open price: 5.400000095367432 in date: 2008-05-12 00:00:00
+      Maximum high price: 5775.76611328125 in date: 2008-01-02 00:00:00
+
+SIMBOLO: NTG
+  Data: 2008-03-20 00:00:00 - open_i=6.300000190734863 - high_i=6.480000019073486
+  Data next: 2008-03-25 00:00:00 - high_next=4518.6875
+    diff_same_day=0.18 (2.86%)
+    diff_next_day=4512.39 (71625.20%)
+
+  Data: 2008-04-18 00:00:00 - open_i=5.900000095367432 - high_i=6.0
+  Data next: 2008-04-21 00:00:00 - high_next=4705.55078125
+    diff_same_day=0.10 (1.69%)
+    diff_next_day=4699.65 (79655.10%)
+
+  Data: 2008-05-12 00:00:00 - open_i=5.400000095367432 - high_i=5.400000095367432
+  Data next: 2008-05-13 00:00:00 - high_next=4680.0693359375
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=4674.67 (86567.95%)
+
+  Data: 2008-06-05 00:00:00 - open_i=5.949999809265137 - high_i=6.0
+  Data next: 2008-06-06 00:00:00 - high_next=4569.650390625
+    diff_same_day=0.05 (0.84%)
+    diff_next_day=4563.70 (76700.85%)
+
+------------------------------------------------------
+Symbol: VIRI
+Data: Minimum open price: 6535.77294921875 in date: 2008-11-24 00:00:00
+      Maximum high price: 28917.90234375 in date: 2008-01-04 00:00:00
+
+Symbol: ESEA
+Data: Minimum open price: 264.0 in date: 2008-11-21 00:00:00
+      Maximum high price: 1399.199951171875 in date: 2008-05-19 00:00:00
+
+Symbol: SHIP
+Data: Minimum open price: 586800.0 in date: 2008-10-30 00:00:00
+      Maximum high price: 1809000.0 in date: 2008-05-22 00:00:00
+
+Symbol: BNB
+Data: Minimum open price: 1925.0 in date: 2008-11-24 00:00:00
+      Maximum high price: 3329.989990234375 in date: 2008-08-12 00:00:00
+
+Symbol: ALECR
+Data: Minimum open price: 4575.0 in date: 2008-10-31 00:00:00
+      Maximum high price: 12125.0 in date: 2008-05-21 00:00:00
+
+Symbol: LOCAL
+Data: Minimum open price: 87393.5703125 in date: 2008-10-28 00:00:00
+      Maximum high price: 177930.796875 in date: 2008-02-05 00:00:00
+
+Symbol: TSL
+Data: Minimum open price: 590.0 in date: 2008-10-08 00:00:00
+      Maximum high price: 2727.5 in date: 2008-05-09 00:00:00
+
+Symbol: TOPS
+Data: Minimum open price: 22680000528384.0 in date: 2008-10-29 00:00:00
+      Maximum high price: 161784002510848.0 in date: 2008-05-21 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:36.360824
+Controllo anomalie per il mercato: data_market_larg_comp_eu_symbols
+Symbol: MAERSK-B
+Data: Minimum open price: 6398.97314453125 in date: 2010-01-04 00:00:00
+      Maximum high price: 9572.306640625 in date: 2010-07-08 00:00:00
+
+Symbol: OTP
+Data: Minimum open price: 4470.0 in date: 2010-08-31 00:00:00
+      Maximum high price: 7400.0 in date: 2010-03-25 00:00:00
+
+Symbol: EUROB
+Data: Minimum open price: 3601.261962890625 in date: 2010-06-08 00:00:00
+      Maximum high price: 8789.857421875 in date: 2010-01-11 00:00:00
+
+Symbol: BMPS
+Data: Minimum open price: 36963.734375 in date: 2010-12-01 00:00:00
+      Maximum high price: 60404.69921875 in date: 2010-01-11 00:00:00
+
+Symbol: ETE
+Data: Minimum open price: 9104.9541015625 in date: 2010-12-28 00:00:00
+      Maximum high price: 29100.705078125 in date: 2010-01-11 00:00:00
+
+Symbol: MOL
+Data: Minimum open price: 5.09499979019165 in date: 2010-08-20 00:00:00
+      Maximum high price: 2900.0 in date: 2010-09-15 00:00:00
+
+SIMBOLO: MOL
+  Data: 2010-03-15 00:00:00 - open_i=5.65500020980835 - high_i=5.75
+  Data next: 2010-03-16 00:00:00 - high_next=2548.75
+    diff_same_day=0.09 (1.68%)
+    diff_next_day=2543.09 (44970.73%)
+
+  Data: 2010-05-24 00:00:00 - open_i=5.199999809265137 - high_i=5.199999809265137
+  Data next: 2010-05-25 00:00:00 - high_next=2144.375
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=2139.18 (41137.98%)
+
+  Data: 2010-08-20 00:00:00 - open_i=5.09499979019165 - high_i=5.170000076293945
+  Data next: 2010-08-23 00:00:00 - high_next=2585.625
+    diff_same_day=0.08 (1.47%)
+    diff_next_day=2580.53 (50648.28%)
+
+  Data: 2010-11-01 00:00:00 - open_i=5.355000019073486 - high_i=5.389999866485596
+  Data next: 2010-11-02 00:00:00 - high_next=2603.125
+    diff_same_day=0.03 (0.65%)
+    diff_next_day=2597.77 (48511.11%)
+
+------------------------------------------------------
+Symbol: TPEIR
+Data: Minimum open price: 470853.6875 in date: 2010-12-01 00:00:00
+      Maximum high price: 1452492.125 in date: 2010-01-11 00:00:00
+
+Symbol: ARTO
+Data: Minimum open price: 1810.010009765625 in date: 2010-01-13 00:00:00
+      Maximum high price: 2898.0 in date: 2010-08-31 00:00:00
+
+Symbol: TABAK
+Data: Minimum open price: 7950.0 in date: 2010-05-20 00:00:00
+      Maximum high price: 10519.0 in date: 2010-11-24 00:00:00
+
+Symbol: SPB
+Data: Minimum open price: 1200.0 in date: 2010-05-28 00:00:00
+      Maximum high price: 2500.0 in date: 2010-04-20 00:00:00
+
+Symbol: CO
+Data: Minimum open price: 5747.0 in date: 2010-02-09 00:00:00
+      Maximum high price: 7510.0 in date: 2010-12-21 00:00:00
+
+Symbol: NTG
+Data: Minimum open price: 4.0 in date: 2010-04-21 00:00:00
+      Maximum high price: 4660.0 in date: 2010-02-08 00:00:00
+
+SIMBOLO: NTG
+  Data: 2010-04-01 00:00:00 - open_i=4.245999813079834 - high_i=4.245999813079834
+  Data next: 2010-04-06 00:00:00 - high_next=3430.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=3425.75 (80681.92%)
+
+  Data: 2010-04-21 00:00:00 - open_i=4.0 - high_i=4.099999904632568
+  Data next: 2010-04-22 00:00:00 - high_next=3590.0
+    diff_same_day=0.10 (2.50%)
+    diff_next_day=3586.00 (89650.00%)
+
+  Data: 2010-04-30 00:00:00 - open_i=4.099999904632568 - high_i=4.25
+  Data next: 2010-05-03 00:00:00 - high_next=2300.0
+    diff_same_day=0.15 (3.66%)
+    diff_next_day=2295.90 (55997.56%)
+
+  Data: 2010-05-13 00:00:00 - open_i=4.019999980926514 - high_i=4.0279998779296875
+  Data next: 2010-05-14 00:00:00 - high_next=1950.0
+    diff_same_day=0.01 (0.20%)
+    diff_next_day=1945.98 (48407.46%)
+
+  Data: 2010-05-24 00:00:00 - open_i=4.020999908447266 - high_i=4.020999908447266
+  Data next: 2010-05-25 00:00:00 - high_next=1700.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=1695.98 (42178.04%)
+
+------------------------------------------------------
+Symbol: VIRI
+Data: Minimum open price: 9434.9375 in date: 2010-08-31 00:00:00
+      Maximum high price: 18060.1328125 in date: 2010-04-26 00:00:00
+
+Symbol: SHIP
+Data: Minimum open price: 162000.0 in date: 2010-12-29 00:00:00
+      Maximum high price: 540000.0 in date: 2010-01-06 00:00:00
+
+Symbol: BNB
+Data: Minimum open price: 3325.0 in date: 2010-02-10 00:00:00
+      Maximum high price: 4420.0 in date: 2010-04-06 00:00:00
+
+Symbol: ALECR
+Data: Minimum open price: 2750.0 in date: 2010-12-29 00:00:00
+      Maximum high price: 4875.0 in date: 2010-01-13 00:00:00
+
+Symbol: LOCAL
+Data: Minimum open price: 85142.71875 in date: 2010-12-21 00:00:00
+      Maximum high price: 128386.8125 in date: 2010-06-15 00:00:00
+
+Symbol: TOPS
+Data: Minimum open price: 9525599928320.0 in date: 2010-09-27 00:00:00
+      Maximum high price: 19655999619072.0 in date: 2010-01-14 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:36.918578
+Controllo anomalie per il mercato: data_market_larg_comp_eu_symbols
+SIMBOLO: MAN
+  Data: 2011-08-15 00:00:00 - open_i=1.6070599555969238 - high_i=1.6070599555969238
+  Data next: 2011-08-16 00:00:00 - high_next=54.4900016784668
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=52.88 (3290.66%)
+
+  Data: 2011-10-26 00:00:00 - open_i=1.320085048675537 - high_i=1.320085048675537
+  Data next: 2011-10-27 00:00:00 - high_next=50.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=48.68 (3687.63%)
+
+  Data: 2011-11-01 00:00:00 - open_i=1.339216947555542 - high_i=1.339216947555542
+  Data next: 2011-11-02 00:00:00 - high_next=50.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=48.66 (3633.53%)
+
+  Data: 2011-12-08 00:00:00 - open_i=1.2052949666976929 - high_i=1.2052949666976929
+  Data next: 2011-12-09 00:00:00 - high_next=55.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=53.79 (4463.20%)
+
+  Data: 2011-12-26 00:00:00 - open_i=1.0905050039291382 - high_i=1.0905050039291382
+  Data next: 2011-12-27 00:00:00 - high_next=50.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=48.91 (4485.03%)
+
+------------------------------------------------------
+Symbol: MAERSK-B
+Data: Minimum open price: 5589.94775390625 in date: 2011-09-14 00:00:00
+      Maximum high price: 9467.6904296875 in date: 2011-02-17 00:00:00
+
+SIMBOLO: 1913
+  Data: 2011-06-23 00:00:00 - open_i=0.17000000178813934 - high_i=0.17000000178813934
+  Data next: 2011-06-24 00:00:00 - high_next=40.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=39.83 (23429.41%)
+
+------------------------------------------------------
+Symbol: OTP
+Data: Minimum open price: 2750.0 in date: 2011-09-26 00:00:00
+      Maximum high price: 6475.0 in date: 2011-04-28 00:00:00
+
+Symbol: EUROB
+Data: Minimum open price: 295.6407775878906 in date: 2011-12-20 00:00:00
+      Maximum high price: 5248.1201171875 in date: 2011-02-18 00:00:00
+
+Symbol: ETE
+Data: Minimum open price: 2234.98876953125 in date: 2011-11-01 00:00:00
+      Maximum high price: 12149.939453125 in date: 2011-02-21 00:00:00
+
+Symbol: BMPS
+Data: Minimum open price: 12610.4736328125 in date: 2011-11-30 00:00:00
+      Maximum high price: 46389.375 in date: 2011-02-17 00:00:00
+
+Symbol: MOL
+Data: Minimum open price: 1781.25 in date: 2011-09-23 00:00:00
+      Maximum high price: 3214.375 in date: 2011-04-07 00:00:00
+
+Symbol: TPEIR
+Data: Minimum open price: 53426.2734375 in date: 2011-11-01 00:00:00
+      Maximum high price: 612276.1875 in date: 2011-01-03 00:00:00
+
+Symbol: TABAK
+Data: Minimum open price: 9151.0 in date: 2011-04-26 00:00:00
+      Maximum high price: 12580.0 in date: 2011-12-30 00:00:00
+
+Symbol: CO
+Data: Minimum open price: 5303.0 in date: 2011-08-22 00:00:00
+      Maximum high price: 7655.0 in date: 2011-05-18 00:00:00
+
+Symbol: NTG
+Data: Minimum open price: 9.298999786376953 in date: 2011-04-21 00:00:00
+      Maximum high price: 2030.0 in date: 2011-01-06 00:00:00
+
+SIMBOLO: NTG
+  Data: 2011-04-21 00:00:00 - open_i=9.298999786376953 - high_i=9.649999618530273
+  Data next: 2011-04-26 00:00:00 - high_next=1160.0
+    diff_same_day=0.35 (3.77%)
+    diff_next_day=1150.70 (12374.46%)
+
+  Data: 2011-05-20 00:00:00 - open_i=10.350000381469727 - high_i=10.550000190734863
+  Data next: 2011-05-23 00:00:00 - high_next=1060.0
+    diff_same_day=0.20 (1.93%)
+    diff_next_day=1049.65 (10141.55%)
+
+  Data: 2011-06-03 00:00:00 - open_i=11.220000267028809 - high_i=11.220000267028809
+  Data next: 2011-06-06 00:00:00 - high_next=1090.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=1078.78 (9614.79%)
+
+  Data: 2011-06-13 00:00:00 - open_i=12.600000381469727 - high_i=12.78499984741211
+  Data next: 2011-06-14 00:00:00 - high_next=1010.0
+    diff_same_day=0.18 (1.47%)
+    diff_next_day=997.40 (7915.87%)
+
+------------------------------------------------------
+Symbol: VIRI
+Data: Minimum open price: 8755.3330078125 in date: 2011-10-05 00:00:00
+      Maximum high price: 20088.103515625 in date: 2011-03-01 00:00:00
+
+Symbol: SHIP
+Data: Minimum open price: 23520.0 in date: 2011-12-29 00:00:00
+      Maximum high price: 185400.0 in date: 2011-01-05 00:00:00
+
+Symbol: BNB
+Data: Minimum open price: 2005.0 in date: 2011-12-01 00:00:00
+      Maximum high price: 3560.0 in date: 2011-05-18 00:00:00
+
+Symbol: ALECR
+Data: Minimum open price: 1625.0 in date: 2011-11-24 00:00:00
+      Maximum high price: 3375.0 in date: 2011-06-08 00:00:00
+
+Symbol: LOCAL
+Data: Minimum open price: 29525.1953125 in date: 2011-12-13 00:00:00
+      Maximum high price: 99213.7109375 in date: 2011-02-03 00:00:00
+
+Symbol: TOPS
+Data: Minimum open price: 1542239944704.0 in date: 2011-10-11 00:00:00
+      Maximum high price: 17539200450560.0 in date: 2011-01-05 00:00:00
+
+Symbol: PSHG
+Data: Minimum open price: 3445092.0 in date: 2011-12-12 00:00:00
+      Maximum high price: 11483640.0 in date: 2011-01-03 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:37.472338
+Controllo anomalie per il mercato: data_market_larg_comp_eu_symbols
+SIMBOLO: MAN
+  Data: 2012-01-06 00:00:00 - open_i=1.16703200340271 - high_i=1.16703200340271
+  Data next: 2012-01-09 00:00:00 - high_next=54.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=52.83 (4527.12%)
+
+  Data: 2012-04-09 00:00:00 - open_i=1.2818219661712646 - high_i=1.2818219661712646
+  Data next: 2012-04-10 00:00:00 - high_next=52.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=50.72 (3956.73%)
+
+  Data: 2012-05-01 00:00:00 - open_i=1.2244269847869873 - high_i=1.2244269847869873
+  Data next: 2012-05-02 00:00:00 - high_next=50.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=48.78 (3983.54%)
+
+  Data: 2012-05-17 00:00:00 - open_i=1.1096370220184326 - high_i=1.128769040107727
+  Data next: 2012-05-18 00:00:00 - high_next=51.0
+    diff_same_day=0.02 (1.72%)
+    diff_next_day=49.89 (4496.10%)
+
+  Data: 2012-05-28 00:00:00 - open_i=1.128769040107727 - high_i=1.128769040107727
+  Data next: 2012-05-29 00:00:00 - high_next=50.0099983215332
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=48.88 (4330.49%)
+
+  Data: 2012-06-07 00:00:00 - open_i=1.0522420406341553 - high_i=1.0522420406341553
+  Data next: 2012-06-08 00:00:00 - high_next=52.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=50.95 (4841.83%)
+
+  Data: 2012-08-15 00:00:00 - open_i=0.7843980193138123 - high_i=0.7843980193138123
+  Data next: 2012-08-16 00:00:00 - high_next=52.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=51.22 (6529.29%)
+
+  Data: 2012-10-26 00:00:00 - open_i=0.860925018787384 - high_i=0.860925018787384
+  Data next: 2012-10-29 00:00:00 - high_next=57.9900016784668
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=57.13 (6635.78%)
+
+  Data: 2012-11-01 00:00:00 - open_i=0.860925018787384 - high_i=0.860925018787384
+  Data next: 2012-11-02 00:00:00 - high_next=50.0099983215332
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=49.15 (5708.87%)
+
+  Data: 2012-12-26 00:00:00 - open_i=0.7270029783248901 - high_i=0.7270029783248901
+  Data next: 2012-12-27 00:00:00 - high_next=51.9900016784668
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=51.26 (7051.28%)
+
+------------------------------------------------------
+Symbol: MAERSK-B
+Data: Minimum open price: 6175.7939453125 in date: 2012-06-06 00:00:00
+      Maximum high price: 8397.126953125 in date: 2012-02-20 00:00:00
+
+Symbol: OTP
+Data: Minimum open price: 3020.0 in date: 2012-01-05 00:00:00
+      Maximum high price: 4442.0 in date: 2012-10-17 00:00:00
+
+Symbol: EUROB
+Data: Minimum open price: 294.6487121582031 in date: 2012-01-11 00:00:00
+      Maximum high price: 1468.2830810546875 in date: 2012-02-20 00:00:00
+
+Symbol: ETE
+Data: Minimum open price: 1379.9930419921875 in date: 2012-06-06 00:00:00
+      Maximum high price: 4694.9765625 in date: 2012-02-08 00:00:00
+
+Symbol: BMPS
+Data: Minimum open price: 8112.03173828125 in date: 2012-07-23 00:00:00
+      Maximum high price: 23271.09375 in date: 2012-03-02 00:00:00
+
+Symbol: LPP
+Data: Minimum open price: 1952.0 in date: 2012-01-13 00:00:00
+      Maximum high price: 4890.0 in date: 2012-12-21 00:00:00
+
+Symbol: TPEIR
+Data: Minimum open price: 59711.71875 in date: 2012-06-06 00:00:00
+      Maximum high price: 254560.484375 in date: 2012-02-01 00:00:00
+
+Symbol: ARTO
+Data: Minimum open price: 2082.010009765625 in date: 2012-06-11 00:00:00
+      Maximum high price: 3465.0 in date: 2012-11-06 00:00:00
+
+Symbol: TABAK
+Data: Minimum open price: 10426.0 in date: 2012-11-22 00:00:00
+      Maximum high price: 12460.0 in date: 2012-01-03 00:00:00
+
+Symbol: ACP
+Data: Minimum open price: 39.20000076293945 in date: 2012-10-15 00:00:00
+      Maximum high price: 55.45000076293945 in date: 2012-02-20 00:00:00
+
+Symbol: CO
+Data: Minimum open price: 6240.0 in date: 2012-07-26 00:00:00
+      Maximum high price: 7594.0 in date: 2012-03-19 00:00:00
+
+Symbol: VIRI
+Data: Minimum open price: 11936.4609375 in date: 2012-06-04 00:00:00
+      Maximum high price: 19519.626953125 in date: 2012-10-09 00:00:00
+
+Symbol: SHIP
+Data: Minimum open price: 13080.0 in date: 2012-12-18 00:00:00
+      Maximum high price: 57000.0 in date: 2012-04-12 00:00:00
+
+Symbol: ALECR
+Data: Minimum open price: 1825.0 in date: 2012-01-12 00:00:00
+      Maximum high price: 5075.0 in date: 2012-12-27 00:00:00
+
+Symbol: LOCAL
+Data: Minimum open price: 16208.6787109375 in date: 2012-07-27 00:00:00
+      Maximum high price: 46651.8203125 in date: 2012-01-31 00:00:00
+
+Symbol: TOPS
+Data: Minimum open price: 1391040004096.0 in date: 2012-12-28 00:00:00
+      Maximum high price: 7862400057344.0 in date: 2012-02-22 00:00:00
+
+Symbol: PSHG
+Data: Minimum open price: 3874802.5 in date: 2012-08-27 00:00:00
+      Maximum high price: 5838134.5 in date: 2012-05-14 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:38.041114
+Controllo anomalie per il mercato: data_market_larg_comp_eu_symbols
+SIMBOLO: MAN
+  Data: 2014-01-01 00:00:00 - open_i=0.7078719735145569 - high_i=0.7078719735145569
+  Data next: 2014-01-02 00:00:00 - high_next=50.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=49.29 (6963.42%)
+
+  Data: 2014-01-06 00:00:00 - open_i=0.7461349964141846 - high_i=0.7461349964141846
+  Data next: 2014-01-07 00:00:00 - high_next=51.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=50.25 (6735.22%)
+
+  Data: 2014-04-21 00:00:00 - open_i=0.8800569772720337 - high_i=0.8800569772720337
+  Data next: 2014-04-22 00:00:00 - high_next=55.93000030517578
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=55.05 (6255.27%)
+
+  Data: 2014-05-01 00:00:00 - open_i=0.9183200001716614 - high_i=0.9183200001716614
+  Data next: 2014-05-02 00:00:00 - high_next=55.959999084472656
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=55.04 (5993.74%)
+
+  Data: 2014-05-29 00:00:00 - open_i=0.765267014503479 - high_i=0.7843980193138123
+  Data next: 2014-05-30 00:00:00 - high_next=55.93000030517578
+    diff_same_day=0.02 (2.50%)
+    diff_next_day=55.16 (7208.56%)
+
+  Data: 2014-06-09 00:00:00 - open_i=0.765267014503479 - high_i=0.765267014503479
+  Data next: 2014-06-10 00:00:00 - high_next=54.9900016784668
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=54.22 (7085.73%)
+
+  Data: 2014-06-19 00:00:00 - open_i=0.9183200001716614 - high_i=0.9183200001716614
+  Data next: 2014-06-20 00:00:00 - high_next=54.790000915527344
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=53.87 (5866.33%)
+
+  Data: 2014-08-15 00:00:00 - open_i=0.6313449740409851 - high_i=0.6313449740409851
+  Data next: 2014-08-18 00:00:00 - high_next=49.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=48.37 (7661.21%)
+
+  Data: 2014-12-08 00:00:00 - open_i=0.5490790009498596 - high_i=0.5490790009498596
+  Data next: 2014-12-09 00:00:00 - high_next=48.400001525878906
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=47.85 (8714.76%)
+
+  Data: 2014-12-26 00:00:00 - open_i=0.47829100489616394 - high_i=0.47829100489616394
+  Data next: 2014-12-29 00:00:00 - high_next=48.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=47.52 (9935.73%)
+
+------------------------------------------------------
+Symbol: MAERSK-B
+Data: Minimum open price: 9642.0498046875 in date: 2014-12-17 00:00:00
+      Maximum high price: 13416.9208984375 in date: 2014-09-18 00:00:00
+
+Symbol: OTP
+Data: Minimum open price: 3528.0 in date: 2014-03-14 00:00:00
+      Maximum high price: 4970.0 in date: 2014-06-02 00:00:00
+
+Symbol: BMPS
+Data: Minimum open price: 3925.838134765625 in date: 2014-12-30 00:00:00
+      Maximum high price: 23148.03125 in date: 2014-06-17 00:00:00
+
+Symbol: LPP
+Data: Minimum open price: 7234.60009765625 in date: 2014-12-31 00:00:00
+      Maximum high price: 10149.9501953125 in date: 2014-09-05 00:00:00
+
+Symbol: TPEIR
+Data: Minimum open price: 27970.224609375 in date: 2014-12-29 00:00:00
+      Maximum high price: 66311.4375 in date: 2014-03-04 00:00:00
+
+Symbol: ARTO
+Data: Minimum open price: 4411.02001953125 in date: 2014-10-27 00:00:00
+      Maximum high price: 6495.0 in date: 2014-03-26 00:00:00
+
+Symbol: TABAK
+Data: Minimum open price: 9705.0 in date: 2014-11-06 00:00:00
+      Maximum high price: 11468.0 in date: 2014-04-02 00:00:00
+
+Symbol: CO
+Data: Minimum open price: 7126.0 in date: 2014-12-16 00:00:00
+      Maximum high price: 9753.0 in date: 2014-06-30 00:00:00
+
+SIMBOLO: SBB-B
+  Data: 2014-11-11 00:00:00 - open_i=0.013729999773204327 - high_i=0.013729999773204327
+  Data next: 2014-11-12 00:00:00 - high_next=3.844413995742798
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=3.83 (27900.10%)
+
+------------------------------------------------------
+Symbol: VIRI
+Data: Minimum open price: 3365.060791015625 in date: 2014-11-05 00:00:00
+      Maximum high price: 9738.9716796875 in date: 2014-01-09 00:00:00
+
+Symbol: SHIP
+Data: Minimum open price: 9600.0 in date: 2014-12-31 00:00:00
+      Maximum high price: 31200.0 in date: 2014-02-20 00:00:00
+
+Symbol: ALECR
+Data: Minimum open price: 3325.0 in date: 2014-10-17 00:00:00
+      Maximum high price: 11725.0 in date: 2014-02-21 00:00:00
+
+Symbol: LOCAL
+Data: Minimum open price: 11145.2568359375 in date: 2014-11-07 00:00:00
+      Maximum high price: 26280.9453125 in date: 2014-03-07 00:00:00
+
+Symbol: TOPS
+Data: Minimum open price: 224640008192.0 in date: 2014-12-30 00:00:00
+      Maximum high price: 3190320005120.0 in date: 2014-01-21 00:00:00
+
+Symbol: PSHG
+Data: Minimum open price: 1348401.625 in date: 2014-11-20 00:00:00
+      Maximum high price: 3274689.5 in date: 2014-02-19 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:38.639011
+Controllo anomalie per il mercato: data_market_larg_comp_eu_symbols
+SIMBOLO: MAN
+  Data: 2015-01-01 00:00:00 - open_i=0.4955100119113922 - high_i=0.4955100119113922
+  Data next: 2015-01-02 00:00:00 - high_next=48.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=47.50 (9586.99%)
+
+  Data: 2015-01-06 00:00:00 - open_i=0.5165550112724304 - high_i=0.5165550112724304
+  Data next: 2015-01-07 00:00:00 - high_next=48.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=47.48 (9192.33%)
+
+  Data: 2015-04-06 00:00:00 - open_i=0.39028599858283997 - high_i=0.39028599858283997
+  Data next: 2015-04-07 00:00:00 - high_next=47.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=46.61 (11942.45%)
+
+  Data: 2015-05-01 00:00:00 - open_i=1.320085048675537 - high_i=1.320085048675537
+  Data next: 2015-05-04 00:00:00 - high_next=46.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=44.68 (3384.62%)
+
+  Data: 2015-05-14 00:00:00 - open_i=1.2072080373764038 - high_i=1.2531239986419678
+  Data next: 2015-05-15 00:00:00 - high_next=47.0
+    diff_same_day=0.05 (3.80%)
+    diff_next_day=45.79 (3793.28%)
+
+  Data: 2015-05-25 00:00:00 - open_i=1.3736540079116821 - high_i=1.4138309955596924
+  Data next: 2015-05-26 00:00:00 - high_next=47.0
+    diff_same_day=0.04 (2.92%)
+    diff_next_day=45.63 (3321.53%)
+
+  Data: 2015-06-04 00:00:00 - open_i=1.2282530069351196 - high_i=1.2282530069351196
+  Data next: 2015-06-05 00:00:00 - high_next=47.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=45.77 (3726.57%)
+
+  Data: 2015-10-26 00:00:00 - open_i=0.8130959868431091 - high_i=0.8781440258026123
+  Data next: 2015-10-27 00:00:00 - high_next=45.5099983215332
+    diff_same_day=0.07 (8.00%)
+    diff_next_day=44.70 (5497.12%)
+
+  Data: 2015-12-08 00:00:00 - open_i=0.774832010269165 - high_i=0.774832010269165
+  Data next: 2015-12-09 00:00:00 - high_next=49.4900016784668
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=48.72 (6287.19%)
+
+  Data: 2015-12-25 00:00:00 - open_i=0.774832010269165 - high_i=0.774832010269165
+  Data next: 2015-12-28 00:00:00 - high_next=49.470001220703125
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=48.70 (6284.61%)
+
+------------------------------------------------------
+Symbol: MAERSK-B
+Data: Minimum open price: 7728.46044921875 in date: 2015-12-22 00:00:00
+      Maximum high price: 14341.0234375 in date: 2015-03-30 00:00:00
+
+Symbol: OTP
+Data: Minimum open price: 3500.0 in date: 2015-01-16 00:00:00
+      Maximum high price: 6180.0 in date: 2015-12-01 00:00:00
+
+Symbol: BMPS
+Data: Minimum open price: 2421.261474609375 in date: 2015-12-15 00:00:00
+      Maximum high price: 5507.1962890625 in date: 2015-02-23 00:00:00
+
+Symbol: LPP
+Data: Minimum open price: 5200.0 in date: 2015-12-15 00:00:00
+      Maximum high price: 8196.0 in date: 2015-04-27 00:00:00
+
+Symbol: DCC
+Data: Minimum open price: 3408.0 in date: 2015-01-16 00:00:00
+      Maximum high price: 6060.0 in date: 2015-12-03 00:00:00
+
+Symbol: TPEIR
+Data: Minimum open price: 64.42579650878906 in date: 2015-12-11 00:00:00
+      Maximum high price: 31741.4921875 in date: 2015-01-13 00:00:00
+
+Symbol: KBHL
+Data: Minimum open price: 3000.0 in date: 2015-01-02 00:00:00
+      Maximum high price: 4700.0 in date: 2015-04-15 00:00:00
+
+Symbol: ARTO
+Data: Minimum open price: 4210.0 in date: 2015-12-10 00:00:00
+      Maximum high price: 6200.0 in date: 2015-02-20 00:00:00
+
+Symbol: TABAK
+Data: Minimum open price: 10380.0 in date: 2015-05-11 00:00:00
+      Maximum high price: 12060.0 in date: 2015-12-07 00:00:00
+
+Symbol: EMEIS
+Data: Minimum open price: 3163.506103515625 in date: 2015-01-12 00:00:00
+      Maximum high price: 4808.96337890625 in date: 2015-11-04 00:00:00
+
+Symbol: CO
+Data: Minimum open price: 4151.0 in date: 2015-12-23 00:00:00
+      Maximum high price: 8789.0 in date: 2015-04-15 00:00:00
+
+Symbol: VIRI
+Data: Minimum open price: 1872.004638671875 in date: 2015-12-22 00:00:00
+      Maximum high price: 5358.3291015625 in date: 2015-05-14 00:00:00
+
+Symbol: SHIP
+Data: Minimum open price: 6600.0 in date: 2015-06-09 00:00:00
+      Maximum high price: 17280.0 in date: 2015-07-16 00:00:00
+
+Symbol: COBH
+Data: Minimum open price: 2150.0 in date: 2015-01-19 00:00:00
+      Maximum high price: 3350.0 in date: 2015-09-17 00:00:00
+
+Symbol: ALECR
+Data: Minimum open price: 4400.0 in date: 2015-01-07 00:00:00
+      Maximum high price: 5800.0 in date: 2015-08-21 00:00:00
+
+Symbol: LOCAL
+Data: Minimum open price: 5395.58984375 in date: 2015-12-15 00:00:00
+      Maximum high price: 19685.779296875 in date: 2015-02-05 00:00:00
+
+Symbol: TOPS
+Data: Minimum open price: 69120000000.0 in date: 2015-12-16 00:00:00
+      Maximum high price: 386639986688.0 in date: 2015-01-13 00:00:00
+
+Symbol: PSHG
+Data: Minimum open price: 518616.0 in date: 2015-12-15 00:00:00
+      Maximum high price: 2000376.0 in date: 2015-04-27 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:39.235720
+Controllo anomalie per il mercato: data_market_larg_comp_eu_symbols
+SIMBOLO: MAN
+  Data: 2016-05-05 00:00:00 - open_i=0.5146420001983643 - high_i=0.5146420001983643
+  Data next: 2016-05-06 00:00:00 - high_next=49.900001525878906
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=49.39 (9596.06%)
+
+  Data: 2016-05-16 00:00:00 - open_i=0.5012490153312683 - high_i=0.5184680223464966
+  Data next: 2016-05-17 00:00:00 - high_next=49.7400016784668
+    diff_same_day=0.02 (3.44%)
+    diff_next_day=49.24 (9823.21%)
+
+  Data: 2016-10-26 00:00:00 - open_i=0.31567201018333435 - high_i=0.32715100049972534
+  Data next: 2016-10-27 00:00:00 - high_next=54.9900016784668
+    diff_same_day=0.01 (3.64%)
+    diff_next_day=54.67 (17319.98%)
+
+  Data: 2016-12-08 00:00:00 - open_i=0.4300000071525574 - high_i=0.4699999988079071
+  Data next: 2016-12-09 00:00:00 - high_next=55.97999954223633
+    diff_same_day=0.04 (9.30%)
+    diff_next_day=55.55 (12918.60%)
+
+------------------------------------------------------
+Symbol: MAERSK-B
+Data: Minimum open price: 6525.3837890625 in date: 2016-02-12 00:00:00
+      Maximum high price: 10191.2802734375 in date: 2016-12-16 00:00:00
+
+Symbol: OTP
+Data: Minimum open price: 5700.0 in date: 2016-01-26 00:00:00
+      Maximum high price: 8450.0 in date: 2016-12-16 00:00:00
+
+Symbol: LOTB
+Data: Minimum open price: 1580.0 in date: 2016-01-20 00:00:00
+      Maximum high price: 2617.949951171875 in date: 2016-10-24 00:00:00
+
+Symbol: BMPS
+Data: Minimum open price: 312.5552673339844 in date: 2016-12-22 00:00:00
+      Maximum high price: 2529.614013671875 in date: 2016-01-04 00:00:00
+
+Symbol: LPP
+Data: Minimum open price: 3820.0 in date: 2016-09-27 00:00:00
+      Maximum high price: 6280.0 in date: 2016-04-19 00:00:00
+
+Symbol: DCC
+Data: Minimum open price: 4806.0 in date: 2016-02-09 00:00:00
+      Maximum high price: 8029.919921875 in date: 2016-08-11 00:00:00
+
+SIMBOLO: MBK
+  Data: 2016-01-06 00:00:00 - open_i=6.198999881744385 - high_i=6.199999809265137
+  Data next: 2016-01-07 00:00:00 - high_next=305.0
+    diff_same_day=0.00 (0.02%)
+    diff_next_day=298.80 (4820.15%)
+
+  Data: 2016-05-03 00:00:00 - open_i=6.098999977111816 - high_i=6.098999977111816
+  Data next: 2016-05-04 00:00:00 - high_next=327.95001220703125
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=321.85 (5277.11%)
+
+  Data: 2016-05-26 00:00:00 - open_i=5.920000076293945 - high_i=5.920000076293945
+  Data next: 2016-05-27 00:00:00 - high_next=324.70001220703125
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=318.78 (5384.80%)
+
+  Data: 2016-08-15 00:00:00 - open_i=5.885000228881836 - high_i=5.885000228881836
+  Data next: 2016-08-16 00:00:00 - high_next=375.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=369.11 (6272.13%)
+
+  Data: 2016-11-01 00:00:00 - open_i=6.179999828338623 - high_i=6.179999828338623
+  Data next: 2016-11-02 00:00:00 - high_next=353.5
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=347.32 (5620.06%)
+
+  Data: 2016-11-11 00:00:00 - open_i=6.099999904632568 - high_i=6.099999904632568
+  Data next: 2016-11-14 00:00:00 - high_next=363.5
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=357.40 (5859.02%)
+
+------------------------------------------------------
+Symbol: MOL
+Data: Minimum open price: 7.090000152587891 in date: 2016-03-14 00:00:00
+      Maximum high price: 2606.25 in date: 2016-12-28 00:00:00
+
+SIMBOLO: MOL
+  Data: 2016-03-15 00:00:00 - open_i=7.579999923706055 - high_i=7.579999923706055
+  Data next: 2016-03-16 00:00:00 - high_next=2034.375
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=2026.80 (26738.72%)
+
+  Data: 2016-05-16 00:00:00 - open_i=7.480000019073486 - high_i=7.5
+  Data next: 2016-05-17 00:00:00 - high_next=2061.875
+    diff_same_day=0.02 (0.27%)
+    diff_next_day=2054.39 (27465.17%)
+
+  Data: 2016-11-01 00:00:00 - open_i=8.079999923706055 - high_i=8.279999732971191
+  Data next: 2016-11-02 00:00:00 - high_next=2296.25
+    diff_same_day=0.20 (2.48%)
+    diff_next_day=2288.17 (28318.94%)
+
+------------------------------------------------------
+Symbol: KBHL
+Data: Minimum open price: 3351.0 in date: 2016-02-12 00:00:00
+      Maximum high price: 6500.0 in date: 2016-12-21 00:00:00
+
+Symbol: TABAK
+Data: Minimum open price: 11842.0 in date: 2016-01-21 00:00:00
+      Maximum high price: 13696.0 in date: 2016-04-07 00:00:00
+
+Symbol: CO
+Data: Minimum open price: 3531.5 in date: 2016-01-21 00:00:00
+      Maximum high price: 5534.0 in date: 2016-06-07 00:00:00
+
+Symbol: VIRI
+Data: Minimum open price: 545.6573486328125 in date: 2016-11-29 00:00:00
+      Maximum high price: 2031.162841796875 in date: 2016-01-04 00:00:00
+
+Symbol: SHIP
+Data: Minimum open price: 2760.0 in date: 2016-12-30 00:00:00
+      Maximum high price: 20760.0 in date: 2016-11-16 00:00:00
+
+Symbol: LOCAL
+Data: Minimum open price: 1761.5185546875 in date: 2016-07-06 00:00:00
+      Maximum high price: 5839.7265625 in date: 2016-01-04 00:00:00
+
+Symbol: TOPS
+Data: Minimum open price: 28080001024.0 in date: 2016-01-21 00:00:00
+      Maximum high price: 181440004096.0 in date: 2016-08-02 00:00:00
+
+Symbol: PSHG
+Data: Minimum open price: 198185.40625 in date: 2016-12-15 00:00:00
+      Maximum high price: 2423603.75 in date: 2016-11-16 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:39.860804
+Controllo anomalie per il mercato: data_market_larg_comp_eu_symbols
+SIMBOLO: MAN
+  Data: 2018-01-01 00:00:00 - open_i=0.5 - high_i=0.5
+  Data next: 2018-01-02 00:00:00 - high_next=58.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=57.50 (11500.00%)
+
+  Data: 2018-02-19 00:00:00 - open_i=0.7699999809265137 - high_i=0.7699999809265137
+  Data next: 2018-02-20 00:00:00 - high_next=60.5
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=59.73 (7757.14%)
+
+  Data: 2018-04-02 00:00:00 - open_i=0.7699999809265137 - high_i=0.7699999809265137
+  Data next: 2018-04-03 00:00:00 - high_next=60.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=59.23 (7692.21%)
+
+  Data: 2018-04-09 00:00:00 - open_i=0.7699999809265137 - high_i=0.7699999809265137
+  Data next: 2018-04-10 00:00:00 - high_next=60.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=59.23 (7692.21%)
+
+  Data: 2018-05-01 00:00:00 - open_i=0.7699999809265137 - high_i=0.7699999809265137
+  Data next: 2018-05-02 00:00:00 - high_next=61.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=60.23 (7822.08%)
+
+  Data: 2018-05-28 00:00:00 - open_i=0.75 - high_i=0.75
+  Data next: 2018-05-29 00:00:00 - high_next=62.5
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=61.75 (8233.33%)
+
+  Data: 2018-08-15 00:00:00 - open_i=0.699999988079071 - high_i=0.699999988079071
+  Data next: 2018-08-16 00:00:00 - high_next=61.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=60.30 (8614.29%)
+
+  Data: 2018-12-26 00:00:00 - open_i=0.5099999904632568 - high_i=0.5099999904632568
+  Data next: 2018-12-27 00:00:00 - high_next=66.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=65.49 (12841.18%)
+
+------------------------------------------------------
+Symbol: GMBL
+Data: Minimum open price: 120000.0 in date: 2018-04-23 00:00:00
+      Maximum high price: 810000.0 in date: 2018-05-21 00:00:00
+
+Symbol: MAERSK-B
+Data: Minimum open price: 6712.8193359375 in date: 2018-07-11 00:00:00
+      Maximum high price: 10343.8447265625 in date: 2018-01-09 00:00:00
+
+Symbol: OTP
+Data: Minimum open price: 9660.0 in date: 2018-06-20 00:00:00
+      Maximum high price: 11850.0 in date: 2018-12-05 00:00:00
+
+Symbol: ROCK-B
+Data: Minimum open price: 1528.0 in date: 2018-02-06 00:00:00
+      Maximum high price: 2878.0 in date: 2018-09-13 00:00:00
+
+Symbol: LPP
+Data: Minimum open price: 7500.0 in date: 2018-11-15 00:00:00
+      Maximum high price: 10330.0 in date: 2018-01-09 00:00:00
+
+SIMBOLO: DIA
+  Data: 2018-08-15 00:00:00 - open_i=0.8370350003242493 - high_i=0.8593059778213501
+  Data next: 2018-08-16 00:00:00 - high_next=89.0
+    diff_same_day=0.02 (2.66%)
+    diff_next_day=88.16 (10532.77%)
+
+  Data: 2018-12-24 00:00:00 - open_i=0.1596750020980835 - high_i=0.17181900143623352
+  Data next: 2018-12-27 00:00:00 - high_next=71.9000015258789
+    diff_same_day=0.01 (7.61%)
+    diff_next_day=71.74 (44928.97%)
+
+------------------------------------------------------
+Symbol: DCC
+Data: Minimum open price: 5595.0 in date: 2018-11-21 00:00:00
+      Maximum high price: 7760.0 in date: 2018-01-11 00:00:00
+
+Symbol: ARTO
+Data: Minimum open price: 4940.0 in date: 2018-11-30 00:00:00
+      Maximum high price: 6950.0 in date: 2018-01-02 00:00:00
+
+Symbol: TABAK
+Data: Minimum open price: 14040.0 in date: 2018-12-28 00:00:00
+      Maximum high price: 18060.0 in date: 2018-03-13 00:00:00
+
+SIMBOLO: SES
+  Data: 2018-08-15 00:00:00 - open_i=0.7888659834861755 - high_i=0.7906510233879089
+  Data next: 2018-08-16 00:00:00 - high_next=29.600000381469727
+    diff_same_day=0.00 (0.23%)
+    diff_next_day=28.81 (3652.22%)
+
+------------------------------------------------------
+Symbol: EMEIS
+Data: Minimum open price: 5568.94580078125 in date: 2018-12-28 00:00:00
+      Maximum high price: 7995.77978515625 in date: 2018-07-18 00:00:00
+
+Symbol: CO
+Data: Minimum open price: 2650.0 in date: 2018-09-04 00:00:00
+      Maximum high price: 5348.0 in date: 2018-01-08 00:00:00
+
+Symbol: SHIP
+Data: Minimum open price: 1200.0 in date: 2018-12-26 00:00:00
+      Maximum high price: 2856.0 in date: 2018-03-07 00:00:00
+
+Symbol: COBH
+Data: Minimum open price: 3600.0 in date: 2018-01-02 00:00:00
+      Maximum high price: 4820.0 in date: 2018-06-26 00:00:00
+
+Symbol: ALECR
+Data: Minimum open price: 4300.0 in date: 2018-03-19 00:00:00
+      Maximum high price: 6850.0 in date: 2018-08-27 00:00:00
+
+Symbol: LOCAL
+Data: Minimum open price: 947.5468139648438 in date: 2018-12-21 00:00:00
+      Maximum high price: 2706.978515625 in date: 2018-02-19 00:00:00
+
+Symbol: TOPS
+Data: Minimum open price: 88800.0 in date: 2018-06-01 00:00:00
+      Maximum high price: 420000.0 in date: 2018-02-05 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:40.501455
+Controllo anomalie per il mercato: data_market_larg_comp_eu_symbols
+SIMBOLO: MAN
+  Data: 2019-01-01 00:00:00 - open_i=0.5099999904632568 - high_i=0.5099999904632568
+  Data next: 2019-01-02 00:00:00 - high_next=70.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=69.49 (13625.49%)
+
+  Data: 2019-02-11 00:00:00 - open_i=0.5400000214576721 - high_i=0.5400000214576721
+  Data next: 2019-02-12 00:00:00 - high_next=70.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=69.46 (12862.96%)
+
+  Data: 2019-03-11 00:00:00 - open_i=0.6200000047683716 - high_i=0.6200000047683716
+  Data next: 2019-03-12 00:00:00 - high_next=76.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=75.38 (12158.06%)
+
+  Data: 2019-03-25 00:00:00 - open_i=0.6000000238418579 - high_i=0.6000000238418579
+  Data next: 2019-03-26 00:00:00 - high_next=78.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=77.40 (12900.00%)
+
+  Data: 2019-04-05 00:00:00 - open_i=0.47999998927116394 - high_i=0.47999998927116394
+  Data next: 2019-04-08 00:00:00 - high_next=80.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=79.52 (16566.67%)
+
+  Data: 2019-04-22 00:00:00 - open_i=0.48100000619888306 - high_i=0.48100000619888306
+  Data next: 2019-04-23 00:00:00 - high_next=87.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=86.52 (17987.32%)
+
+  Data: 2019-04-29 00:00:00 - open_i=0.5 - high_i=0.5
+  Data next: 2019-04-30 00:00:00 - high_next=90.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=89.50 (17900.00%)
+
+  Data: 2019-05-01 00:00:00 - open_i=0.47699999809265137 - high_i=0.47699999809265137
+  Data next: 2019-05-02 00:00:00 - high_next=90.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=89.52 (18767.92%)
+
+  Data: 2019-06-17 00:00:00 - open_i=0.5460000038146973 - high_i=0.5460000038146973
+  Data next: 2019-06-18 00:00:00 - high_next=90.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=89.45 (16383.52%)
+
+  Data: 2019-08-15 00:00:00 - open_i=0.5 - high_i=0.5
+  Data next: 2019-08-16 00:00:00 - high_next=99.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=98.50 (19700.00%)
+
+  Data: 2019-12-26 00:00:00 - open_i=0.30000001192092896 - high_i=0.30000001192092896
+  Data next: 2019-12-27 00:00:00 - high_next=97.5
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=97.20 (32400.00%)
+
+------------------------------------------------------
+Symbol: GMBL
+Data: Minimum open price: 150000.0 in date: 2019-11-14 00:00:00
+      Maximum high price: 630000.0 in date: 2019-10-08 00:00:00
+
+Symbol: MAERSK-B
+Data: Minimum open price: 6892.0 in date: 2019-06-04 00:00:00
+      Maximum high price: 10555.0 in date: 2019-12-13 00:00:00
+
+Symbol: OTP
+Data: Minimum open price: 11210.0 in date: 2019-01-02 00:00:00
+      Maximum high price: 15850.0 in date: 2019-12-13 00:00:00
+
+Symbol: LPP
+Data: Minimum open price: 6970.0 in date: 2019-08-22 00:00:00
+      Maximum high price: 9205.0 in date: 2019-04-09 00:00:00
+
+SIMBOLO: DIA
+  Data: 2019-08-15 00:00:00 - open_i=0.19984599947929382 - high_i=0.2053930014371872
+  Data next: 2019-08-16 00:00:00 - high_next=106.4000015258789
+    diff_same_day=0.01 (2.78%)
+    diff_next_day=106.20 (53141.00%)
+
+  Data: 2019-12-25 00:00:00 - open_i=0.0481100007891655 - high_i=0.0481100007891655
+  Data next: 2019-12-27 00:00:00 - high_next=116.4000015258789
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=116.35 (241845.54%)
+
+------------------------------------------------------
+Symbol: DCC
+Data: Minimum open price: 5915.0 in date: 2019-01-02 00:00:00
+      Maximum high price: 8558.2998046875 in date: 2019-11-26 00:00:00
+
+Symbol: MOL
+Data: Minimum open price: 17.799999237060547 in date: 2019-11-01 00:00:00
+      Maximum high price: 3450.0 in date: 2019-04-24 00:00:00
+
+SIMBOLO: MOL
+  Data: 2019-10-23 00:00:00 - open_i=17.84000015258789 - high_i=17.8799991607666
+  Data next: 2019-10-24 00:00:00 - high_next=2950.0
+    diff_same_day=0.04 (0.22%)
+    diff_next_day=2932.16 (16435.87%)
+
+  Data: 2019-11-01 00:00:00 - open_i=17.799999237060547 - high_i=17.979999542236328
+  Data next: 2019-11-04 00:00:00 - high_next=3012.0
+    diff_same_day=0.18 (1.01%)
+    diff_next_day=2994.20 (16821.35%)
+
+  Data: 2019-12-27 00:00:00 - open_i=20.100000381469727 - high_i=20.299999237060547
+  Data next: 2019-12-30 00:00:00 - high_next=2952.0
+    diff_same_day=0.20 (1.00%)
+    diff_next_day=2931.90 (14586.57%)
+
+------------------------------------------------------
+Symbol: ARTO
+Data: Minimum open price: 4200.0 in date: 2019-12-04 00:00:00
+      Maximum high price: 5900.0 in date: 2019-03-05 00:00:00
+
+Symbol: TABAK
+Data: Minimum open price: 13300.0 in date: 2019-09-23 00:00:00
+      Maximum high price: 15920.0 in date: 2019-03-26 00:00:00
+
+SIMBOLO: SES
+  Data: 2019-08-15 00:00:00 - open_i=0.390500009059906 - high_i=0.4000000059604645
+  Data next: 2019-08-16 00:00:00 - high_next=33.70000076293945
+    diff_same_day=0.01 (2.43%)
+    diff_next_day=33.31 (8529.96%)
+
+------------------------------------------------------
+Symbol: EMEIS
+Data: Minimum open price: 5396.5126953125 in date: 2019-02-04 00:00:00
+      Maximum high price: 7510.4130859375 in date: 2019-09-04 00:00:00
+
+Symbol: CO
+Data: Minimum open price: 2757.0 in date: 2019-05-24 00:00:00
+      Maximum high price: 5008.0 in date: 2019-10-31 00:00:00
+
+Symbol: SHIP
+Data: Minimum open price: 73.5999984741211 in date: 2019-11-22 00:00:00
+      Maximum high price: 1584.0 in date: 2019-01-08 00:00:00
+
+Symbol: ALECR
+Data: Minimum open price: 5900.0 in date: 2019-07-18 00:00:00
+      Maximum high price: 7200.0 in date: 2019-08-13 00:00:00
+
+Symbol: LOCAL
+Data: Minimum open price: 845.278564453125 in date: 2019-02-08 00:00:00
+      Maximum high price: 2043.2783203125 in date: 2019-04-30 00:00:00
+
+Symbol: TOPS
+Data: Minimum open price: 3900.0 in date: 2019-11-25 00:00:00
+      Maximum high price: 150000.0 in date: 2019-01-08 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:41.154724
+Controllo anomalie per il mercato: data_market_larg_comp_eu_symbols
+SIMBOLO: MAN
+  Data: 2020-01-01 00:00:00 - open_i=0.30000001192092896 - high_i=0.30000001192092896
+  Data next: 2020-01-02 00:00:00 - high_next=98.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=97.70 (32566.67%)
+
+  Data: 2020-04-13 00:00:00 - open_i=0.3160000145435333 - high_i=0.3160000145435333
+  Data next: 2020-04-14 00:00:00 - high_next=105.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=104.68 (33127.85%)
+
+  Data: 2020-05-01 00:00:00 - open_i=0.3700000047683716 - high_i=0.3700000047683716
+  Data next: 2020-05-04 00:00:00 - high_next=100.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=99.63 (26927.03%)
+
+  Data: 2020-06-01 00:00:00 - open_i=0.44999998807907104 - high_i=0.44999998807907104
+  Data next: 2020-06-02 00:00:00 - high_next=107.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=106.55 (23677.78%)
+
+  Data: 2020-10-26 00:00:00 - open_i=0.4399999976158142 - high_i=0.4399999976158142
+  Data next: 2020-10-27 00:00:00 - high_next=108.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=107.56 (24445.45%)
+
+------------------------------------------------------
+Symbol: GMBL
+Data: Minimum open price: 113600.0 in date: 2020-04-15 00:00:00
+      Maximum high price: 390000.0 in date: 2020-05-29 00:00:00
+
+Symbol: ADYEN
+Data: Minimum open price: 671.2000122070312 in date: 2020-03-19 00:00:00
+      Maximum high price: 1979.5 in date: 2020-12-28 00:00:00
+
+Symbol: MAERSK-B
+Data: Minimum open price: 5200.0 in date: 2020-03-23 00:00:00
+      Maximum high price: 14115.0 in date: 2020-12-18 00:00:00
+
+Symbol: OTP
+Data: Minimum open price: 8065.0 in date: 2020-04-22 00:00:00
+      Maximum high price: 15720.0 in date: 2020-02-19 00:00:00
+
+Symbol: LOTB
+Data: Minimum open price: 2510.0 in date: 2020-03-18 00:00:00
+      Maximum high price: 3770.0 in date: 2020-11-16 00:00:00
+
+Symbol: ROCK-B
+Data: Minimum open price: 1000.0 in date: 2020-03-23 00:00:00
+      Maximum high price: 2950.0 in date: 2020-11-09 00:00:00
+
+Symbol: LPP
+Data: Minimum open price: 4450.0 in date: 2020-03-17 00:00:00
+      Maximum high price: 9035.0 in date: 2020-01-07 00:00:00
+
+SIMBOLO: DIA
+  Data: 2020-12-24 00:00:00 - open_i=0.05249600112438202 - high_i=0.053762998431921005
+  Data next: 2020-12-28 00:00:00 - high_next=169.89999389648438
+    diff_same_day=0.00 (2.41%)
+    diff_next_day=169.85 (323543.69%)
+
+------------------------------------------------------
+Symbol: DCC
+Data: Minimum open price: 3973.0 in date: 2020-03-16 00:00:00
+      Maximum high price: 7518.0 in date: 2020-03-05 00:00:00
+
+Symbol: MOL
+Data: Minimum open price: 17.899999618530273 in date: 2020-06-01 00:00:00
+      Maximum high price: 2968.0 in date: 2020-01-03 00:00:00
+
+SIMBOLO: MOL
+  Data: 2020-06-01 00:00:00 - open_i=17.899999618530273 - high_i=18.1200008392334
+  Data next: 2020-06-02 00:00:00 - high_next=1976.0
+    diff_same_day=0.22 (1.23%)
+    diff_next_day=1958.10 (10939.11%)
+
+  Data: 2020-08-21 00:00:00 - open_i=21.850000381469727 - high_i=22.399999618530273
+  Data next: 2020-08-24 00:00:00 - high_next=1739.0
+    diff_same_day=0.55 (2.52%)
+    diff_next_day=1717.15 (7858.81%)
+
+  Data: 2020-10-23 00:00:00 - open_i=23.0 - high_i=23.200000762939453
+  Data next: 2020-10-26 00:00:00 - high_next=1635.0
+    diff_same_day=0.20 (0.87%)
+    diff_next_day=1612.00 (7008.70%)
+
+------------------------------------------------------
+Symbol: KBHL
+Data: Minimum open price: 4010.0 in date: 2020-03-19 00:00:00
+      Maximum high price: 6000.0 in date: 2020-01-28 00:00:00
+
+Symbol: ARTO
+Data: Minimum open price: 3380.0 in date: 2020-05-26 00:00:00
+      Maximum high price: 4440.0 in date: 2020-01-02 00:00:00
+
+Symbol: TABAK
+Data: Minimum open price: 12000.0 in date: 2020-03-19 00:00:00
+      Maximum high price: 15540.0 in date: 2020-01-23 00:00:00
+
+SIMBOLO: PRO
+  Data: 2020-07-24 00:00:00 - open_i=0.20000000298023224 - high_i=0.20200000703334808
+  Data next: 2020-07-27 00:00:00 - high_next=11.300000190734863
+    diff_same_day=0.00 (1.00%)
+    diff_next_day=11.10 (5550.00%)
+
+------------------------------------------------------
+Symbol: EMEIS
+Data: Minimum open price: 4802.5771484375 in date: 2020-03-18 00:00:00
+      Maximum high price: 8238.4638671875 in date: 2020-02-20 00:00:00
+
+Symbol: SPB
+Data: Minimum open price: 2540.0 in date: 2020-03-20 00:00:00
+      Maximum high price: 3800.0 in date: 2020-06-02 00:00:00
+
+Symbol: CO
+Data: Minimum open price: 1921.0 in date: 2020-11-02 00:00:00
+      Maximum high price: 4285.0 in date: 2020-01-02 00:00:00
+
+Symbol: COBH
+Data: Minimum open price: 2640.0 in date: 2020-10-28 00:00:00
+      Maximum high price: 4000.0 in date: 2020-01-02 00:00:00
+
+SIMBOLO: H2O
+  Data: 2020-10-15 00:00:00 - open_i=0.16911399364471436 - high_i=0.16911399364471436
+  Data next: 2020-10-16 00:00:00 - high_next=37.0301399230957
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=36.86 (21796.56%)
+
+------------------------------------------------------
+Symbol: ALECR
+Data: Minimum open price: 4620.0 in date: 2020-04-03 00:00:00
+      Maximum high price: 15100.0 in date: 2020-12-29 00:00:00
+
+Symbol: LOCAL
+Data: Minimum open price: 143.03030395507812 in date: 2020-10-29 00:00:00
+      Maximum high price: 1216.78369140625 in date: 2020-01-02 00:00:00
+
+Symbol: CRJ
+Data: Minimum open price: 130.0 in date: 2020-03-13 00:00:00
+      Maximum high price: 1400.0 in date: 2020-07-20 00:00:00
+
+Symbol: TOPS
+Data: Minimum open price: 242.39999389648438 in date: 2020-09-25 00:00:00
+      Maximum high price: 6900.0 in date: 2020-01-06 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:41.850691
+Controllo anomalie per il mercato: data_market_larg_comp_eu_symbols
+Symbol: OP
+Data: Minimum open price: 22.799999237060547 in date: 2022-12-28 00:00:00
+      Maximum high price: 4640.0 in date: 2022-01-12 00:00:00
+
+SIMBOLO: MAN
+  Data: 2022-06-06 00:00:00 - open_i=1.840000033378601 - high_i=1.840000033378601
+  Data next: 2022-06-07 00:00:00 - high_next=112.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=110.16 (5986.96%)
+
+  Data: 2022-10-26 00:00:00 - open_i=1.100000023841858 - high_i=1.100000023841858
+  Data next: 2022-10-27 00:00:00 - high_next=104.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=102.90 (9354.55%)
+
+------------------------------------------------------
+Symbol: GMBL
+Data: Minimum open price: 3200.0 in date: 2022-12-30 00:00:00
+      Maximum high price: 170240.0 in date: 2022-01-03 00:00:00
+
+Symbol: ADYEN
+Data: Minimum open price: 1182.0 in date: 2022-06-15 00:00:00
+      Maximum high price: 2379.0 in date: 2022-01-03 00:00:00
+
+Symbol: MAERSK-B
+Data: Minimum open price: 13375.0 in date: 2022-09-30 00:00:00
+      Maximum high price: 24920.0 in date: 2022-01-13 00:00:00
+
+Symbol: OTP
+Data: Minimum open price: 7900.0 in date: 2022-07-27 00:00:00
+      Maximum high price: 18690.0 in date: 2022-01-12 00:00:00
+
+Symbol: LOTB
+Data: Minimum open price: 4520.0 in date: 2022-06-06 00:00:00
+      Maximum high price: 6630.0 in date: 2022-12-20 00:00:00
+
+Symbol: ROCK-B
+Data: Minimum open price: 1144.0 in date: 2022-09-26 00:00:00
+      Maximum high price: 2937.0 in date: 2022-01-03 00:00:00
+
+Symbol: LPP
+Data: Minimum open price: 7500.0 in date: 2022-10-14 00:00:00
+      Maximum high price: 19040.0 in date: 2022-01-12 00:00:00
+
+Symbol: DCC
+Data: Minimum open price: 4001.0 in date: 2022-12-20 00:00:00
+      Maximum high price: 6520.0 in date: 2022-01-19 00:00:00
+
+SIMBOLO: DIA
+  Data: 2022-08-15 00:00:00 - open_i=0.013799999840557575 - high_i=0.014100000262260437
+  Data next: 2022-08-16 00:00:00 - high_next=140.0500030517578
+    diff_same_day=0.00 (2.17%)
+    diff_next_day=140.04 (1014755.11%)
+
+------------------------------------------------------
+SIMBOLO: MBK
+  Data: 2022-01-06 00:00:00 - open_i=14.600000381469727 - high_i=14.699999809265137
+  Data next: 2022-01-07 00:00:00 - high_next=484.6000061035156
+    diff_same_day=0.10 (0.68%)
+    diff_next_day=470.00 (3219.18%)
+
+------------------------------------------------------
+Symbol: MOL
+Data: Minimum open price: 22.600000381469727 in date: 2022-11-01 00:00:00
+      Maximum high price: 3170.0 in date: 2022-04-21 00:00:00
+
+SIMBOLO: MOL
+  Data: 2022-03-15 00:00:00 - open_i=35.349998474121094 - high_i=36.45000076293945
+  Data next: 2022-03-16 00:00:00 - high_next=2640.0
+    diff_same_day=1.10 (3.11%)
+    diff_next_day=2604.65 (7368.18%)
+
+  Data: 2022-06-06 00:00:00 - open_i=29.1200008392334 - high_i=29.65999984741211
+  Data next: 2022-06-07 00:00:00 - high_next=2860.0
+    diff_same_day=0.54 (1.85%)
+    diff_next_day=2830.88 (9721.43%)
+
+  Data: 2022-11-01 00:00:00 - open_i=22.600000381469727 - high_i=22.860000610351562
+  Data next: 2022-11-02 00:00:00 - high_next=2520.0
+    diff_same_day=0.26 (1.15%)
+    diff_next_day=2497.40 (11050.44%)
+
+------------------------------------------------------
+Symbol: KBHL
+Data: Minimum open price: 5580.0 in date: 2022-10-20 00:00:00
+      Maximum high price: 7600.0 in date: 2022-06-01 00:00:00
+
+Symbol: ARTO
+Data: Minimum open price: 4360.0 in date: 2022-08-25 00:00:00
+      Maximum high price: 5600.0 in date: 2022-01-03 00:00:00
+
+Symbol: TABAK
+Data: Minimum open price: 16020.0 in date: 2022-02-25 00:00:00
+      Maximum high price: 17960.0 in date: 2022-05-25 00:00:00
+
+SIMBOLO: SES
+  Data: 2022-08-15 00:00:00 - open_i=1.8660000562667847 - high_i=1.9299999475479126
+  Data next: 2022-08-16 00:00:00 - high_next=134.39999389648438
+    diff_same_day=0.06 (3.43%)
+    diff_next_day=132.53 (7102.57%)
+
+------------------------------------------------------
+Symbol: EMEIS
+Data: Minimum open price: 367.21832275390625 in date: 2022-12-29 00:00:00
+      Maximum high price: 5783.52880859375 in date: 2022-01-04 00:00:00
+
+Symbol: CO
+Data: Minimum open price: 753.0 in date: 2022-10-13 00:00:00
+      Maximum high price: 2436.0 in date: 2022-01-05 00:00:00
+
+Symbol: BNB
+Data: Minimum open price: 650.0 in date: 2022-10-10 00:00:00
+      Maximum high price: 1785.0 in date: 2022-01-24 00:00:00
+
+Symbol: ALECR
+Data: Minimum open price: 16800.0 in date: 2022-02-25 00:00:00
+      Maximum high price: 22600.0 in date: 2022-07-29 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:42.542263
+Controllo anomalie per il mercato: data_market_larg_comp_eu_symbols
+SIMBOLO: MAN
+  Data: 2023-10-26 00:00:00 - open_i=0.9800000190734863 - high_i=0.9800000190734863
+  Data next: 2023-10-27 00:00:00 - high_next=110.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=109.02 (11124.49%)
+
+------------------------------------------------------
+Symbol: GMBL
+Data: Minimum open price: 4.0 in date: 2023-12-21 00:00:00
+      Maximum high price: 9520.0 in date: 2023-01-25 00:00:00
+
+Symbol: ADYEN
+Data: Minimum open price: 629.4000244140625 in date: 2023-09-22 00:00:00
+      Maximum high price: 1699.199951171875 in date: 2023-07-31 00:00:00
+
+Symbol: MAERSK-B
+Data: Minimum open price: 9966.0 in date: 2023-11-13 00:00:00
+      Maximum high price: 17265.0 in date: 2023-03-02 00:00:00
+
+Symbol: OTP
+Data: Minimum open price: 9456.0 in date: 2023-03-20 00:00:00
+      Maximum high price: 16085.0 in date: 2023-12-20 00:00:00
+
+Symbol: LOTB
+Data: Minimum open price: 5800.0 in date: 2023-02-09 00:00:00
+      Maximum high price: 8420.0 in date: 2023-12-18 00:00:00
+
+Symbol: LPP
+Data: Minimum open price: 9160.0 in date: 2023-03-16 00:00:00
+      Maximum high price: 16930.0 in date: 2023-12-13 00:00:00
+
+SIMBOLO: DIA
+  Data: 2023-08-15 00:00:00 - open_i=0.0142000000923872 - high_i=0.0142000000923872
+  Data next: 2023-08-16 00:00:00 - high_next=90.36000061035156
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=90.35 (636238.03%)
+
+------------------------------------------------------
+Symbol: DCC
+Data: Minimum open price: 4124.0 in date: 2023-01-03 00:00:00
+      Maximum high price: 5839.080078125 in date: 2023-12-29 00:00:00
+
+SIMBOLO: MBK
+  Data: 2023-11-01 00:00:00 - open_i=16.0 - high_i=16.100000381469727
+  Data next: 2023-11-02 00:00:00 - high_next=530.7999877929688
+    diff_same_day=0.10 (0.63%)
+    diff_next_day=514.80 (3217.50%)
+
+------------------------------------------------------
+Symbol: MOL
+Data: Minimum open price: 25.299999237060547 in date: 2023-10-23 00:00:00
+      Maximum high price: 3190.0 in date: 2023-07-19 00:00:00
+
+SIMBOLO: MOL
+  Data: 2023-03-15 00:00:00 - open_i=26.040000915527344 - high_i=26.040000915527344
+  Data next: 2023-03-16 00:00:00 - high_next=2478.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=2451.96 (9416.13%)
+
+  Data: 2023-05-29 00:00:00 - open_i=28.450000762939453 - high_i=28.549999237060547
+  Data next: 2023-05-30 00:00:00 - high_next=2870.0
+    diff_same_day=0.10 (0.35%)
+    diff_next_day=2841.55 (9987.87%)
+
+  Data: 2023-10-23 00:00:00 - open_i=25.299999237060547 - high_i=26.25
+  Data next: 2023-10-24 00:00:00 - high_next=2910.0
+    diff_same_day=0.95 (3.75%)
+    diff_next_day=2884.70 (11401.98%)
+
+  Data: 2023-11-01 00:00:00 - open_i=26.549999237060547 - high_i=26.649999618530273
+  Data next: 2023-11-02 00:00:00 - high_next=2896.0
+    diff_same_day=0.10 (0.38%)
+    diff_next_day=2869.45 (10807.72%)
+
+------------------------------------------------------
+Symbol: KBHL
+Data: Minimum open price: 4550.0 in date: 2023-12-13 00:00:00
+      Maximum high price: 6680.0 in date: 2023-03-27 00:00:00
+
+Symbol: TABAK
+Data: Minimum open price: 15500.0 in date: 2023-12-08 00:00:00
+      Maximum high price: 17980.0 in date: 2023-03-27 00:00:00
+
+Symbol: BFT
+Data: Minimum open price: 740.0 in date: 2023-01-02 00:00:00
+      Maximum high price: 2140.0 in date: 2023-12-20 00:00:00
+
+SIMBOLO: SES
+  Data: 2023-08-15 00:00:00 - open_i=1.3839999437332153 - high_i=1.4919999837875366
+  Data next: 2023-08-16 00:00:00 - high_next=105.69999694824219
+    diff_same_day=0.11 (7.80%)
+    diff_next_day=104.32 (7537.28%)
+
+------------------------------------------------------
+Symbol: CO
+Data: Minimum open price: 55.400001525878906 in date: 2023-12-05 00:00:00
+      Maximum high price: 1217.0 in date: 2023-02-03 00:00:00
+
+Symbol: ALECR
+Data: Minimum open price: 22200.0 in date: 2023-01-02 00:00:00
+      Maximum high price: 29200.0 in date: 2023-07-17 00:00:00
+
+---------------------------------------------
+
+
+
+2025-02-21 17:26:43.273363
+Controllo anomalie per il mercato: data_market_larg_comp_eu_symbols
+SIMBOLO: FRAG
+  Data: 2024-11-29 00:00:00 - open_i=0.01899999938905239 - high_i=0.01899999938905239
+  Data next: 2024-12-02 00:00:00 - high_next=9.75
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=9.73 (51215.79%)
+
+------------------------------------------------------
+Symbol: MAERSK-B
+Data: Minimum open price: 8852.0 in date: 2024-03-20 00:00:00
+      Maximum high price: 14430.0 in date: 2024-01-04 00:00:00
+
+Symbol: OTP
+Data: Minimum open price: 15620.0 in date: 2024-01-04 00:00:00
+      Maximum high price: 22210.0 in date: 2024-12-09 00:00:00
+
+Symbol: LOTB
+Data: Minimum open price: 7650.0 in date: 2024-01-12 00:00:00
+      Maximum high price: 12580.0 in date: 2024-10-17 00:00:00
+
+Symbol: ROCK-B
+Data: Minimum open price: 1752.0 in date: 2024-01-17 00:00:00
+      Maximum high price: 3234.0 in date: 2024-11-12 00:00:00
+
+Symbol: LPP
+Data: Minimum open price: 12400.0 in date: 2024-03-18 00:00:00
+      Maximum high price: 18980.0 in date: 2024-02-26 00:00:00
+
+SIMBOLO: DIA
+  Data: 2024-08-15 00:00:00 - open_i=0.012600000016391277 - high_i=0.012799999676644802
+  Data next: 2024-08-16 00:00:00 - high_next=101.1500015258789
+    diff_same_day=0.00 (1.59%)
+    diff_next_day=101.14 (802677.79%)
+
+  Data: 2024-12-24 00:00:00 - open_i=0.01640000008046627 - high_i=0.016699999570846558
+  Data next: 2024-12-27 00:00:00 - high_next=100.25
+    diff_same_day=0.00 (1.83%)
+    diff_next_day=100.23 (611180.48%)
+
+------------------------------------------------------
+Symbol: DCC
+Data: Minimum open price: 4864.0 in date: 2024-11-11 00:00:00
+      Maximum high price: 6075.0 in date: 2024-05-16 00:00:00
+
+SIMBOLO: MBK
+  Data: 2024-05-03 00:00:00 - open_i=15.300000190734863 - high_i=15.300000190734863
+  Data next: 2024-05-06 00:00:00 - high_next=706.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=690.70 (4514.38%)
+
+  Data: 2024-05-30 00:00:00 - open_i=15.800000190734863 - high_i=15.800000190734863
+  Data next: 2024-05-31 00:00:00 - high_next=631.7999877929688
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=616.00 (3898.73%)
+
+  Data: 2024-08-15 00:00:00 - open_i=14.800000190734863 - high_i=14.800000190734863
+  Data next: 2024-08-16 00:00:00 - high_next=623.7999877929688
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=609.00 (4114.86%)
+
+  Data: 2024-11-01 00:00:00 - open_i=14.5 - high_i=14.5
+  Data next: 2024-11-04 00:00:00 - high_next=578.4000244140625
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=563.90 (3888.97%)
+
+  Data: 2024-11-11 00:00:00 - open_i=14.600000381469727 - high_i=14.699999809265137
+  Data next: 2024-11-12 00:00:00 - high_next=593.7999877929688
+    diff_same_day=0.10 (0.68%)
+    diff_next_day=579.20 (3967.12%)
+
+------------------------------------------------------
+Symbol: MOL
+Data: Minimum open price: 33.0 in date: 2024-03-15 00:00:00
+      Maximum high price: 3090.0 in date: 2024-05-14 00:00:00
+
+SIMBOLO: MOL
+  Data: 2024-03-15 00:00:00 - open_i=33.0 - high_i=34.5
+  Data next: 2024-03-18 00:00:00 - high_next=2976.0
+    diff_same_day=1.50 (4.55%)
+    diff_next_day=2943.00 (8918.18%)
+
+  Data: 2024-05-20 00:00:00 - open_i=38.45000076293945 - high_i=39.75
+  Data next: 2024-05-21 00:00:00 - high_next=3086.0
+    diff_same_day=1.30 (3.38%)
+    diff_next_day=3047.55 (7926.01%)
+
+  Data: 2024-08-20 00:00:00 - open_i=36.20000076293945 - high_i=36.349998474121094
+  Data next: 2024-08-21 00:00:00 - high_next=2778.0
+    diff_same_day=0.15 (0.41%)
+    diff_next_day=2741.80 (7574.03%)
+
+  Data: 2024-10-23 00:00:00 - open_i=33.099998474121094 - high_i=33.099998474121094
+  Data next: 2024-10-24 00:00:00 - high_next=2644.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=2610.90 (7887.92%)
+
+  Data: 2024-11-01 00:00:00 - open_i=34.349998474121094 - high_i=34.900001525878906
+  Data next: 2024-11-04 00:00:00 - high_next=2650.0
+    diff_same_day=0.55 (1.60%)
+    diff_next_day=2615.65 (7614.70%)
+
+  Data: 2024-12-27 00:00:00 - open_i=37.099998474121094 - high_i=37.099998474121094
+  Data next: 2024-12-30 00:00:00 - high_next=2736.0
+    diff_same_day=0.00 (0.00%)
+    diff_next_day=2698.90 (7274.66%)
+
+------------------------------------------------------
+Symbol: KBHL
+Data: Minimum open price: 3650.0 in date: 2024-11-27 00:00:00
+      Maximum high price: 6280.0 in date: 2024-12-03 00:00:00
+
+Symbol: ARTO
+Data: Minimum open price: 4680.0 in date: 2024-03-07 00:00:00
+      Maximum high price: 11000.0 in date: 2024-12-30 00:00:00
+
+Symbol: TABAK
+Data: Minimum open price: 14700.0 in date: 2024-05-09 00:00:00
+      Maximum high price: 17020.0 in date: 2024-12-16 00:00:00
+
+Symbol: BFT
+Data: Minimum open price: 1970.0 in date: 2024-01-02 00:00:00
+      Maximum high price: 3050.0 in date: 2024-05-27 00:00:00
+
+SIMBOLO: SES
+  Data: 2024-08-15 00:00:00 - open_i=2.4000000953674316 - high_i=2.440000057220459
+  Data next: 2024-08-16 00:00:00 - high_next=99.4000015258789
+    diff_same_day=0.04 (1.67%)
+    diff_next_day=97.00 (4041.67%)
+
+------------------------------------------------------
+Symbol: ALECR
+Data: Minimum open price: 18000.0 in date: 2024-12-10 00:00:00
+      Maximum high price: 25000.0 in date: 2024-01-02 00:00:00
+
+SIMBOLO: LOCAL
+  Data: 2024-07-04 00:00:00 - open_i=4.008080005645752 - high_i=4.113131046295166
+  Data next: 2024-07-05 00:00:00 - high_next=150.0
+    diff_same_day=0.11 (2.62%)
+    diff_next_day=145.99 (3642.44%)
+
+------------------------------------------------------
+SIMBOLO: ATO
+  Data: 2024-11-11 00:00:00 - open_i=0.004970000125467777 - high_i=0.005036999937146902
+  Data next: 2024-11-12 00:00:00 - high_next=0.5109999775886536
+    diff_same_day=0.00 (1.35%)
+    diff_next_day=0.51 (10181.69%)
+
+------------------------------------------------------

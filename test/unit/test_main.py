@@ -7,18 +7,18 @@ from pathlib import Path
 import traceback
 
 
-# Trova dinamicamente la cartella Trading-Agent e la aggiunge al path
+# Trova dinamicamente la cartella Backtesting-Trading-Strategies e la aggiunge al path
 current_path = Path(__file__).resolve()
-while current_path.name != 'trading-agent':
-    if current_path == current_path.parent:  # Se raggiungiamo la root senza trovare Trading-Agent
-        raise RuntimeError("Errore: Impossibile trovare la cartella Trading-Agent!")
+while current_path.name != 'Backtesting-Trading-Strategies':
+    if current_path == current_path.parent:  # Se raggiungiamo la root senza trovare Backtesting-Trading-Strategies
+        raise RuntimeError("Errore: Impossibile trovare la cartella Backtesting-Trading-Strategies!")
     current_path = current_path.parent
 
 # Aggiunge la root al sys.path solo se non è già presente
 if str(current_path) not in sys.path:
     sys.path.append(str(current_path))
 
-from manage_module import get_path_specify, project_root, main_project, db_path, manage_symbols_path, utils_path, history_market_data_path, capitalization_path, symbols_info_path, marketFiles 
+from manage_module import get_path_specify, project_root, main_project, db_path, manage_symbols_path, utils_path, history_market_data_path, capitalization_path, symbols_info_path, marketFiles, history_volume_data
 
 # Ora possiamo importare `config`
 get_path_specify([db_path, f'{main_project}/symbols', main_project, utils_path])
@@ -36,7 +36,6 @@ sys.path.append(f'{main_project}/agent8_trailing_stop_loss')
 
 from work_historical.agents import agent1_downloadANDinsertDATA_DB, agent2, agent3, agent4, agent5_variationNumberTitle, agent6_selectionSector, agent7_larger_time_window, agent8_trailing_stop_loss
 
-# Recupero delle capitalizzazioni di mercato per i simboli azionari di ogni mercato.
 Path = f'{project_root}/logs'
 if not os.path.exists(Path):
     os.mkdir(f'{project_root}/logs')
@@ -44,18 +43,18 @@ if not os.path.exists(Path):
 
 #import work_historical.agents.agent1_downloadANDinsertDATA_DB
 import work_historical.agents.agent1_downloadANDinsertDATA_DB.agent1_Yahoo_Finance as agent1_Yahoo_Finance
-import work_historical.agents.agent2.agent2_markCapDayInitial as agent2_markCapDayInitial
+import work_historical.agents.agent2.agent2_avgVolDayInitial as agent2_avgVolDayInitial
 import work_historical.agents.agent2.agent2_selectRandom as agent2_selectRandom
-import work_historical.agents.agent3.agent3_markCapDayInitial as agent3_markCapDayInitial
+import work_historical.agents.agent3.agent3_avgVolDayInitial as agent3_avgVolDayInitial
 import work_historical.agents.agent3.agent3_selectRandom as agent3_selectRandom
-import work_historical.agents.agent4.agent4_markCapDayInitial as agent4_markCapDayInitial
+import work_historical.agents.agent4.agent4_avgVolDayInitial as agent4_avgVolDayInitial
 import work_historical.agents.agent4.agent4_selectRandom as agent4_selectRandom
-import work_historical.agents.agent5_variationNumberTitle.agent5_markCapDayInitial as agent5_markCapDayInitial
+import work_historical.agents.agent5_variationNumberTitle.agent5_avgVolDayInitial as agent5_avgVolDayInitial
 import work_historical.agents.agent5_variationNumberTitle.agent5_selectRandom as agent5_selectRandom
-import work_historical.agents.agent6_selectionSector.agent6_markCapDayInitial as agent6_markCapDayInitial
-import work_historical.agents.agent7_larger_time_window.agent7_markCapDayInitial as agent7_markCapDayInitial
+import work_historical.agents.agent6_selectionSector.agent6_avgVolDayInitial as agent6_avgVolDayInitial
+import work_historical.agents.agent7_larger_time_window.agent7_avgVolDayInitial as agent7_avgVolDayInitial
 import work_historical.agents.agent7_larger_time_window.agent7_selectRandom as agent7_selectRandom
-import work_historical.agents.agent8_trailing_stop_loss.agent8_markCapDayInitial as agent8_markCapDayInitial
+import work_historical.agents.agent8_trailing_stop_loss.agent8_avgVolDayInitial as agent8_avgVolDayInitial
 import work_historical.agents.agent8_trailing_stop_loss.agent8_selectRandom as agent8_selectRandom
 
 #from work_historical.utils import generateiRandomDates2
@@ -79,11 +78,17 @@ logger_main.propagate = False  # Evita la propagazione
 def main():
     cur, conn = connectDB.connect_data_backtesting()
     #datesToTrade1 = generateiRandomDates2(cur, 80)
+    logger_main.info("\n\n\n\n\n")    
     
-    #logger_main.info("Start download and save history market data.!\n")
-    #agent1_Yahoo_Finance.main()
-    #logger_main.info("End download and save history market data.!\n")
-        
+    logger_main.info("Start download and save history market data.!\n")
+    try:
+        #agent1_Yahoo_Finance.main()
+        print("Esecuzione dell'agente 1 già avvenuta in precedenza.")
+    except Exception as e:
+        logger_main.error(f"Error in agent1_Yahoo_Finance.main(): {e}")
+        return
+    logger_main.info("End download and save history market data.!\n")
+    
     logger_main.info("Start simulations!\n")
     
     """cur.execute("select initial_date, end_date from testing where id=1 order by initial_date;")
@@ -124,8 +129,8 @@ def main():
                      ('2021-02-26 00:00:00', datetime(2021, 2, 26, 0, 0), '2022-02-26 00:00:00'), ('2021-03-18 00:00:00', datetime(2021, 3, 18, 0, 0), '2022-03-18 00:00:00'), 
                      ('2021-06-02 00:00:00', datetime(2021, 6, 2, 0, 0), '2022-06-02 00:00:00'), ('2021-08-06 00:00:00', datetime(2021, 8, 6, 0, 0), '2022-08-06 00:00:00'), 
                      ('2021-09-14 00:00:00', datetime(2021, 9, 14, 0, 0), '2022-09-14 00:00:00'), ('2021-11-10 00:00:00', datetime(2021, 11, 10, 0, 0), '2022-11-10 00:00:00'),
-                     ('2022-01-11 00:00:00', datetime(2022, 1, 11, 0, 0), '2023-01-11 00:00:00'), ('2022-04-14 00:00:00', datetime(2022, 4, 14, 0, 0), '2023-04-14 00:00:00'), 
-                     ('2022-07-13 00:00:00', datetime(2022, 7, 13, 0, 0), '2023-07-13 00:00:00'), ('2022-08-10 00:00:00', datetime(2022, 8, 10, 0, 0), '2023-08-10 00:00:00'), 
+                     ('2022-04-14 00:00:00', datetime(2022, 4, 14, 0, 0), '2023-04-14 00:00:00'), ('2022-07-13 00:00:00', datetime(2022, 7, 13, 0, 0), '2023-07-13 00:00:00'), 
+                     ('2022-08-10 00:00:00', datetime(2022, 8, 10, 0, 0), '2023-08-10 00:00:00'), 
                      ('2022-09-02 00:00:00', datetime(2022, 9, 2, 0, 0), '2023-09-02 00:00:00'), ('2022-09-14 00:00:00', datetime(2022, 9, 14, 0, 0), '2023-09-14 00:00:00'), 
                      ('2022-11-09 00:00:00', datetime(2022, 11, 9, 0, 0), '2023-11-09 00:00:00'), ('2022-12-02 00:00:00', datetime(2022, 12, 2, 0, 0), '2023-12-02 00:00:00'), 
                      ('2023-01-04 00:00:00', datetime(2023, 1, 4, 0, 0), '2024-01-04 00:00:00'), ('2023-01-09 00:00:00', datetime(2023, 1, 9, 0, 0), '2024-01-09 00:00:00'), 
@@ -162,7 +167,7 @@ def main():
     
     logger_main.info(f"Start program: {datetime.now()}")
     
-    marksCap = ['topVal1999', 'topVal2000', 'topVal2001', 'topVal2002', 'topVal2003', 'topVal2004', 'topVal2005', 'topVal2006', 'topVal2007', 'topVal2008', 'topVal2009', 
+    """marksCap = ['topVal1999', 'topVal2000', 'topVal2001', 'topVal2002', 'topVal2003', 'topVal2004', 'topVal2005', 'topVal2006', 'topVal2007', 'topVal2008', 'topVal2009', 
                 'topVal2010', 'topVal2011', 'topVal2012', 'topVal2013', 'topVal2014', 'topVal2015', 'topVal2016', 'topVal2017', 'topVal2018', 'topVal2019', 'topVal2020', 
                 'topVal2021', 'topVal2022', 'topVal2023', 'topVal2024']
     
@@ -182,6 +187,27 @@ def main():
                     dizMarkCap[mark][year][row['date']].append(row['symb'])
                     
     logger_main.info(f"Find market capitalization. \n")
+    """
+    
+    
+    
+    volume_value_files = ['topVal1999', 'topVal2000', 'topVal2001', 'topVal2002', 'topVal2003', 'topVal2004', 'topVal2005', 'topVal2006', 'topVal2007', 'topVal2008', 'topVal2009', 
+                        'topVal2010', 'topVal2011', 'topVal2012', 'topVal2013', 'topVal2014', 'topVal2015', 'topVal2016', 'topVal2017', 'topVal2018', 'topVal2019', 'topVal2020', 
+                        'topVal2021', 'topVal2022', 'topVal2023', 'topVal2024']
+    
+    diz_volume = {}
+    for mark in ['NASDAQ', 'NYSE', 'LARG_COMP_EU']:
+        diz_volume[mark] = {}
+        for filename in volume_value_files:
+            with open(f'{history_volume_data}/{mark}/top_value/{filename}.csv', mode='r') as file:
+                year = filename[-4:]
+                if mark not in diz_volume[mark]:
+                    diz_volume[mark][year] = {}
+                for row in csv.DictReader(file):
+                    if row['date'] not in diz_volume[mark][year]:
+                        diz_volume[mark][year][row['date']] = []
+                    diz_volume[mark][year][row['date']].append(row['symb'])
+    
     
     ############################################################################################
     
@@ -259,48 +285,49 @@ def main():
     
     # Esecuzione degli agenti con le varie strategie
     
-    logger_main.info(f"Start agent2 with select title for better cap in day initial.")
-    agent2_markCapDayInitial.main(datesToTrade1, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totalDates)
-    logger_main.info(f"End agent2 with select title for better cap in day initial. \n")
-    #agent2.agent2_markCapDayPurchase.main(datesToTrade1, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge)
+    logger_main.info(f"Start agent2 with select title for average of the amount of volume in the 6 months preceding the initial date.")
+    agent2_avgVolDayInitial.main(datesToTrade1, diz_volume, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totalDates)
+    logger_main.info(f"End agent2 with select title for average of the amount of volume in the 6 months preceding the initial date. \n")
+    #agent2.agent2_markCapDayPurchase.main(datesToTrade1, diz_volume, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge)
         
     logger_main.info(f"Start agent2 with random select title.")
-    agent2_selectRandom.main(datesToTrade1, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totalDates)
+    agent2_selectRandom.main(datesToTrade1, diz_volume, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totalDates)
     logger_main.info(f"End agent2 with random select title. \n\n")
     
     ####################################
     
-    logger_main.info(f"Start agent3 with select title for better cap in day initial.")
-    agent3_markCapDayInitial.main(datesToTrade1,  dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totalDates)
-    logger_main.info(f"End agent3 with select title for better cap in day initial. \n")
-    #agent3.agent3_markCapDayPurchase.main(datesToTrade1, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge)
+    logger_main.info(f"Start agent3 with select title for average of the amount of volume in the 6 months preceding the initial date.")
+    agent3_avgVolDayInitial.main(datesToTrade1,  diz_volume, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totalDates)
+    logger_main.info(f"End agent3 with select title for average of the amount of volume in the 6 months preceding the initial date. \n")
+    #agent3.agent3_markCapDayPurchase.main(datesToTrade1, diz_volume, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge)
         
     logger_main.info(f"Start agent3 with random select title.")
-    agent3_selectRandom.main(datesToTrade1,  dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totalDates)
+    agent3_selectRandom.main(datesToTrade1,  diz_volume, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totalDates)
     logger_main.info(f"End agent3 with random select title. \n\n")
     
     ####################################
     
-    logger_main.info(f"Start agent7 with select title for better cap in day initial.")
-    agent7_markCapDayInitial.main(datesToTrade1, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totalDates)
-    logger_main.info(f"End agent7 with select title for better cap in day initial. \n")
-    #agent7_larger_time_window.agent7_markCapDayPurchase.main(datesToTrade1, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge)
+    logger_main.info(f"Start agent7 with select title for average of the amount of volume in the 6 months preceding the initial date.")
+    agent7_avgVolDayInitial.main(datesToTrade1, diz_volume, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totalDates)
+    logger_main.info(f"End agent7 with select title for average of the amount of volume in the 6 months preceding the initial date. \n")
+    #agent7_larger_time_window.agent7_markCapDayPurchase.main(datesToTrade1, diz_volume, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge)
     
     logger_main.info(f"Start agent7 with random select title.")
-    agent7_selectRandom.main(datesToTrade1, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totalDates)
+    agent7_selectRandom.main(datesToTrade1, diz_volume, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totalDates)
     logger_main.info(f"End agent7 with random select title. \n\n")
 
     ####################################
 
-    logger_main.info(f"Start agent8 with select title for better cap in day initial. ")
-    agent8_markCapDayInitial.main(datesToTrade1, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totalDates)
-    logger_main.info(f"End agent8 with select title for better cap in day initial.\n")
+    logger_main.info(f"Start agent8 with select title for average of the amount of volume in the 6 months preceding the initial date. ")
+    agent8_avgVolDayInitial.main(datesToTrade1, diz_volume, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totalDates)
+    logger_main.info(f"End agent8 with select title for average of the amount of volume in the 6 months preceding the initial date.\n")
     
     logger_main.info(f"Start agent8 with random select title.")
-    agent8_selectRandom.main(datesToTrade1, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totalDates)
+    agent8_selectRandom.main(datesToTrade1, diz_volume, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totalDates)
     logger_main.info(f"End agent8 with random select title. \n\n")
     
     ####################################
+    
     
     # Creazione del dizionario per la simulazione dell'agente 6 con la suddivisione dei titoli in settori.
     """
@@ -339,38 +366,38 @@ def main():
                     dizSymbSect[mark][sector] = [row['Symbol']]
                 else:
                     dizSymbSect[mark][sector].append(row['Symbol'])
-
-    logger_main.info(f"Start agent6 with select title for better cap in day initial.")
-    agent6_markCapDayInitial.main(datesToTrade1, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, 
+    
+    logger_main.info(f"Start agent6 with select title for average of the amount of volume in the 6 months preceding the initial date.")
+    agent6_avgVolDayInitial.main(datesToTrade1, diz_volume, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, 
                                                          symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, 
                                                          pricesDispoInDatesLarge, totalDates, dizSymbSect)
-    logger_main.info(f"End agent6 with select title for better cap in day initial. \n\n")
+    logger_main.info(f"End agent6 with select title for average of the amount of volume in the 6 months preceding the initial date. \n\n")
     
     ####################################
     
     
-    logger_main.info(f"Start agent5 with select title for better cap in day initial.")
-    agent5_markCapDayInitial.main(datesToTrade1, dizMarkCap, symbolsDispoInDatesNasd, 
+    logger_main.info(f"Start agent5 with select title for average of the amount of volume in the 6 months preceding the initial date.")
+    agent5_avgVolDayInitial.main(datesToTrade1, diz_volume, symbolsDispoInDatesNasd, 
                                                               symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, 
                                                               pricesDispoInDatesNyse, pricesDispoInDatesLarge, totalDates)
-    logger_main.info(f"End agent5 with select title for better cap in day initial. \n")
+    logger_main.info(f"End agent5 with select title for average of the amount of volume in the 6 months preceding the initial date. \n")
     
     #agent5_variationNumberTitle.agent5_markCapDayPurchase.main(datesToTrade1, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge)
     logger_main.info(f"Start agent5 with random select title.")
-    agent5_selectRandom.main(datesToTrade1, dizMarkCap, symbolsDispoInDatesNasd, 
+    agent5_selectRandom.main(datesToTrade1, diz_volume, symbolsDispoInDatesNasd, 
                                                          symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, 
                                                          pricesDispoInDatesNyse, pricesDispoInDatesLarge, totalDates)
     logger_main.info(f"End agent5 with random select title. \n\n")
      
     ####################################
     
-    logger_main.info(f"Start agent4 with select title for better cap in day initial. ")
-    agent4_markCapDayInitial.main(datesToTrade1, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totalDates)
-    logger_main.info(f"End agent4 with select title for better cap in day initial. \n")
+    logger_main.info(f"Start agent4 with select title for average of the amount of volume in the 6 months preceding the initial date. ")
+    agent4_avgVolDayInitial.main(datesToTrade1, diz_volume, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totalDates)
+    logger_main.info(f"End agent4 with select title for average of the amount of volume in the 6 months preceding the initial date. \n")
     #agent4.agent4_markCapDayPurchase.main(datesToTrade1, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge)
     
     logger_main.info(f"Start agent4 with random select title. ")
-    agent4_selectRandom.main(datesToTrade1, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totalDates)
+    agent4_selectRandom.main(datesToTrade1, diz_volume, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totalDates)
     logger_main.info(f"End agent4 with random select title. \n\n")
 
 

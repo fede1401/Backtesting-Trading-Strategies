@@ -13,13 +13,14 @@ import pandas as pd
 import traceback
 import numpy as np
 import time
+
 from pathlib import Path
 
-# Trova dinamicamente la cartella Trading-Agent e la aggiunge al path
+# Trova dinamicamente la cartella Backtesting-Trading-Strategies e la aggiunge al path
 current_path = Path(__file__).resolve()
-while current_path.name != 'trading-agent':
-    if current_path == current_path.parent:  # Se raggiungiamo la root senza trovare Trading-Agent
-        raise RuntimeError("Errore: Impossibile trovare la cartella Trading-Agent!")
+while current_path.name != 'Backtesting-Trading-Strategies':
+    if current_path == current_path.parent:  # Se raggiungiamo la root senza trovare Backtesting-Trading-Strategies
+        raise RuntimeError("Errore: Impossibile trovare la cartella Backtesting-Trading-Strategies!")
     current_path = current_path.parent
 
 # Aggiunge la root al sys.path solo se non è già presente
@@ -37,13 +38,14 @@ from symbols import manage_symbol
 import agentState
 import utils
 
-logger_agent6 = logging.getLogger('agent6')
-logger_agent6.setLevel(logging.INFO)
+
+logger_agent5 = logging.getLogger('agent5')
+logger_agent5.setLevel(logging.INFO)
 
 # Evita di aggiungere più volte lo stesso handler
-if not logger_agent6.handlers:
+if not logger_agent5.handlers:
     # Crea un file handler che scrive in un file specifico
-    file_handler = logging.FileHandler(f'{project_root}/logs/testAgent6.log')
+    file_handler = logging.FileHandler(f'{project_root}/logs/testAgent5.log')
     file_handler.setLevel(logging.INFO)
 
     # Definisci il formatter
@@ -51,9 +53,9 @@ if not logger_agent6.handlers:
     file_handler.setFormatter(formatter)
 
     # Aggiungi il file handler al logger
-    logger_agent6.addHandler(file_handler)
+    logger_agent5.addHandler(file_handler)
 
-logger_agent6.propagate = False
+logger_agent5.propagate = False
 
 
 "Simboli che presentano anomalie nei dati di mercato"
@@ -72,21 +74,17 @@ SYMB_TOT_ANOMALIE = ['IDEX', 'CYRX', 'QUBT', 'POCI', 'MULN', 'BTCS', 'HEPA', 'OL
                       'ATXG', 'SILO', 'KWE', 'TOP',  'TPST', 'NXTT', 'OCTO', 'EGRX', 'AAGR', 'MYNZ', 'IDEX', 'CSSE', 
                       'BFI', 'EFTR', 'DRUG', 'GROM', 'HPCO', 'NCNC', 'SMFL', 'WT', 'EMP', 'IVT', 'EMP', 'AMPY', 'ARCH', 'ODV',
                       'SNK', 'CBE', 'BST', 'BOL', 'GEA', 'NTG', 'MBK', 'MOL', 'MAN', '1913', 
-                       'SBB-B', 'SES', 'DIA', 'H2O', 'EVO', 'LOCAL', 'ATO', 'FRAG', 'MYNZ', 'IPA']
+                       'SBB-B', 'SES', 'DIA', 'H2O', 'EVO', 'LOCAL', 'ATO', 'FRAG', 'MYNZ', 'IPA', 'CODA', 'PRO', 'XTP']
 
-
-# In questo agente andiamo ad investire sul 50% dei titoli a maggiore capitalizzazione per ogni settore del mercato corrispondente.
 
 # Funzione principale per il trading e il caricamento
-def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, 
-         pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totaledates, dizSymbSect):
+def main(datesToTrade, diz_volume, symbolsDispoInDatesNasd, symbolsDispoInDatesNyse, symbolsDispoInDatesLarge, pricesDispoInDatesNasd, pricesDispoInDatesNyse, pricesDispoInDatesLarge, totaledates):
     try:
-        logger_agent6.info(f"[SIMULATION START] agent6_markCapDayInitial initiated at {datetime.now()}\n")
+        logger_agent5.info(f"[SIMULATION START] agent5_avgVolDayInitial initiated at {datetime.now()}\n")
 
         # Connessione al database
         cur, conn = connectDB.connect_data_backtesting()
 
-        # Inizializzazione delle variabili
         profitsPerc = []
         profTot = []
         middleSale = []
@@ -95,43 +93,43 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
         middletitleBetterProfit = []
         middletitleWorseProfit = []
         
-        # Definizione parametri
+        # parametri su cui fare i test
         list_take_profit = [0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09, 0.10, 0.15, 0.20, 0.30, 0.40, 0.50, 0.60, 0.70, 0.80, 0.90, 1.00]
-        percToValut = [0.1, 0.2, 0.3, 0.4, 0.5]
-
-        # Inizio elaborazione per i diversi mercati
-        market = ['nasdaq_actions', 'nyse_actions', 'larg_comp_eu_actions']
         
-        for m in market:
-            logger_agent6.info(f"[MARKET INFO] Operating on market '{m}'\n")
-            
-            # Viene selezionato l'ultimo id del test inserito nel database
-            idTest = utils.get_last_id_test(cur) 
-            
-            # viene registrata una riga vuota nel database per separare le simulazioni
-            insertDataDB.insert_in_data_simulation(idTest, "------", mean_perc_profit=0, std_dev=0, variance=0, initial_budget= 0, mean_budget_with_profit_usd=0, 
+        iterations = [1,2,3,4,5,6,7,8]
+
+        for ite in iterations:
+            # Inizio elaborazione per i diversi mercati
+            market = ['nasdaq_actions', 'nyse_actions', 'larg_comp_eu_actions']
+            for m in market:
+                logger_agent5.info(f"[MARKET INFO] Operating on market '{m}'\n")
+                
+                # Viene selezionato l'ultimo id del test inserito nel database
+                idTest = utils.get_last_id_test(cur) 
+                
+                # viene registrata una riga vuota nel database per separare le simulazioni
+                insertDataDB.insert_in_data_simulation(idTest, "------", mean_perc_profit=0, std_dev=0, variance=0, initial_budget= 0, mean_budget_with_profit_usd=0, 
                                                     avg_sale=0, avg_purchase=0, avg_time_sale=0,  best_symbol='----', worst_symbol='-----', timestamp_in = datetime.now(),timestamp_fin=datetime.now(), 
                                                     notes='---', cur=cur, conn=conn)
-            
-            # Recupero dei simboli azionari per il mercato scelto
-            if m == 'nasdaq_actions':
-                symbols = manage_symbol.get_symbols('NASDAQ', -1)
-                symbolsDispoInDates = symbolsDispoInDatesNasd
-                pricesDispoInDates = pricesDispoInDatesNasd
-                m = 'data_market_nasdaq_symbols'
-            elif m == 'nyse_actions':
-                symbols = manage_symbol.get_symbols('NYSE', -1)
-                symbolsDispoInDates = symbolsDispoInDatesNyse
-                pricesDispoInDates = pricesDispoInDatesNyse
-                m = 'data_market_nyse_symbols'
-            elif m == 'larg_comp_eu_actions':
-                symbols = manage_symbol.get_symbols('LARG_COMP_EU', -1)
-                symbolsDispoInDates = symbolsDispoInDatesLarge
-                pricesDispoInDates = pricesDispoInDatesLarge
-                m = 'data_market_larg_comp_eu_symbols'
-            
-            # Ciclo per la variazione relativa alla percentuale da valutare e per il Take Profit
-            for indexPerc in range (len(percToValut)): 
+                
+                # Recupero dei simboli azionari per il mercato scelto
+                if m == 'nasdaq_actions':
+                    symbols = manage_symbol.get_symbols('NASDAQ', -1)
+                    symbolsDispoInDates = symbolsDispoInDatesNasd
+                    pricesDispoInDates = pricesDispoInDatesNasd
+                    m = 'data_market_nasdaq_symbols'
+                elif m == 'nyse_actions':
+                    symbols = manage_symbol.get_symbols('NYSE', -1)
+                    symbolsDispoInDates = symbolsDispoInDatesNyse
+                    pricesDispoInDates = pricesDispoInDatesNyse
+                    m = 'data_market_nyse_symbols'
+                elif m == 'larg_comp_eu_actions':
+                    symbols = manage_symbol.get_symbols('LARG_COMP_EU', -1)
+                    symbolsDispoInDates = symbolsDispoInDatesLarge
+                    pricesDispoInDates = pricesDispoInDatesLarge
+                    m = 'data_market_larg_comp_eu_symbols'
+                
+                    
                 for i in range(len(list_take_profit)):  # Per ogni valore di Take Profit (1%-10%)
                     profitsPerc = []
                     profTot = []
@@ -141,30 +139,24 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
                     middletitleBetterProfit = []
                     middletitleWorseProfit = []
                     
-                    # Definizione del Take Profit e della percentuale da valutare
-                    TK = list_take_profit[i]
-                    PERC = percToValut[indexPerc]
                     
+                    TK = list_take_profit[i]
                     #idTest = utils.getLastIdTest(cur) 
                     idTest += 1
+                    time_stamp_in = datetime.now()
                                     
-                    # Test per ogni data
-                    total_steps = len(datesToTrade)   
-                    #total_steps = 1 # for fast test
+                    total_steps = len(datesToTrade)  # 
                     for step in range(total_steps):
-                        time_stamp_in = datetime.now()
                         # Logica principale
                         utils.clear_tables_db(cur, conn)
                         trade_date, initial_date, endDate = datesToTrade[step]
-                        logger_agent6.info(f"[TEST START] Starting test for agent6_markCapDayInitial with TP {TK}% and perc to select symbol of sector:{PERC*100} on initial date {initial_date} at {datetime.now()}")
+                        logger_agent5.info(f"[TEST START] Starting test for agent5_avgVolDayInitial with TP {TK}% and number of titles:{ite*100} on initial date {initial_date} at {datetime.now()}")
 
-                        profitPerc, profitUSD, nSale, nPurchase, middleTimeSale, titleBetterProfit, titleWorseProfit, initial_budget  = tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, m, TK, initial_date, endDate,  dizMarkCap, 
-                                                                                                                                                                symbolsDispoInDates, pricesDispoInDates, totaledates[m], PERC, 
-                                                                                                                                                                dizSymbSect=dizSymbSect)
+                        profitPerc, profitUSD, nSale, nPurchase, middleTimeSale, titleBetterProfit, titleWorseProfit, initial_budget = tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, m, TK, initial_date, endDate, ite, diz_volume, symbolsDispoInDates, pricesDispoInDates, totaledates[m])
                         
                         # profitNotReinvestedPerc, profitNotReinvested, ticketSale, ticketPur, float(np.mean(middleTimeSale)), max(titleProfit[symbol]), min(titleProfit[symbol])
                         
-                        print(f"\nProfitto per il test {idTest}: agent6_top_mark_cap with TK:{TK} and PERC to select title for a sector: {PERC}, {m}, buy one after the other: {profitPerc}, rimangono {total_steps - step -1} iterazioni\n")
+                        print(f"\nProfitto per il test {idTest}: agent5_top_avg_vol con TP={TK}%, {m}, buy one after the other: {profitPerc}, rimangono {total_steps - step -1} iterazioni\n")
                         
                         profitPerc = round(profitPerc, 4)
                         
@@ -173,10 +165,10 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
                         elif m == 'data_market_nyse_symbols':
                             market_to_insert = 'nyse'
                         elif m == 'data_market_larg_comp_eu_symbols':
-                            market_to_insert = 'european'    
+                            market_to_insert = 'european'   
                         
-                        notes = f"TP:{TK}%, Market:{market_to_insert}, perc to select symbol of sector:{PERC*100}, Agent6 (Top MktCap, Sector). Selects top-cap stocks by sector, sorting them in descending order."
-                        insertDataDB.insert_in_data_testing( idTest, "agent6_top_mark_cap", step, initial_date=initial_date, end_date=endDate, initial_budget=initial_budget, profit_perc=profitPerc, budg_with_profit_USD=profitUSD, market=market_to_insert, n_purchase=nPurchase, n_sale=nSale, middle_time_sale_second=middleTimeSale,
+                        notes = f"TP:{TK}%, Market:{market_to_insert}, Agent5 (Top AvgVol). Tests various (#stocks, budget) pairs (e.g., 100/1000, 200/2000...), now with #stock:{ite*100} and #budget:{ite*1000}, using symbols sorted by decreasing average of the amount of volume in the 6 months preceding the starting date."
+                        insertDataDB.insert_in_data_testing( idTest, "agent5_top_avg_vol",  step, initial_date=initial_date, end_date=endDate, initial_budget=initial_budget, profit_perc=profitPerc, budg_with_profit_USD=profitUSD, market=market_to_insert, n_purchase=nPurchase, n_sale=nSale, middle_time_sale_second=middleTimeSale,
                                                  middle_time_sale_day=(middleTimeSale / 86400), title_better_profit=titleBetterProfit, title_worse_profit=titleWorseProfit, notes=notes, cur=cur, conn=conn)
                         
                         profTot.append(profitUSD)
@@ -186,10 +178,9 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
                         MmiddleTimeSale.append(middleTimeSale)
                         middletitleBetterProfit.append(titleBetterProfit)
                         middletitleWorseProfit.append(titleWorseProfit)
-                        logger_agent6.info(f"[TEST END] Completed test for agent6_markCapDayInitial with TP {TK}% and perc to select symbol of sector:{PERC*100} on initial date {initial_date} at {datetime.now()}\n\n")
+                        logger_agent5.info(f"[TEST END] Completed test for agent5_avgVolDayInitial with TP {TK}% and number of titles:{ite*1000} on initial date {initial_date} at {datetime.now()}\n\n")
 
-                    # end for step of the date to simulation
-                    
+
                     # Calcolo delle statistiche
                     mean_profit_perc = round(float(np.mean(profitsPerc)), 4)
                     std_deviation = round(float(np.std(profitsPerc)), 4)
@@ -217,44 +208,39 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
                             
                     mean_titleBetterProfit = max(dizBetterTitle, key=dizBetterTitle.get)
                     mean_titleWorseProfit = max(dizWorseTitle, key=dizWorseTitle.get)
-                    
+                    logger_agent5.info(f"[SIMULATION END] agent5_avgVolDayInitial simulation ended with TP {TK}% and number of titles:{ite*1000} at {datetime.now()}\n\n\n\n")
+
                     #logging.info(f"Profitto medio: {mean_profit}, Deviazione standard: {std_deviation}")
-                    logger_agent6.info(f"[SIMULATION END] agent6_markCapDayInitial simulation ended with TP {TK}% and perc to select symbol of sector:{PERC*100} at {datetime.now()}\n\n\n\n")
 
                     if m == 'data_market_nasdaq_symbols':
                         market_to_insert = 'nasdaq'
                     elif m == 'data_market_nyse_symbols':
                         market_to_insert = 'nyse'
                     elif m == 'data_market_larg_comp_eu_symbols':
-                        market_to_insert = 'european'    
-
-                    notes = f"TP:{TK}%, Market:{market_to_insert}, perc to select symbol of sector:{PERC*100}, Agent6 (Top MktCap, Sector). Selects top-cap stocks by sector, sorting them in descending order."
-                    insertDataDB.insert_in_data_simulation(idTest, "agent6_top_mark_cap", mean_perc_profit=mean_profit_perc, std_dev=std_deviation, variance=varianza, initial_budget= initial_budget, 
+                        market_to_insert = 'european'   
+                        
+                    notes = f"TP:{TK}%, Market:{market_to_insert}, Agent5 (Top AvgVol). Tests various (#stocks, budget) pairs (e.g., 100/1000, 200/2000...), now with #stock:{ite*100} and #budget:{ite*1000}, using symbols sorted by decreasing average of the amount of volume in the 6 months preceding the starting date."
+                    insertDataDB.insert_in_data_simulation(idTest, "agent5_top_avg_vol", mean_perc_profit=mean_profit_perc, std_dev=std_deviation, variance=varianza, initial_budget= initial_budget, 
                                                        mean_budget_with_profit_usd=mean_profit_usd, avg_sale=mean_sale, avg_purchase=mean_purchase, avg_time_sale=(mean_time_sale / 86400), best_symbol=mean_titleBetterProfit, 
                                                        worst_symbol=mean_titleWorseProfit, timestamp_in=time_stamp_in, timestamp_fin=datetime.now(), notes=notes, cur=cur, conn=conn)
 
-                # end for of the take profit
-            # end for of the percentage to valutate: end simulation
-
     except Exception as e:
-        logger_agent6.critical(f"Errore non gestito: {e}")
-        logger_agent6.critical(f"Dettagli del traceback:\n{traceback.format_exc()}")
+        logger_agent5.critical(f"Errore non gestito: {e}")
+        logger_agent5.critical(f"Dettagli del traceback:\n{traceback.format_exc()}")
 
     finally:
-        logger_agent6.info("Connessione chiusa e fine del trading agent.")
+        logger_agent5.info("Connessione chiusa e fine del trading agent.")
         cur.close()
         conn.close()
+        #logging.shutdown()
+
 
 ################################################################################
 
 
-def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, market, TP, initial_date, endDate, dizMarkCap, symbolsDispoInDates, pricesDispoInDates, totaledates, perc, dizSymbSect):      
-    # Recupero dei simboli azionari a maggior capitalizzazione divisi per settore di appartenenza 
-    symbolDisp1 = manage_symbol.get_x_symbols_ordered_by_market_cap_for_sector( market, initial_date, perc, dizMarkCap, dizSymbSect)
-    logger_agent6.info(f"[SYMBOL SELECTION] Test 'agent6_markCapDayInitial' in market '{market}' used symbols: {symbolDisp1}")
-    
-    # Inizializzazione delle variabili
-    budgetInvestimenti = initial_budget = len(symbolDisp1) * 10
+def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, market, TP, initial_date, endDate, iterationNumber, diz_volume, symbolsDispoInDates, pricesDispoInDates,  totaledates):   
+    # Inizializzazione ad ogni iterazione
+    budget = budgetInvestimenti = initial_budget = iterationNumber*1000
     profitTotalUSD = profitTotalPerc = profitNotReinvested = profitNotReinvestedPerc = equity = margin = ticketPur = ticketSale = budgetMantenimento = nSaleProfit = 0
     i = 0   # utilizzata per la scelta del titolo azionario da acquistare
     middleTimeSale = []
@@ -262,35 +248,37 @@ def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, mar
     sales = set()
     purchases = set()
     salesDict = {}
-
-    # Inserimento dei dati iniziali dell'agente nel database
-    #insertDataDB.insertInDataTrader(trade_date, agentState.AgentState.INITIAL, initial_budget, 1000, 0, 0, profitTotalUSD, profitTotalPerc, budgetMantenimento, budgetInvestimenti, cur, conn)
+ 
+    # Inserimento dei dati iniziali dell'agente nel database ---> #insertDataDB.insertInDataTrader(trade_date, agentState.AgentState.INITIAL, initial_budget, budget, 0, 0, profitTotalUSD, profitTotalPerc, budgetMantenimento, budgetInvestimenti, cur, conn)
                 
     stateAgent = agentState.AgentState.SALE
             
+    # Recupero dei simboli azionari disponibili per le date di trading scelte. 
+    symbolDisp1 = manage_symbol.get_x_symbols_ordered_by_volume(market, initial_date, 100, diz_volume, symbolsDispoInDates, logger_agent5)
+    logger_agent5.info(f"[SYMBOL SELECTION] Test 'agent5_avgVolDayInitial' in market '{market}' used symbols: {symbolDisp1}")
+    
     # Ottimizzazione 4: Recupera TUTTI i prezzi dei simboli disponibili per il periodo in una sola query
     prices_dict = (pricesDispoInDates[initial_date])[0]
-
+    
     # Ottengo tutte le date per l'iterazione:
-
     datesTrade = totaledates[initial_date.strftime('%Y-%m-%d %H:%M:%S')]
 
     i_for_date = 0
-
+    
     # Il ciclo principale esegue le operazioni di trading per 1 anno
     while True:
 
             ######################## inizio SALE
-            if stateAgent == agentState.AgentState.SALE or stateAgent == agentState.AgentState.SALE_IMMEDIATE: #-->  logging.info(f"Agent entrato nello stato Sale\n")
+            if stateAgent == agentState.AgentState.SALE or stateAgent == agentState.AgentState.SALE_IMMEDIATE:    # -->  logging.info(f"Agent entrato nello stato Sale\n")
 
                 # Memorizzo le informazioni relative agli acquisti nelle variabili seguenti:
                 for pur in purchases:
-                    datePur, ticketP, volume, symbol, price_open =  pur[0], pur[1], pur[2], pur[3], pur[4]
+                    datePur, ticketP, volume, symbol, price_open = pur[0], pur[1], pur[2], pur[3], pur[4]
                     
                     # Se il ticket di acquisto del simbolo: symbol è già stato venduto, allora non dobbiamo analizzarlo e si passa al prossimo acquisto.
                     if ticketP in sales:
                         continue
-
+  
                     price_data = prices_dict.get((symbol, trade_date))
                     if price_data:
                         open_price_from_dict, price_current = price_data
@@ -365,9 +353,10 @@ def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, mar
             
             ######################## inizio PURCHASE
             if stateAgent == agentState.AgentState.PURCHASE:   #logging.info(f"Agent entrato nello stato Purchase\n")
-                giro = 0
+
                 numb_purch = 0
                 #i = 0
+                giro = 0
 
                 # Acquisto di azioni in modo casuale dal pool di titoli azionari finché c'è budget
                 while budgetInvestimenti > 0:      
@@ -379,13 +368,16 @@ def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, mar
                     
                     if i == len(symbolDisp1):   
                         i = 0
-                    
+
                     chosen_symbol = symbolDisp1[i]
                     
                     i += 1
                     giro += 1
-
+                    
                     price_data = prices_dict.get((chosen_symbol, trade_date))
+                    if price_data == None:
+                        continue
+                
                     if price_data:
                         price, _ = price_data
 
@@ -395,8 +387,7 @@ def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, mar
                         if price == 0: # Se il prezzo è = 0, allora non si può acquistare
                             continue
 
-                        # Verifica se il simbolo è in un settore accettato e se è presente tra tutti i settori nek database:
-                        #if chosen_symbol in sectorSymbols and sectorSymbols[chosen_symbol] in sectors:
+                        # Verifica se il simbolo è in un settore accettato e se è presente tra tutti i settori nek database: ---> #if chosen_symbol in sectorSymbols and sectorSymbols[chosen_symbol] in sectors:
 
                         # Calcolo volume e aggiornamento budget
                         #volumeAcq = float(math.floor(10 / price))
@@ -410,7 +401,19 @@ def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, mar
                         insertDataDB.insert_purchase(trade_date, ticketPur, volumeAcq, chosen_symbol, price, cur, conn)
                         numb_purch += 1
                         budgetInvestimenti -= (price * volumeAcq)
+                        
                         purchases.add((dateObject, ticketPur, volumeAcq, chosen_symbol, price))
+
+                        # Aggiornamento stato
+                        #insertDataDB.insertInDataTrader(trade_date, stateAgent, initial_budget, budget, equity, margin, profitTotalUSD, profitTotalPerc, budgetMantenimento, budgetInvestimenti, cur, conn)
+
+                            # Logging dell'acquisto
+                            #if logging.getLogger().isEnabledFor(logging.INFO):
+                                #logging.info(f"Acquistata azione {chosen_symbol} in data: {trade_date}, prezzo: {price}, budgetInvestimenti: {budgetInvestimenti}")
+
+                        #else:
+                        #    if logging.getLogger().isEnabledFor(logging.INFO):
+                        #        logging.info(f"Settore di appartenenza per {chosen_symbol} non valido o non trovato.")
 
                 # Dopo lo stato di acquisto il programma entra nello stato di attesa
                 stateAgent = agentState.AgentState.SALE_IMMEDIATE  #logging.info(f"Cambio di stato da PURCHASE a SALE IMMEDIATE\n\n")
@@ -419,16 +422,25 @@ def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, mar
 
             ######################## inizio WAIT
             if stateAgent == agentState.AgentState.WAIT:  #logging.info(f"Agent entrato nello stato Wait\n")
-                
                 # Aggiornamento dello stato dell'agent nel database
                 #insertDataDB.insertInDataTrader(trade_date, stateAgent, initial_budget, budget, equity, margin, profitTotalUSD, profitTotalPerc, budgetMantenimento, budgetInvestimenti, cur, conn)
-
+                
                 i_for_date += 1
                 if i_for_date < len(datesTrade):
                     trade_date = datesTrade[i_for_date]
+                    # trade_date = trade_date.strftime('%Y-%m-%d %H:%M:%S')
+                    #trade_date = str(trade_date[0])
                     trade_date = trade_date.strftime('%Y-%m-%d %H:%M:%S')
 
                 if i_for_date >= len(datesTrade):
+
+                    # Recupera i ticker relativi agli acquisti già venduti nel db.
+                    #cur.execute("SELECT ticket_pur FROM sale")
+                    #sales = {int(sale[0]) for sale in cur.fetchall()}
+                    
+                    # Recupera tutti valori delle colonne degli acquisti nel db.
+                    #cur.execute("SELECT * FROM purchase order by now;")
+                    #purchasesDB = cur.fetchall()
                     
                     # Memorizzo le informazioni relative agli acquisti nelle variabili seguenti:
                     for pur in purchases:
@@ -445,7 +457,6 @@ def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, mar
                             if price_current == None:
                                 continue
 
-                            
                             if price_current > price_open:   
                                 # Calcolo del profitto:
                                 profit = price_current - price_open
@@ -503,7 +514,8 @@ def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, mar
     for k, v in titleProfit.items():
         #titleProfit[k] = round
         purForLog += f'{k}: {len(v)}, '
-    logger_agent6.info(f"[PURCHASE INFO] Number of purchases: {len(purchases)}; Purchase details: {purForLog}")
+    logger_agent5.info(f"[PURCHASE INFO] Number of purchases: {len(purchases)}; Purchase details: {purForLog}")
+
     
     #return profitTotalPerc
     maxT, minT = '', ''
@@ -511,7 +523,7 @@ def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, mar
     for k, v in titleProfit.items():
         for value in v:
             if value > 40:
-                logger_agent6.info(f"[PROFIT INFO] Highest profit recorded for symbol {k}: {value}%")
+                logger_agent5.info(f"[PROFIT INFO] Highest profit recorded for symbol {k}: {value}%")
         titleProfit[k] = float(np.mean(v))
         if titleProfit[k] > maxP:
             maxP = titleProfit[k]
@@ -520,28 +532,28 @@ def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, mar
             minP = titleProfit[k]
             minT = k
             
-    profitNotReinvestedPerc = ((profitNotReinvested - initial_budget) / initial_budget ) * 100
+    profitNotReinvestedPerc = ((profitNotReinvested - initial_budget) / initial_budget )  * 100
 
-    logger_agent6.info(f"[OVERALL PROFIT] Overall profit percentage: {profitNotReinvestedPerc}%")
+    logger_agent5.info(f"[OVERALL PROFIT] Overall profit percentage: {profitNotReinvestedPerc}%")
     
     if profitNotReinvestedPerc > 250:
         for tick, infoS in salesDict.items():
-            logger_agent6.info(
+            logger_agent5.info(
                 f"[TRANSACTION] {tick}: Purchase Date: {infoS[1]}, Sale Date: {infoS[0]}, TicketAcq: {infoS[2]}, "
-                f"Volume: {infoS[3]}, Symbol: {infoS[4]}, Current Sale Price: {infoS[5]}, "
-                f"Purchase Price: {infoS[6]}, Profit: {infoS[7]}, Profit Percentage: {infoS[8]}"
+                f"Volume: {round(float(infoS[3]), 4)}, Symbol: {infoS[4]}, Current Sale Price: {round(float(infoS[5]))}, "
+                f"Purchase Price: {round(float(infoS[6]))}, Profit: {round(float(infoS[7]))}, Fractional percentage: {infoS[8]}, Profit percentage: {round(float(infoS[8] * 100), 4)}"
             )
+
 
     if middleTimeSale == []:
         return profitNotReinvestedPerc, profitNotReinvested, nSaleProfit, ticketPur, 0, maxT, minT, initial_budget
 
     else:
-        return profitNotReinvestedPerc, profitNotReinvested, nSaleProfit, ticketPur, float(np.mean(middleTimeSale)), maxT, minT, initial_budget
+        return profitNotReinvestedPerc, profitNotReinvested, nSaleProfit, ticketPur, float( np.mean(middleTimeSale)), maxT, minT, initial_budget
 
 
-
-
-
+    
 
 if __name__ == "__main__":
     print()
+

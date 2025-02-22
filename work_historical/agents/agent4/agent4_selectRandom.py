@@ -15,11 +15,11 @@ import numpy as np
 
 from pathlib import Path
 
-# Trova dinamicamente la cartella Trading-Agent e la aggiunge al path
+# Trova dinamicamente la cartella Backtesting-Trading-Strategies e la aggiunge al path
 current_path = Path(__file__).resolve()
-while current_path.name != 'trading-agent':
-    if current_path == current_path.parent:  # Se raggiungiamo la root senza trovare Trading-Agent
-        raise RuntimeError("Errore: Impossibile trovare la cartella Trading-Agent!")
+while current_path.name != 'Backtesting-Trading-Strategies':
+    if current_path == current_path.parent:  # Se raggiungiamo la root senza trovare Backtesting-Trading-Strategies
+        raise RuntimeError("Errore: Impossibile trovare la cartella Backtesting-Trading-Strategies!")
     current_path = current_path.parent
 
 # Aggiunge la root al sys.path solo se non è già presente
@@ -71,7 +71,7 @@ SYMB_TOT_ANOMALIE = ['IDEX', 'CYRX', 'QUBT', 'POCI', 'MULN', 'BTCS', 'HEPA', 'OL
                       'ATXG', 'SILO', 'KWE', 'TOP',  'TPST', 'NXTT', 'OCTO', 'EGRX', 'AAGR', 'MYNZ', 'IDEX', 'CSSE', 
                       'BFI', 'EFTR', 'DRUG', 'GROM', 'HPCO', 'NCNC', 'SMFL', 'WT', 'EMP', 'IVT', 'EMP', 'AMPY', 'ARCH', 'ODV',
                       'SNK', 'CBE', 'BST', 'BOL', 'GEA', 'NTG', 'MBK', 'MOL', 'MAN', '1913', 
-                       'SBB-B', 'SES', 'DIA', 'H2O', 'EVO', 'LOCAL', 'ATO', 'FRAG', 'MYNZ', 'IPA']
+                       'SBB-B', 'SES', 'DIA', 'H2O', 'EVO', 'LOCAL', 'ATO', 'FRAG', 'MYNZ', 'IPA', 'CODA', 'PRO', 'XTP']
 
 
 # Funzione principale per il trading e il caricamento
@@ -140,15 +140,15 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
                     # get last idTest
                     #idTest = utils.getLastIdTest(cur) 
                     idTest += 1
+                    time_stamp_in = datetime.now()
                     
                     total_steps = len(datesToTrade)  # 
                     for step in range(total_steps):
-                        time_stamp_in = datetime.now()
                         # Logica principale
                         utils.clear_tables_db(cur, conn)
                         trade_date, initial_date, endDate = datesToTrade[step]
                         logger_agent4.info(f"[TEST START] Starting test for agent4_selectRandom with TP {TK}% and DELAY={DELAY} on initial date {initial_date} at {datetime.now()}")
-                        profitPerc, profitUSD, nSale, nPurchase, middleTimeSale, titleBetterProfit, titleWorseProfit, initial_budget  = tradingYear(cur, conn, symbols, trade_date, m, DELAY, TK, initial_date, endDate, dizMarkCap, symbolsDispoInDates, pricesDispoInDates, totaledates[m])
+                        profitPerc, profitUSD, nSale, nPurchase, middleTimeSale, titleBetterProfit, titleWorseProfit, initial_budget  = tradingYear(cur, conn, symbols, trade_date, m, DELAY, TK, initial_date, endDate, symbolsDispoInDates, pricesDispoInDates, totaledates[m])
                         
                         # profitNotReinvestedPerc, profitNotReinvested, ticketSale, ticketPur, float(np.mean(middleTimeSale)), max(titleProfit[symbol]), min(titleProfit[symbol])
                         
@@ -235,7 +235,7 @@ def main(datesToTrade, dizMarkCap, symbolsDispoInDatesNasd, symbolsDispoInDatesN
 ################################################################################
 
                   
-def tradingYear(cur, conn, symbols, trade_date, market, DELAY, TK, initial_date, endDate, dizMarkCap, symbolsDispoInDates, pricesDispoInDates, totaledates):
+def tradingYear(cur, conn, symbols, trade_date, market, DELAY, TK, initial_date, endDate, symbolsDispoInDates, pricesDispoInDates, totaledates):
     # Inizializzazione ad ogni iterazione
     budgetInvestimenti = initial_budget = 1000
     #profitTotalUSD = profitTotalPerc = profitNotReinvested = profitNotReinvestedPerc = equity = margin = ticketPur = ticketSale =budgetMantenimento = 0
@@ -564,8 +564,8 @@ def tradingYear(cur, conn, symbols, trade_date, market, DELAY, TK, initial_date,
         for tick, infoS in salesDict.items():
             logger_agent4.info(
                 f"[TRANSACTION] {tick}: Purchase Date: {infoS[1]}, Sale Date: {infoS[0]}, TicketAcq: {infoS[2]}, "
-                f"Volume: {infoS[3]}, Symbol: {infoS[4]}, Current Sale Price: {infoS[5]}, "
-                f"Purchase Price: {infoS[6]}, Profit: {infoS[7]}, Profit Percentage: {infoS[8]}"
+                f"Volume: {round(float(infoS[3]), 4)}, Symbol: {infoS[4]}, Current Sale Price: {round(float(infoS[5]))}, "
+                f"Purchase Price: {round(float(infoS[6]))}, Profit: {round(float(infoS[7]))}, Fractional percentage: {infoS[8]}, Profit percentage: {round(float(infoS[8] * 100), 4)}"
             )
 
     if middleTimeSale == []:
