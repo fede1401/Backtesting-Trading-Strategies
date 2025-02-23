@@ -399,6 +399,9 @@ def tradingYear_purchase_one_after_the_other(cur, conn, symbols, trade_date, mar
                             budgetInvestimenti -= (price * volumeAcq)
                             
                             purchases.add((dateObject, ticketPur, volumeAcq, chosen_symbol, price))
+                            
+                            # Aggiorna il contatore degli acquisti effettuati
+                            numb_purch += 1
 
                             # Aggiornamento stato
                             #insertDataDB.insertInDataTrader(trade_date, stateAgent, initial_budget, budget, equity, margin, profitTotalUSD, profitTotalPerc, budgetMantenimento, budgetInvestimenti, cur, conn)
