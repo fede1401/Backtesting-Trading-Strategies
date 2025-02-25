@@ -14,3 +14,7 @@ data/dataset/history_market_data/
 data/dataset/capitalization/NASDAQ/all_mark_cap
 data/dataset/capitalization/NYSE/all_mark_cap
 data/dataset/capitalization/LARG_COMP_EU/all_mark_cap
+
+
+# Ignora i file relativi relativi ai risultati delle simulazioni poiché sono troppo pesanti
+data/result/

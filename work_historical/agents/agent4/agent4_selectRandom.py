@@ -429,7 +429,7 @@ def tradingYear(cur, conn, symbols, trade_date, market, DELAY, TK, initial_date,
                                     dateObject = datetime.strptime(trade_date, '%Y-%m-%d %H:%M:%S')
 
                                     # Inserimento nel database e aggioirnamento del budget e del numero di acquisti
-                                    insertDataDB.insertInPurchase(trade_date, ticketPur, volumeAcq, chosen_symbol, price, cur, conn)
+                                    insertDataDB.insert_purchase(trade_date, ticketPur, volumeAcq, chosen_symbol, price, cur, conn)
                                     numb_purch += 1
                                     budgetInvestimenti -= (price * volumeAcq)
                                     purchases.add((dateObject, ticketPur, volumeAcq, chosen_symbol, price))
@@ -455,11 +455,6 @@ def tradingYear(cur, conn, symbols, trade_date, market, DELAY, TK, initial_date,
 
                 #if trade_date >= endDate:
                 if i_for_date >= len(datesTrade):
-                    
-                    # Recupera tutti valori delle colonne degli acquisti nel db.
-                    cur.execute("SELECT * FROM purchase order by now;")
-                    purchasesDB = cur.fetchall()
-                    
                     # Memorizzo le informazioni relative agli acquisti nelle variabili seguenti:
                     for pur in purchases:
                         datePur, ticketP, volume, symbol, price_open = pur[0], pur[1], pur[2], pur[3], pur[4]

@@ -125,7 +125,7 @@ def main(datesToTrade, diz_volume, symbolsDispoInDatesNasd, symbolsDispoInDatesN
                 m = 'data_market_larg_comp_eu_symbols'
                 
             # Ciclo per la variazione del parametro relativo al delay di ri-acquisto di un titolo azionario venduto.
-            for i in range(0, 20):
+            for i in range(0, 25):
                 DELAY = i
                 for i in range(len(list_take_profit)):
                     profitsPerc = []
@@ -208,7 +208,7 @@ def main(datesToTrade, diz_volume, symbolsDispoInDatesNasd, symbolsDispoInDatesN
                     mean_titleWorseProfit = max(dizWorseTitle, key=dizWorseTitle.get)
                     
                     #logging.info(f"Profitto medio: {mean_profit}, Deviazione standard: {std_deviation}")
-                    logger_agent4.iinfo(f"[SIMULATION END] agent4_avgVolDayInitial simulation ended with TP {TK}% and DELAY={DELAY} at {datetime.now()}\n\n\n\n")
+                    logger_agent4.info(f"[SIMULATION END] agent4_avgVolDayInitial simulation ended with TP {TK}% and DELAY={DELAY} at {datetime.now()}\n\n\n\n")
 
                     if m == 'data_market_nasdaq_symbols':
                         market_to_insert = 'nasdaq'
@@ -425,7 +425,7 @@ def tradingYear(cur, conn, symbols, trade_date, market, DELAY, TK, initial_date,
                                     dateObject = datetime.strptime(trade_date, '%Y-%m-%d %H:%M:%S')
 
                                     # Inserimento nel database e aggioirnamento del budget e del numero di acquisti
-                                    insertDataDB.insertInPurchase(trade_date, ticketPur, volumeAcq, chosen_symbol, price, cur, conn)
+                                    insertDataDB.insert_purchase(trade_date, ticketPur, volumeAcq, chosen_symbol, price, cur, conn)
                                     numb_purch += 1
                                     budgetInvestimenti -= (price * volumeAcq)
                                     purchases.add((dateObject, ticketPur, volumeAcq, chosen_symbol, price))
@@ -452,14 +452,6 @@ def tradingYear(cur, conn, symbols, trade_date, market, DELAY, TK, initial_date,
                 #if trade_date >= endDate:
                 if i_for_date >= len(datesTrade):
 
-                    # Recupera i ticker relativi agli acquisti già venduti nel db.
-                    #cur.execute("SELECT ticket_pur FROM sale")
-                    #sales = {int(sale[0]) for sale in cur.fetchall()}
-                    
-                    # Recupera tutti valori delle colonne degli acquisti nel db.
-                    cur.execute("SELECT * FROM purchase order by now;")
-                    purchasesDB = cur.fetchall()
-                    
                     # Memorizzo le informazioni relative agli acquisti nelle variabili seguenti:
                     for pur in purchases:
                         datePur, ticketP, volume, symbol, price_open = pur[0], pur[1], pur[2], pur[3], pur[4]
