@@ -18,3 +18,11 @@ data/dataset/capitalization/LARG_COMP_EU/all_mark_cap
 
 # Ignora i file relativi relativi ai risultati delle simulazioni poiché sono troppo pesanti
 data/result/
+
+
+#Ignora i file relativi alla documentazione per ora
+documents/
+
+
+# Ignora il file di backup del database
+work_historical/database/backup_database.sql

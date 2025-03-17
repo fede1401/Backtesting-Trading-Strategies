@@ -12,9 +12,11 @@
       
     - `history_market_data/`
       - Dati di mercato dettagliati, suddivisi a loro volta per mercato (NASDAQ, NYSE, LARG_COMP_EU). Vengono cancellati una volta caricati nel DB.
+      - `history_volume_data/`: Dati di mercato relativi al volume scambiato e suddivisi. Utili per la variante operativa relativa alla selezione dei simboli in maniera decrescente alla media del volume scambiato (si trovano i titoli con più operazioni effettuate)
 
 - directory: `anomalies/`:
   - Presenti dei file relativi a delle anomalie rilevate nei dati;
 
 - directory: `result/`:
   - Dati per i risultati dei test/simulazioni;
+  - `plot/`: rappresentazioni grafiche dei risultati delle simulazioni generate dal file nel path `test/unit/generate_plot.py`

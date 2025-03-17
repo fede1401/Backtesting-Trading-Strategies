@@ -134,7 +134,7 @@ Esempio: se il prezzo di acquisto di AAPL è 250 USD, allora il volume sarà 10/
 - L’acquisto avviene sempre al prezzo di apertura del titolo relativo al timestamp considerato.
 - La vendita avviene sempre al prezzo massimo relativo al timestamp considerato, questo permette anche una “vendita intra-day”.
 3. **Strategia dell’investitore prudente**: di ogni profitto derivante da una vendita, il 10% viene reinvestito, mentre il restante 90% viene conservato (non più rimesso sul mercato). L’obiettivo è proteggere la maggior parte del guadagno, reinvestendo una quota limitata per “accelerare” la crescita.
-4. **Selezione dei titoli**: si considera un insieme di titoli a maggiore capitalizzazione nel mercato analizzato (Nasdaq/NYSE/Europa). Questa selezione varia in base alle singole strategie, ma di norma si usa uno script che filtra i titoli per capitalizzazione di mercato e ne sceglie i primi X.
+4. **Selezione dei titoli**: si considera un insieme di titoli a maggiore volume scambiato (Nasdaq/NYSE/Europa). Questa selezione varia in base alle singole strategie, ma di norma si usa uno script che filtra i titoli per volume scambiato e ne sceglie i primi X.
 
 #### Metodologia di valutazione delle strategie.
 Per misurare l’efficacia di ogni strategia e dei suoi parametri, si procede come segue:
@@ -165,7 +165,7 @@ L’obiettivo di queste statistiche aggregate è fornire un quadro chiaro delle 
 
 ### Note sulle Varianti di Selezione dei Simboli.
 **Nota:** Per ogni agente (ad eccezione dell'agente 6) esistono due varianti operative:
-- **Top MktCap:** I simboli vengono selezionati ordinando in modo decrescente la capitalizzazione dal mercato di riferimento **nella data in cui si effettua la simulazione**. La selezione è calcolata per ogni data di test; ad esempio, se il test per la strategia è relativo al 2002, la selezione dei simboli avverrà in base alla capitalizzazione decrescente dei simboli nel 2002.
+- **Top average volume:** I simboli vengono selezionati ordinando in modo decrescente il volume scambiato del titolo di riferimento **nella data in cui si effettua la simulazione**. La selezione è calcolata per ogni data di test; ad esempio, se il test per la strategia è relativo al 2002, la selezione dei simboli avverrà in base al volume scambiato per quei titoli nel 2002.
 Questo è stato fatto tramite le funzioni presenti nel file al percorso `work_historical/symbols/manage_symbol.py`.
 - **Random:** I simboli vengono scelti in maniera casuale (ad esempio, 100 simboli) dal medesimo mercato.
 
