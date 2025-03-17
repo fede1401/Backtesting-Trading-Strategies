@@ -346,6 +346,8 @@ def get_x_symbols_ordered_by_volume_for_sector( market, initial_date, perc, diz_
     symbolToUse = []
     for k, v in diz_symb_sect[strMark].items():
         for s in symbXSelect2:
+            if market == 'data_market_larg_comp_eu_symbols':
+                v = [symb_eu.split('.')[0] for symb_eu in v]
             if s in v:
                 if k not in dizNew:
                     dizNew[k] = [s]

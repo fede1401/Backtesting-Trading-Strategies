@@ -1,0 +1,182 @@
+26 febbraio 2025:
+Project 1 - Completare Relazione:
+    ✔ Task 0: completare la sezione relativa agli esperimenti del progetto; @done(25-02-26 21:38)
+        Subtask:
+            ✔ Task 0.1: comprendere ed inserire le sezioni e i paragrafi degli esperimenti sul documento; @done(25-02-26 21:38)
+                ✔ inizialmente una descrizione relativa a cosa si vuole ottenere con gli esperimenti: 'abbiamo già ribadito che il nostro obiettivo è ...'; @done(25-02-26 12:21)
+                ✔ descrivere la differenza tra test e simulazioni; @done(25-02-26 13:30)
+                pausa pranzo ---> 13:30 - 15:30
+                ✔ descrivere dove vengono registrati i risultati degli esperimenti: i campi memorizzati nel database relativi ai test e alle simulazioni; @done(25-02-26 16:04)
+                ✔ parlare dei log dei risultati: 'abbiamo deciso di registrare i risultati degli esperimenti ...'; @done(25-02-26 16:54)
+                pausa pomeridiana ---> 16:55 - 18:40
+                ✔ come vengono eseguiti gli esperimenti: hardware e software utilizzato e tempo per l'esecuzione dei test: (parlare del fatto che ogni agente ha bisogno delle informazioni di base per l'esecuzione: perciò si è deciso di spostare la creazione di questi nel main e passarlo direttamente agli agenti); @done(25-02-26 21:38)
+                pausa cena ---> 20:20 - 21:00 
+
+    ☐ Task 1: completare la sezione relativa ai risultati del progetto;
+    SubTask:
+        ✔ Task 1.1: comprendere ed inserire le sezioni e i paragrafi degli esperimenti sul documento; @done(25-02-26 22:11)
+            ✔ difficile mostrare tutti i risultati in delle tabelle del db, quindi si può fare un riassunto con dei grafici; @done(25-02-26 22:10)
+            ✔ si può fare un confronto tra i vari agenti con i diversi parametri di valutazione con dei plot: 'abbiamo confrontato i risultati ottenuti dai vari agenti ...'; @done(25-02-26 22:25)
+            ✔ conclusioni sui risultati ottenuti: 'abbiamo ottenuto risultati soddisfacenti ...'; @done(25-02-26 22:10)
+        ☐ Task 1.2: realizzare i risultati con il programma 'generate_plot.py' all'interno della cartella 'test';
+        ☐ Task 1.3: salvare i risultati all'interno della cartella 'results';
+        ☐ Task 1.2.1: realizzare plot relativo alla distribuzione dei tempi di distribuzione;
+        ☐ Task 1.4: inserire i risultati nel contenitore di LaTeX;
+        ☐ Task 1.5: compilare il documento con i risultati inseriti: nel grafico indicare cosa rappresenta il grafico e analisi;
+        ☐ Task 1.6: verificare tutti i risultati inseriti e la scrittura;
+        
+    pausa dopo cena ---> 22:27 - 22:37
+    ☐ Task 2: completare la sezione relativa all'Implementazione dei "Trading Agents";
+    SubTask:
+        ✔ Task 2.1: comprendere quali sono le informazioni da riportare sul documento (attraverso schemi, ...); @done(25-02-26 23:22)
+        ☐ Task 2.2: scrivere e ricontrollare la sezione relativa;
+
+
+    ☐ Task 3: ricordare di inserire i seguenti punti nella relazione:
+        ✔ log dei risultati nei file all'interno della cartella log: possono essere mostrati nella sezione `Esperimenti` anche attraverso dei screenshot; @done(25-02-26 16:55)
+        ☐ inserire nei risultati i 20 titoli che hanno performance migliore e peggiore suddivisi per agente tramite una rappresentazione per tabelle.
+        ☐ nell'introduzione specifica che i giorni di contrattazione di mercato escludono sabato, domenica e festività;
+        ✔ scrivere che una volta che si selezionano i titoli, si procede con il test di trading su quei specifici titoli; @done(25-02-26 16:56)
+        ☐ inserire sitografia: dove ho preso i dati di mercato, dove ho analizzato le situazioni del data cleaning, ....
+        ☐ nella sezione "Historical Data" bisogna inserire:
+            ☐ tempo di scaricamento dei dati elevato;
+            ☐ dati ben organizzati all'interno delle cartelle;
+            ☐ parlare di `check_data.py` dato che i dati sono stati controllati poiché scaricati da me;
+            ☐ parlare di Data Cleaning dato che i dati sono stati puliti da me;
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+27 febbraio 2025:
+    Project 1 - Completare Relazione:
+        lavoro in mattinata ---> 11:40 - 13:20
+        pausa pranzo ---> 13:20 - 14:05
+        ✔ Task 0: completare la sezione relativa all'Implementazione dei "Trading Agents"; @done(25-02-27 15:47)
+        SubTask:
+            ✔ Task 0.1: scrivere la sezione relatvia; @done(25-02-27 14:52)
+            ✔ Task 0.2: inserire un diagramma per la diversificazione degli agenti; @done(25-02-27 15:47)
+            ✔ Task 0.3: ricontrollare la sezione; @done(25-02-27 16:10)
+
+        pausa pomeridiana (preparazione pacco monitor da vendere + giri + da Eva) ---> 16:10 - 19:30
+        ☐ Task 1: completare la sezione relativa ai risultati del progetto;
+        SubTask:
+            ✔ Task 1.1: comprendere quali valori ci interessano per i risultati; @done(25-02-28 01:03)
+            ✔ Task 1.2: realizzare i risultati con il programma 'generate_plot.py' all'interno della cartella 'test'; @done(25-02-28 01:02)
+            ✔ Evento 1: per realizzare i plot relativi ai risultati die profitti percentuali medi per ogni agente e per ogni mercato, mi sono accorto di un errore per l'agente 6 relativo al lavoro sul mercato europeo: ho risolto l'errore e ho rieseguito i test per l'agente 6 sul mercato europeo; @done(25-02-27 22:17)
+                ✔ Aggiustato `log.main` e sistemato documento Latex con numero di test e tempo test per agente 6; @done(25-02-28 00:41)
+            ✔ Task 1.3: salvare i risultati all'interno della cartella 'results'; @done(25-02-28 01:03)
+            ☐ Task 1.4: inserire i risultati nel contenitore di LaTeX;
+            ☐ Task 1.5: compilare il documento con i risultati inseriti: nel grafico indicare cosa rappresenta il grafico e analisi;
+            ☐ Task 1.6: verificare tutti i risultati inseriti e la scrittura;
+            ☐ Task 1.7: comprendere e commentare le funzioni per la realizzazione dei plot;
+
+    
+        ☐ Task 2: ricordare di inserire i seguenti punti nella relazione:
+            ✔ inserire nei risultati i 20 titoli che hanno performance migliore e peggiore suddivisi per agente tramite una rappresentazione per tabelle: tramite query: SELECT best_profit_symbol, COUNT(best_profit_symbol) as number_of_symbol FROM testing_data WHERE market='european' GROUP BY best_profit_symbol  ORDER BY number_of_symbol DESC; @done(25-02-28 01:05)
+            ☐ nell'introduzione specifica che i giorni di contrattazione di mercato escludono sabato, domenica e festività;
+            ☐ inserire sitografia: dove ho preso i dati di mercato, dove ho analizzato le situazioni del data cleaning, ....
+            ☐ nella sezione "Historical Data" bisogna inserire:
+                ☐ tempo di scaricamento dei dati elevato;
+                ☐ dati ben organizzati all'interno delle cartelle;
+                ☐ parlare di `check_data.py` dato che i dati sono stati controllati poiché scaricati da me;
+                ☐ parlare di Data Cleaning dato che i dati sono stati puliti da me;
+    
+            ☐ inserire nel numero di test delle diverse strategie le motivazioni del numero di test: (ad esempio agente 4 tanti parametri da valutare, ...)
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+28 febbraio 2025:
+    Project 1 - Completare Relazione:
+
+        ✔ Task 0: definire in maniera più dettagliata la relazione tra "Esperimenti" e "Risultati" seguendo la scaletta del professore: interazione con chat per chiarimenti (Struttura relazione Tesi); @done(25-02-28 17:40)
+
+
+        ☐ Task 1: completare la sezione relativa ai risultati del progetto;
+        SubTask:
+            ✔ Task 1.4: inserire i risultati nel contenitore di LaTeX; @done(25-02-28 17:59)
+            ☐ Task 1.5: compilare il documento con i risultati inseriti: nel grafico indicare cosa rappresenta il grafico e analisi;
+            ☐ Task 1.6: verificare tutti i risultati inseriti e la scrittura;
+            ☐ Task 1.7: comprendere e commentare le funzioni per la realizzazione dei plot;
+
+        
+        ☐ Task 2: ricordare di inserire i seguenti punti nella relazione:
+            ☐ nell'introduzione specifica che i giorni di contrattazione di mercato escludono sabato, domenica e festività;
+            ☐ inserire sitografia: dove ho preso i dati di mercato, dove ho analizzato le situazioni del data cleaning, ....
+            ☐ nella sezione "Historical Data" bisogna inserire:
+                ☐ tempo di scaricamento dei dati elevato;
+                ☐ dati ben organizzati all'interno delle cartelle;
+                ☐ parlare di `check_data.py` dato che i dati sono stati controllati poiché scaricati da me;
+                ☐ parlare di Data Cleaning dato che i dati sono stati puliti da me nella zona relativa agli "Esperimenti";
+            
+            ☐ correggere sul capitolo 6 che tutti gli agenti derivano dall' agente 2, a meno dell'agente 8 che segue una strategia indipendente;
+            
+            ☐ inserire nel numero di test delle diverse strategie le motivazioni del numero di test: (ad esempio agente 4 tanti parametri da valutare, ...)
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+☐ Completo capitolo 8: 1 marzo o 2 marzo ore 15:00
+☐ Parlare di Data Cleaning dato che i dati sono stati puliti da me nella zona relativa agli "Esperimenti": 2 marzo ore 15:00
+
+☐ Sistemare Capitolo 4 + inserire Bibliografia e Sitografia: 3 marzo / 4 marzo
+☐ Sistemare tutti i capitoli + inserire schemi : 4 / 5 marzo
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+3 marzo 2025:
+    Project 1 - Completare Relazione:
+        ✔ Completare paragrafo relativo alla "Pulizia dei dati" nella sezione "Esperimenti" della relazione; @done(25-03-03 14:40)
+        ✔ Sistemare Capitolo 5,6,7 sistemato da Eva. @done(25-03-03 15:44)
+        ✔ Sistemare Capitolo 4; @done(25-03-03 19:54)
+        Pausa doccia + cena ---> 20:00 - 21:30
+            ✔ Sistemata formattazione con grassetto e rilettura Capitolo 4 @done(25-03-03 22:12)
+        ✔ Sistemare Capitolo 1,2,3; --> 22:12 - 22:50 @done(25-03-04 00:30)
+        ☐ Sistemare Capitolo 8.
+            Subtask:
+                ☐ Generare nuovi plot;
+                ☐ Inserire i nuovi plot nel documento;
+                ☐ Analizzare i nuovi plot;
+        
+        ☐ Inserire Bibliografia e Sitografia;  
+        ☐ Inserire schemi;
+
+        Task 2: 
+        ✔ nell'introduzione specifica che i giorni di contrattazione di mercato escludono sabato, domenica e festività; @done(25-03-04 00:30)
+        ☐ inserire sitografia: dove ho preso i dati di mercato, dove ho analizzato le situazioni del data cleaning, ....
+        ✔ nella sezione "Historical Data" bisogna inserire: @done(25-03-04)
+            ✔ tempo di scaricamento dei dati elevato; @done(25-03-03 )
+            ✔ dati ben organizzati all'interno delle cartelle; @done(25-03-03 )
+            ✔ parlare di `check_data.py` dato che i dati sono stati controllati poiché scaricati da me; @done(25-03-03 )
+            ✔ parlare di Data Cleaning dato che i dati sono stati puliti da me nella zona relativa agli "Esperimenti"; @done(25-03-03 )
+        
+        ✔ correggere sul capitolo 6 che tutti gli agenti derivano dall' agente 2, a meno dell'agente 8 che segue una strategia indipendente; @done(25-03-03 )
+        
+        ✔ inserire nel numero di test delle diverse strategie le motivazioni del numero di test: (ad esempio agente 4 tanti parametri da valutare, ...) @done(25-03-03 23:04)
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+4 marzo 2025:
+    Project 1 - Completare Relazione:
+        Task 1:
+            ✔ Rilettura dei Capitoli 1,2,3,4,5,6,7 @done(25-03-04 12:24)
+                ✔ scritto appunti per il miglioramento dei capitoli letti; @done(25-03-04 12:24)
+                ☐ sistemare i capitoli con gli appunti fatti:
+                    ✔ scrivere meglio l'introduzione al Capitolo 5; @done(25-03-04 12:52)
+                    ✔ descrivere più dettagliatamente il processo di estrazione dei prezzi dei titoli in Capitolo 4; @done(25-03-04 12:45)
+                    ☐ inserire schemi: asse cartesiano per questione domanda/offerte prezzi;
+                    ✔ inserire link per Outline Capitolo 2; @done(25-03-04 12:29)
+                    ☐ inserire schema per stato WAIT Capitolo 5;
+                    
+
+        ☐ Sistemare Capitolo 8.
+            Subtask:
+                ✔ Generare nuovi plot; @done(25-03-04 22:02)
+                ✔ Inserire i nuovi plot nel documento; @done(25-03-04 23:02)
+                ✔ Analizzare i nuovi plot; @done(25-03-04 23:02)
+        
+        ☐ Inserire Bibliografia e Sitografia;  
+        ☐ Definire e applicare le regole di evidenziazione dei termini tecnici;
