@@ -1,16 +1,22 @@
 # Backetesting-Trading-strategies.
-> **Sviluppo di trading agent** per l'analisi e la valutazione delle prestazioni di determinate strategie di trading attraverso simulazioni applicate a dati storici del mondo reale.
+**Sviluppo e validazione di trading agents**, ovvero agenti software progettati per operare autonomamente all'interno del mercato azionario.
+Il loro compito è analizzare constantemente i dati di mercato ed eseguire operazioni di acquisto e di vendita secondo regole e strategie ben definite.
 
+Ogni agente segue una strategia di trading precisa.
 
-L'obiettivo principale è **trovare la strategia che genera il maggior profitto**. L’idea è che, se una strategia ha prodotto buoni risultati su dati passati, possa (con i dovuti caveat) mantenere performance interessanti anche in contesti di mercato attuali e futuri.
+Per valutare l'efficacia di queste strategie, ho implementato un sistema di simulazione basato su dati di mercato storici. Ciò mi ha permesso di testare il comportamento degli agenti in scenari di mercato concreti. 
 
-Nel dominio di questa applicazione, si effettuano simulazioni di trading su titoli azionari quotati sui mercati Nasdaq, NYSE e su alcuni simboli di rilevanti società europee a grande capitalizzazione.
+L'obiettivo principale è **trovare la strategia ottimale a seconda delle esigenze di un potenziale trader**. Questa può puntare alla massimizzazione del profitto, oppure alla stabilità, minimizzando i rischi.
+L’idea è che, se una strategia ha prodotto buoni risultati su dati passati, possa mantenere performance interessanti anche in contesti di mercato attuali e futuri.
+
+Nel dominio di questa applicazione, si lavora titoli azionari quotati sui mercati Nasdaq, NYSE e su alcuni simboli di rilevanti società europee a grande capitalizzazione.
 
 ---
 ## Sommario.
 - [Caratteristiche Principali.](#caratteristiche-principali)
 - [Quick Start.](#quick-start)
 - [Struttura del Repository](#struttura-del-repository)
+- [Motivazioni e Soluzioni proposte](#motivazioni-e-simulazioni)
 - [Descrizione sullo Sviluppo dei Trading Agent](#descrizione-sullo-sviluppo-dei-trading-agents)
   - [Agente 1: Scaricamento Dataset](#agente-1-scaricamento-dataset)
   - [Informazioni di Base per le Strategie](#informazioni-di-base-per-le-strategie)
@@ -77,9 +83,9 @@ Nel dominio di questa applicazione, si effettuano simulazioni di trading su tito
 
 ## Struttura del Repository.
 Ecco una panoramica delle cartelle principali:
-- `test/`: include file come test_main.py che permettono l’esecuzione degli agenti e i test su diverse strategie.
+- `test/`: include file come test_main.py (per l’esecuzione degli agenti e i test su diverse strategie), generate_plot.py (per la generazione dei plot in base ai risultati ottenuti dagli esperimenti)
 - `work_historical/`: 
-	- `agent/`: contiene i file agenti.py, che implementano le strategie di trading;
+	- `agents/`: contiene i file agenti.py, che implementano le strategie di trading;
 	- `utils/`: funzioni di utilità (per esempio, gestione date randomiche);
 	- `database/`: script e file di connessione al DB (connectDB.py).
 	- `symbols/`: file come manage_symbol.py per gestire l’individuazione dei titoli a maggior capitalizzazione.
@@ -89,9 +95,23 @@ Ecco una panoramica delle cartelle principali:
 
 ***
 
+
+
+## Motivazioni
+Per chi non avesse familiarità con il tema, il **trading azionario** si traduce nell’acquisto e nella vendita di titoli azionari con l’obiettivo di trarre un profitto dalle variazioni di prezzo positive.
+Molti trader inesperti subiscono perdite significative poiché operare nel mercato azionario non è facile: si tratta di un ambiente dinamico influenzato da fattori economici, politici e psicologici.
+
+Come si possono minimizzare i rischi e ottimizzare i risultati nel trading? 
+Il primo passo fondamentale è studiare e definire una strategia efficace: comprare azioni in modo completamente casuale è praticamente inutile.
+Successivamente è molto importante simulare le strategie sui dati di mercato del passato e quindi in scenari reali poich´e anche conoscendo molto bene un mercato, non vi è una garanzia che una strategia ”ben pensata sulla carta” possa produrre risultati positivi nella realtà.
+
+Viene garantita l'automazione, vantaggiosa perché consente un intervento istantaneo laddove si presenti un’opportunità di guadagno, riducendo al minimo il fattore psicologico.
+
+
 ## Descrizione sullo sviluppo dei trading agents.
 Il nucleo dell'applicazione si basa su:
 - **implementazione dei diversi agenti**, ciascuno associato a una strategia di trading specifica.
+- **esecuzione dgli esperimenti** su numerose combinazioni di condizioni: strategia di selezione titoli, parametri specifici, uno dei tre mercati e una delle 76 date casuali estratte dal periodo 1999–2025.
 - **valutazione dei risultati** di ogni agente tramite simulazioni, salvando criteri fondamentali, fra cui:
 	- profitto percentuale : ((capitale finale - capitale iniziale)/capitale iniziale) * 100.
 	- variazione.
@@ -103,8 +123,8 @@ Ogni agente, e quindi ogni strategia, include una serie di parametri configurabi
 Per ogni spiegazione dell'agente verranno specificati questi parametri.
 
 #### Agente 1: scaricamento dataset.
-L'agente 1 è un **agente particolare** poiché non implementa una vera e propria strategia operativa di trading. Il suo compito è:
-- **scaricare i dati di mercato** (prezzi di apertura, chiusura, massimi e minimi, ecc.) dai mercati di riferimento (Nasdaq, NYSE ed Europa).
+Prima di progettare gli agenti di trading, è stato necessario costruire una solida base di dati su cui testare le strategie. Questo compito è stato affidato all’**Agente 1**, un agente particolare che non implementa una vera e propria strategia operativa di trading, ma si occupa di:
+- **scaricare i dati di mercato** (prezzi di apertura, chiusura, massimi e minimi, ecc.) dai mercati di riferimento.
 - **inserire questi dati all’interno di un database** PostgreSQL per costituire lo storico necessario a tutti gli altri agenti.
 
 In dettaglio, i dati memorizzati includono:
@@ -116,7 +136,13 @@ In dettaglio, i dati memorizzati includono:
 - **prezzo più basso**: prezzo minimo raggiunto dall'azione durante il periodo
 - **prezzo di chisura**: prezzo di chiusura dell'azione alla fine del periodo
 
-Questa raccolta avviene tramite l’API yfinance, che permette di recuperare dati storici fino a date molto remote, fino ai giorni odierni, a intervalli giornalieri.
+Per ottenere dati affidabili ho utilizzato l’API yfinance, che mi ha permesso di recuperare dati storici su un ampio orizzonte temporale, dal 1999
+ad oggi, escludendo le giornate in cui i mercati erano chiusi, come i weekend e le festività.
+
+Per garantire un’analisi pi`u ampia e rappresentativa, sono stati considerati tre mercati principali:
+- **NASDAQ**, caratterizzato da titoli tecnologici.
+- **NYSE**, con titoli di aziende più consolidate.
+- **Titoli europei a grande capitalizzazione**, per una maggiore diversificazione.
 
 Il database PostgreSQL è scelto per la sua stabilità e per la possibilità di gestire grandi volumi di dati in modo affidabile.
 
@@ -256,6 +282,10 @@ Per mantenere modularità e ordine nel codice, le funzioni e i calcoli comuni a 
 - manage_symbol.py (in /work_historical/symbols): individua i titoli azionari a maggior capitalizzazione in un periodo specifico.
 - Funzioni per date randomiche (in /work_historical/utils): generano e gestiscono le date casuali per i test.
 ***
+
+
+
+
 
 ## Requisiti 
 - Python 3.*+
