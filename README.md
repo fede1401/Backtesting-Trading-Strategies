@@ -1,4 +1,4 @@
-# Backetesting-Trading-strategies.
+# Backetesting-Trading-strategies
 **Sviluppo e validazione di trading agents**, ovvero agenti software progettati per operare autonomamente all'interno del mercato azionario.
 Il loro compito è **analizzare constantemente i dati di mercato** ed **eseguire operazioni di acquisto e di vendita** secondo _regole_ e _strategie_ ben definite.
 
@@ -43,9 +43,9 @@ Nel dominio di questa applicazione, si lavora titoli azionari quotati sui mercat
 	```
 	Nota: i test potrebbero richiedere tempi lunghi, a seconda della quantità di dati e della frequenza delle simulazioni.
 
---
+---
 
-## Struttura del Repository.
+## Struttura del Repository
 Ecco una panoramica delle cartelle principali:
 - `test/`: include file come test_main.py (per l’esecuzione degli agenti e i test su diverse strategie), generate_plot.py (per la generazione dei plot in base ai risultati ottenuti dagli esperimenti)
 - `work_historical/`: 
@@ -61,7 +61,7 @@ Ecco una panoramica delle cartelle principali:
 
 
 
-## Motivazioni
+## Motivazioni e Soluzioni
 Per chi non avesse familiarità con il tema, il **trading azionario** si traduce nell’acquisto e nella vendita di titoli azionari con l’obiettivo di trarre un profitto dalle variazioni di prezzo positive.
 Molti trader inesperti subiscono perdite significative poiché operare nel mercato azionario non è facile: si tratta di un ambiente dinamico influenzato da fattori economici, politici e psicologici.
 
@@ -72,7 +72,7 @@ Successivamente è molto importante simulare le strategie sui dati di mercato de
 Viene garantita l'**automazione**, vantaggiosa perché consente un intervento istantaneo laddove si presenti un’opportunità di guadagno, riducendo al minimo il fattore psicologico.
 
 
-## Descrizione sullo sviluppo dei trading agents.
+## Descrizione sullo sviluppo dei trading Agents
 Il nucleo dell'applicazione si basa su:
 - **implementazione dei diversi agenti**, ciascuno associato a una strategia di trading specifica.
 - **esecuzione dgli esperimenti** su numerose combinazioni di condizioni: strategia di selezione titoli, parametri specifici, uno dei tre mercati e una delle 76 date casuali estratte dal periodo 1999–2025.
@@ -86,7 +86,7 @@ Ogni agente, e quindi ogni strategia, include una serie di **parametri configura
 
 Per ogni spiegazione dell'agente verranno specificati questi parametri.
 
-#### Agente 1: scaricamento dataset.
+### Agente 1: scaricamento dataset.
 Prima di progettare gli agenti di trading, è stato necessario costruire una solida base di dati su cui testare le strategie. Questo compito è stato affidato all’**Agente 1**, un agente particolare che non implementa una vera e propria strategia operativa di trading, ma si occupa di:
 - **scaricare i dati di mercato** (prezzi di apertura, chiusura, massimi e minimi, ecc.) dai mercati di riferimento.
 - **inserire questi dati all’interno di un database** PostgreSQL per costituire lo storico necessario a tutti gli altri agenti.
@@ -127,7 +127,7 @@ Esempio: se il prezzo di acquisto di AAPL è 250 USD, allora il volume sarà 10/
 4. **Selezione dei titoli**: si considera un insieme di titoli a maggiore volume scambiato (Nasdaq/NYSE/Europa). Questa selezione varia in base alle singole strategie, ma di norma si usa uno script che filtra i titoli per volume scambiato e ne sceglie i primi X.
 
 
-#### Test e Simulazioni
+### Test e Simulazioni
 Per valutare le diverse strategie di trading implementate sull'ambiente di simulazione ogni Agente viene **testato su numerose combinazioni di condizioni**: 
 - metodologia di selezione di simboli su cui lavorare;
 - parametri specifici dell'agente;
@@ -155,7 +155,7 @@ dove:
 solamente per l'Agente 2.
 
 
-#### Metodologia di valutazione delle strategie.
+### Metodologia di valutazione delle strategie.
 Per misurare l’efficacia di ogni strategia e dei suoi parametri, si procede come segue:
 1. **Finestra temporale di valutazione**: dal 1999 al 2025.
 2. **Selezione di date casuali**: vengono scelte 75 date random (fra tutte quelle presenti nel dataset). Per ciascuna data selezionata, si valuta la strategia in un arco di 1 anno intero. Questo “singolo test” viene ripetuto per tutti i parametri della strategia.
@@ -396,32 +396,60 @@ Ecco i seguenti passaggi:
 ## Risultati ottenuti.
 Analizzando la documentazione si possono osservare i dettagli dei risultati ottenuti.
 Le conclusioni generali includono:
+
+#### Andamento generale dei risultati
+L’analisi della distribuzione dei profitti nelle simulazioni permette di comprendere l’andamento generale delle strategie testate.
+La maggior parte dei test registra profitti compresi tra 0% e 30%, con una media complessiva del +22% annuo. Tuttavia, la deviazione standard del 28% indica che alcuni risultati dei test possono variare discostandosi dalla media.
+Osservando il grafico, notiamo che la distribuzione presenta sia casi di profitto negativo (sulla sinistra) sia alcuni episodi di guadagni estremamente elevati (sulla destra), seppur meno frequenti.
+Questa analisi mostra dei buoni risultati, al variare di alcune condizioni i risultati cambiano come vedremo nei seguenti paragrafi.
+![distribution_mean_profit](https://github.com/user-attachments/assets/0147f895-e6bf-4a4b-95e6-235cc715778d)
+![profit_every_test_by_agent_boxplot](https://github.com/user-attachments/assets/f9017a70-e6fa-4be5-911f-59847f269be7)
+
+---
+
 #### Importanza del contesto storico.
 I risultati variano significativamente a seconda del contesto storico in cui si effettua il test. Anche la migliore strategia può subire pesanti perdite se applicata in un periodo sfavorevole. 
+![mean_profit_every_date_initial_test](https://github.com/user-attachments/assets/4b8d0e87-b67f-469e-bbc6-b17b2d6cc710)
+
+---
 
 #### Selezione dei titoli e volatilità.
 - Le strategie che effettuano la scelta dei titoli su cui lavorare in modo casuale (symb_rnd) spesso ottengono profitti medi più elevati, perché possono includere titoli a bassa capitalizzazione, che presentano oscillazioni di prezzo più marcate. Tra tutte, l’Agente 3 (con selezione casuale) si è rivelato quello con il miglior profitto percentuale medio, ma con più esposizione al rischio.
-- Allo stesso tempo, queste scelte casuali mostrano maggiore instabilità, con oscillazioni di pro tti percentuali molto ampie (deviazione standard più elevata). Questo significa che gli alti profitti sono compensati da un rischio maggiore.
+- Allo stesso tempo, queste scelte casuali mostrano maggiore instabilità, con oscillazioni di profitti percentuali molto ampie (deviazione standard più elevata). Questo significa che gli alti profitti sono compensati da un rischio maggiore.
 - Le strategie basate su aziende grandi e più consolidate (top_avg_vol), invece, presentano profitti medi leggermente inferiori, ma offrono risultati più stabili.
 - Grazie all’analisi dei titoli che registrano maggior e minor pro tti è stato confermato il trend.
 	- I titoli a bassa capitalizzazione, per loro natura molto volatili, hanno garantito guadagni alti: compaiono fra i migliori, ma in alcuni casi anche tra i peggiori, poiché la volatilità ampli ca sia i rialzi sia i ribassi.
- 	- Le grandi aziende, pur più stabili, presentano movimenti di prezzo meno accentuati e dunque un potenziale di guadagno inferiore in strategie di breve periodo.	 
+ 	- Le grandi aziende, pur più stabili, presentano movimenti di prezzo meno accentuati e dunque un potenziale di guadagno inferiore in strategie di breve periodo.
+
+#### Instabilità vs Stabilità.
+- L'Agente 3 risulta il più profittevole, ma anche molto instabile.
+- L’Agente 8, basato sul trailing stop loss, si distingue invece come il più stabile: presenta uttuazioni moderate e una distribuzione dei profitti meno soggetta a valori estremi. Per chi preferisce una strategia di guadagno più equilibrata, la stabilità di questo Agente può essere un vantaggio.
+
+![mean_profit_every_agent](https://github.com/user-attachments/assets/164070ff-6011-49c9-933d-0a3dddceffaf)
+![dev_std_every_agent](https://github.com/user-attachments/assets/c57c30c4-e48b-44a6-8309-ccc416caa29a)
+
+---
 
 #### Tempo di detenzione e Take Profit.
 - Spesso un **Take Profit basso** (vendita rapida quando si raggiunge un piccolo guadagno) permette di chiudere operazioni in tempi molto brevi, ottenendo profitti medi più elevati ma con maggiore variabilità.
 - Al crescere del tempo di detenzione, i pro tti tendono a calare.
 Questo è legato sia a **Take Profit più alti** (che ritardano la vendita), sia al fatto che titoli meno volatili richiedono più tempo per generare movimenti di prezzo significativi.
 
-#### Instabilità vs Stabilità.
-- L'Agente 3 risulta il più profittevole, ma anche molto instabile.
-- L’Agente 8, basato sul trailing stop loss, si distingue invece come il più stabile: presenta uttuazioni moderate e una distribuzione dei profitti meno soggetta a valori estremi. Per chi preferisce una strategia di guadagno più equilibrata, la stabilità di questo Agente può essere un vantaggio.
+#### Correlazione fra tempi di detenzione e rendimenti.
+Il tempo di detenzione rappresenta l’intervallo, espresso in giorni, tra l’acquisto e la vendita di un titolo e varia in modo significativo in base alla strategia adottata. I guadagni più alti si concentrano spesso nei primi giorni (1–5). Con il passare del tempo, il profitto medio tende a diminuire, a conferma che puntare a rapidi aumenti di prezzo (Take Profit basso) è più redditizio, ma meno stabile.
+
+![avg_profit_by_time_detenction](https://github.com/user-attachments/assets/584955de-7241-44c9-8c04-04011b7cace2)
+![mean_profit_every_agent_take_profit_agent2_top_avg_vol](https://github.com/user-attachments/assets/4787af27-bed5-46f7-889c-4c55da47289b)
+![mean_profit_every_agent_take_profit_agent2_symb_rnd](https://github.com/user-attachments/assets/21f1d47e-0773-4465-95af-f3c4b3e3b8e2)
+
+---
 
 #### Influenza sul numero di operazioni e tempi di detenzione.
 - Gli agenti che adottano la selezione casuale (symb_rnd) spesso chiudono le posizioni più in fretta, grazie alle oscillazioni di prezzo elevate. Di conseguenza, registrano mediamente tempi di detenzione inferiori rispetto a chi sceglie titoli più stabili ma anche più lenti nei movimenti.
 - Le strategie che operano su un numero maggiore di titoli o su orizzonti temporali più lunghi generano molte più transazioni, aumentando sì le occasioni di guadagno ma anche l’esposizione al rischio.
+![mean_#_sales_every_agent](https://github.com/user-attachments/assets/4707e9d4-d095-41a8-bac4-b21483c939fd)
+![mean_#_purchase_every_agent](https://github.com/user-attachments/assets/30180658-15a2-4eb6-b301-14dd70912c27)
 
-#### Correlazione fra tempi di detenzione e rendimenti.
-Il tempo di detenzione rappresenta l’intervallo, espresso in giorni, tra l’acquisto e la vendita di un titolo e varia in modo significativo in base alla strategia adottata.I guadagni più alti si concentrano spesso nei primi giorni (1–5). Con il passare del tempo, il profitto medio tende a diminuire, a conferma che puntare a rapidi aumenti di prezzo (Take Profit basso) è più redditizio, ma meno stabile.
 
 ---
 ### Sviluppi futuri.
