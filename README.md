@@ -1,51 +1,15 @@
 # Backetesting-Trading-strategies.
 **Sviluppo e validazione di trading agents**, ovvero agenti software progettati per operare autonomamente all'interno del mercato azionario.
-Il loro compito è analizzare constantemente i dati di mercato ed eseguire operazioni di acquisto e di vendita secondo regole e strategie ben definite.
+Il loro compito è **analizzare constantemente i dati di mercato** ed **eseguire operazioni di acquisto e di vendita** secondo _regole_ e _strategie_ ben definite.
 
 Ogni agente segue una strategia di trading precisa.
 
-Per valutare l'efficacia di queste strategie, ho implementato un sistema di simulazione basato su dati di mercato storici. Ciò mi ha permesso di testare il comportamento degli agenti in scenari di mercato concreti. 
+Per valutare l'efficacia di queste strategie, ho implementato un **sistema di simulazione basato su dati di mercato storici**. Ciò mi ha permesso di testare il comportamento degli agenti in scenari di mercato concreti. 
 
 L'obiettivo principale è **trovare la strategia ottimale a seconda delle esigenze di un potenziale trader**. Questa può puntare alla massimizzazione del profitto, oppure alla stabilità, minimizzando i rischi.
 L’idea è che, se una strategia ha prodotto buoni risultati su dati passati, possa mantenere performance interessanti anche in contesti di mercato attuali e futuri.
 
-Nel dominio di questa applicazione, si lavora titoli azionari quotati sui mercati Nasdaq, NYSE e su alcuni simboli di rilevanti società europee a grande capitalizzazione.
-
----
-## Sommario.
-- [Caratteristiche Principali.](#caratteristiche-principali)
-- [Quick Start.](#quick-start)
-- [Struttura del Repository](#struttura-del-repository)
-- [Motivazioni e Soluzioni proposte](#motivazioni-e-simulazioni)
-- [Descrizione sullo Sviluppo dei Trading Agent](#descrizione-sullo-sviluppo-dei-trading-agents)
-  - [Agente 1: Scaricamento Dataset](#agente-1-scaricamento-dataset)
-  - [Informazioni di Base per le Strategie](#informazioni-di-base-per-le-strategie)
-  - [Metodologia di Valutazione delle Strategie](#metodologia-di-valutazione-delle-strategie)
-- [Descrizione degli Agenti di Trading](#descrizione-degli-agenti-di-trading)
-  - [Note sulle Varianti di Selezione dei Simboli](#note-sulle-variante-di-selezione-dei-simboli)
-  - [Agente 2: Strategia Semplice con Take Profit](#agente-2-strategia-semplice-con-take-profit)
-  - [Agente 3](#agente-3)
-  - [Agente 4](#agente-4)
-  - [Agente 5](#agente-5)
-  - [Agente 6](#agente-6)
-  - [Agente 7](#agente-7)
-  - [Agente 8](#agente-8)
-  - [Utilizzo di Sistemi e File Comuni](#utilizzo-di-sistemi-e-file-comuni)
-- [Requisiti](#requisiti)
-- [Preparazione dell’Ambiente ed Esecuzione dei Test](#preparazione-dellambiente-ed-esecuzione-dei-test)
-  - [Sistema di Logging](#sistema-di-logging)
-  - [Controllo degli Errori](#controllo-degli-errori)
-  - [Struttura dei Percorsi](#struttura-dei-percorsi)
-  - [Spiegazione dei Test](#spiegazione-dei-test)
-- [Database PostgreSQL](#database-postgresql)
-  - [Installazione e Creazione del Database](#installazione-e-creazione-del-database)
-  - [Collegamento al DB](#collegamento-al-db)
-  - [Eliminazione di Database e Utenti](#eliminazione-di-database-e-utenti)
-- [Esempio di Report / Output](#esempio-di-report--output)
-- [Licenza](#licenza)
-- [Contatti](#contatti)
-
----
+Nel dominio di questa applicazione, si lavora titoli azionari quotati sui mercati _Nasdaq_, _NYSE_ e su alcuni _simboli di rilevanti società europee a grande capitalizzazione_.
 
 ## Caratteristiche Principali
 - **Simulazione su dati reali** provenienti da diverse Borse (Nasdaq, NYSE, Europa).
@@ -101,11 +65,11 @@ Ecco una panoramica delle cartelle principali:
 Per chi non avesse familiarità con il tema, il **trading azionario** si traduce nell’acquisto e nella vendita di titoli azionari con l’obiettivo di trarre un profitto dalle variazioni di prezzo positive.
 Molti trader inesperti subiscono perdite significative poiché operare nel mercato azionario non è facile: si tratta di un ambiente dinamico influenzato da fattori economici, politici e psicologici.
 
-Come si possono minimizzare i rischi e ottimizzare i risultati nel trading? 
+Come si possono **minimizzare i rischi e ottimizzare i risultati nel trading?**
 Il primo passo fondamentale è studiare e definire una strategia efficace: comprare azioni in modo completamente casuale è praticamente inutile.
 Successivamente è molto importante simulare le strategie sui dati di mercato del passato e quindi in scenari reali poich´e anche conoscendo molto bene un mercato, non vi è una garanzia che una strategia ”ben pensata sulla carta” possa produrre risultati positivi nella realtà.
 
-Viene garantita l'automazione, vantaggiosa perché consente un intervento istantaneo laddove si presenti un’opportunità di guadagno, riducendo al minimo il fattore psicologico.
+Viene garantita l'**automazione**, vantaggiosa perché consente un intervento istantaneo laddove si presenti un’opportunità di guadagno, riducendo al minimo il fattore psicologico.
 
 
 ## Descrizione sullo sviluppo dei trading agents.
@@ -118,7 +82,7 @@ Il nucleo dell'applicazione si basa su:
 	- deviazione standard.
 	- tempo medio che intercorre tra un acquisto e una vendita.
 
-Ogni agente, e quindi ogni strategia, include una serie di parametri configurabili: questi consentono di testare la stessa strategia variando tali parametri, osservando così quali combinazioni producano, nel tempo, i risultati migliori.
+Ogni agente, e quindi ogni strategia, include una serie di **parametri configurabili**: questi consentono di testare la stessa strategia variando tali parametri, osservando così quali combinazioni producano, nel tempo, i risultati migliori.
 
 Per ogni spiegazione dell'agente verranno specificati questi parametri.
 
@@ -161,6 +125,35 @@ Esempio: se il prezzo di acquisto di AAPL è 250 USD, allora il volume sarà 10/
 - La vendita avviene sempre al prezzo massimo relativo al timestamp considerato, questo permette anche una “vendita intra-day”.
 3. **Strategia dell’investitore prudente**: di ogni profitto derivante da una vendita, il 10% viene reinvestito, mentre il restante 90% viene conservato (non più rimesso sul mercato). L’obiettivo è proteggere la maggior parte del guadagno, reinvestendo una quota limitata per “accelerare” la crescita.
 4. **Selezione dei titoli**: si considera un insieme di titoli a maggiore volume scambiato (Nasdaq/NYSE/Europa). Questa selezione varia in base alle singole strategie, ma di norma si usa uno script che filtra i titoli per volume scambiato e ne sceglie i primi X.
+
+
+#### Test e Simulazioni
+Per valutare le diverse strategie di trading implementate sull'ambiente di simulazione ogni Agente viene **testato su numerose combinazioni di condizioni**: 
+- metodologia di selezione di simboli su cui lavorare;
+- parametri specifici dell'agente;
+-  uno dei tre mercati considerati;
+- una delle 76 date casuali estratte dal periodo 1999–2025.
+Ogni test simula un anno di attività di trading.
+
+**_Esempio pratico_**: Consideriamo l’agente 2. Questo agente viene testato iterando
+su vari valori di take profit, ad esempio :
+_1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 30, 40, 50, 60, 70, 80, 90, 100%_
+Per ognuno di questi valori, l’agente:
+1. Seleziona uno dei tre mercati (Nasdaq, NYSE, Europa).
+2. Adotta una delle due strategie di scelta dei titoli (random vs top average volume).
+3. Esegue 76 test, ciascuno relativo a una data casuale (compresa tra il 1999 e il
+2025).
+   
+Per esempio, un singolo test potrebbe essere “Agente 2 con take profit= 1%, su Nasdaq, con selezione random, a partire dal 17 dicembre 1999 no al 17 dicembre 2000”. 
+Ripetendo questa procedura per tutte le combinazioni, si ottengono:
+2 x 20 x 76 x 3 = 9120 test
+dove:
+- 2 varianti operative relative alla selezione dei simboli;
+- 20: i valori di take profit;
+- 76: le date causali estratte;
+- 3: mercati considerati per il lavoro di tesi;
+solamente per l'Agente 2.
+
 
 #### Metodologia di valutazione delle strategie.
 Per misurare l’efficacia di ogni strategia e dei suoi parametri, si procede come segue:
@@ -400,7 +393,44 @@ Ecco i seguenti passaggi:
 
 ---
 
-## Esempio di report / output.
+## Risultati ottenuti.
+Analizzando la documentazione si possono osservare i dettagli dei risultati ottenuti.
+Le conclusioni generali includono:
+#### Importanza del contesto storico.
+I risultati variano significativamente a seconda del contesto storico in cui si effettua il test. Anche la migliore strategia può subire pesanti perdite se applicata in un periodo sfavorevole. 
+
+#### Selezione dei titoli e volatilità.
+- Le strategie che effettuano la scelta dei titoli su cui lavorare in modo casuale (symb_rnd) spesso ottengono profitti medi più elevati, perché possono includere titoli a bassa capitalizzazione, che presentano oscillazioni di prezzo più marcate. Tra tutte, l’Agente 3 (con selezione casuale) si è rivelato quello con il miglior profitto percentuale medio, ma con più esposizione al rischio.
+- Allo stesso tempo, queste scelte casuali mostrano maggiore instabilità, con oscillazioni di pro tti percentuali molto ampie (deviazione standard più elevata). Questo significa che gli alti profitti sono compensati da un rischio maggiore.
+- Le strategie basate su aziende grandi e più consolidate (top_avg_vol), invece, presentano profitti medi leggermente inferiori, ma offrono risultati più stabili.
+- Grazie all’analisi dei titoli che registrano maggior e minor pro tti è stato confermato il trend.
+	- I titoli a bassa capitalizzazione, per loro natura molto volatili, hanno garantito guadagni alti: compaiono fra i migliori, ma in alcuni casi anche tra i peggiori, poiché la volatilità ampli ca sia i rialzi sia i ribassi.
+ 	- Le grandi aziende, pur più stabili, presentano movimenti di prezzo meno accentuati e dunque un potenziale di guadagno inferiore in strategie di breve periodo.	 
+
+#### Tempo di detenzione e Take Profit.
+- Spesso un **Take Profit basso** (vendita rapida quando si raggiunge un piccolo guadagno) permette di chiudere operazioni in tempi molto brevi, ottenendo profitti medi più elevati ma con maggiore variabilità.
+- Al crescere del tempo di detenzione, i pro tti tendono a calare.
+Questo è legato sia a **Take Profit più alti** (che ritardano la vendita), sia al fatto che titoli meno volatili richiedono più tempo per generare movimenti di prezzo significativi.
+
+#### Instabilità vs Stabilità.
+- L'Agente 3 risulta il più profittevole, ma anche molto instabile.
+- L’Agente 8, basato sul trailing stop loss, si distingue invece come il più stabile: presenta uttuazioni moderate e una distribuzione dei profitti meno soggetta a valori estremi. Per chi preferisce una strategia di guadagno più equilibrata, la stabilità di questo Agente può essere un vantaggio.
+
+#### Influenza sul numero di operazioni e tempi di detenzione.
+- Gli agenti che adottano la selezione casuale (symb_rnd) spesso chiudono le posizioni più in fretta, grazie alle oscillazioni di prezzo elevate. Di conseguenza, registrano mediamente tempi di detenzione inferiori rispetto a chi sceglie titoli più stabili ma anche più lenti nei movimenti.
+- Le strategie che operano su un numero maggiore di titoli o su orizzonti temporali più lunghi generano molte più transazioni, aumentando sì le occasioni di guadagno ma anche l’esposizione al rischio.
+
+#### Correlazione fra tempi di detenzione e rendimenti.
+Il tempo di detenzione rappresenta l’intervallo, espresso in giorni, tra l’acquisto e la vendita di un titolo e varia in modo significativo in base alla strategia adottata.I guadagni più alti si concentrano spesso nei primi giorni (1–5). Con il passare del tempo, il profitto medio tende a diminuire, a conferma che puntare a rapidi aumenti di prezzo (Take Profit basso) è più redditizio, ma meno stabile.
+
+---
+### Sviluppi futuri.
+Sono presentati i seguenti suggerimenti per i sviluppi futuri:
+- **Migliorare la selezione dei titoli basata sul valore di capitalizzazione di mercato** in un determinato periodo storico.
+- Introdurre **vincoli di mercato più realistici** come limiti di acquisto e di vendita oppure costi di transazione.
+- Eseguire un **maggior numero di test** su periodi specifici .
+- Grazie all’approccio modulare adottato nel progetto, sarà possibile per altri sviluppatori e ricercatori **definire nuove strategie di trading e testarle con maggiore fessibilità**.
+
 
 
 ---
