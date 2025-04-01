@@ -11,14 +11,14 @@ L’idea è che, se una strategia ha prodotto buoni risultati su dati passati, p
 
 Nel dominio di questa applicazione, si lavora titoli azionari quotati sui mercati _Nasdaq_, _NYSE_ e su alcuni _simboli di rilevanti società europee a grande capitalizzazione_.
 
-## Caratteristiche Principali
+## ✨ Caratteristiche Principali
 - **Simulazione su dati reali** provenienti da diverse Borse (Nasdaq, NYSE, Europa).
 - **Modularità**: più agenti, ognuno con una strategia di trading specifica.
 - **Database PostgreSQL** per la memorizzazione dei dati e l’analisi delle performance.
 - **Logging e Monitoraggio** dei risultati e degli eventuali errori durante le simulazioni.
 - **Ampio orizzonte temporale** (dal 1999 al 2025) e test randomizzati su 75 date diverse.
 
-## Quick Start
+## 🚀 Quick Start
 1. **Clona il repository**:
    ```bash
    git clone https://github.com/fede1401/Backtesting-Trading-Strategies.git
@@ -45,7 +45,7 @@ Nel dominio di questa applicazione, si lavora titoli azionari quotati sui mercat
 
 ---
 
-## Struttura del Repository
+## 📚 Struttura del Repository
 Ecco una panoramica delle cartelle principali:
 - `test/`: include file come test_main.py (per l’esecuzione degli agenti e i test su diverse strategie), generate_plot.py (per la generazione dei plot in base ai risultati ottenuti dagli esperimenti)
 - `work_historical/`: 
@@ -75,7 +75,7 @@ Viene garantita l'**automazione**, vantaggiosa perché consente un intervento is
 ## Descrizione sullo sviluppo dei trading Agents
 Il nucleo dell'applicazione si basa su:
 - **implementazione dei diversi agenti**, ciascuno associato a una strategia di trading specifica.
-- **esecuzione dgli esperimenti** su numerose combinazioni di condizioni: strategia di selezione titoli, parametri specifici, uno dei tre mercati e una delle 76 date casuali estratte dal periodo 1999–2025.
+- **esecuzione degli esperimenti** su numerose combinazioni di condizioni: strategia di selezione titoli, parametri specifici, uno dei tre mercati e una delle 76 date casuali estratte dal periodo 1999–2025.
 - **valutazione dei risultati** di ogni agente tramite simulazioni, salvando criteri fondamentali, fra cui:
 	- profitto percentuale : ((capitale finale - capitale iniziale)/capitale iniziale) * 100.
 	- variazione.
@@ -86,7 +86,7 @@ Ogni agente, e quindi ogni strategia, include una serie di **parametri configura
 
 Per ogni spiegazione dell'agente verranno specificati questi parametri.
 
-### Agente 1: scaricamento dataset.
+### Agente 1: scaricamento dataset
 Prima di progettare gli agenti di trading, è stato necessario costruire una solida base di dati su cui testare le strategie. Questo compito è stato affidato all’**Agente 1**, un agente particolare che non implementa una vera e propria strategia operativa di trading, ma si occupa di:
 - **scaricare i dati di mercato** (prezzi di apertura, chiusura, massimi e minimi, ecc.) dai mercati di riferimento.
 - **inserire questi dati all’interno di un database** PostgreSQL per costituire lo storico necessario a tutti gli altri agenti.
@@ -98,7 +98,7 @@ In dettaglio, i dati memorizzati includono:
 - **prezzo iniziale**: prezzo di apertura del titolo azionario all'inizio del periodo.
 - **prezzo più alto**: prezzo massimo raggiunto dal titolo azionario durante il periodo
 - **prezzo più basso**: prezzo minimo raggiunto dall'azione durante il periodo
-- **prezzo di chisura**: prezzo di chiusura dell'azione alla fine del periodo
+- **prezzo di chiusura**: prezzo di chiusura dell'azione alla fine del periodo
 
 Per ottenere dati affidabili ho utilizzato l’API yfinance, che mi ha permesso di recuperare dati storici su un ampio orizzonte temporale, dal 1999
 ad oggi, escludendo le giornate in cui i mercati erano chiusi, come i weekend e le festività.
@@ -114,7 +114,7 @@ L’Agente 1, in sintesi, fornisce la **base dati** su cui tutte le altre strate
 
 ***
 
-#### Informazioni di base per le strategie.
+#### Informazioni di base per le strategie
 Le strategie dei vari agenti (dal 2 all’8) si concentrano sull’acquisto e sulla vendita di titoli azionari.
 L'obiettivo del trading è sfruttare le variazioni di prezzo dei titoli per ottenere profitti nel breve termine: l'obiettivo è acquistare e rivendere il titolo una volta che questo ha subito un'aumento del prezzo.
 A seguire, alcuni aspetti comuni a tutte le strategie:
@@ -155,7 +155,7 @@ dove:
 solamente per l'Agente 2.
 
 
-### Metodologia di valutazione delle strategie.
+### Metodologia di valutazione delle strategie
 Per misurare l’efficacia di ogni strategia e dei suoi parametri, si procede come segue:
 1. **Finestra temporale di valutazione**: dal 1999 al 2025.
 2. **Selezione di date casuali**: vengono scelte 75 date random (fra tutte quelle presenti nel dataset). Per ciascuna data selezionata, si valuta la strategia in un arco di 1 anno intero. Questo “singolo test” viene ripetuto per tutti i parametri della strategia.
@@ -180,9 +180,9 @@ Per misurare l’efficacia di ogni strategia e dei suoi parametri, si procede co
 L’obiettivo di queste statistiche aggregate è fornire un quadro chiaro delle **prestazioni di ogni strategia** in contesti di mercato e parametri differenti, così da compiere una scelta informata su quale agente/strategia risulti globalmente più vantaggiosa.
 ***
 
-## Descrizione degli Agenti di Trading.
+## Descrizione degli Agenti di Trading
 
-### Note sulle Varianti di Selezione dei Simboli.
+### Note sulle Varianti di Selezione dei Simboli
 **Nota:** Per ogni agente (ad eccezione dell'agente 6) esistono due varianti operative:
 - **Top average volume:** I simboli vengono selezionati ordinando in modo decrescente il volume scambiato del titolo di riferimento **nella data in cui si effettua la simulazione**. La selezione è calcolata per ogni data di test; ad esempio, se il test per la strategia è relativo al 2002, la selezione dei simboli avverrà in base al volume scambiato per quei titoli nel 2002.
 Questo è stato fatto tramite le funzioni presenti nel file al percorso `work_historical/symbols/manage_symbol.py`.
@@ -195,7 +195,7 @@ Le note di inserimento nel database sono create in modo conciso permettendo di c
 
 ---
 
-#### Agente 2: strategia semplice con take profit.
+#### Agente 2: strategia semplice con take profit
 L'agente 2 simula una strategia molto semplice: viene utilizzato come **strategia di riferimento** per gli altri agenti.
 Questo utilizza un approccio iterativo per testare i seguenti **parametri** di take profit: 1,2,3,4,5,6,7,8,9,10,15,20,30,40,50,60,70,80,90,100 (in percentuale).
 Grazie ai parametri si può valutare quale tra questi è quello che reagisce migliormente e dà più profitti.
@@ -211,7 +211,7 @@ Grazie a questa strategia base, si ottiene un primo benchmark sulle possibili pr
 
 ***
 
-#### Agente 3.
+#### Agente 3
 L’Agente 3 estende la logica dell’Agente 2 introducendo una **condizione di acquisto basata sul prezzo medio del titolo**. In particolare:
 
 1. Si calcola (pre-analisi) il prezzo medio storico del titolo nei 50 giorni precedenti.
@@ -223,7 +223,7 @@ L’aspettativa è che, comprando solo quando un titolo è “sottovalutato” r
 
 ***
 
-#### Agente 4.
+#### Agente 4
 L'agente 4 riprende la base dell’Agente 2, ma differisce poiché una volta venduto un titolo azionario si va a **riacquistare lo stesso titolo** dopo un delay definito. 
 La modifica principale è:
 1. Una volta venduto un titolo, non lo si riacquista immediatamente, ma si attende un numero di giorni definito dal parametro “delay”.
@@ -234,7 +234,7 @@ L’idea alla base: lasciare “decantare” il titolo dopo la vendita, per vede
 
 ***
 
-#### Agente 5.
+#### Agente 5
 L’Agente 5 introduce **variazioni nel numero di titoli su cui operare e nel budget iniziale**, pur mantenendo la stessa logica di base dell’Agente 2. In particolare, si valutano diverse coppie:
 - **100 titoli** azionari a maggiore capitalizzazione e **1000 USD** di budget iniziale;
 - **200 titoli** azionari a maggiore capitalizzazione e **2000 USD** di budget iniziale;
@@ -244,7 +244,7 @@ L’Agente 5 introduce **variazioni nel numero di titoli su cui operare e nel bu
 
 Per ogni combinazione (numero di titoli – budget), si eseguono i test e si misurano i parametri di valutazione. In questo modo, si capisce come il capitalizzare un maggior numero di titoli (quindi diversificando) e disporre di un budget più elevato possa influire sui risultati e se esiste un “punto di equilibrio” fra l’aumento dei titoli/budget e la redditività complessiva.
 
-#### Agente 6.
+#### Agente 6
 L’Agente 6 si basa sulla stessa strategia dell’Agente 2 ma **seleziona i titoli in modo diverso**: invece di prendere i titoli a maggior capitalizzazione senza distinzione, li filtra per settore e ne preleva una certa percentuale tra i top di quel settore. I parametri testati sono:
 - 10% dei titoli a maggior capitalizzazione di ogni settore.
 - 20% dei titoli a maggior capitalizzazione di ogni settore.
@@ -254,11 +254,11 @@ L’aspettativa è capire se diversificare la scelta dei titoli per settore (anz
 
 ***
 
-#### Agente 7.
+#### Agente 7
 L’Agente 7 mantiene la struttura e i parametri dell’Agente 2, ma **estende la finestra temporale per il singolo test da 1 anno a 2 anni**. 
 Questa differenza consente di studiare l’impatto di una visione più lungo-termine sul funzionamento del take profit e di capire se una strategia originariamente pensata per il breve termine possa diventare più (o meno) profittevole su un orizzonte doppio.
 
-#### Agente 8.
+#### Agente 8
 L'agente 8 sfrutta la strategia del **TSL: trailing stop loss**.
 Questa strategia si basa sulla vendita di un titolo azionario quando il suo prezzo scende sotto una certa soglia.
 L'obiettivo è ottenere un profitto, tenendo salva una percentuale di profitto che il titolo ha già guadagnato.
@@ -270,7 +270,7 @@ L’idea è **garantire un profitto minimo** nel momento in cui il titolo abbia 
 
 ***
 
-#### Utilizzo di sistemi e file comuni.
+#### Utilizzo di sistemi e file comuni
 Per mantenere modularità e ordine nel codice, le funzioni e i calcoli comuni a più agenti sono posizionati in file condivisi. Ad esempio:
 - manage_symbol.py (in /work_historical/symbols): individua i titoli azionari a maggior capitalizzazione in un periodo specifico.
 - Funzioni per date randomiche (in /work_historical/utils): generano e gestiscono le date casuali per i test.
@@ -280,13 +280,13 @@ Per mantenere modularità e ordine nel codice, le funzioni e i calcoli comuni a 
 
 
 
-## Requisiti 
+## 💼 Requisiti 
 - Python 3.*+
 - scaricamento librerie fondamentali per la creazione dell'environmente: (yfinance, ...)
 Il file setup.py (ancora da completare) si occuperà di gestire l’installazione automatica di tutte le dipendenze necessarie.
 
 ***
-## Preparazione dell’ambiente ed esecuzione dei test.
+## Preparazione dell’ambiente ed esecuzione dei test
 Per l'esecuzione delle simulazioni è prima fondamentale creare l'ambiente, poiché è su questo che verranno valutate le diverse strategie.
 1. **Data setup**. 
 - Per la preparazione dell'ambiente c'è l'**agente 1**: questo scarica e memorizza i dati di mercato storici e di capitalizzazione di mercato storici nel database (scaricati mediante un'algoritmo preciso).
@@ -304,21 +304,21 @@ python3 test_main.py
 
 Se si desidera solo scaricare i dati, si può lanciare un apposito main (legato all’Agente 1) e commentare l’esecuzione degli altri agenti.
 
-### Sistema di logging.
+### Sistema di logging
 Per monitorare l’andamento dei test (es. risultati, errori e tempistiche) si utilizzano i file di log nella cartella /logs grazie a **sistema di logging Python** configurato per salvare:
 - Eventuali errori logici o di runtime.
 - Informazioni sui tempi di esecuzione.
 - Dettagli sulle operazioni svolte da ciascun agente.
 Parte dei risultati viene inoltre memorizzata nel database per analisi successive più approfondite.
 
-### Controllo degli errori.
+### Controllo degli errori
 Dato che il dataset è stato generato internamente dall’Agente 1, è presente uno **script di controllo per evidenziare possibili anomalie nei dati di mercato scaricati**. Il suo funzionamento si basa sul confronto tra:
 - Prezzo di apertura e prezzo massimo nello stesso giorno.
 - Prezzo di apertura e prezzo massimo nel giorno successivo (per verificare incongruenze non realistiche).
 
 Questo script, checkErrorData.py, si trova nella cartella /scripts e serve a **evidenziare differenze anomale** che potrebbero inficiare le simulazioni (visto che acquisto e vendita, in queste strategie, utilizzano proprio prezzo di apertura e prezzo massimo come valori di riferimento).
 
-### Struttura dei percorsi.
+### Struttura dei percorsi
 Per gestire i percorsi dei file e delle cartelle in modo dinamico, è presente un algoritmo nel file manage_module.py. In sintesi:
 1. Un ciclo individua la root del progetto.
 2. Vengono definiti i percorsi fondamentali (cartelle log, cartelle script, ecc.).
@@ -328,7 +328,7 @@ In tutti gli altri file, quindi, si può importare facilmente sia la root sia i 
 
 ***
 
-### Spiegazione dei test.
+### Spiegazione dei test
 I test verranno eseguiti su un dataset molto ampio. L'elevato numero di test e simulazioni può comportare tempi di esecuzione significativi.
 Si può pensare che le tabelle del database relative ai dati di mercato raggiungono milioni di record. Per questo effettuare delle query può risultare abbastanza inefficiente.
 Per questo per ottimizzare:
@@ -337,10 +337,10 @@ Per questo per ottimizzare:
 
 ***
 
-## Database postgreSQL.
+## ⚙️ Database postgreSQL
 In una sistema come questo, la gestione e la memorizzazione dei dati è fondamentale per la comprensione e la valutazione delle strategie di trading.
 
-#### Installazione e creazione del database.
+#### Installazione e creazione del database
 1. Seguire la guida ufficiale su: https://www.postgresql.org/download/linux/ubuntu/ per installare postgreSQL.
 2. All’interno della cartella db-scripts sono presenti:
 - **Definizione nome DB e utente;**
@@ -351,7 +351,7 @@ In una sistema come questo, la gestione e la memorizzazione dei dati è fondamen
 
 Per creare il database, basta posizionarsi in db-scripts ed eseguire lo script .sh appropriato per il proprio sistema operativo.
 
-#### Collegamento al DB.
+#### Collegamento al DB
 Per il collegamento al database da terminale si utilizza il comando:
 ``` psql -U nome_utente -h localhost -d nome_db```, in questo caso si utilizza ``` psql -U reporting_user -h localhost -d data_backtesting -p 5433```
 Verrà richiesta la password, presente nel file create-db-user.sql.
@@ -393,50 +393,52 @@ Ecco i seguenti passaggi:
 
 ---
 
-## Risultati ottenuti.
+## Risultati ottenuti
 Analizzando la documentazione si possono osservare i dettagli dei risultati ottenuti.
 Le conclusioni generali includono:
 
 #### Andamento generale dei risultati
-L’analisi della distribuzione dei profitti nelle simulazioni permette di comprendere l’andamento generale delle strategie testate.
-La maggior parte dei test registra profitti compresi tra 0% e 30%, con una media complessiva del +22% annuo. Tuttavia, la deviazione standard del 28% indica che alcuni risultati dei test possono variare discostandosi dalla media.
+L’analisi della **distribuzione dei profitti nelle simulazioni** permette di comprendere l’**andamento generale delle strategie testate**.
+La maggior parte dei test registra **profitti compresi tra 0% e 30**%, con una **media complessiva del +22% annuo**. Tuttavia, la **deviazione standard del 28%** indica che alcuni **risultati dei test possono variare discostandosi dalla media**.
 Osservando il grafico, notiamo che la distribuzione presenta sia casi di profitto negativo (sulla sinistra) sia alcuni episodi di guadagni estremamente elevati (sulla destra), seppur meno frequenti.
-Questa analisi mostra dei buoni risultati, al variare di alcune condizioni i risultati cambiano come vedremo nei seguenti paragrafi.
+Questa **analisi mostra dei buoni risultati**, al variare di alcune condizioni i risultati cambiano come vedremo nei seguenti paragrafi.
 ![distribution_mean_profit](https://github.com/user-attachments/assets/0147f895-e6bf-4a4b-95e6-235cc715778d)
 ![profit_every_test_by_agent_boxplot](https://github.com/user-attachments/assets/f9017a70-e6fa-4be5-911f-59847f269be7)
 
 ---
 
-#### Importanza del contesto storico.
-I risultati variano significativamente a seconda del contesto storico in cui si effettua il test. Anche la migliore strategia può subire pesanti perdite se applicata in un periodo sfavorevole. 
+#### Importanza del contesto storico
+I risultati **variano significativamente a seconda del contesto storico in cui si effettua i test**. Anche la migliore strategia può subire pesanti perdite se applicata in un periodo sfavorevole. 
 ![mean_profit_every_date_initial_test](https://github.com/user-attachments/assets/4b8d0e87-b67f-469e-bbc6-b17b2d6cc710)
 
 ---
 
-#### Selezione dei titoli e volatilità.
+#### Selezione dei titoli e volatilità
 - Le strategie che effettuano la scelta dei titoli su cui lavorare in modo casuale (symb_rnd) spesso ottengono profitti medi più elevati, perché possono includere titoli a bassa capitalizzazione, che presentano oscillazioni di prezzo più marcate. Tra tutte, l’Agente 3 (con selezione casuale) si è rivelato quello con il miglior profitto percentuale medio, ma con più esposizione al rischio.
 - Allo stesso tempo, queste scelte casuali mostrano maggiore instabilità, con oscillazioni di profitti percentuali molto ampie (deviazione standard più elevata). Questo significa che gli alti profitti sono compensati da un rischio maggiore.
 - Le strategie basate su aziende grandi e più consolidate (top_avg_vol), invece, presentano profitti medi leggermente inferiori, ma offrono risultati più stabili.
-- Grazie all’analisi dei titoli che registrano maggior e minor pro tti è stato confermato il trend.
+- Grazie all’analisi dei titoli che registrano maggior e minor profitti è stato confermato il trend.
 	- I titoli a bassa capitalizzazione, per loro natura molto volatili, hanno garantito guadagni alti: compaiono fra i migliori, ma in alcuni casi anche tra i peggiori, poiché la volatilità ampli ca sia i rialzi sia i ribassi.
  	- Le grandi aziende, pur più stabili, presentano movimenti di prezzo meno accentuati e dunque un potenziale di guadagno inferiore in strategie di breve periodo.
 
 #### Instabilità vs Stabilità.
 - L'Agente 3 risulta il più profittevole, ma anche molto instabile.
-- L’Agente 8, basato sul trailing stop loss, si distingue invece come il più stabile: presenta uttuazioni moderate e una distribuzione dei profitti meno soggetta a valori estremi. Per chi preferisce una strategia di guadagno più equilibrata, la stabilità di questo Agente può essere un vantaggio.
+- L’Agente 8, basato sul trailing stop loss, si distingue invece come il più stabile: presenta fluttuazioni moderate e una distribuzione dei profitti meno soggetta a valori estremi. Per chi preferisce una strategia di guadagno più equilibrata, la stabilità di questo Agente può essere un vantaggio.
 
 ![mean_profit_every_agent](https://github.com/user-attachments/assets/164070ff-6011-49c9-933d-0a3dddceffaf)
 ![dev_std_every_agent](https://github.com/user-attachments/assets/c57c30c4-e48b-44a6-8309-ccc416caa29a)
 
 ---
 
-#### Tempo di detenzione e Take Profit.
+#### Tempo di detenzione e Take Profit
 - Spesso un **Take Profit basso** (vendita rapida quando si raggiunge un piccolo guadagno) permette di chiudere operazioni in tempi molto brevi, ottenendo profitti medi più elevati ma con maggiore variabilità.
-- Al crescere del tempo di detenzione, i pro tti tendono a calare.
+- Al crescere del tempo di detenzione, i profitti tendono a calare.
 Questo è legato sia a **Take Profit più alti** (che ritardano la vendita), sia al fatto che titoli meno volatili richiedono più tempo per generare movimenti di prezzo significativi.
 
-#### Correlazione fra tempi di detenzione e rendimenti.
+#### Correlazione fra tempi di detenzione e rendimenti
 Il tempo di detenzione rappresenta l’intervallo, espresso in giorni, tra l’acquisto e la vendita di un titolo e varia in modo significativo in base alla strategia adottata. I guadagni più alti si concentrano spesso nei primi giorni (1–5). Con il passare del tempo, il profitto medio tende a diminuire, a conferma che puntare a rapidi aumenti di prezzo (Take Profit basso) è più redditizio, ma meno stabile.
+
+- Gli agenti che adottano la selezione casuale (symb_rnd) spesso chiudono le posizioni più in fretta, grazie alle oscillazioni di prezzo elevate. Di conseguenza, registrano mediamente tempi di detenzione inferiori rispetto a chi sceglie titoli più stabili ma anche più lenti nei movimenti.
 
 ![avg_profit_by_time_detenction](https://github.com/user-attachments/assets/584955de-7241-44c9-8c04-04011b7cace2)
 ![mean_profit_every_agent_take_profit_agent2_top_avg_vol](https://github.com/user-attachments/assets/4787af27-bed5-46f7-889c-4c55da47289b)
@@ -445,14 +447,13 @@ Il tempo di detenzione rappresenta l’intervallo, espresso in giorni, tra l’a
 ---
 
 #### Influenza sul numero di operazioni e tempi di detenzione.
-- Gli agenti che adottano la selezione casuale (symb_rnd) spesso chiudono le posizioni più in fretta, grazie alle oscillazioni di prezzo elevate. Di conseguenza, registrano mediamente tempi di detenzione inferiori rispetto a chi sceglie titoli più stabili ma anche più lenti nei movimenti.
-- Le strategie che operano su un numero maggiore di titoli o su orizzonti temporali più lunghi generano molte più transazioni, aumentando sì le occasioni di guadagno ma anche l’esposizione al rischio.
+- Le strategie che operano su un numero maggiore di titoli o su orizzonti temporali più lunghi generano molte più transazioni. Ho osservato tramite l’analisi dei grafici che, nel complesso, il numero di operazioni non è un indicatore determinante del successo: può  aumentanre sì le occasioni di guadagno ma anche l’esposizione al rischio. 
 ![mean_#_sales_every_agent](https://github.com/user-attachments/assets/4707e9d4-d095-41a8-bac4-b21483c939fd)
 ![mean_#_purchase_every_agent](https://github.com/user-attachments/assets/30180658-15a2-4eb6-b301-14dd70912c27)
 
 
 ---
-### Sviluppi futuri.
+### Sviluppi futuri
 Sono presentati i seguenti suggerimenti per i sviluppi futuri:
 - **Migliorare la selezione dei titoli basata sul valore di capitalizzazione di mercato** in un determinato periodo storico.
 - Introdurre **vincoli di mercato più realistici** come limiti di acquisto e di vendita oppure costi di transazione.
@@ -463,12 +464,12 @@ Sono presentati i seguenti suggerimenti per i sviluppi futuri:
 
 ---
 
-## Licenza.
+## Licenza
 
 
 --- 
 
-## Contatti.
+## 👤 Contatti
 Per informazioni, segnalazioni di bug o richieste di funzionalità:
 - Apri una Issue su GitHub;
 - Oppure contattami direttamente;
